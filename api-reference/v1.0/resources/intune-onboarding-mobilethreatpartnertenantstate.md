@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ece2cc46e98d6ff3bf232adf99114cff1bdd31d4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a0bb2f4f1ede224eb16e89a29b9ba2800a919fd8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447247"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729571"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>mobileThreatPartnerTenantState 枚举类型
 
@@ -23,10 +23,12 @@ ms.locfileid: "60447247"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|不可用|0|合作伙伴不可用。|
+|无法|0|合作伙伴不可用。|
 |可用|1|合作伙伴可用。|
-|enabled|2|启用合作伙伴。|
-|unresponsive|3|合作伙伴无响应。|
+|enabled|2|已启用合作伙伴。|
+|反应 迟钝|3|合作伙伴无响应。|
+
+
 
 
 

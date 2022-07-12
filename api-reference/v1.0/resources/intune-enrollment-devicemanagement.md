@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0102a098760e303267cc2e510e4e18a4a320126
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 584a6104fc9791cac58f9ca20af9e53ae1687df1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452872"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736053"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -34,7 +34,7 @@ deviceManagement 资源表示已在 Intune 中预留的租户的集合设备标�
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|该Windows autopilot 设备标识包含集合。|
+|windowsAutopilotDeviceIdentities|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 集合|包含的 Windows autopilot 设备标识集合。|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) 集合|导入的 Windows AutoPilot 设备的集合。|
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -51,6 +51,8 @@ deviceManagement 资源表示已在 Intune 中预留的租户的集合设备标�
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

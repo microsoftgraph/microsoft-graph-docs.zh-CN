@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e3ca2aa471d70b6f37da0002c9117d880147654
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f314db8aba65ad1ceb0225361a4cc2b801cb7076
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453357"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736781"
 ---
 # <a name="update-managedappoperation"></a>更新 managedAppOperation
 
@@ -51,10 +51,10 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|操作名称。|
+|displayName|字符串|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 
@@ -95,6 +95,8 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
+
 
 
 

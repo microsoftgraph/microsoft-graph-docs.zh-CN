@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 723917f0bdb9c17577ddbdfa45ca4a44c0aa7e68
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e4fadf7efcc5da33db27f3a350f31e66a78b4276
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449868"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731524"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>创建 managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -45,9 +45,9 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 managedDeviceMobileAppConfigurationDeviceStatus 对象的 JSON 表示形式。
+在请求正文中，为 managedDeviceMobileAppConfigurationDeviceStatus 对象提供 JSON 表示形式。
 
-下表显示创建 managedDeviceMobileAppConfigurationDeviceStatus 时所需的属性。
+下表显示了创建 managedDeviceMobileAppConfigurationDeviceStatus 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -63,7 +63,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -105,6 +105,8 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

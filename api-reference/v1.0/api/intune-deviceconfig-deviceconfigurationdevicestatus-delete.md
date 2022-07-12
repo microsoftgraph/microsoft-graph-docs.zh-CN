@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7edc6cff751596952a14893352fcb1ab03d9b579
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5517cf66935c081b641fa8299ba1558fbd4155ff
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454038"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732091"
 ---
 # <a name="delete-deviceconfigurationdevicestatus"></a>删除 deviceConfigurationDeviceStatus
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

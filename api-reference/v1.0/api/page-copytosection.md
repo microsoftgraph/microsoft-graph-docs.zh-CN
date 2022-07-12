@@ -1,22 +1,24 @@
 ---
 title: page： copyToSection
-description: 将页面复制到特定节。
+description: 将页面复制到特定部分。
 ms.localizationpriority: medium
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f80fdc196a08cd4118347569bbc9167860f4209e
-ms.sourcegitcommit: 25acfa7d0153336c9a35d30a1dd422aeadc1342c
+ms.openlocfilehash: 5c38f6bd1b3eda0d37acc7e1bf62085ae5a7d4bc
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345317"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735059"
 ---
 # <a name="page-copytosection"></a>page： copyToSection
 
-命名空间：microsoft.graph 将页面复制到特定部分。
+命名空间：microsoft.graph
 
-对于 Copy 操作，你可以遵循异步调用模式：首先调用 Copy 操作，然后轮询操作终结点的结果。
+将页面复制到特定部分。
+
+对于复制操作，请遵循异步调用模式：首先调用复制操作，然后轮询操作终结点以获取结果。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -41,21 +43,21 @@ POST /groups/{id}/onenote/pages/{id}/copyToSection
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 JSON 对象，其中包含操作所需的参数。
+在请求正文中，提供包含操作所需的参数的 JSON 对象。
 
 | 参数    | 类型   |说明|
 |:---------------|:--------|:----------|
-|groupId|String|要复制到的组的 ID。 仅在复制到组时Microsoft 365使用。|
-|id|String|必需。 目标节的 ID。|
+|groupId|String|要复制到的组的 ID。 仅在复制到 Microsoft 365 组时使用。|
+|id|String|必需。 目标部分的 ID。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 响应 `202 Accepted` 代码和标头 `Operation-Location` 。 轮询Operation-Location [终结点，获取复制操作的状态](onenoteoperation-get.md)。
+如果成功，此方法将返回 `202 Accepted` 响应代码和 `Operation-Location` 标头。 轮询Operation-Location终结点以 [获取复制操作的状态](onenoteoperation-get.md)。
 
 ## <a name="example"></a>示例
-下面是一个如何调用此 API 的示例。
-##### <a name="request"></a>请求
-下面是一个请求示例。
+
+### <a name="request"></a>请求
+下面展示了示例请求。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -98,8 +100,8 @@ Content-type: application/json
 ---
 
 
-##### <a name="response"></a>响应
-下面是一个响应示例。
+### <a name="response"></a>响应
+下面展示了示例响应。
 <!-- {
   "blockType": "response"
 } -->

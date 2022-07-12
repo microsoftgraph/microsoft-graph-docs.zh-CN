@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2562589dec5febcf9a79bcd7956886aa5730c00c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 867917745377ffc1ef343868d77bfe9b649270fe
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444615"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733568"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>删除 iosUpdateDeviceStatus
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/iosUpdateStatuses/{iosU
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

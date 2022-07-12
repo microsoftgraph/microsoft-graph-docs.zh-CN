@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: afc371e84cf7cab3991af8a93d03321e9cdc8871
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: fc38c2363aeafe77c25701e8cb410861086c5353
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449784"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733414"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>windowsMinimumOperatingSystem 资源类型
 
@@ -45,6 +45,8 @@ Windows 移动应用需要的最低操作系统。
   "v10_0": true
 }
 ```
+
+
 
 
 

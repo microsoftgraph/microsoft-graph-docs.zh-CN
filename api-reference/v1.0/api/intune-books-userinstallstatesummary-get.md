@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cf73bc16adf779d02114a9c4b40f0eedfe372cf
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d980abf7334daaad136f62473780accab8186245
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454929"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733002"
 ---
 # <a name="get-userinstallstatesummary"></a>获取 userInstallStateSummary
 
@@ -79,6 +79,8 @@ Content-Length: 269
   }
 }
 ```
+
+
 
 
 

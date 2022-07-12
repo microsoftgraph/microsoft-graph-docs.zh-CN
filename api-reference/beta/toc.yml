@@ -222,9 +222,9 @@ items:
           - name: 构建 Web 应用程序 (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
           - name: 构建 web 应用程序 (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/beta
           - name: 构建 web 应用 (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/beta
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/beta
           - name: 构建 SharePoint Web 部件
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/beta
           - name: 生成 Teams 选项卡
@@ -1773,7 +1773,7 @@ items:
                   - name: 列出审阅集
                     href: api/ediscovery-case-list-reviewsets.md
                   - name: 创建审阅集
-                    href: /api/ediscovery-case-post-reviewsets.md
+                    href: api/ediscovery-case-post-reviewsets.md
                   - name: 获取设置
                     href: api/ediscovery-casesettings-get.md
                   - name: 更新设置
@@ -1783,11 +1783,11 @@ items:
                   - name: 列出源集合
                     href: api/ediscovery-case-list-sourcecollections.md
                   - name: 创建源集合
-                    href: /api/ediscovery-case-post-sourcecollections.md
+                    href: api/ediscovery-case-post-sourcecollections.md
                   - name: 列出标记
-                    href: /api/ediscovery-case-list-tags.md
+                    href: api/ediscovery-case-list-tags.md
                   - name: 创建标记
-                    href: /api/ediscovery-case-post-tags.md
+                    href: api/ediscovery-case-post-tags.md
               - name: Custodian
                 href: resources/ediscovery-custodian.md
                 items:
@@ -9785,7 +9785,7 @@ items:
                   - name: Windows Hello 企业版 PIN 使用情况
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: 基于角色的访问控制 (RBAC)
-                href: /resources/intune-rbac-conceptual.md
+                href: resources/intune-rbac-conceptual.md
                 items:
                   - name: 设备和应用管理分配的角色详情
                     href: resources/intune-rbac-deviceandappmanagementassignedroledetails.md
@@ -10493,7 +10493,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 设置审阅状态
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: 排除故障
+                  - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10888,7 +10888,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: 服务运行状况问题
+              - name: Estado de funcionamento dos serviços问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题
@@ -14612,7 +14612,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365安全报告
+          - name: Microsoft Defender for Office 365 安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training
@@ -15866,7 +15866,7 @@ items:
                 href: api/teamsappsettings-get.md
               - name: 更新
                 href: api/teamsappsettings-update.md
-          - name: 设备
+          - name: Device
             items:
               - name: 预配的设备
                 href: resources/teamworkdevice.md

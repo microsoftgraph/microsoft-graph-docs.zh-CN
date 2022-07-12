@@ -1,16 +1,16 @@
 ---
 title: notificationTemplateBrandingOptions 枚举类型
-description: 邮件模板的品牌打造选项。 已在 Intune 管理员控制台中定义品牌。
+description: 消息模板的品牌选项。 已在 Intune 管理员控制台中定义品牌。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d8ee577acc6d825a95cfe20db63fc890a1f87444
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c089aaf9c4e8e7a900c28dec0cb1c420c8f15c28
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457454"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736004"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>notificationTemplateBrandingOptions 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60457454"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-邮件模板的品牌打造选项。 已在 Intune 管理员控制台中定义品牌。
+消息模板的品牌选项。 已在 Intune 管理员控制台中定义品牌。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
@@ -26,7 +26,10 @@ ms.locfileid: "60457454"
 |无|0|无品牌。|
 |includeCompanyLogo|1|包括公司徽标。|
 |includeCompanyName|2|包括公司名称。|
-|includeContactInformation|4 |包括联系人信息。|
+|includeContactInformation|4|包括联系人信息。|
+|includeDeviceDetails|16|包括设备详细信息。|
+
+
 
 
 

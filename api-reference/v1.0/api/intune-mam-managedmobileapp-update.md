@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a76d249bfdc89af6371a0b16b9b1550a1307c77d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d63059da083f09ba453c1b62ada4cf596469c001
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457797"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731993"
 ---
 # <a name="update-managedmobileapp"></a>更新 managedMobileApp
 
@@ -99,6 +99,8 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
+
+
 
 
 

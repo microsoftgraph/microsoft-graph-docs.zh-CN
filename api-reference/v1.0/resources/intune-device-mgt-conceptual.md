@@ -1,16 +1,16 @@
 ---
 title: Microsoft Intune 中的设备管理
-description: 设备管理资源Microsoft Intune
+description: Microsoft Intune 中的设备管理资源
 author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e3560bb63ca156029cd238a03479841ae2ccef4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c8647c69e3ecc37fd588a7e11e3c469ae5085016
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455856"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733421"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Microsoft Intune 中的设备管理
 
@@ -20,10 +20,6 @@ ms.locfileid: "60455856"
 
 - [操作状态](intune-devices-actionstate.md)
 - [Apple 推送通知证书](intune-devices-applepushnotificationcertificate.md)
-- [审核主角](intune-auditing-auditactor.md)
-- [审核事件](intune-auditing-auditevent.md)
-- [审核属性](intune-auditing-auditproperty.md)
-- [审核资源](intune-auditing-auditresource.md)
 - [合规性状态](intune-devices-compliancestate.md)
 - [配置管理器客户端已启用的功能](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [从共享 Apple 设备删除用户操作结果](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
@@ -34,10 +30,8 @@ ms.locfileid: "60455856"
 - [设备 Exchange 访问状态摘要](intune-devices-deviceexchangeaccessstatesummary.md)
 - [设备地理位置](intune-devices-devicegeolocation.md)
 - [设备运行状况证明状态](intune-devices-devicehealthattestationstate.md)
-- [设备管理](intune-auditing-devicemanagement.md)
-- [设备管理](intune-auditing-devicemanagement.md)
-- [设备管理](intune-auditing-devicemanagement.md)
-- [设备管理](intune-auditing-devicemanagement.md)
+- [设备管理](intune-devices-devicemanagement.md)
+- [设备管理](intune-devices-devicemanagement.md)
 - [设备管理 Exchange 访问状态](intune-devices-devicemanagementexchangeaccessstate.md)
 - [设备管理 Exchange 访问状态原因](intune-devices-devicemanagementexchangeaccessstatereason.md)
 - [设备管理订阅状态](intune-devices-devicemanagementsubscriptionstate.md)
@@ -52,12 +46,8 @@ ms.locfileid: "60455856"
 - [管理代理类型](intune-devices-managementagenttype.md)
 - [通知邮件模板](intune-notification-notificationmessagetemplate.md)
 - [通知模板品牌选项](intune-notification-notificationtemplatebrandingoptions.md)
-- [平台类型](intune-esim-platformtype.md)
-- [远程协助载入状态](intune-remoteassistance-remoteassistanceonboardingstatus.md)
-- [远程协助合作伙伴](intune-remoteassistance-remoteassistancepartner.md)
 - [远程锁定操作结果](intune-devices-remotelockactionresult.md)
 - [重置密码操作结果](intune-devices-resetpasscodeactionresult.md)
-- [Tuple_2操作type_collection_1执行顺序](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [更新 Windows 设备帐户操作参数](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [用户](intune-devices-user.md)
 - [Windows Defender 扫描操作结果](intune-devices-windowsdefenderscanactionresult.md)

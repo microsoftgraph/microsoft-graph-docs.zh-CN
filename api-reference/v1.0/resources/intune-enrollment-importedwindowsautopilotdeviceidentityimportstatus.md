@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a91a12a181a22855f17f4e50aa3b2ee3fbb84c4d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 091f92354ff98129ab1bb02ffd2b91a8e2120108
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452072"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733757"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>importedWindowsAutopilotDeviceIdentityImportStatus 枚举类型
 
@@ -24,10 +24,12 @@ ms.locfileid: "60452072"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知状态。|
-|pending|1|挂起状态。|
-|partial|2|部分状态。|
+|等待|1|挂起状态。|
+|部分|2|部分状态。|
 |complete|3|完成状态。|
-|error|4 |错误状态。|
+|error|4|错误状态。|
+
+
 
 
 

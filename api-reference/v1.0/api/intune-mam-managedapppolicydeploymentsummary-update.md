@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68942b24269349b36cb899e4eebd10c65b61cca5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a6757b9ccf7204cd7e91db7432afa6266a2ab9ae
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450107"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736263"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>更新 managedAppPolicyDeploymentSummary
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|尚未记录|
+|displayName|字符串|尚未记录|
 |configurationDeployedUserCount|Int32|尚未记录|
 |lastRefreshTime|DateTimeOffset|尚未记录|
 |configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) 集合|尚未记录|
@@ -120,6 +120,8 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
 
 
 

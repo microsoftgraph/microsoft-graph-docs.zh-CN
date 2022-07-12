@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71a23aa958511dea3c0ba6b119614718adc1ca85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6df0970077cc511f093775fe7f861aafa90b19b9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444844"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722626"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>softwareUpdateStatusSummary 资源类型
 
@@ -78,6 +78,8 @@ ms.locfileid: "60444844"
   "notApplicableUserCount": 1024
 }
 ```
+
+
 
 
 

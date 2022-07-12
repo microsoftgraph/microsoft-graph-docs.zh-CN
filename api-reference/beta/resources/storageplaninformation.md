@@ -5,13 +5,13 @@ ms.date: 06/20/2018
 title: StoragePlanInformation
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: db5707686f6104d8d9004696094c0bcc22066f5a
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 036da4561666bacf12f3cd7a448c9b9ba18808aa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63723268"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735941"
 ---
 # <a name="storageplaninformation-resource-type"></a>storagePlanInformation 资源类型
 

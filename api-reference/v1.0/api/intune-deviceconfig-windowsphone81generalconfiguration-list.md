@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 982431de8392a062067f4326b80885e80b591dba
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f444ed70dedb33b2762e4c3e20ea836de42cc4a2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456366"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732861"
 ---
 # <a name="list-windowsphone81generalconfigurations"></a>列出 windowsPhone81GeneralConfigurations
 
@@ -116,6 +116,8 @@ Content-Length: 1842
   ]
 }
 ```
+
+
 
 
 

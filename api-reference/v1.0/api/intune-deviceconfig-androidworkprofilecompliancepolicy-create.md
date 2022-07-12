@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 53e1ca7c48b5e38b518436a6583979038df98f8f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c87fd19c6b092bc9d94d153c3fcb9e9ffcb1541b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446117"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736606"
 ---
 # <a name="create-androidworkprofilecompliancepolicy"></a>创建 androidWorkProfileCompliancePolicy
 
@@ -45,15 +45,15 @@ POST /deviceManagement/deviceCompliancePolicies
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 androidWorkProfileCompliancePolicy 对象的 JSON 表示形式。
+在请求正文中，为 androidWorkProfileCompliancePolicy 对象提供 JSON 表示形式。
 
-下表显示创建 androidWorkProfileCompliancePolicy 时所需的属性。
+下表显示了创建 androidWorkProfileCompliancePolicy 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -82,7 +82,7 @@ POST /deviceManagement/deviceCompliancePolicies
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -160,6 +160,8 @@ Content-Length: 1342
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

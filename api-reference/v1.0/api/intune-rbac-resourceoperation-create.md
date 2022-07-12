@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2353f51925f4e0b8612b9f3db5f5e7984671aa55
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b21a99b8fef499537a2acedee6ebd0e1dd6a3b0d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456563"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736732"
 ---
 # <a name="create-resourceoperation"></a>创建 resourceOperation
 
@@ -51,7 +51,7 @@ POST /deviceManagement/resourceOperations
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|资源操作的键。 只读，且自动生成。|
+|id|字符串|资源操作的键。 只读，且自动生成。|
 |resourceName|String|执行此操作的资源的名称。|
 |actionName|String|此操作将执行的操作类型。 actionName 应简明，并尽可能限制在几个字以内。|
 |说明|String|资源操作的说明。 当在 Azure 门户中显示时，会在操作的鼠标悬停文本中使用说明。|
@@ -93,6 +93,8 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
 
 
 

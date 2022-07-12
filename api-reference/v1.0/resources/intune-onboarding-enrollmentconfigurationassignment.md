@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84a1fb480c7a7b65fba3283f66e61923043aa53a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f45a2f82d1f4d4da67281539f8c04b206eb53117
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446194"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736403"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>enrollmentConfigurationAssignment 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60446194"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|注册配置分配密钥|
+|id|String|注册配置分配的密钥|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|表示对租户中托管设备的分配|
 
 ## <a name="relationships"></a>关系
@@ -56,6 +56,8 @@ ms.locfileid: "60446194"
   }
 }
 ```
+
+
 
 
 

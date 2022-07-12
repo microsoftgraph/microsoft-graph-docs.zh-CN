@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c3e66737dbeda15f10a739f113a395d111c5853
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 65d0b3430d4f71d9e13ef876e61597fcb6f8d506
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457097"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736928"
 ---
 # <a name="create-editionupgradeconfiguration"></a>创建 editionUpgradeConfiguration
 
@@ -109,6 +109,8 @@ Content-Length: 483
   "productKey": "Product Key value"
 }
 ```
+
+
 
 
 

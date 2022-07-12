@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff259e9b2263b44748128d8c1be6d7d483430fd2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 93dd1ceea3ad67f233ddf48b0e441adf4877cbc7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454992"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733218"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>更新 windowsUpdateForBusinessConfiguration
 
@@ -69,7 +69,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |featureUpdatesPaused|Boolean|暂停功能更新|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|质量更新暂停到期日期/时间|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|功能更新暂停到期日期/时间|
-|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定接收更新的分支设备。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
+|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|确定哪些分支设备将接收其更新。 可取值为：`userDefined`、`all`、`businessReadyOnly`、`windowsInsiderBuildFast`、`windowsInsiderBuildSlow`、`windowsInsiderBuildRelease`。|
 
 
 
@@ -144,6 +144,8 @@ Content-Length: 1082
   "businessReadyUpdatesOnly": "all"
 }
 ```
+
+
 
 
 

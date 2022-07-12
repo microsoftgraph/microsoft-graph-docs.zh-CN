@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b0fd96b1ae27145f1161370bc85d7b59bc9bd83
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 942700abd2d060d6c07229b7b53e10bda29f8133
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446615"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736109"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>welcomeScreenMeetingInformation 枚举类型
 
@@ -23,9 +23,11 @@ ms.locfileid: "60446615"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|userDefined|0|用户定义，默认值，无意图。|
-|showOrganizerAndTimeOnly|1|只显示组织者和时间。|
-|showOrganizerAndTimeAndSubject|2|为私人会议隐藏 (组织者、时间和主题) 。|
+|userDefined|0|用户定义，默认值，无意向。|
+|showOrganizerAndTimeOnly|1|仅显示组织者和时间。|
+|showOrganizerAndTimeAndSubject|2|为私人会议) 隐藏显示组织者、时间和主题 (主题。|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39d7509f1b513d2b903a0beaf4f972c4a2656075
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9c7cacb81efd4a43f8ef82c5e5fcde275ac0dc3e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453791"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734037"
 ---
 # <a name="list-windows10teamgeneralconfigurations"></a>列出 windows10TeamGeneralConfigurations
 
@@ -99,6 +99,8 @@ Content-Length: 1463
   ]
 }
 ```
+
+
 
 
 

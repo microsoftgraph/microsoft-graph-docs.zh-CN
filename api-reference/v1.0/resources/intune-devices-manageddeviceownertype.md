@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8890ee985cd6cea738aa0a4e69d62881f7a4564b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9917984bacdd85aed0913334b1c19622060ac161
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452984"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735346"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>managedDeviceOwnerType 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "60452984"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|未知。|
-|公司|1|归公司所有。|
-|personal|2|归个人所有。|
+|公司|1|由公司拥有。|
+|personal|2|由人拥有。|
+
+
 
 
 

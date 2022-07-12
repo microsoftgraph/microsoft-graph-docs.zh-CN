@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0117a56e637b7a86112c057fdb70969e5a011324
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bd6618e0c8f534a27cca4e96f6860c71a514b8b7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445358"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733267"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>更新 managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -105,6 +105,8 @@ Content-Length: 348
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b901d9f6402340d1ba28e16836cb13a74ef71f3d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c1a85996e2865b1e4365ff846b6ddb98535e233e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454136"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722906"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>windowsInformationProtectionPinCharacterRequirements 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "60454136"
 |成员|值|说明|
 |:---|:---|:---|
 |notAllow|0|不允许|
-|requireAtLeastOne|1|需要一个 atleast|
-|allow|2|允许任意数字|
+|requireAtLeastOne|1|需要 atleast 一个|
+|允许|2|允许任何数字|
+
+
 
 
 

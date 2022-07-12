@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8365c1efdb79fd1d04f3268d30cf34a2a30c6bd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e5751ea8a389315e46efe1ead5149bf7e6cd7596
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453609"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731573"
 ---
 # <a name="ipv4range-resource-type"></a>iPv4Range 资源类型
 
@@ -26,8 +26,8 @@ IPv4 范围定义。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|lowerAddress|String|较低的地址。|
-|upperAddress|String|地址上限。|
+|lowerAddress|String|较低地址。|
+|upperAddress|String|上地址。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,6 +46,8 @@ IPv4 范围定义。
   "upperAddress": "String"
 }
 ```
+
+
 
 
 

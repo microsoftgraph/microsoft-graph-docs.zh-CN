@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a1ea05771dfc190a3b428500e41671323f2f831
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 31b751a53383bbc14ebd1dd1644b440df12957be
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447845"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734289"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>settingStateDeviceSummary 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60447845"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |settingName|String|设置的名称|
 |instancePath|String|设置的 InstancePath 的名称|
 |unknownDeviceCount|Int32|设置的设备未知计数|
@@ -69,6 +69,8 @@ ms.locfileid: "60447845"
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 937d77e69312ac4957c4fd7ad364c0fe5817c213
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 55b2cc465f33312fe939f9c2c826846a94bce2eb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450487"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735744"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>deviceThreatProtectionLevel 枚举类型
 
@@ -23,12 +23,14 @@ ms.locfileid: "60450487"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|不可用|0|默认值。 请勿使用。|
-|secured|1|设备威胁级别要求：安全。 这是最安全级别，表示未在设备上发现任何威胁。|
-|low|2|设备威胁防护级别要求：低。 低表示威胁的严重性，对设备或设备数据带来的风险最小。|
-|中等|3|设备威胁防护级别要求：中等。 中等表示威胁的严重性，对设备或设备数据带来中等风险。|
-|high|4 |设备威胁防护级别要求：高。 高表示威胁的严重性，对设备或设备数据带来高风险。|
-|notSet|10 |设备威胁防护级别要求：未设置。 未设置表示设备无需满足威胁防护级别。|
+|无法|0|默认值。 请勿使用。|
+|担保|1|设备威胁级别要求：安全。 这是最安全的级别，表示设备上未发现任何威胁。|
+|低|2|设备威胁防护级别要求：低。 低表示对设备或设备数据构成最小风险的威胁严重性。|
+|中等|3|设备威胁防护级别要求：中等。 中等表示对设备或设备数据构成中等风险的威胁严重性。|
+|高|4|设备威胁防护级别要求：高。 高表示威胁的严重性，对设备或设备数据构成严重风险。|
+|notSet|10|设备威胁防护级别要求：未设置。 未设置表示设备无需满足威胁防护级别。|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c31c0ac86075bcf8c9d74f82efb6fefabf374dfc
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 41e83214068b1f2b80bbd33dacb07103b1744260
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451195"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735143"
 ---
 # <a name="termsandconditions-resource-type"></a>termsAndConditions 资源类型
 
@@ -35,7 +35,7 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
 |id|String|T&C 策略的唯一标识符。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
-|displayName|String|管理员提供的 T&C 策略名称。 |
+|displayName|字符串|管理员提供的 T&C 策略名称。 |
 |说明|String|管理员提供的 T&C 策略描述。|
 |title|String|管理员提供的条款和条件标题。 这会向用户显示，提示用户接受 T&C 策略。|
 |bodyText|String|管理员提供的条款和条件正文文本，通常为条款本身。 这会向用户显示，提示用户接受 T&C 策略。|
@@ -70,6 +70,8 @@ TermsAndConditions 实体表示给定条款和条件 (T&C) 策略的元数据和
   "version": 1024
 }
 ```
+
+
 
 
 

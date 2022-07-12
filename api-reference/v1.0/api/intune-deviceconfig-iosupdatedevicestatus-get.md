@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b4232d457adb85cc71bd12502311ade85c1f5bd7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 1e9d5fa66fae144438cb759a6573851cb88a178d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447513"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735682"
 ---
 # <a name="get-iosupdatedevicestatus"></a>获取 iosUpdateDeviceStatus
 
@@ -86,6 +86,8 @@ Content-Length: 646
   }
 }
 ```
+
+
 
 
 

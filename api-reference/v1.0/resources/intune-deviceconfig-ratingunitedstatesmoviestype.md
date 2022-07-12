@@ -1,16 +1,16 @@
 ---
 title: ratingUnitedStatesMoviesType 枚举类型
-description: 美国电影评级标签
+description: Estados Unidos中的电影分级标签
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 145ae32df41ad90d24727ac6c9b736aeb00f483e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ff16274e46f9ef0e642ea5ada636103c28669671
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447387"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733792"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>ratingUnitedStatesMoviesType 枚举类型
 
@@ -18,18 +18,20 @@ ms.locfileid: "60447387"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-美国电影评级标签
+Estados Unidos中的电影分级标签
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |allAllowed|0|默认值，允许所有电影内容|
 |allBlocked|1|不允许任何电影内容|
-|general|2|G，所有年龄均接受|
-|parentalGuidance|3|PG，某些材料可能不适合子材料|
-|parentalGuidance13|4 |PG13，某些材料可能不适合 13 下的子用户|
-|restricted|5|R，17 下的查看器需要伴随的家长或成人监护人|
-|一些|6 |NC17，仅|
+|常规|2|G，所有年龄段都承认|
+|parentalGuidance|3|PG，某些材料可能不适合儿童|
+|parentalGuidance13|4|PG13，某些材料可能不适合 13 岁以下的儿童|
+|限制|5|R， 17 岁以下的观众需要陪同父母或成人监护人|
+|成人|6 |NC17，仅限成人|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a99b16d8c5c5e0d7d244cc66d339f04cf24ebd2c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3942ac055a55dfd07c0b7b7b979761439c23aad4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451967"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733736"
 ---
 # <a name="iprange-resource-type"></a>ipRange 资源类型
 
@@ -39,6 +39,8 @@ ms.locfileid: "60451967"
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
+
 
 
 

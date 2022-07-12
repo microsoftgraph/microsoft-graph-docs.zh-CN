@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c46622908dda15a8bb9dc2f64c29caf7380d4572
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a60e0f9f0fea4d89df6ba71df63cf187406305a1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457279"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731592"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>androidManagedAppRegistration 资源类型
 
@@ -86,6 +86,8 @@ ManagedAppRegistration 资源表示具有管理功能的组织成员使用的应
   "version": "String"
 }
 ```
+
+
 
 
 

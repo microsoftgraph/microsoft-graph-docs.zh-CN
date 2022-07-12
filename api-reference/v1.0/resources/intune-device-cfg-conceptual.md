@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: d97fc069f7862d242cee325dd875d826ef747113
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1b22e05fc3968ac126a06696bc5a4cd7362434fa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59118472"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722983"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Microsoft Intune 中的设备配置
 
@@ -70,7 +70,6 @@ ms.locfileid: "59118472"
 - [设备配置用户概述](intune-deviceconfig-deviceconfigurationuseroverview.md)
 - [设备配置用户状态](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [设备管理](intune-deviceconfig-devicemanagement.md)
-- [设备管理](intune-deviceconfig-devicemanagement.md)
 - [设备管理设置](intune-deviceconfig-devicemanagementsettings.md)
 - [设备威胁防护级别](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [诊断数据提交模式](intune-deviceconfig-diagnosticdatasubmissionmode.md)
@@ -124,7 +123,7 @@ ms.locfileid: "59118472"
 - [OMA 设置字符串](intune-deviceconfig-omasettingstring.md)
 - [OMA 设置字符串 XML](intune-deviceconfig-omasettingstringxml.md)
 - [策略平台类型](intune-deviceconfig-policyplatformtype.md)
-- [预发布功能](intune-deviceconfig-prereleasefeatures.md)
+- [预发行版功能](intune-deviceconfig-prereleasefeatures.md)
 - [分级应用类型](intune-deviceconfig-ratingappstype.md)
 - [分级澳大利亚电影类型](intune-deviceconfig-ratingaustraliamoviestype.md)
 - [分级澳大利亚电视类型](intune-deviceconfig-ratingaustraliatelevisiontype.md)
@@ -144,7 +143,7 @@ ms.locfileid: "59118472"
 - [分级英国电视类型](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [分级美国电影类型](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [分级美国电视类型](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
-- [Report](intune-deviceconfig-report.md)
+- [报告](intune-deviceconfig-report.md)
 - [报表根目录](intune-deviceconfig-reportroot.md)
 - [所需密码类型](intune-deviceconfig-requiredpasswordtype.md)
 - [安全搜索筛选器类型](intune-deviceconfig-safesearchfiltertype.md)

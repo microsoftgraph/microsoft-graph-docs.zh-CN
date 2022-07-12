@@ -5,12 +5,12 @@ author: mkhribech
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2a6d4639a681da83a52ebe11298477b4beccbc0a
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: fa979daa3cc0c7b6824889a1c084be7ecb7ad476
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645554"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723522"
 ---
 <!-- markdownlint-disable MD001 MD022 MD024 -->
 
@@ -30,7 +30,7 @@ ms.locfileid: "66645554"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | 委派（工作或学校帐户）     | 不支持。                                                                          |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                          |
-| Application                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallAsGuest.All、Calls.JoinGroupCall.All、Calls.Initiate.All、Calls.InitiateGroupCall.All |
+| 应用程序                            | Calls.JoinGroupCalls.Chat*、Calls.JoinGroupCallAsGuest.All、Calls.JoinGroupCall.All、Calls.Initiate.All、Calls.InitiateGroupCall.All |
 
 > **笔记：** 对于应用托管媒体的调用，除了列出的权限之一外，还需要 Call.AccessMedia.All 或 Calls.AccessMedia.Chat* 权限。
 >

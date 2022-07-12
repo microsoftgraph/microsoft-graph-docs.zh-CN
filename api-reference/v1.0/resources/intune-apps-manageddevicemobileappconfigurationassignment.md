@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b996be26910c10ba4a206af1981844c8185787cd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 10c6999933ea10234b9405312d9e729789b017ef
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449791"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733120"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>managedDeviceMobileAppConfigurationAssignment 资源类型
 
@@ -55,6 +55,8 @@ ms.locfileid: "60449791"
   }
 }
 ```
+
+
 
 
 

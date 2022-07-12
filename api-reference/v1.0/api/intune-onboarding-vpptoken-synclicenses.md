@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b825b38ff9f1119b92695a8482f97fc2837a5a7a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6792f981c2b0be356c36db1a2715db1f42f628d3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444925"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732553"
 ---
 # <a name="synclicenses-action"></a>syncLicenses 操作
 
@@ -83,6 +83,8 @@ Content-Length: 619
   }
 }
 ```
+
+
 
 
 

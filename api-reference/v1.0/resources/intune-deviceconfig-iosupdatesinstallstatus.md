@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 832d2b770169e8b9a7c5e620e7f396aaa865d01c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ed73e61c6355228b49e6e72bf989bc27fa7ac538
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446721"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736151"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>iosUpdatesInstallStatus 枚举类型
 
@@ -25,7 +25,7 @@ ms.locfileid: "60446721"
 |:---|:---|:---|
 |success|0|尚未记录|
 |可用|1|尚未记录|
-|idle|2|尚未记录|
+|闲置|2|尚未记录|
 |unknown|3|尚未记录|
 |下载|-2016330712|尚未记录|
 |downloadFailed|-2016330711|尚未记录|
@@ -39,8 +39,10 @@ ms.locfileid: "60446721"
 |installPhoneCallInProgress|-2016330703|尚未记录|
 |installFailed|-2016330702|尚未记录|
 |notSupportedOperation|-2016330701|尚未记录|
-|sharedDeviceUserLoggedInError|-2016324035|尚未记录|
+|sharedDeviceUserLoggedInError|-2016330699|尚未记录|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|尚未记录|
+
+
 
 
 

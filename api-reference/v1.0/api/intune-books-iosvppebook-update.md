@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eb4df3c1a24325574720964fa52c0ae9f316bd1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7f01a1f037d2c5daea62a281e03ab70a1a302dd7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446685"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734583"
 ---
 # <a name="update-iosvppebook"></a>更新 iosVppEBook
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
-|说明|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|说明|字符串|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|电子图书的发布日期和时间。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|书籍封面。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
@@ -145,6 +145,8 @@ Content-Length: 964
   "usedLicenseCount": 0
 }
 ```
+
+
 
 
 

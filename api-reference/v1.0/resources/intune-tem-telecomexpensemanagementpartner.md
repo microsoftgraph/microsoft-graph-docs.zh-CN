@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5343f13a83b2d7403410d5dfe7dae62277ddef5e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7d09b755a1a10f7747e525308d4afb0a2f664a63
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444789"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732350"
 ---
 # <a name="telecomexpensemanagementpartner-resource-type"></a>telecomExpenseManagementPartner 资源类型
 
@@ -32,7 +32,7 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|TEM 合作伙伴的唯一标识符。|
+|id|字符串|TEM 合作伙伴的唯一标识符。|
 |displayName|String|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
@@ -61,6 +61,8 @@ telecomExpenseManagementPartner 资源表示给定 TEM 服务的元数据和状�
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

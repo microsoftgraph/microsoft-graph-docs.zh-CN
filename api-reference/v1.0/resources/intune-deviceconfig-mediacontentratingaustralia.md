@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a07259e3b3edb7231c4b6f9e287e2506a89e440
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ff9efff4d66d3f3404de0862d4999dbb402b564c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450220"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735619"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>mediaContentRatingAustralia 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "60450220"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|movieRating|[ratingAustraliaMoviesType](../resources/intune-deviceconfig-ratingaustraliamoviestype.md)|为澳大利亚选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`mature`、`agesAbove15` 或 `agesAbove18`。|
-|tvRating|[ratingAustraliaTelevisionType](../resources/intune-deviceconfig-ratingaustraliatelevisiontype.md)|为澳大利亚选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`preschoolers`、`children`、`general`、`parentalGuidance`、`mature`、`agesAbove15`、`agesAbove15AdultViolence`。|
+|movieRating|[ratingAustraliaMoviesType](../resources/intune-deviceconfig-ratingaustraliamoviestype.md)|为澳大利亚选择的电影分级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`mature`、`agesAbove15` 或 `agesAbove18`。|
+|tvRating|[ratingAustraliaTelevisionType](../resources/intune-deviceconfig-ratingaustraliatelevisiontype.md)|为澳大利亚选择了电视分级。 可取值为：`allAllowed`、`allBlocked`、`preschoolers`、`children`、`general`、`parentalGuidance`、`mature`、`agesAbove15`、`agesAbove15AdultViolence`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,8 @@ ms.locfileid: "60450220"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 ms.localizationpriority: medium
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 7e9c655cf91a87790d9e5f1327eebaca0a60cb7e
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: b1990619b734889df50a6333c4a3ce523d8e5a22
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59098949"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735479"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>使用 Microsoft Intune 管理应用
 
@@ -27,7 +27,6 @@ ms.locfileid: "59098949"
 - [设备应用管理](intune-apps-deviceappmanagement.md)
 - [设备应用管理](intune-apps-deviceappmanagement.md)
 - [设备安装状态](intune-books-deviceinstallstate.md)
-- [设备管理](intune-androidforwork-devicemanagement.md)
 - [电子书安装摘要](intune-books-ebookinstallsummary.md)
 - [文件加密信息](intune-apps-fileencryptioninfo.md)
 - [安装状态](intune-books-installstate.md)
@@ -78,15 +77,15 @@ ms.locfileid: "59098949"
 - [Web 应用](intune-apps-webapp.md)
 - [Win32 LOB 应用](intune-apps-win32lobapp.md)
 - [Win32 LOB 应用分配设置](intune-apps-win32lobappassignmentsettings.md)
-- [Win32 LOB 应用传递优化优先级](intune-apps-win32lobappdeliveryoptimizationpriority.md)
+- [Win32 LOB 应用交付优化优先级](intune-apps-win32lobappdeliveryoptimizationpriority.md)
 - [Win32 LOB 应用文件系统操作类型](intune-apps-win32lobappfilesystemoperationtype.md)
 - [Win32 LOB 应用文件系统规则](intune-apps-win32lobappfilesystemrule.md)
 - [Win32 LOB 应用安装体验](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB 应用 msi 信息](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB 应用 msi 包类型](intune-apps-win32lobappmsipackagetype.md)
 - [Win32 LOB 应用通知](intune-apps-win32lobappnotification.md)
-- [Win32 LOB 应用 Power Shell 脚本规则](intune-apps-win32lobapppowershellscriptrule.md)
-- [Win32 LOB 应用 Power Shell 脚本规则操作类型](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
+- [Win32 LOB 应用 Power shell 脚本规则](intune-apps-win32lobapppowershellscriptrule.md)
+- [Win32 LOB 应用 Power shell 脚本规则操作类型](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Win32 LOB 应用产品代码规则](intune-apps-win32lobappproductcoderule.md)
 - [Win32 LOB 应用注册表规则](intune-apps-win32lobappregistryrule.md)
 - [Win32 LOB 应用注册表规则操作类型](intune-apps-win32lobappregistryruleoperationtype.md)

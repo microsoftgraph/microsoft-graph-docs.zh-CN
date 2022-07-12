@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 494957284f3a8d90379d7b9492de0f48a8f43a07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: affe221e30a8471e4707c8ea7959016cd89fbe64
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455961"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732280"
 ---
 # <a name="create-compliancemanagementpartner"></a>创建 complianceManagementPartner
 
@@ -45,19 +45,19 @@ POST /deviceManagement/complianceManagementPartners
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 complianceManagementPartner 对象的 JSON 表示形式。
+在请求正文中，为 complianceManagementPartner 对象提供 JSON 表示形式。
 
-下表显示创建 complianceManagementPartner 时所需的属性。
+下表显示了创建 complianceManagementPartner 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的 ID|
-|lastHeartbeatDateTime|DateTimeOffset|管理员载入合规性管理合作伙伴后最后检测信号的时间戳|
+|lastHeartbeatDateTime|DateTimeOffset|管理员加入合规性管理合作伙伴后最后一个检测信号的时间戳|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|此租户的合作伙伴状态。 可取值为：`unknown`、`unavailable`、`enabled`、`terminated`、`rejected`、`unresponsive`。|
-|displayName|String|合作伙伴显示名称|
-|macOsOnboarded|Boolean|为 Mac 设备载入的合作伙伴。|
-|androidOnboarded|Boolean|针对 Android 设备加入的合作伙伴。|
-|iosOnboarded|Boolean|为 ios 设备载入的合作伙伴。|
+|displayName|字符串|合作伙伴显示名称|
+|macOsOnboarded|Boolean|合作伙伴已加入 Mac 设备。|
+|androidOnboarded|布尔值|适用于 Android 设备的合作伙伴。|
+|iosOnboarded|Boolean|适用于 ios 设备的合作伙伴加入。|
 |macOsEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Mac 设备的用户组。|
 |androidEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 Android 设备的用户组。|
 |iosEnrollmentAssignments|[complianceManagementPartnerAssignment](../resources/intune-onboarding-compliancemanagementpartnerassignment.md) 集合|通过合作伙伴注册 ios 设备的用户组。|
@@ -65,7 +65,7 @@ POST /deviceManagement/complianceManagementPartners
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -159,6 +159,8 @@ Content-Length: 1235
   ]
 }
 ```
+
+
 
 
 

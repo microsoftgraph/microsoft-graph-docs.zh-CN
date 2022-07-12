@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 216326926356f9c4eb3edd58545e4320569e71ef
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 55477e77d39891e929268da358a458e26e4ac7e8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451259"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732938"
 ---
 # <a name="get-ioscompliancepolicy"></a>获取 iosCompliancePolicy
 
@@ -94,6 +94,8 @@ Content-Length: 978
   }
 }
 ```
+
+
 
 
 

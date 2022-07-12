@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1a2de6012d1a576b5f4c2c55e671d700313bfd0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5875ec65c666b6cb4d04573181e22a022e63cfbe
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449833"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732833"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>创建 windowsAutopilotDeviceIdentity
 
@@ -45,34 +45,34 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 windowsAutopilotDeviceIdentity 对象的 JSON 表示形式。
+在请求正文中，为 windowsAutopilotDeviceIdentity 对象提供 JSON 表示形式。
 
-下表显示创建 windowsAutopilotDeviceIdentity 时所需的属性。
+下表显示了创建 windowsAutopilotDeviceIdentity 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|对象的 GUID|
-|groupTag|String|autopilot Windows组标记。|
-|purchaseOrderIdentifier|String|Purchase Order Autopilot Windows标识符。|
+|groupTag|字符串|Windows autopilot 设备的组标记。|
+|purchaseOrderIdentifier|字符串|Windows autopilot 设备的采购订单标识符。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
-|manufacturer|String|autopilot Windows Oem 制造商。|
-|model|String|autopilot Windows型号名称。|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Autopilot 设备的 intune Windows状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`。|
-|lastContactedDateTime|DateTimeOffset|Intune Autopilot 设备的上次Windows日期时间。|
-|addressableUserName|String|可地址用户名。|
+|manufacturer|String|Windows autopilot 设备的 Oem 制造商。|
+|model|String|Windows autopilot 设备的模型名称。|
+|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Windows autopilot 设备的 Intune 注册状态。 可取值为：`unknown`、`enrolled`、`pendingReset`、`failed`、`notContacted`。|
+|lastContactedDateTime|DateTimeOffset|Windows autopilot 设备的 Intune 上次联系日期时间。|
+|addressableUserName|字符串|可寻址用户名。|
 |userPrincipalName|String|用户主体名称。|
 |resourceName|String|资源名称。|
-|skuNumber|String|SKU 号|
+|skuNumber|字符串|SKU 编号|
 |systemFamily|String|系统系列|
-|azureActiveDirectoryDeviceId|String|AAD设备 ID - 要弃用|
-|managedDeviceId|String|托管设备 ID|
+|azureActiveDirectoryDeviceId|字符串|AAD 设备 ID - 要弃用|
+|managedDeviceId|字符串|托管设备 ID|
 |displayName|String|显示名称|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -132,6 +132,8 @@ Content-Length: 863
   "displayName": "Display Name value"
 }
 ```
+
+
 
 
 

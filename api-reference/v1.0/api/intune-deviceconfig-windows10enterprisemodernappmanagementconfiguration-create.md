@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 74c56950a377fa1cba7621ed302b2ae2ba4f5189
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 934639e611b486040254eb59c715e1bd94775c25
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455518"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736879"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>创建 windows10EnterpriseModernAppManagementConfiguration
 
@@ -100,6 +100,8 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
+
 
 
 

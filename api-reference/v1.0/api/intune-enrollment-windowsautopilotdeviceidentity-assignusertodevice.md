@@ -1,16 +1,16 @@
 ---
 title: assignUserToDevice 操作
-description: 将用户分配给 Autopilot 设备。
+description: 将用户分配到 Autopilot 设备。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63747a574ff357945f1607e2dac6b3d5b810de4f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4a826b9f83e137105aa1e0bcc3bccbdf9df6073a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449543"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733190"
 ---
 # <a name="assignusertodevice-action"></a>assignUserToDevice 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "60449543"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-将用户分配给 Autopilot 设备。
+将用户分配到 Autopilot 设备。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 |属性|类型|说明|
 |:---|:---|:---|
-|userPrincipalName|String|尚未记录|
+|userPrincipalName|字符串|尚未记录|
 |addressableUserName|String|尚未记录|
 
 
@@ -80,6 +80,8 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

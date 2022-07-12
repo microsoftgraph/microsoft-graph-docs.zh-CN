@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94daee7c66fd8f4c7372a0373869435a5039cc81
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 64d88d9320fbb6dfaa6bebeb7a4c3f575ff840ef
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446552"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730894"
 ---
 # <a name="delete-androidcompliancepolicy"></a>删除 androidCompliancePolicy
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

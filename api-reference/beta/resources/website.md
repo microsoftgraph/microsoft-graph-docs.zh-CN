@@ -1,16 +1,16 @@
 ---
 title: 网站资源类型
-description: 代表网站。
-localization_priority: Normal
+description: 表示网站。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: AAmatino
-ms.openlocfilehash: 4c283d77119c0272aaafa964db62bb35ad747a10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2435e6b4f4608831f73261066173ab83813fb820
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973469"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731433"
 ---
 # <a name="website-resource-type"></a>网站资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "47973469"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-代表网站。
+表示网站。
 
 
 ## <a name="properties"></a>属性

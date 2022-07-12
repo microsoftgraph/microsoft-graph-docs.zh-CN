@@ -1,16 +1,16 @@
 ---
 title: sharedPCAccountDeletionPolicyType 枚举类型
-description: 在共享电脑上删除帐户时的可能值。
+description: 共享电脑上删除帐户时的可能值。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f41cfc20132577d11d94cdd66d28cdccfa203b4f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c8ffe724bebd4f03778088d2fc1bb5b8397e3848
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457300"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733799"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>sharedPCAccountDeletionPolicyType 枚举类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "60457300"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-在共享电脑上删除帐户时的可能值。
+共享电脑上删除帐户时的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|immediate|0|立即删除。|
-|diskSpaceThreshold|1|达到磁盘空间阈值时删除。|
-|diskSpaceThresholdOrInactiveThreshold|2|达到磁盘空间阈值或非活动阈值时删除。|
+|立即|0|立即删除。|
+|diskSpaceThreshold|1|在磁盘空间阈值处删除。|
+|diskSpaceThresholdOrInactiveThreshold|2|在磁盘空间阈值或非活动阈值处删除。|
+
+
 
 
 

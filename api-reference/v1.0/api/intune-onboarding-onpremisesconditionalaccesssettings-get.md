@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19dfd336d998f7dada11f6d838c257a5fb6bfef3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 66d3d68a8ecd85f9f41c48f6b9ce314e493cc160
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447100"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732560"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>获取 onPremisesConditionalAccessSettings
 
@@ -83,6 +83,8 @@ Content-Length: 363
   }
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 87516ec3cebd634ceada0e757a3a06ecffcc10d7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5c8be60f36eafba63b6b5a5ae402ecdb23955b2c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456324"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730026"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>删除 windowsInformationProtectionAppLearningSummary
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProte
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8901fc49f925db7c4c20c49d11d0359425bf0407
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8a511c8c970b847e4764c5c1e1061290db7473cb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457069"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733141"
 ---
 # <a name="list-windowsinformationprotections"></a>列出 windowsInformationProtections
 
@@ -197,6 +197,8 @@ Content-Length: 4491
   ]
 }
 ```
+
+
 
 
 

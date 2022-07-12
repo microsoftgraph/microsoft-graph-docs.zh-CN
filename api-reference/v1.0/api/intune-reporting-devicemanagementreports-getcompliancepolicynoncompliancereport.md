@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c4cebdba081b7faab75b118eeada4cd022c3c882
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d512295905e591da3cb19d9e1ab49acb72fec21a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446650"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732511"
 ---
 # <a name="getcompliancepolicynoncompliancereport-action"></a>getCompliancePolicyNonComplianceReport 操作
 
@@ -64,7 +64,7 @@ POST /deviceManagement/reports/getCompliancePolicyNonComplianceReport
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和流。
 
 ## <a name="example"></a>示例
 
@@ -106,6 +106,8 @@ Content-Length: 111
   "value": "Z2V0Q29tcGxpYW5jZVBvbGljeU5vbkNvbXBsaWFuY2VSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgMTA0ODU4MDU5OQ=="
 }
 ```
+
+
 
 
 

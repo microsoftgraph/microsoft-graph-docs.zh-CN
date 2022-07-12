@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: apiPageType
-ms.openlocfilehash: ca9c3edd7d4016fb0d0ced1c71f304504bf0ef69
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 934206863b13e5e7e3a1a5918f6fc630561fa470
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439212"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730383"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -103,7 +103,7 @@ CSV 文件包含下面的列标题：
 - 报表周期
 
 > [!NOTE] 
-> “组织会议数量”中的值可能不是用户在指定时间段内组织的“临时组织会议数量”、“安排组织的一次性会议数量”和“安排组织的定期会议数量”的总和。 这是因为输出 CSV 文件中未包含未分类的会议值。 有关详细信息，请参阅 [Microsoft Teams 用户活动报告](https://docs.microsoft.com/en-us/microsoftteams/teams-analytics-and-reports/user-activity-report)。
+> “组织会议数量”中的值可能不是用户在指定时间段内组织的“临时组织会议数量”、“安排组织的一次性会议数量”和“安排组织的定期会议数量”的总和。 这是因为输出 CSV 文件中未包含未分类的会议值。 有关详细信息，请参阅 [Microsoft Teams 用户活动报告](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/user-activity-report)。
 
 ## <a name="example"></a>示例
 

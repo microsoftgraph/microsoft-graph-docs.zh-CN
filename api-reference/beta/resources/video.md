@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: 视频
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: f8442cbd6ca6971ad0ad2a67214964b9e4425c77
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 7bd266b8905620bfede51bea0f79c71f6b7f417d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724045"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734660"
 ---
 # <a name="video-resource-type"></a>Video 资源类型
 

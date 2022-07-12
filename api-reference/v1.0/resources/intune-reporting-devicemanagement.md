@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11c0dc5e1162475ab5e944d50918d03cbbddcf43
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7004b3748a75d2bc680d0bd6bc7cbbb0d6c7e780
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448932"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735570"
 ---
 # <a name="devicemanagement-resource-type"></a>deviceManagement 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "60448932"
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|reports|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|报告单一ton|
+|报告|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|单一实例报表|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -50,6 +50,8 @@ ms.locfileid: "60448932"
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

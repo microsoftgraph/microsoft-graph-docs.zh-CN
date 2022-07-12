@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 13832512b07d862dcdbe6f2f2d49313c79349b31
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9470b41e5f7375fe714b94d3d74e85deec4a06b1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440183"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733351"
 ---
 # <a name="omasetting-resource-type"></a>omaSetting 资源类型
 
@@ -45,6 +45,8 @@ OMA 设置定义。
   "omaUri": "String"
 }
 ```
+
+
 
 
 

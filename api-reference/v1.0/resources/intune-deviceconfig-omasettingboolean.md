@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81d1e6d08f0517aa30f4ff1200c12510cab9a39c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e8b6ddcd6398e98f864d0a4b235c0ec867d501a3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454901"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733827"
 ---
 # <a name="omasettingboolean-resource-type"></a>omaSettingBoolean 资源类型
 
@@ -50,6 +50,8 @@ OMA 设置布尔定义。
   "value": true
 }
 ```
+
+
 
 
 

@@ -222,9 +222,9 @@ items:
           - name: 构建 Web 应用程序 (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
           - name: 构建 web 应用程序 (React)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-react?context=graph/api/1.0
+            href: /graph/toolkit/get-started/use-toolkit-with-react?context=graph/api/1.0
           - name: 构建 web 应用 (Angular)
-            href: /graph/toolkit/get-started/use-/graph/toolkit-with-angular?context=graph/api/1.0
+            href: /graph/toolkit/get-started/use-toolkit-with-angular?context=graph/api/1.0
           - name: 构建 SharePoint Web 部件
             href: /graph/toolkit/get-started/build-a-sharepoint-web-part?context=graph/api/1.0
           - name: 生成 Teams 选项卡
@@ -484,7 +484,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: 发送邮件
                 href: api/user-sendmail.md
-          - name: 备注
+          - name: 注释
             items:
               - name: Onenote
                 href: resources/onenote.md
@@ -1831,13 +1831,6 @@ items:
                         href: api/intune-books-deviceinstallstate-delete.md
                       - name: 更新
                         href: api/intune-books-deviceinstallstate-update.md
-                  - name: 设备管理
-                    href: resources/intune-androidforwork-devicemanagement.md
-                    items:
-                      - name: 获取
-                        href: api/intune-androidforwork-devicemanagement-get.md
-                      - name: 更新
-                        href: api/intune-androidforwork-devicemanagement-update.md
                   - name: 电子书安装摘要
                     href: resources/intune-books-ebookinstallsummary.md
                     items:
@@ -2746,13 +2739,6 @@ items:
                         href: api/intune-deviceconfig-devicemanagement-get.md
                       - name: 更新
                         href: api/intune-deviceconfig-devicemanagement-update.md
-                  - name: 设备管理
-                    href: resources/intune-deviceconfig-devicemanagement.md
-                    items:
-                      - name: 获取
-                        href: api/intune-deviceconfig-devicemanagement-get.md
-                      - name: 更新
-                        href: api/intune-deviceconfig-devicemanagement-update.md
                   - name: 设备管理设置
                     href: resources/intune-deviceconfig-devicemanagementsettings.md
                   - name: 设备威胁防护级别
@@ -3324,26 +3310,7 @@ items:
                         href: api/intune-devices-applepushnotificationcertificate-get.md
                       - name: 更新
                         href: api/intune-devices-applepushnotificationcertificate-update.md
-                  - name: 审核主角
-                    href: resources/intune-auditing-auditactor.md
-                  - name: 审核事件
-                    href: resources/intune-auditing-auditevent.md
-                    items:
-                      - name: 列出
-                        href: api/intune-auditing-auditevent-list.md
-                      - name: 获取
-                        href: api/intune-auditing-auditevent-get.md
-                      - name: 创建
-                        href: api/intune-auditing-auditevent-create.md
-                      - name: 删除
-                        href: api/intune-auditing-auditevent-delete.md
-                      - name: 更新
-                        href: api/intune-auditing-auditevent-update.md
-                  - name: 审核属性
-                    href: resources/intune-auditing-auditproperty.md
-                  - name: 审核资源
-                    href: resources/intune-auditing-auditresource.md
-                  - name: 符合性状态
+                  - name: 合规性状态
                     href: resources/intune-devices-compliancestate.md
                   - name: 配置管理器客户端已启用的功能
                     href: resources/intune-devices-configurationmanagerclientenabledfeatures.md
@@ -3371,8 +3338,8 @@ items:
                         href: api/intune-devices-devicecategory-get.md
                       - name: 更新
                         href: api/intune-devices-devicecategory-update.md
-                  - name: 设备注册失败原因
-                    href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
+                  - name: 设备注册类型
+                    href: resources/intune-devices-deviceenrollmenttype.md
                   - name: 设备 Exchange 访问状态摘要
                     href: resources/intune-devices-deviceexchangeaccessstatesummary.md
                   - name: 设备地理位置
@@ -3380,49 +3347,30 @@ items:
                   - name: 设备运行状况证明状态
                     href: resources/intune-devices-devicehealthattestationstate.md
                   - name: 设备管理
-                    href: resources/intune-auditing-devicemanagement.md
+                    href: resources/intune-devices-devicemanagement.md
                     items:
                       - name: 获取
-                        href: api/intune-auditing-devicemanagement-get.md
+                        href: api/intune-devices-devicemanagement-get.md
                       - name: 更新
-                        href: api/intune-auditing-devicemanagement-update.md
+                        href: api/intune-devices-devicemanagement-update.md
+                  - name: 设备管理
+                    href: resources/intune-devices-devicemanagement.md
+                    items:
+                      - name: 获取
+                        href: api/intune-devices-devicemanagement-get.md
+                      - name: 更新
+                        href: api/intune-devices-devicemanagement-update.md
                   - name: 设备管理 Exchange 访问状态
                     href: resources/intune-devices-devicemanagementexchangeaccessstate.md
                   - name: 设备管理 Exchange 访问状态原因
                     href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
                   - name: 设备管理订阅状态
                     href: resources/intune-devices-devicemanagementsubscriptionstate.md
-                  - name: 设备管理疑难解答事件
-                    href: resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md
-                    items:
-                      - name: 列出
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-list.md
-                      - name: 获取
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-get.md
-                      - name: 创建
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-create.md
-                      - name: 删除
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
-                      - name: 更新
-                        href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
                   - name: 设备操作系统摘要
                     href: resources/intune-devices-deviceoperatingsystemsummary.md
                   - name: 设备注册状态
                     href: resources/intune-devices-deviceregistrationstate.md
-                  - name: 注册疑难解答事件
-                    href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
-                    items:
-                      - name: 列出
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
-                      - name: 获取
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
-                      - name: 创建
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-create.md
-                      - name: 删除
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-delete.md
-                      - name: 更新
-                        href: api/intune-troubleshooting-enrollmenttroubleshootingevent-update.md
-                  - name: 已本地化的通知邮件
+                  - name: 已本地化的通知消息
                     href: resources/intune-notification-localizednotificationmessage.md
                     items:
                       - name: 列出
@@ -3516,59 +3464,12 @@ items:
                         href: api/intune-notification-notificationmessagetemplate-sendtestmessage.md
                   - name: 通知模板品牌选项
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
-                  - name: 平台类型
-                    href: resources/intune-esim-platformtype.md
-                  - name: 远程协助载入状态
-                    href: resources/intune-remoteassistance-remoteassistanceonboardingstatus.md
-                  - name: 远程协助合作伙伴
-                    href: resources/intune-remoteassistance-remoteassistancepartner.md
-                    items:
-                      - name: 列出
-                        href: api/intune-remoteassistance-remoteassistancepartner-list.md
-                      - name: 获取
-                        href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                      - name: 创建
-                        href: api/intune-remoteassistance-remoteassistancepartner-create.md
-                      - name: 删除
-                        href: api/intune-remoteassistance-remoteassistancepartner-delete.md
-                      - name: 更新
-                        href: api/intune-remoteassistance-remoteassistancepartner-update.md
-                      - name: beginOnboarding 操作
-                        href: api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md
-                      - name: 断开连接操作
-                        href: api/intune-remoteassistance-remoteassistancepartner-disconnect.md
                   - name: 远程锁定操作结果
                     href: resources/intune-devices-remotelockactionresult.md
-                  - name: 报告
-                    href: resources/intune-troubleshooting-report.md
-                  - name: 报表根
-                    href: resources/intune-troubleshooting-reportroot.md
-                    items:
-                      - name: 获取
-                        href: api/intune-troubleshooting-reportroot-get.md
-                      - name: 更新
-                        href: api/intune-troubleshooting-reportroot-update.md
                   - name: 重置密码操作结果
                     href: resources/intune-devices-resetpasscodeactionresult.md
-                  - name: type_操作collection_1执行Tuple_2
-                    href: resources/intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md
                   - name: 更新 Windows 设备帐户操作参数
                     href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
-                  - name: 用户
-                    href: resources/intune-devices-user.md
-                    items:
-                      - name: 列出
-                        href: api/intune-devices-user-list.md
-                      - name: 获取
-                        href: api/intune-devices-user-get.md
-                      - name: 创建
-                        href: api/intune-devices-user-create.md
-                      - name: 删除
-                        href: api/intune-devices-user-delete.md
-                      - name: 更新
-                        href: api/intune-devices-user-update.md
-                      - name: removeAllDevicesFromManagement 操作
-                        href: api/intune-devices-user-removealldevicesfrommanagement.md
                   - name: 用户
                     href: resources/intune-devices-user.md
                     items:
@@ -4152,7 +4053,7 @@ items:
                   - name: Windows Hello 企业版 PIN 使用情况
                     href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
               - name: 基于角色的访问控制 (RBAC)
-                href: resources/intune-rbac-conceptual.md
+                href: /resources/intune-rbac-conceptual.md
                 items:
                   - name: 设备和应用管理角色分配
                     href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -4245,8 +4146,6 @@ items:
                     href: resources/intune-shared-configurationmanagercollectionassignmenttarget.md
                   - name: 设备和应用管理分配目标
                     href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
-                  - name: 设备注册类型
-                    href: resources/intune-shared-deviceenrollmenttype.md
                   - name: 排除组分配目标
                     href: resources/intune-shared-exclusiongroupassignmenttarget.md
                   - name: 组分配目标
@@ -4297,7 +4196,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: 服务运行状况问题
+              - name: Estado de funcionamento dos serviços问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题

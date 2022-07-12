@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fddacdbd203d161aa0917fabae34f2b42dc7695
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 97c5041e13c7fc35d62b1d23369d8ca234edf58f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454276"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731783"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>创建 deviceComplianceScheduledActionForRule
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|ruleName|String|此计划操作适用的规则名称。 当前计划的操作是按策略而不是按规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
+|ruleName|String|此计划操作适用的规则名称。 当前计划的操作是根据策略而不是每个规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
 
 
 
@@ -87,6 +87,8 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
+
 
 
 

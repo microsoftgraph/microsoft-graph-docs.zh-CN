@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91a23a2fcbe811bf2c5ea5ace83df546d655fd7d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 19d61ff2502f3be49b179098c87d8cbe9e12ff4d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452935"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736844"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>删除 windowsPhone81GeneralConfiguration
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d74d8dc64146f6938c10ba1c934c7917272e257a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 27ad27360f8eae4d949c7c6f95b3623dcaecf229
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457503"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731958"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>managedDeviceMobileAppConfigurationUserSummary 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "60457503"
 |:---|:---|:---|
 |id|String|实体的键。|
 |pendingCount|Int32|待定用户的数量|
-|notApplicableCount|Int32|不适用用户的数量|
+|notApplicableCount|Int32|不适用的用户数|
 |successCount|Int32|成功用户的数量|
 |errorCount|Int32|错误用户的数量|
 |failedCount|Int32|失败用户的数量|
@@ -62,6 +62,8 @@ ms.locfileid: "60457503"
   "configurationVersion": 1024
 }
 ```
+
+
 
 
 

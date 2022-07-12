@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e729a2bcba12e6dc082e907473c86baabb718e12
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bf24d4b4188951517fe43cca9451cb71bc6fc46c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450718"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730845"
 ---
 # <a name="delete-settingstatedevicesummary"></a>删除 settingStateDeviceSummary
 
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

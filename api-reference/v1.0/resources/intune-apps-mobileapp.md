@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b71c2ee6cd6dcb377dfa0d6a3fbecc0108471b5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 01c9106f4db522defe7f80bd96de3ee3393fcd7c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456226"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731020"
 ---
 # <a name="mobileapp-resource-type"></a>mobileApp 资源类型
 
@@ -40,7 +40,7 @@ ms.locfileid: "60456226"
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。|
 |privacyInformationUrl|String|隐私声明 Url。|
 |informationUrl|String|详细信息 Url。|
-|owner|String|应用的所有者。|
+|所有者|String|应用的所有者。|
 |developer|String|应用的开发者。|
 |notes|String|应用的备注。|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 可取值为：`notPublished`、`processing`、`published`。|
@@ -82,6 +82,8 @@ ms.locfileid: "60456226"
   "publishingState": "String"
 }
 ```
+
+
 
 
 

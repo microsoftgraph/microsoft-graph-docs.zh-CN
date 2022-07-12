@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1e90d45e1366868811eca3da875d28f1cc0fef2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f4b5f02addf8ff8f4a4f9ef120c7ded4b58bc7f4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446075"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730460"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>更新 deviceComplianceUserStatus
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 |devicesCount|Int32|该用户的设备计数。|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|策略报告的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |lastReportedDateTime|DateTimeOffset|策略报告的上次修改日期时间。|
-|userPrincipalName|String|UserPrincipalName。|
+|userPrincipalName|字符串|UserPrincipalName。|
 
 
 
@@ -99,6 +99,8 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

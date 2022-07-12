@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 08f8b36284df0752303ecb20552dec8ef917ab4b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a3d0e98109a70f33980bd4bd742ff45902271f6b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447401"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735731"
 ---
 # <a name="policyplatformtype-enum-type"></a>policyPlatformType 枚举类型
 
@@ -23,14 +23,16 @@ ms.locfileid: "60447401"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|android|0|Android。|
-|iOS|2|iOS。|
+|Android|0|Android。|
+|iOS|2|Ios。|
 |macOS|3|MacOS。|
-|windowsPhone81|4 |WindowsPhone 8.1。|
-|windows81AndLater|5|Windows 8.1及更高版本|
+|windowsPhone81|4|WindowsPhone 8.1。|
+|windows81AndLater|5|Windows 8.1 及更高版本|
 |windows10AndLater|6 |Windows 10及更高版本。|
 |androidWorkProfile|7 |AndroidWorkProfile。|
-|all|100|所有平台。|
+|全部|100|所有平台|
+
+
 
 
 

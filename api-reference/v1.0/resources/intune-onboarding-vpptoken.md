@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0f52e3bab37b4dd076a645d7e024762c4f80fbe4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dcd28c8e7975a6835d3a75a284b692f451ec096e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455637"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729879"
 ---
 # <a name="vpptoken-resource-type"></a>vppToken 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "60455637"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
+|id|字符串|这是创建 appleVolumePurchaseProgramToken 时自动生成的。 它是实体的键。|
 |organizationName|String|与 Apple Volume Purchase Program 令牌关联的组织|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|与给定的 Apple Volume Purchase Program 令牌关联的批量购买计划的类型。 可取值为：`business`、`education`。 可取值为：`business`、`education`。|
 |appleId|String|与给定的 Apple Volume Purchase Program 令牌关联的 Apple ID。|
@@ -74,6 +74,8 @@ ms.locfileid: "60455637"
   "countryOrRegion": "String"
 }
 ```
+
+
 
 
 
