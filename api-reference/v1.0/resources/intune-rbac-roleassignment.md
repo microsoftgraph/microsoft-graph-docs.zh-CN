@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0545e93bce9698b5af8994df19f7d08c6fbe5c7a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dc5c9140bbbe9ea4608a9f4a0c144d89a3e696a8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457370"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729865"
 ---
 # <a name="roleassignment-resource-type"></a>roleAssignment 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "60457370"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
-|displayName|String|角色分配的显示或友好名称。|
+|displayName|字符串|角色分配的显示或友好名称。|
 |说明|String|角色分配的说明。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
@@ -61,6 +61,8 @@ ms.locfileid: "60457370"
   ]
 }
 ```
+
+
 
 
 

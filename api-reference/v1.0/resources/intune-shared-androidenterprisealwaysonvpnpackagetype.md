@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f21c539a07535c942bfe3bb610af7575a496449
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: cd524518404ccfbad212331b282ee41746e33df2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446608"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731188"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>androidEnterpriseAlwaysOnVpnPackageType 枚举类型
 
@@ -23,12 +23,14 @@ ms.locfileid: "60446608"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|未配置;将忽略此值。|
-|custom|1|自定义程序包名称，ITPro 可以提供想要使用的 VPN 客户端的程序包名称。|
+|notConfigured|0|未配置;忽略此值。|
+|自 定义|1|自定义包名称，ITPro 可以提供要使用的 VPN 客户端的包名称。|
 |ciscoAnyConnect|2|Cisco AnyConnect。|
-|f5Access|3|F5 Access。|
-|paloAltoNetworksGlobalProtect|4 |Palo Alto Networks GlobalProtect.|
-|pulseSecure|5|脉冲安全。|
+|f5Access|3|F5 访问。|
+|paloAltoNetworksGlobalProtect|4|Palo Alto Networks GlobalProtect。|
+|pulseSecure|5|Pulse Secure。|
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: internetSiteSecurityLevel 枚举类型
-description: Internet 网站安全级别的可能值。
+description: Internet 站点安全级别的可能值。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6d68f2df1eb3092ff9cd6753b70b99899cd31a82
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7143111002857bc2808af025ede13b6683a48229
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453707"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722710"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>internetSiteSecurityLevel 枚举类型
 
@@ -18,15 +18,17 @@ ms.locfileid: "60453707"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-Internet 网站安全级别的可能值。
+Internet 站点安全级别的可能值。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|userDefined|0|用户定义，默认值，无意图。|
+|userDefined|0|用户定义，默认值，无意向。|
 |中等|1|中。|
-|mediumHigh|2|中-高。|
-|high|3|高。|
+|mediumHigh|2|中高。|
+|高|3|高。|
+
+
 
 
 

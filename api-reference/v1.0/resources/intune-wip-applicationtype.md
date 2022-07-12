@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d1a9f5e32dfad27524dcbedf219e9ace8d01942a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5a80e4607dedc240b2c6fa2906742bf84083a0ab
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456457"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729858"
 ---
 # <a name="applicationtype-enum-type"></a>applicationType 枚举类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "60456457"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|universal|1|Windows 通用应用程序|
-|desktop|2|Windows 桌面应用程序|
+|普遍|1|Windows 通用应用程序|
+|桌面|2|Windows 桌面应用程序|
+
+
 
 
 

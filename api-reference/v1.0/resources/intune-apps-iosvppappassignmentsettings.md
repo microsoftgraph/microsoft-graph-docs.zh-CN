@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 683627031fd13c1ec81d4fb622323cd28794a208
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: daa41c1321854a5e9c0f62046ba118ac2f38d8d0
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453867"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730790"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>iosVppAppAssignmentSettings 资源类型
 
@@ -46,6 +46,8 @@ ms.locfileid: "60453867"
   "vpnConfigurationId": "String"
 }
 ```
+
+
 
 
 

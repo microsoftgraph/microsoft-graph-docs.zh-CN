@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 615073310d216c7ebbe4409b1748f0fa85c7a338
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9896541ddc88d669e55a84a9caa2c185db6bed3d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454444"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733680"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>列出 managedDeviceMobileAppConfigurationAssignments
 
@@ -77,6 +77,8 @@ Content-Length: 281
   ]
 }
 ```
+
+
 
 
 

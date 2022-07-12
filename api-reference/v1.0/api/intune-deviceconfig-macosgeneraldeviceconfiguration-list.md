@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dd116dfd521215b76b9db61c633f7f287f98c0f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 89523edb511ef69f1144c4534610eb3e068f4d37
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447450"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729690"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>列出 macOSGeneralDeviceConfigurations
 
@@ -101,6 +101,8 @@ Content-Length: 1227
   ]
 }
 ```
+
+
 
 
 

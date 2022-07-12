@@ -1,25 +1,24 @@
 ---
 title: localizedName 资源类型
-description: 表示术语库中使用的本地化名称，用于标识本地化语言中的名称。
+description: 表示术语存储中使用的本地化名称，该名称标识本地化语言中的名称。
 author: mohitpcad
-ms.author: mopathak
-localization_priority: Normal
-ms.prod: sharepoint-taxonomy
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 5c9e6d4cd614c242e8f915fde71eadd07aa5de15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f6308689f1f370e3463b9cc095da211dc612de1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973601"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734235"
 ---
 # <a name="localizedname-resource-type"></a>localizedName 资源类型
 
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示术语 [库]中使用的本地化名称，用于标识本地化语言中的名称。 有关详细信息，请参阅 [localizedLabel]。
+表示术语 [存储]中使用的本地化名称，该名称标识本地化语言中的名称。 有关详细信息，请参阅 [localizedLabel]。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -58,7 +57,7 @@ ms.locfileid: "47973601"
   "section": "documentation",
   "tocPath": "TermLocalizedNameFacet",
   "tocBookmarks": {
-    "Resources/termStore.termLocalizedName": "#"
+    "Resources/termStore.termLocalizedName&quot;: &quot;#"
   },
   "suppressions": []
 }

@@ -2,16 +2,16 @@
 author: JeremyKelley
 description: SearchResult 资源指示项是搜索查询的响应。
 ms.date: 09/10/2017
-title: Searchresult.xml
-localization_priority: Normal
+title: SearchResult
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 8ee83da0ffdd5d2ed577ba1b7165c05f5a63b1e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: files
+ms.openlocfilehash: 07dbd5e20cfb91ed40a20cbf7cc63b32900e7228
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063945"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731601"
 ---
 # <a name="searchresult-resource-type"></a>SearchResult 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d14d946c0cb293e426f99bc7b8736bd75a1a2b11
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5501acb2bd2829a4c891bc813008bcd5fe35b2d5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455209"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733302"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>resetPasscodeActionResult 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "60455209"
 |属性|类型|说明|
 |:---|:---|:---|
 |actionName|String|操作名称 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|操作的状态 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
+|actionState|[actionState](../resources/intune-devices-actionstate.md)|从 [deviceActionResult](../resources/intune-devices-deviceactionresult.md) 继承的操作的状态。 可取值为：`none`、`pending`、`canceled`、`active`、`done`、`failed` 或 `notSupported`。|
 |startDateTime|DateTimeOffset|操作启动的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |lastUpdatedDateTime|DateTimeOffset|操作状态上次更新的时间 继承自 [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |密码|String|新生成的设备密码 |
@@ -52,6 +52,8 @@ ms.locfileid: "60455209"
   "passcode": "String"
 }
 ```
+
+
 
 
 

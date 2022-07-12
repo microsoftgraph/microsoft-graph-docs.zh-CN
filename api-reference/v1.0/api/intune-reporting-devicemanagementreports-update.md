@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec634b4e324ec588469f9b31de829bd525ed6b0d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 31ccf7f869b391272862fd988ca5fa45db7007a5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60443317"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733470"
 ---
 # <a name="update-devicemanagementreports"></a>更新 deviceManagementReports
 
@@ -18,7 +18,7 @@ ms.locfileid: "60443317"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [deviceManagementReports 对象](../resources/intune-reporting-devicemanagementreports.md) 的属性。
+更新 [deviceManagementReports 对象的](../resources/intune-reporting-devicemanagementreports.md) 属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,9 +45,9 @@ PATCH /deviceManagement/reports
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象的 JSON 表示形式。
+在请求正文中，为 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象提供 JSON 表示形式。
 
-下表显示创建 [deviceManagementReports 时所需的属性](../resources/intune-reporting-devicemanagementreports.md)。
+下表显示了创建 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ PATCH /deviceManagement/reports
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新的 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -84,6 +84,8 @@ Content-Length: 114
   "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
 }
 ```
+
+
 
 
 

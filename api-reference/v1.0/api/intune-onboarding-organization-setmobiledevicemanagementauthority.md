@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df212840370760e8fe9ffce83f7748ea92738542
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0427e723f9ae998ee9e239cd74630cb2707c60cf
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60436773"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730390"
 ---
 # <a name="setmobiledevicemanagementauthority-action"></a>setMobileDeviceManagementAuthority 操作
 
@@ -69,6 +69,8 @@ Content-Length: 18
   "value": 2
 }
 ```
+
+
 
 
 

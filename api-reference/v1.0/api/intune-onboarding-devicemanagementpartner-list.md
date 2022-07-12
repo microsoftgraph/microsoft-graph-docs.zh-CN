@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c603cef66342bbd50f97a2ada53553f4d6ac87e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f02645efa74aacf1214e2489f07b704975315f39
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447880"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723081"
 ---
 # <a name="list-devicemanagementpartners"></a>列出 deviceManagementPartners
 
@@ -82,6 +82,8 @@ Content-Length: 624
   ]
 }
 ```
+
+
 
 
 

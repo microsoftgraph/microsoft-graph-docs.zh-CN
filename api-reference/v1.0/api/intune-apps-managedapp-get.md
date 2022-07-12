@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f9acefe7fadcbd70bba55857e02ce11925dfa90a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 1fb867cc222510d2a5c7e988f71bebc09585664f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444765"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732637"
 ---
 # <a name="get-managedapp"></a>获取 managedApp
 
@@ -94,6 +94,8 @@ Content-Length: 879
   }
 }
 ```
+
+
 
 
 

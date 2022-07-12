@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b1c6d5454ad5ea481e0f9dd0174e5086383f6b62
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a2a2bb693a8ff5618936b2c411887978264a192d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447611"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731349"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>获取 mdmWindowsInformationProtectionPolicy
 
@@ -198,6 +198,8 @@ Content-Length: 4346
   }
 }
 ```
+
+
 
 
 

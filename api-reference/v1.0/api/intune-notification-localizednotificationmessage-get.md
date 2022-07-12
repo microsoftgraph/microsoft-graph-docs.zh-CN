@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cd1e2d18dd943cb4eac60acc052832b5c99a99d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8c2f20dfe1adc5804e96eab4b1b77feea5b8d51a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457706"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732301"
 ---
 # <a name="get-localizednotificationmessage"></a>获取 localizedNotificationMessage
 
@@ -80,6 +80,8 @@ Content-Length: 346
   }
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: localizedLabel 资源类型
-description: 表示术语存储中术语的标签。
+description: 表示术语存储区中术语的标签。
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 4d7de3c9567c20659af4c863d2cf1ac248beff6b
-ms.sourcegitcommit: a9a035e7cf7b500aebe5477c05361552e7c3a7ab
+ms.openlocfilehash: 1317d51a113da35289b06b035c43316059edf7d0
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696308"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731559"
 ---
 # <a name="localizedlabel-resource-type"></a>localizedLabel 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "52696308"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示术语存储 [中] 术语 [的标签]。
+表示术语[存储]区中[术语]的标签。
 
 标识与给定术语关联的标签。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|isDefault|Boolean|指示标签是否是默认标签。|
-|languageTag|String|标签的语言标记。|
+|isDefault|Boolean|指示标签是否为默认标签。|
+|languageTag|字符串|标签的语言标记。|
 |name|String|标签的名称。|
 
 ## <a name="relationships"></a>关系
@@ -52,8 +52,8 @@ ms.locfileid: "52696308"
 [microsoft.graph.termStore.term]: termstore-term.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[term]: ../resources/termstore-term.md
-[store]: ../resources/termstore-store.md
+[术语]: ../resources/termstore-term.md
+[商店]: ../resources/termstore-store.md
 
 
 <!--

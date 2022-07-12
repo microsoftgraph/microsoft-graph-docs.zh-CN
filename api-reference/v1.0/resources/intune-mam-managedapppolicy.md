@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77d47008b036d79788434a2a389fd7a6caeb3eab
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dab2cb43e7e2cd0d1bb9d78f525aad162531e1cb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454584"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733295"
 ---
 # <a name="managedapppolicy-resource-type"></a>managedAppPolicy 资源类型
 
@@ -30,7 +30,7 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|策略显示名称。|
+|displayName|字符串|策略显示名称。|
 |说明|String|策略的说明。|
 |createdDateTime|DateTimeOffset|创建策略的日期和时间。|
 |lastModifiedDateTime|DateTimeOffset|上次修改策略的时间。|
@@ -59,6 +59,8 @@ ManagedAppPolicy 资源表示特定于平台的策略的基类型。
   "version": "String"
 }
 ```
+
+
 
 
 

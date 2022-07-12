@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5e864c558f2da930c818df41870585757fed9e3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5edddd24133af746aae24fbbd202f441f0b5fc1e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444891"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732665"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>列出 windowsInformationProtectionNetworkLearningSummaries
 
@@ -76,6 +76,8 @@ Content-Length: 235
   ]
 }
 ```
+
+
 
 
 

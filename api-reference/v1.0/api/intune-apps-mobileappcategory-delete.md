@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4115bd69c78c10a068966b9622b52df14b4ef7a1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8f5072cff8090af487ee41dd72a36c876e057fbf
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456443"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731846"
 ---
 # <a name="delete-mobileappcategory"></a>删除 mobileAppCategory
 
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppCategories/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

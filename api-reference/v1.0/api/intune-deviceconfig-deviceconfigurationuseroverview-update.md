@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5427493ba289a66d7c273ab9e502a077df650068
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9af34a5a7e7c9c36b7212700772863f69b1811a3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454101"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732084"
 ---
 # <a name="update-deviceconfigurationuseroverview"></a>更新 deviceConfigurationUserOverview
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatusO
 |:---|:---|:---|
 |id|String|实体的键。|
 |pendingCount|Int32|待定用户的数量|
-|notApplicableCount|Int32|不适用用户的数量|
+|notApplicableCount|Int32|不适用的用户数|
 |successCount|Int32|成功用户的数量|
 |errorCount|Int32|错误用户的数量|
 |failedCount|Int32|失败用户的数量|
@@ -105,6 +105,8 @@ Content-Length: 331
   "configurationVersion": 4
 }
 ```
+
+
 
 
 

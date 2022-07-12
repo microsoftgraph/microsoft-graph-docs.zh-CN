@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 325b5e971213b5061c013867b30749b6db8396dc
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8d63bc4b56204f2fbd86391403d2ddf2b76f9a74
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456669"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722962"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>updateWindowsDeviceAccountActionParameter 资源类型
 
@@ -54,6 +54,8 @@ ms.locfileid: "60456669"
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
+
 
 
 

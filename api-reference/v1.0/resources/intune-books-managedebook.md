@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6dd588d91c54f00ed4217b898b7a78018b74da88
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3e1c4513c824ceb52f9036a1cdb847277fdca548
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453637"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732435"
 ---
 # <a name="managedebook-resource-type"></a>managedEBook 资源类型
 
@@ -31,7 +31,7 @@ ms.locfileid: "60453637"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|displayName|String|电子书的名称。|
+|displayName|字符串|电子书的名称。|
 |说明|String|说明。|
 |publisher|String|发布者。|
 |publishedDateTime|DateTimeOffset|电子书的发布日期和时间。|
@@ -76,6 +76,8 @@ ms.locfileid: "60453637"
   "privacyInformationUrl": "String"
 }
 ```
+
+
 
 
 

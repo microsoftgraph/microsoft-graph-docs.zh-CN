@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d2cf9ca55703ab08d98c20d93254ae968963239
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3823d273adbef209c7b8ec577e9145eedda4a944
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444502"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732056"
 ---
 # <a name="list-settingstatedevicesummaries"></a>列出 settingStateDeviceSummaries
 
@@ -84,6 +84,8 @@ Content-Length: 486
   ]
 }
 ```
+
+
 
 
 

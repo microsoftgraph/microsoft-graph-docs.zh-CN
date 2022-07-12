@@ -5,12 +5,12 @@ author: ananmishr
 ms.localizationpriority: medium
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cf845e7867f8a2e69019b8807383feb5c417f1ef
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: d7aebdbd0236f0c1223e295456d408f37fb0708e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645424"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731587"
 ---
 # <a name="meetinginfo-resource-type"></a>meetingInfo 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "66645424"
 
 | 类型                                                    | 说明                                                         |
 |:--------------------------------------------------------|:--------------------------------------------------------------------|
-| [joinMeetingIdMeetingInfo](joinmeetingidmeetingInfo.md) | 包含会议的 **joinMeetingId** 和 **密码** 。     |
+| [joinMeetingIdMeetingInfo](joinmeetingidmeetinginfo.md) | 包含会议的 **joinMeetingId** 和 **密码** 。     |
 | [organizerMeetingInfo](./organizermeetinginfo.md)       | 有关会议组织者的详细信息。                         |
 | [tokenMeetingInfo](tokenmeetinginfo.md)                 | 包含有关会议信息的加密令牌。 |
 

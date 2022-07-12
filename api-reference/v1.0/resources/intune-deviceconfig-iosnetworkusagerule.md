@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e8e2cfe0626d56aeb945bd2bd3446c8f19ba039
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d8f39b4b93f2551bf89d41faf737d9d3dbfbe5d6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452998"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722689"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>iosNetworkUsageRule 资源类型
 
@@ -53,6 +53,8 @@ ms.locfileid: "60452998"
   "cellularDataBlocked": true
 }
 ```
+
+
 
 
 

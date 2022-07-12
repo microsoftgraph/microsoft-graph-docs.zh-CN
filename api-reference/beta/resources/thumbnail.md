@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: 缩略图
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 0d5f9b3ced926820873800ba160cc5da8d368ca4
-ms.sourcegitcommit: f4999aa6fc05f845027db01aa489f7086f9850e1
+ms.prod: sites-and-lists
+ms.openlocfilehash: 0833ed2e8b5957cd4faa3f5442c5770b93a3c5b8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60288452"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732189"
 ---
 # <a name="thumbnail-resource-type"></a>Thumbnail 资源类型
 

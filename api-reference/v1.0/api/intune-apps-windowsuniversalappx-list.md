@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 968a7a62c5aa125436fe8f70a868ff772b2fbb60
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3a374c69a6f35539a80fde983007de5299ba8a9b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451498"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732623"
 ---
 # <a name="list-windowsuniversalappxs"></a>列出 windowsUniversalAppXs
 
@@ -107,6 +107,8 @@ Content-Length: 1534
   ]
 }
 ```
+
+
 
 
 

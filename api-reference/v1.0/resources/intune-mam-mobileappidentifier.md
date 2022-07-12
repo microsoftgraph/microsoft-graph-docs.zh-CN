@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0441e2684b8da8b7a89ff19f64a1ec726aca47c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8c6395432f12a043a4b544ca5de6fbb1be31f790
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448988"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730607"
 ---
 # <a name="mobileappidentifier-resource-type"></a>mobileAppIdentifier 资源类型
 
@@ -39,6 +39,8 @@ ms.locfileid: "60448988"
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
+
+
 
 
 

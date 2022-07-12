@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04effc13de36faf26fb26ef455e71d3c01007f04
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: fa601c8d8cfd4268a9cf54c335daab1be9fa8429
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447499"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729697"
 ---
 # <a name="update-iosupdatedevicestatus"></a>更新 iosUpdateDeviceStatus
 
@@ -52,10 +52,10 @@ PATCH /deviceManagement/iosUpdateStatuses/{iosUpdateDeviceStatusId}
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|策略报告安装状态。 可能的值是 `success` `available` `idle` ：、、、、、、、、、 `unknown` `downloading` `downloadFailed` `downloadRequiresComputer` `downloadInsufficientSpace` `downloadInsufficientPower` `downloadInsufficientNetwork` `installing` `installInsufficientSpace` `installInsufficientPower` `installPhoneCallInProgress` `installFailed` `notSupportedOperation` `sharedDeviceUserLoggedInError` `deviceOsHigherThanDesiredOsVersion` 。|
+|installStatus|[iosUpdatesInstallStatus](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|策略报告安装状态。 可能的值为：、、、`idle``unknown`、`downloading`、`downloadFailed`、`downloadRequiresComputer`、`downloadInsufficientSpace`、`downloadInsufficientPower`、`installing``downloadInsufficientNetwork`、`installInsufficientSpace``installInsufficientPower`、`installPhoneCallInProgress`、、`installFailed`、`notSupportedOperation`、 `sharedDeviceUserLoggedInError``deviceOsHigherThanDesiredOsVersion``available``success`|
 |osVersion|String|报告的设备版本。|
 |deviceId|String|报告的设备 ID。|
-|userId|String|报告的用户 ID。|
+|userId|字符串|报告的用户 ID。|
 |deviceDisplayName|String|DevicePolicyStatus 的设备名。|
 |userName|String|报告的用户名|
 |deviceModel|String|报告的设备模型|
@@ -117,6 +117,8 @@ Content-Length: 601
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

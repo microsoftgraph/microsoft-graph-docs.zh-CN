@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 955ddce1b6b2cd1fc32925a6a763db83c38bcfac
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 18e046e8648bfa6b0d505b4dac110641fd08a864
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454887"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730677"
 ---
 # <a name="settingsource-resource-type"></a>settingSource 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "60454887"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |displayName|String|尚未记录|
 |sourceType|[settingSourceType](../resources/intune-deviceconfig-settingsourcetype.md)|尚未记录。 可取值为：`deviceConfiguration`、`deviceIntent`。|
 
@@ -45,6 +45,8 @@ ms.locfileid: "60454887"
   "sourceType": "String"
 }
 ```
+
+
 
 
 

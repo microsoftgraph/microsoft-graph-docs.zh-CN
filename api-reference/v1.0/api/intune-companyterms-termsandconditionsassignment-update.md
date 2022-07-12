@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aa7352d7bfedd406db8f269902ec14bc4ad7ea9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d52f6cca2df731a17aa729e93c4d1e1418169987
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446131"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731503"
 ---
 # <a name="update-termsandconditionsassignment"></a>更新 termsAndConditionsAssignment
 
@@ -93,6 +93,8 @@ Content-Length: 269
   }
 }
 ```
+
+
 
 
 

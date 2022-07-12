@@ -3,18 +3,18 @@ title: targetResourceApp 资源类型
 description: 指示管理员在审核活动中添加、更新或删除的应用对象。 派生自 targetResource 资源。
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: identity-and-access-reports
 author: SarahBar
-ms.openlocfilehash: fd4e40743b6dbb83e2915140e1f8510d54acc926
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 350edc5f8ddbbf593ea2e1ef6ecb9a5096d3c790
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59053859"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735563"
 ---
 # <a name="targetresourceapp-resource-type"></a>targetResourceApp 资源类型
 
-命名空间：microsoft.graph 指示管理员作为审核活动的一部分添加、更新或删除的应用对象。 派生自 [targetResource](targetresource.md) 资源。
+命名空间：microsoft.graph 指示管理员在审核活动中添加、更新或删除的应用对象。 派生自 [targetResource](targetresource.md) 资源。
 
 
 

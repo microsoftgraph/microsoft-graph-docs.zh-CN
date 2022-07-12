@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 204213d5e9eca15ea8765f6154d27cc8771f276d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0341343a7b3e63868fe26d8fb39f59966ea1bff1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456549"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723032"
 ---
 # <a name="create-devicemanagementexportjob"></a>创建 deviceManagementExportJob
 
@@ -45,28 +45,28 @@ POST /deviceManagement/reports/exportJobs
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 deviceManagementExportJob 对象的 JSON 表示形式。
+在请求正文中，为 deviceManagementExportJob 对象提供 JSON 表示形式。
 
-下表显示创建 deviceManagementExportJob 时所需的属性。
+下表显示了创建 deviceManagementExportJob 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|此实体的唯一标识符|
-|reportName|String|报告的名称|
-|filter|String|应用于报表的筛选器|
-|select|String collection|从报表选择的列|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报告的格式。 可取值为：`csv`、`pdf`。|
-|snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration ID。 如果指定了 sessionId，则 Filter、Select 和 OrderBy 将应用于 sessionId 表示的数据。 Filter、Select 和 OrderBy 不能与 CachedReportConfiguration id 一起指定。|
-|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|配置所请求的导出作业的本地化方式。 可取值为：`localizedValuesAsAdditionalColumn`、`replaceLocalizableValues`。|
+|reportName|字符串|报表的名称|
+|filter|字符串|对报表应用的筛选器|
+|select|字符串集合|从报表中选择的列|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|导出的报表的格式。 可取值为：`csv`、`pdf`。|
+|snapshotId|String|快照是由 ReportName 表示的数据集的可识别子集。 可以在此处使用 sessionId 或 CachedReportConfiguration ID。 如果指定了 sessionId，则会将 Filter、Select 和 OrderBy 应用到由 sessionId 表示的数据。 无法将 Filter、Select 和 OrderBy 与 CachedReportConfiguration ID 一起指定。|
+|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|配置请求的导出作业的本地化方式。 可取值为：`localizedValuesAsAdditionalColumn`、`replaceLocalizableValues`。|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|导出作业的状态。 可取值为：`unknown`、`notStarted`、`inProgress`、`completed`、`failed`。|
-|url|String|导出报告的临时位置|
-|requestDateTime|DateTimeOffset|请求导出报告的时间|
-|expirationDateTime|DateTimeOffset|导出报告的过期时间|
+|url|String|导出报表的临时位置|
+|requestDateTime|DateTimeOffset|请求导出报表的时间|
+|expirationDateTime|DateTimeOffset|导出的报表过期的时间|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -118,6 +118,8 @@ Content-Length: 504
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
+
+
 
 
 

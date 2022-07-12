@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae894f8654ff891ddacd86b931573b5ec7aafc7c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 999a9a92503df48726a1dd48e57e6698132378e8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454241"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730754"
 ---
 # <a name="deviceinstallstate-resource-type"></a>deviceInstallState 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60454241"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |deviceName|String|设备名称。|
 |deviceId|String|设备 ID。|
 |lastSyncDateTime|DateTimeOffset|上次同步日期和时间。|
@@ -67,6 +67,8 @@ ms.locfileid: "60454241"
   "userName": "String"
 }
 ```
+
+
 
 
 

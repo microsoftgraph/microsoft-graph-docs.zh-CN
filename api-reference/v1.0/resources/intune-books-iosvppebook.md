@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97e397ec96119b549fdb8187b3ddc9ab8ea858a7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8451018acf3405efb6176f33f5604ce630ca1d71
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449388"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730740"
 ---
 # <a name="iosvppebook-resource-type"></a>iosVppEBook 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "60449388"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
+|id|字符串|实体的键。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|String|电子图书的名称。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |说明|String|说明。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|发布者。 继承自 [managedEBook](../resources/intune-books-managedebook.md)|
@@ -99,6 +99,8 @@ ms.locfileid: "60449388"
   "usedLicenseCount": 1024
 }
 ```
+
+
 
 
 

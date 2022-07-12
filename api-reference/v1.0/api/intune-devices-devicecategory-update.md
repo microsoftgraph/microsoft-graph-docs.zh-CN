@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c10a00dcb46c72488f0d4d51417f98698ea30e5d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 604ea48261bb7a6a0cd3c8f727deb445cb351191
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457083"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723179"
 ---
 # <a name="update-devicecategory"></a>更新 deviceCategory
 
@@ -84,6 +84,8 @@ Content-Length: 105
   "id": "f881b841-b841-f881-41b8-81f841b881f8"
 }
 ```
+
+
 
 
 

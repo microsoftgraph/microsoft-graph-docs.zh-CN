@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0a9a0658e145d446a2291655674d12d785a683f6
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 8a83ea2169f8b3e00c754ed158be767df06a38b5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452851"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730362"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>windowsInformationProtectionDesktopApp 资源类型
 
@@ -58,6 +58,8 @@ ms.locfileid: "60452851"
   "binaryVersionHigh": "String"
 }
 ```
+
+
 
 
 

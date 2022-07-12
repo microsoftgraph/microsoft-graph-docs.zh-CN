@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8160cfaa26e564d790bc7e678ea24b7369d8bedb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d46b1bb3cb691dcdc46fdb5723f8fec26b3d6de7
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449010"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729970"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>applePushNotificationCertificate 资源类型
 
@@ -35,7 +35,7 @@ Apple 推送通知证书。
 |topicIdentifier|String|主题 ID。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 Apple 推送通知证书的日期和时间。|
 |expirationDateTime|DateTimeOffset|Apple 推送通知证书的到期日期和时间。|
-|certificateSerialNumber|String|证书序列号。 此属性是只读的。|
+|certificateSerialNumber|字符串|证书序列号。 此属性是只读的。|
 |证书|String|尚未记录|
 
 ## <a name="relationships"></a>关系
@@ -61,6 +61,8 @@ Apple 推送通知证书。
   "certificate": "String"
 }
 ```
+
+
 
 
 

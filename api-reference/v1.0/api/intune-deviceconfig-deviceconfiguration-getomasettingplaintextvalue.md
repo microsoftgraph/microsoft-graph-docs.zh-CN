@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1670cf30c93beb82124eb9ad92963081f6db45b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 71f71df0151760cd3ad5db5c0bc7486258f83a48
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446054"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723284"
 ---
 # <a name="getomasettingplaintextvalue-function"></a>getOmaSettingPlainTextValue 函数
 
@@ -55,7 +55,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/getOmaSetting
 
 
 ## <a name="response"></a>响应
-如果成功，此函数在响应 `200 OK` 正文中返回 响应代码和 String。
+如果成功，此函数在响应正文中返回 `200 OK` 响应代码和字符串。
 
 ## <a name="example"></a>示例
 
@@ -76,6 +76,8 @@ Content-Length: 57
   "value": "Get Oma Setting Plain Text Value value"
 }
 ```
+
+
 
 
 

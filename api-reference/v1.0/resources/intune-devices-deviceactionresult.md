@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb5dfca79388401ac4f4bad2ed5e2ee365cb64c9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 50505b4d47ac01d202a2f99340389f9adea32650
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451421"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720736"
 ---
 # <a name="deviceactionresult-resource-type"></a>deviceActionResult 资源类型
 
@@ -47,6 +47,8 @@ ms.locfileid: "60451421"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

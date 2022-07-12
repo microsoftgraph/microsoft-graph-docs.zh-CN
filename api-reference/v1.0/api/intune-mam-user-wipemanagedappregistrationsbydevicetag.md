@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 520da54221bef923d6406093f2740c91ee20235f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: deebc79ab3c5be62485f4171f01d12cc16bde9b8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457776"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722605"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>wipeManagedAppRegistrationsByDeviceTag 操作
 
@@ -78,6 +78,8 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

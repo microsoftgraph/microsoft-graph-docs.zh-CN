@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1240343ce57ef9bd8a9aaf88d8ecf4faff22e37
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 766245afaeb7c1b9085e106f3398d6fa1eb6e29b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453623"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722955"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>windowsDeviceAccount 资源类型
 
@@ -41,6 +41,8 @@ ms.locfileid: "60453623"
   "password": "String"
 }
 ```
+
+
 
 
 

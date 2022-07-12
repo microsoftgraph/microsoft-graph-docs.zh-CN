@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ce78ea3d10337896b8847abd1fdf81faae4106f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f13702587934affc7f5e6a697acbdf7b47ea4f00
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451904"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729641"
 ---
 # <a name="create-manageddevice"></a>创建 managedDevice
 
@@ -56,14 +56,14 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |id|String|设备的唯一标识符。 此属性是只读的。|
 |userId|String|与设备关联的用户的唯一标识符。 此属性是只读的。|
 |deviceName|String|设备的名称。 此属性是只读的。|
-|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是"公司"或"个人"。 可取值为：`unknown`、`company`、`personal`。|
+|managedDeviceOwnerType|[managedDeviceOwnerType](../resources/intune-devices-manageddeviceownertype.md)|设备的所有权。 可以是“公司”或“个人”。 可取值为：`unknown`、`company`、`personal`。|
 |deviceActionResults|[deviceActionResult](../resources/intune-devices-deviceactionresult.md) 集合|ComplexType deviceActionResult 对象的列表。 此属性是只读的。|
 |enrolledDateTime|DateTimeOffset|设备的注册时间。 此属性是只读的。|
 |lastSyncDateTime|DateTimeOffset|设备上次成功完成与 Intune 同步的日期和时间。 此属性是只读的。|
-|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性为只读。|
+|operatingSystem|String|设备的操作系统。 Windows、iOS 等。此属性是只读的。|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|设备的符合性状态。 此属性是只读的。 可取值为：`unknown`、`compliant`、`noncompliant`、`conflict`、`error`、`inGracePeriod`、`configManager`。|
 |jailBroken|String|设备是否已越狱或取得 root 权限。 此属性是只读的。|
-|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等此属性为只读。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
+|managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|设备的管理通道。 Intune、EAS 等。此属性是只读的。 可取值为：`eas`、`mdm`、`easMdm`、`intuneClient`、`easIntuneClient`、`configurationManagerClient`、`configurationManagerClientMdm`、`configurationManagerClientMdmEas`、`unknown`、`jamf`、`googleCloudDevicePolicyController`。|
 |osVersion|String|设备的操作系统版本。 此属性是只读的。|
 |easActivated|Boolean|设备是否已激活 Exchange ActiveSync。 此属性是只读的。|
 |easDeviceId|String|设备的 Exchange ActiveSync ID。 此属性是只读的。|
@@ -71,7 +71,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |azureADRegistered|Boolean|设备是否已注册 Azure Active Directory。 此属性是只读的。|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-devices-deviceenrollmenttype.md)|设备的注册类型。 此属性是只读的。 可能的值是：`unknown`、`userEnrollment`、`deviceEnrollmentManager`、`appleBulkWithUser`、`appleBulkWithoutUser`、`windowsAzureADJoin`、`windowsBulkUserless`、`windowsAutoEnrollment`、`windowsBulkAzureDomainJoin`、`windowsCoManagement`、`windowsAzureADJoinUsingDeviceAuth`、`appleUserEnrollment`、`appleUserEnrollmentWithServiceAccount`。|
 |activationLockBypassCode|String|允许绕过设备上的激活锁的代码。 此属性是只读的。|
-|emailAddress|String|电子邮件 () 设备关联的用户的邮箱。 此属性是只读的。|
+|emailAddress|String|与设备关联的用户的电子邮件 () 。 此属性是只读的。|
 |azureADDeviceId|String|Azure Active Directory 设备的唯一标识符。 只读。 此属性是只读的。|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|设备注册状态。 此属性是只读的。 可取值为：`notRegistered`、`registered`、`revoked`、`keyConflict`、`approvalPending`、`certificateReset`、`notRegisteredPendingEnrollment`、`unknown`。|
 |deviceCategoryDisplayName|String|设备类别显示名称。 此属性是只读的。|
@@ -83,28 +83,28 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices
 |remoteAssistanceSessionErrorDetails|String|用于在创建远程协助会话对象时识别问题的错误字符串。 此属性是只读的。|
 |isEncrypted|Boolean|设备加密状态。 此属性是只读的。|
 |userPrincipalName|String|设备用户主体名称。 此属性是只读的。|
-|model|String|设备型号。 此属性是只读的。|
-|manufacturer|String|设备的制造商。 此属性是只读的。|
+|model|String|设备的模型。 此属性是只读的。|
+|manufacturer|String|设备制造商。 此属性是只读的。|
 |imei|String|IMEI。 此属性是只读的。|
-|complianceGracePeriodExpirationDateTime|DateTimeOffset|设备合规性宽限期到期的 DateTime。 此属性是只读的。|
+|complianceGracePeriodExpirationDateTime|DateTimeOffset|设备符合性宽限期到期时的 DateTime。 此属性是只读的。|
 |serialNumber|String|SerialNumber。 此属性是只读的。|
-|phoneNumber|String|电话设备的数量。 此属性是只读的。|
+|phoneNumber|String|设备的电话号码。 此属性是只读的。|
 |androidSecurityPatchLevel|String|Android 安全修补程序级别。 此属性是只读的。|
 |userDisplayName|String|用户显示名称。 此属性是只读的。|
-|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|ConfigrMgr 客户端启用的功能。 此属性是只读的。|
+|configurationManagerClientEnabledFeatures|[configurationManagerClientEnabledFeatures](../resources/intune-devices-configurationmanagerclientenabledfeatures.md)|启用了 ConfigrMgr 客户端的功能。 此属性是只读的。|
 |wiFiMacAddress|String|Wi-Fi MAC。 此属性是只读的。|
 |deviceHealthAttestationState|[deviceHealthAttestationState](../resources/intune-devices-devicehealthattestationstate.md)|设备运行状况证明状态。 此属性是只读的。|
-|subscriberCarrier|String|订阅者运营商。 此属性是只读的。|
-|meid|String|MEID。 此属性是只读的。|
-|totalStorageSpaceInBytes|Int64|总存储字节数。 此属性是只读的。|
-|freeStorageSpaceInBytes|Int64|可用存储字节为单位。 此属性是只读的。|
+|subscriberCarrier|String|订阅服务器运营商。 此属性是只读的。|
+|meid|String|梅德 此属性是只读的。|
+|totalStorageSpaceInBytes|Int64|总存储量（以字节为单位）。 此属性是只读的。|
+|freeStorageSpaceInBytes|Int64|以字节为单位的免费存储。 此属性是只读的。|
 |managedDeviceName|String|用于识别设备的自动生成的名称。 可以覆盖为用户友好名称。|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|指示帐户和设备正在使用移动威胁防护合作伙伴时设备的威胁状态。 只读。 此属性是只读的。 可取值为：`unknown`、`activated`、`deactivated`、`secured`、`lowSeverity`、`mediumSeverity`、`highSeverity`、`unresponsive`、`compromised`、`misconfigured`。|
-|iccid|String|集成的电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
+|iccid|字符串|集成电路卡标识符，它是 SIM 卡的唯一标识号。 此属性是只读的。|
 |udid|String|iOS 和 macOS 设备的唯一设备标识符。 此属性是只读的。|
-|notes|String|IT 管理员在设备上创建的备注|
+|notes|String|IT 管理员创建的设备上的说明|
 |ethernetMacAddress|String|以太网 MAC。 此属性是只读的。|
-|physicalMemoryInBytes|Int64|内存总量（以字节为单位）。 此属性是只读的。|
+|physicalMemoryInBytes|Int64|总内存（以字节为单位）。 此属性是只读的。|
 
 
 
@@ -339,6 +339,8 @@ Content-Length: 4870
   "physicalMemoryInBytes": 5
 }
 ```
+
+
 
 
 

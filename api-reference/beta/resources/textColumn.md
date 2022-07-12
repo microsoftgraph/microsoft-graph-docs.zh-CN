@@ -5,13 +5,13 @@ ms.date: 09/11/2017
 title: TextColumn
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 8a6e8d3a06c3d34a321ec2fb5ff5d83586accb56
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: workbooks-and-charts
+ms.openlocfilehash: a26653663d3327bf7c434de49c2febec539f69db
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63724285"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735577"
 ---
 # <a name="textcolumn-resource-type"></a>TextColumn 资源类型
 

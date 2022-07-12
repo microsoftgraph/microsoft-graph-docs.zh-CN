@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13ddba8bf0592c462938e485bca9eaebed56d431
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 24a7218031aeec3f21e3153acd6be5c6b313b61f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444591"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730194"
 ---
 # <a name="get-sharedpcconfiguration"></a>获取 sharedPCConfiguration
 
@@ -98,6 +98,8 @@ Content-Length: 1101
   }
 }
 ```
+
+
 
 
 

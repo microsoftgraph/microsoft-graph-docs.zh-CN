@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ed806bea7ee191c4c6b5e3ea20553bae59593b0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e016cbd3fa1a271ece30ebe61bef28b3a18059b3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451960"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730985"
 ---
 # <a name="windowsinformationprotectionapplockerfile-resource-type"></a>windowsInformationProtectionAppLockerFile 资源类型
 
@@ -32,7 +32,7 @@ Windows 信息保护 AppLocker 文件
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|友好名称|
+|displayName|字符串|友好名称|
 |fileHash|String|文件的 SHA256 哈希|
 |file|Binary|字节数组形式的文件|
 |id|String|实体的键。|
@@ -59,6 +59,8 @@ Windows 信息保护 AppLocker 文件
   "version": "String"
 }
 ```
+
+
 
 
 

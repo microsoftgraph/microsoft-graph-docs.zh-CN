@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: afda43d06111e69c870edb64ca85ae9149319df0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b60e90396f216a342d8bf1366ceb9e5acb55b443
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449108"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722822"
 ---
 # <a name="get-macoscustomconfiguration"></a>获取 macOSCustomConfiguration
 
@@ -83,6 +83,8 @@ Content-Length: 492
   }
 }
 ```
+
+
 
 
 

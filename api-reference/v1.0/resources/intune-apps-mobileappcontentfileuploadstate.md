@@ -1,16 +1,16 @@
 ---
 title: mobileAppContentFileUploadState 枚举类型
-description: 包含上载请求状态的属性。
+description: 包含用于上传请求状态的属性。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 63377a182ebab73e74b57c243654df79fdea4ba1
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 44457be54adcbeeee27c19065e0ff0445b99ef0f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457727"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730768"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>mobileAppContentFileUploadState 枚举类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60457727"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-包含上载请求状态的属性。
+包含用于上传请求状态的属性。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
@@ -39,6 +39,8 @@ ms.locfileid: "60457727"
 |commitFilePending|301|尚未记录|
 |commitFileFailed|302|尚未记录|
 |commitFileTimedOut|303|尚未记录|
+
+
 
 
 

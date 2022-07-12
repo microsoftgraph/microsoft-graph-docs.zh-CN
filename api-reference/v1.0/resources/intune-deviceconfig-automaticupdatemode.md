@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 55f706fb15ab2c6f40800ea9b2170977de8b3c65
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 58684517d3d6477b0647d29e28d1bd4e29dd1515
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455742"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732420"
 ---
 # <a name="automaticupdatemode-enum-type"></a>automaticUpdateMode 枚举类型
 
@@ -23,12 +23,14 @@ ms.locfileid: "60455742"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|userDefined|0|用户定义，默认值，无意图。|
+|userDefined|0|用户定义，默认值，无意向。|
 |notifyDownload|1|下载时通知。|
 |autoInstallAtMaintenanceTime|2|在维护时自动安装。|
-|autoInstallAndRebootAtMaintenanceTime|3|在维护时自动安装和重启。|
-|autoInstallAndRebootAtScheduledTime|4 |按计划时间自动安装和重启。|
-|autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控制的情况下自动安装和重启|
+|autoInstallAndRebootAtMaintenanceTime|3|在维护时自动安装和重新启动。|
+|autoInstallAndRebootAtScheduledTime|4|在计划的时间自动安装和重新启动。|
+|autoInstallAndRebootWithoutEndUserControl|5|在没有最终用户控制的情况下自动安装和重新启动|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f38fe3cf59ac0d95de4c247907b18e65cdab2cd8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7dc6fd3e6b351b5a03050ebe0af45f53b0df0853
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451463"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732448"
 ---
 # <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a>win32LobAppDeliveryOptimizationPriority 枚举类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "60451463"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|未配置或后台正常传递优化优先级。|
-|foreground|1|前台传递优化优先级。|
+|notConfigured|0|未配置或后台正常交付优化优先级。|
+|前景|1|前台传递优化优先级。|
+
+
 
 
 

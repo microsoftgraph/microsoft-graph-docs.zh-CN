@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d2f083d5ad694b80d8ea160db8604e48d3f72544
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ee4f4acf5bc61dfe81f3ab9b5a12de996c24ee5a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60435727"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729676"
 ---
 # <a name="update-softwareupdatestatussummary"></a>更新 softwareUpdateStatusSummary
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|策略的名称。|
 |compliantDeviceCount|Int32|兼容设备的数量。|
 |nonCompliantDeviceCount|Int32|不兼容设备的数量。|
@@ -129,6 +129,8 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
+
 
 
 

@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: ShareAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 1fba7d65c03981f5336531e37e47731b21e219c0
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: b8cccedfe4d71f7a490d303201f56cec22fd4051
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722479"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731580"
 ---
 # <a name="shareaction-resource-type"></a>ShareAction 资源类型
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07eb571b7465a301e041379ed926e192296f4a31
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 75cddc24ad9a35c9f409e092846eae1b255c8411
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454178"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730698"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>mediaContentRatingJapan 资源类型
 
@@ -23,8 +23,8 @@ ms.locfileid: "60454178"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|为日本选择的电影评级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
-|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|为日本选择的电视评级。 可取值为：`allAllowed`、`allBlocked`、`explicitAllowed`。|
+|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|为日本选择的电影分级。 可取值为：`allAllowed`、`allBlocked`、`general`、`parentalGuidance`、`agesAbove15`、`agesAbove18`。|
+|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|为日本选择电视分级。 可取值为：`allAllowed`、`allBlocked`、`explicitAllowed`。|
 
 ## <a name="relationships"></a>关系
 无
@@ -43,6 +43,8 @@ ms.locfileid: "60454178"
   "tvRating": "String"
 }
 ```
+
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: safeSearchFilterType 枚举类型
-description: 指定筛选成人内容 (需要的安全搜索) 级别
+description: '指定需要哪种级别的安全搜索 (筛选成人内容) '
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5893adc19453b8c0ab299498385739cefb801e7b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b0a518f70b98e142f5d0478047d2d4ac96da1a5c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457307"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733323"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>safeSearchFilterType 枚举类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "60457307"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-指定筛选成人内容 (需要的安全搜索) 级别
+指定需要哪种级别的安全搜索 (筛选成人内容) 
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|userDefined|0|用户定义，默认值，无意图。|
-|strict|1|对成人内容进行严格、最高的筛选。|
-|中等|2|对成人内容进行适量 (不会筛选出有效的) 。|
+|userDefined|0|用户定义，默认值，无意向。|
+|严格|1|针对成人内容进行严格、最高的筛选。|
+|温和|2|不会) 筛选针对成人内容的中度筛选 (有效的搜索结果。|
+
+
 
 
 

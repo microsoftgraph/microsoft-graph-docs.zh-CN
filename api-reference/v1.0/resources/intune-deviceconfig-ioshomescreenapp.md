@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d842896b16b8887a0663c0be23ee91c1d757bac8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5447133c15ddc1b5daa239464aded110a5897038
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449770"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732385"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>iosHomeScreenApp 资源类型
 
@@ -26,8 +26,8 @@ ms.locfileid: "60449770"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|继承自 [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) 的应用的名称|
-|bundleID|String|如果 isWebClip 为 false，则 BundleID;如果 isWebClip 为 true，则应用为 Web 剪辑的 URL。|
+|displayName|字符串|继承自 [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) 的应用的名称|
+|bundleID|String|如果 isWebClip 为 false，则为应用的 BundleID，如果 isWebClip 为 true，则为 Web 剪辑的 URL。|
 
 ## <a name="relationships"></a>关系
 无
@@ -46,6 +46,8 @@ ms.locfileid: "60449770"
   "bundleID": "String"
 }
 ```
+
+
 
 
 

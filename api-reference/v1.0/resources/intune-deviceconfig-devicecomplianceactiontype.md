@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31b9c9079f48e3e9daed8ae46b0aaac68e1815e5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9fd5282100749ba7b609b8c7d350edf4ebc0762d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453714"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733386"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>deviceComplianceActionType 枚举类型
 
@@ -25,11 +25,13 @@ ms.locfileid: "60453714"
 |:---|:---|:---|
 |noAction|0|无操作|
 |通知|1|发送通知|
-|block|2|阻止设备AAD|
-|retire|3|停用设备|
-|wipe|4 |擦除设备|
+|块|2|在 AAD 中阻止设备|
+|退休|3|停用设备|
+|擦|4|擦除设备|
 |removeResourceAccessProfiles|5|从设备中删除资源访问配置文件|
-|pushNotification|9 |向设备发送推送通知|
+|pushNotification|9 |将推送通知发送到设备|
+
+
 
 
 

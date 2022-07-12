@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 08cc8b99c3a1f8a043350107aff72d3d82102f52
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7e88c7e7fd5301d0e96ec58e54432d2459efadc3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454556"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733036"
 ---
 # <a name="update-mobileappcontent"></a>更新 mobileAppContent
 
@@ -86,6 +86,8 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
+
+
 
 
 

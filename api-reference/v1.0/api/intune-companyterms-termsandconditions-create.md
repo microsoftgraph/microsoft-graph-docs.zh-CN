@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ac9001dc0df9171cda4ade944795f3f517b3355
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 03808323bf8e052bf5c24787855c05d26835aa3d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456634"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729753"
 ---
 # <a name="create-termsandconditions"></a>创建 termsAndConditions
 
@@ -106,6 +106,8 @@ Content-Length: 445
   "version": 7
 }
 ```
+
+
 
 
 

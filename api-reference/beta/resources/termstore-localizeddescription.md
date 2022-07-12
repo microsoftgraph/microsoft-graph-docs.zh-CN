@@ -1,30 +1,30 @@
 ---
 title: localizedDescription 资源类型
-description: 表示用于描述术语库中的术语的本地化说明。
+description: 表示用于描述术语存储中的术语的本地化说明。
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sites-and-lists
 doc_type: resourcePageType
-ms.openlocfilehash: 738555750c22f3ffdd5fbd43c8b1849888e0a40f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8506bcb39eeb006f6cea45c1f2d0574af0b71c65
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973615"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732343"
 ---
 # <a name="localizeddescription-resource-type"></a>localizedDescription 资源类型
 
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示用于描述术语[库]中的[术语]的本地化说明。
+表示用于描述术语[存储]中的[术语]的本地化说明。
 
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|说明|String|本地化语言中的说明。|
+|说明|字符串|本地化语言中的说明。|
 |languageTag|String|标签的语言标记。|
 
 ## <a name="relationships"></a>关系
@@ -48,7 +48,7 @@ ms.locfileid: "47973615"
 [microsoft.graph.termStore.term]: termStore-term.md
 [microsoft.graph.termStore.store]: termStore-store.md
 [术语]: ../resources/termstore-term.md
-[microsoft]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 
 <!--
 {
@@ -58,7 +58,7 @@ ms.locfileid: "47973615"
   "section": "documentation",
   "tocPath": "TermLocalizedDescriptionFacet",
   "tocBookmarks": {
-    "Resources/termStore.termLocalizedDescription": "#"
+    "Resources/termStore.termLocalizedDescription&quot;: &quot;#"
   },
   "suppressions": []
 }

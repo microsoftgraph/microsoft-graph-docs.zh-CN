@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b0cac10e0a214d6f63ae98875d253a2672de356
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e87d94624b39067fbefde50c71c93b7de01c1e9e
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453371"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722808"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>获取 windowsPhone81CustomConfiguration
 
@@ -88,6 +88,8 @@ Content-Length: 604
   }
 }
 ```
+
+
 
 
 

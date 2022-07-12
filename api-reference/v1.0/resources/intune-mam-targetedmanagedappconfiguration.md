@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae10c8b51bfde85d2f16ec20a2fa348a444e62b7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 5d40c36ea2624b9ae888cd2ab0b043989610edd1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454465"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730600"
 ---
 # <a name="targetedmanagedappconfiguration-resource-type"></a>targetedManagedAppConfiguration 资源类型
 
@@ -82,6 +82,8 @@ ms.locfileid: "60454465"
   "isAssigned": true
 }
 ```
+
+
 
 
 

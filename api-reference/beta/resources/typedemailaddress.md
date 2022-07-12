@@ -1,16 +1,16 @@
 ---
 title: typedEmailAddress 资源类型
-description: 表示联系人的名称、电子邮件地址及其对应的电子邮件地址类型。
-localization_priority: Normal
+description: 表示联系人的姓名、电子邮件地址及其相应的电子邮件地址类型。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: kevinbellinger
-ms.openlocfilehash: 8ce8ebdd0cb5b8b2113a80dacf72617d0f361356
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 849e566919b22ddaa9c12a275f19139701bf467d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993006"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723487"
 ---
 # <a name="typedemailaddress-resource-type"></a>typedEmailAddress 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "47993006"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示 [联系人](contact.md)的名称、电子邮件地址及其对应的电子邮件地址类型。
+表示 [联系](contact.md)人的姓名、电子邮件地址及其相应的电子邮件地址类型。
 
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
 |address|String|联系人的电子邮件地址。|
 |name|String|联系人的显示名称。|
-|type |String |电子邮件地址的类型。 可取值为：`unknown`、`work`、`personal`、`main`、`other`。 默认值为 `unknown` ，表示尚未将 **地址** 设置为特定类型。 |
-|otherLabel |String  |若要指定自定义类型的电子邮件地址，请将 " **类型** " 设置为 `other` ，并将 **otherLabel** 分配给自定义字符串。 例如，您可以对志愿者活动使用特定的电子邮件地址。 将 " **类型** " 设置为 `other` ，并将 **otherLabel** 设置为自定义字符串，例如 `Volunteer work` 。 |
+|type |字符串 |电子邮件地址的类型。 可取值为：`unknown`、`work`、`personal`、`main`、`other`。 默认值为 `unknown`，这意味着 **地址** 尚未设置为特定类型。 |
+|otherLabel |String  |若要指定电子邮件地址的自定义类型，请将 **类型** 设置为 `other`，并将 **otherLabel** 分配给自定义字符串。 例如，可以为志愿者活动使用特定的电子邮件地址。 将 **类型** 设置为 `other`，并将 **otherLabel** 设置为自定义字符串，例如 `Volunteer work`。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
 

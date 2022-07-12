@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: security
 author: preetikr
-ms.openlocfilehash: dd4e9ee6372e9d063515ad83e851008e01ec6b60
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 4d401b4003ef8ce0a4384daf16a03ce9d2851694
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900141"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735948"
 ---
 # <a name="securescorecontrolprofile-resource-type"></a>secureScoreControlProfile 资源类型
 
@@ -33,22 +33,22 @@ ms.locfileid: "65900141"
 |名称 |类型 |说明 |
 |:--|:--|:--|
 |   azureTenantId   |   字符串  |   租户 ID 的 GUID 字符串。  |
-|   controlName |   字符串  |   控件的名称。 |
+|   controlName |   String  |   控件的名称。 |
 |   title   |   String  |   控件的标题。   |
 | complianceInformation | [complianceInformation](complianceinformation.md) 集合 | 与安全分数控制关联的合规性信息的集合 |
 |   controlCategory |   字符串  |   控制操作类别 (帐户、数据、设备、应用、基础结构) 。  |
 |   actionType  |   String  |   控制操作类型 (配置、审阅、行为) 。 |
 |   service |   String  |    (Exchange、Sharepoint、Azure AD) 拥有控件的服务。 |
 |   maxScore |  字符串  |   当前在指定日期获得的最大分数。   |
-|   层 |  字符串  |   控制层 (核心、深度防御、高级)     |
+|   层 |  String  |   控制层 (核心、深度防御、高级)     |
 |   userImpact |    字符串  | 实现控制 (低、中、高) 的用户影响。    |
 |   implementationCost |    字符串  |   控制 (低、中、高) 的资源成本。 |
 |   排名 |  Int32   |   Microsoft 的堆栈控制排名。   |
 |   威胁 |   String 集合   |   控件缓解 (accountBreach、dataDeletion、dataExfiltration、dataSpillage、elevationOfPrivilege、maliciousInsider、passwordCracking、phishingOrWhaling、欺骗) 的威胁列表。 |
-|   废弃 |    Boolean |   指示控件是否已弃用的标志。   |
-|   修复 |   字符串  |   控件将帮助修正的说明。 |
+|   废弃 |    布尔值 |   指示控件是否已弃用的标志。   |
+|   修复 |   String  |   控件将帮助修正的说明。 |
 |   remediationImpact | 字符串  |   修正对用户的影响的说明。 |
-|   actionUrl | 字符串  |   可在其中操作控件的 URL。 |
+|   actionUrl | String  |   可在其中操作控件的 URL。 |
 |   controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) 集合 |    标记，指示租户标记控件的位置 (忽略，thirdParty 已查看)  (支持 [更新](../api/securescorecontrolprofiles-update.md)) 。 |
 |   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 

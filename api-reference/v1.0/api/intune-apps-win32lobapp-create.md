@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8691d5f5e4cf28bf0debcca247c288f50db522bf
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bc0233bbdce2aede2aed52108dfdf7b820de8225
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452606"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731510"
 ---
 # <a name="create-win32lobapp"></a>创建 win32LobApp
 
@@ -45,14 +45,14 @@ POST /deviceAppManagement/mobileApps
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 win32LobApp 对象的 JSON 表示形式。
+在请求正文中，为 win32LobApp 对象提供 JSON 表示形式。
 
-下表显示创建 win32LobApp 时所需的属性。
+下表显示了创建 win32LobApp 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|String|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|字符串|管理员提供或导入的应用标题。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |说明|String|应用的说明。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publisher|String|应用的发布者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|要显示在应用详细信息中并用于图标上传的大图标。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
@@ -61,31 +61,31 @@ POST /deviceAppManagement/mobileApps
 |isFeatured|Boolean|指示应用是否被管理员标记为特色的值。继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |privacyInformationUrl|String|隐私声明 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |informationUrl|String|详细信息 URL。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
+|所有者|String|应用的所有者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|应用的开发者。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|应用的备注。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|应用的发布状态。 除非应用已发布，否则无法分配应用。 继承自 [mobileApp](../resources/intune-apps-mobileapp.md)。 可取值为：`notPublished`、`processing`、`published`。|
 |committedContentVersion|String|内部提交的内容版本。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|主 Lob 应用程序文件的名称。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|总大小，包括所有已上传文件。 继承自 [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|installCommandLine|String|安装此应用程序的命令行|
-|uninstallCommandLine|String|卸载此应用程序的命令行|
+|installCommandLine|字符串|要安装此应用的命令行|
+|uninstallCommandLine|String|要卸载此应用的命令行|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|可运行此应用的 Windows 体系结构。 可取值为：`none`、`x86`、`x64`、`arm`、`neutral`。|
-|minimumFreeDiskSpaceInMB|Int32|安装此应用程序所需的最小可用磁盘空间的值。|
+|minimumFreeDiskSpaceInMB|Int32|安装此应用所需的最小可用磁盘空间的值。|
 |minimumMemoryInMB|Int32|安装此应用所需的最小物理内存的值。|
-|minimumNumberOfProcessors|Int32|安装此应用程序所需的最少处理器数的值。|
-|minimumCpuSpeedInMHz|Int32|安装此应用所需的最小 CPU 速度的值。|
+|minimumNumberOfProcessors|Int32|安装此应用所需的最小处理器数的值。|
+|minimumCpuSpeedInMHz|Int32|安装此应用所需的最低 CPU 速度的值。|
 |规则|[win32LobAppRule](../resources/intune-apps-win32lobapprule.md) 集合|此应用的检测和要求规则。|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|此应用的安装体验。|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) 集合|安装后行为的返回代码。|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|如果此 Win32 应用是 MSI 应用，则 MSI 详细信息。|
-|setupFilePath|String|加密 Win32LobApp 程序包中安装文件的相对路径。|
-|minimumSupportedWindowsRelease|String|受支持的最低窗口版本的值。|
+|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|MSI 详细介绍此 Win32 应用是否为 MSI 应用。|
+|setupFilePath|字符串|加密的 Win32LobApp 包中安装程序文件的相对路径。|
+|minimumSupportedWindowsRelease|String|支持的最小 Windows 版本的值。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [win32LobApp](../resources/intune-apps-win32lobapp.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -237,6 +237,8 @@ Content-Length: 2306
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
 }
 ```
+
+
 
 
 

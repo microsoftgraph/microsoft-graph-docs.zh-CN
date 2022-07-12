@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f286b39985f310c0a466405fd5814fbbb31e643b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6513793cae2dc77807cc20940e14f1421d53122d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457321"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732462"
 ---
 # <a name="mobileappassignment-resource-type"></a>mobileAppAssignment 资源类型
 
@@ -57,11 +57,26 @@ ms.locfileid: "60457321"
     "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "settings": {
-    "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-    "vpnConfigurationId": "String"
+    "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+    "notifications": "String",
+    "restartSettings": {
+      "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+      "gracePeriodInMinutes": 1024,
+      "countdownDisplayBeforeRestartInMinutes": 1024,
+      "restartNotificationSnoozeDurationInMinutes": 1024
+    },
+    "installTimeSettings": {
+      "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+      "useLocalTime": true,
+      "startDateTime": "String (timestamp)",
+      "deadlineDateTime": "String (timestamp)"
+    },
+    "deliveryOptimizationPriority": "String"
   }
 }
 ```
+
+
 
 
 

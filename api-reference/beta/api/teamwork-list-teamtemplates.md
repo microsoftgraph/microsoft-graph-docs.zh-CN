@@ -5,12 +5,12 @@ author: Charlieforce
 ms.localizationpriority: medium
 ms.prod: teamwork
 doc_type: apiPageType
-ms.openlocfilehash: ce9261b636a0d5f53b3c92d9795624b9b1ddd931
-ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
+ms.openlocfilehash: fdb44b3daab76d1222cdc80fcf0cff13402ce7fb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66690112"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735591"
 ---
 # <a name="list-teamtemplates"></a>列出 teamTemplates
 命名空间：microsoft.graph
@@ -25,8 +25,8 @@ ms.locfileid: "66690112"
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
 |委派（工作或学校帐户）|Team.Create|
-|委派（个人 Microsoft 帐户）|不支持|
-|Application|Team.Create|
+|委派（个人 Microsoft 帐户）|不支持。|
+|应用程序|Team.Create|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -58,9 +58,9 @@ GET /teamwork/teamTemplates
 
 ## <a name="examples"></a>示例
 
-## <a name="example-1-get-a-list-of-team-templates"></a>示例 1：获取团队模板列表
+### <a name="example-1-get-a-list-of-team-templates"></a>示例 1：获取团队模板列表
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 请求示例如下所示。
 
 
@@ -73,7 +73,7 @@ GET /teamwork/teamTemplates
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ```
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 ### <a name="example-2-use-extend-and-filter-to-get-templatedefinitions-for-en-us-locale"></a>示例 2：使用$extend和$filter获取 en-US 区域设置的模板Definitions
 
-### <a name="request"></a>请求
+#### <a name="request"></a>请求
 
 请求示例如下所示。
 
@@ -115,7 +115,7 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&filter=definitions/any(a:a/languageTag eq 'en-US')
 ```
 
-### <a name="response"></a>响应
+#### <a name="response"></a>响应
 下面展示了示例响应。
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
@@ -172,7 +172,7 @@ Content-Type: application/json
                     "lastModifiedBy": null
                 }
             ]
-        },
+        }
     ]
 }
 ```

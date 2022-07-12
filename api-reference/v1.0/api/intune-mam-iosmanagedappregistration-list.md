@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 99fcf554ae4fda0e16815800bab69c166a5ea044
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 28e7b087bc83f854f790456db84d3a4c9b34a90c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447338"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731699"
 ---
 # <a name="list-iosmanagedappregistrations"></a>列出 iosManagedAppRegistrations
 
@@ -91,6 +91,8 @@ Content-Length: 852
   ]
 }
 ```
+
+
 
 
 

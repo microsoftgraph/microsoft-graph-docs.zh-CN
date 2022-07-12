@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: a6615ef05a987e96ffec991187b213233ed3703b
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 887c79aee4a498c7aadd1176b794c5c218ace9ef
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62136617"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731178"
 ---
 # <a name="list-alerts"></a>列出警报
 
@@ -51,7 +51,7 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 - `$top` - 返回每个安全 API 提供商的汇总后顶部结果。  
 - `$filter`
 
-下表通过各个供应商的名称列出了 `$filter` 关键词。 尽管其中某些产品已重命名，但尚未更新该 API。 筛选器关键字将继续使用旧名称，直到另行通知为止。 更新内容请参阅 [changelog](https://developer.microsoft.com/en-us/graph/changelog)。
+下表通过各个供应商的名称列出了 `$filter` 关键词。 尽管其中某些产品已重命名，但尚未更新该 API。 筛选器关键字将继续使用旧名称，直到另行通知为止。 更新内容请参阅 [changelog](https://developer.microsoft.com/graph/changelog)。
 
 | 提供商名称      |$filter 关键字|
 |:----------|:----------|
@@ -71,7 +71,7 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
 

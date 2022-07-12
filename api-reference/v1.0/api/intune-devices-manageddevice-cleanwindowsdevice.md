@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a23698e5499d25616bae847ba24cebbf590a4ac
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 073aa7f2e70f6efa2b2222be9b9c26184ac72dd6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60438438"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732840"
 ---
 # <a name="cleanwindowsdevice-action"></a>cleanWindowsDevice 操作
 
@@ -25,9 +25,9 @@ ms.locfileid: "60438438"
 
 |权限类型|权限（从最低特权到最高特权）|
 |:---|:---|
-|委派（工作或学校帐户）|DeviceManagementManagedDevices.PriviligedOperation.All|
+|委派（工作或学校帐户）|DeviceManagementManagedDevices.PrivilegedOperations.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|应用程序|DeviceManagementManagedDevices.PriviligedOperation.All|
+|应用程序|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- {
@@ -80,6 +80,8 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

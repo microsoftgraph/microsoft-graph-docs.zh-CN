@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4206c56c3de1f297a013a66f762f77d48c4edb79
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2ee4d9d003fe75a2fca32737d66c54572b4f79a2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452991"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722654"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>iosNotificationAlertType 枚举类型
 
@@ -23,10 +23,12 @@ ms.locfileid: "60452991"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，无意图。|
-|横幅|1|横幅。|
-|modal|2|Modal。|
+|deviceDefault|0|设备默认值，无意向。|
+|旗帜|1|旗帜。|
+|模 态|2|模 态。|
 |无|3|无。|
+
+
 
 
 

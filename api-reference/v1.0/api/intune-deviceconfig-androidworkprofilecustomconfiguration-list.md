@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f62a2f5520d59f44a764d680e4119fd10bb49e8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f553fbafb2bf0a95619e05bdea04ad8fc263ac25
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451273"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734107"
 ---
 # <a name="list-androidworkprofilecustomconfigurations"></a>列出 androidWorkProfileCustomConfigurations
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 对象的集合。
 
 ## <a name="example"></a>示例
 
@@ -87,6 +87,8 @@ Content-Length: 652
   ]
 }
 ```
+
+
 
 
 

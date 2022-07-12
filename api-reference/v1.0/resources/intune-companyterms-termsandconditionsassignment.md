@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91303c362407807c5a943fc50e70ab7764eb6af7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 54869ceb0215427b30cd9e7db125212bf480f94a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453721"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732437"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>termsAndConditionsAssignment 资源类型
 
@@ -56,6 +56,8 @@ termsAndConditionsAssignment 实体表示对给定组的给定条款和条件 (T
   }
 }
 ```
+
+
 
 
 

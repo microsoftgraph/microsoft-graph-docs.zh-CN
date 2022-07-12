@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62c8441a5d96853f8f7f08a7db19f4ea81aa2f7a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: af1ffa62a140c3badcd8d74d3f36b5ae710e8db4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454346"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730628"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>importedWindowsAutopilotDeviceIdentity 资源类型
 
@@ -32,11 +32,11 @@ ms.locfileid: "60454346"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|对象的 GUID|
-|groupTag|String|autopilot Windows组标记。|
+|id|字符串|对象的 GUID|
+|groupTag|String|Windows autopilot 设备的组标记。|
 |serialNumber|String|Windows autopilot 设备序列号。|
 |productKey|String|Windows autopilot 设备产品密钥。|
-|importId|String|autopilot 设备的Windows ID。|
+|importId|String|Windows autopilot 设备的导入 ID。|
 |hardwareIdentifier|Binary|Windows autopilot 设备硬件 Blob。|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|导入设备的当前状态。|
 |assignedUserPrincipalName|String|将分配设备的用户的 UPN|
@@ -71,6 +71,8 @@ ms.locfileid: "60454346"
   "assignedUserPrincipalName": "String"
 }
 ```
+
+
 
 
 

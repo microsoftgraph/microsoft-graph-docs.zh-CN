@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c5c472376bc2dac15d3fff8dcaad1a655020363
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 96e5bd966a53e146e9ba21a894f952300a92e75b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445075"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729921"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>localizedNotificationMessage 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60445075"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |locale|String|此消息的目标区域设置。|
 |subject|String|消息模板主题。|
@@ -61,6 +61,8 @@ ms.locfileid: "60445075"
   "isDefault": true
 }
 ```
+
+
 
 
 

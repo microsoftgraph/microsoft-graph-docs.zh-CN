@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4e2734eec245a06afa96e1199952cb214558a4c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 27312d6b8b689957aa813358cbd242a252e6c663
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457104"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731496"
 ---
 # <a name="create-androidworkprofilegeneraldeviceconfiguration"></a>创建 androidWorkProfileGeneralDeviceConfiguration
 
@@ -45,16 +45,16 @@ POST /deviceManagement/deviceConfigurations
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 androidWorkProfileGeneralDeviceConfiguration 对象的 JSON 表示形式。
+在请求正文中，为 androidWorkProfileGeneralDeviceConfiguration 对象提供 JSON 表示形式。
 
-下表显示创建 androidWorkProfileGeneralDeviceConfiguration 时所需的属性。
+下表显示了创建 androidWorkProfileGeneralDeviceConfiguration 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |passwordBlockFingerprintUnlock|Boolean|指示是否阻止指纹解锁。|
@@ -63,39 +63,39 @@ POST /deviceManagement/deviceConfigurations
 |passwordMinimumLength|Int32|密码的最小长度。 有效值为 4 至 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
 |passwordPreviousPasswordBlockCount|Int32|要阻止的以前密码的数量。 有效值为 0 至 24|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值为 1 到 16|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|恢复出厂设置之前允许登录失败的次数。 有效值 1 到 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|必需的密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|允许的数据共享类型。 可能的值是：`deviceDefault`、`preventAny`、`allowPersonalToWork`、`noRestrictions`。|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示设备锁定时是否阻止通知。|
-|workProfileBlockAddingAccounts|Boolean|阻止用户在工作配置文件中添加/删除帐户。|
+|workProfileBlockNotificationsWhileDeviceLocked|Boolean|指示是否在设备锁定时阻止通知。|
+|workProfileBlockAddingAccounts|布尔值|阻止用户在工作配置文件中添加/删除帐户。|
 |workProfileBluetoothEnableContactSharing|Boolean|允许蓝牙设备访问企业联系人。|
-|workProfileBlockScreenCapture|Boolean|阻止工作配置文件中的屏幕捕获。|
-|workProfileBlockCrossProfileCallerId|Boolean|阻止在个人配置文件中显示工作配置文件调用方 ID。|
+|workProfileBlockScreenCapture|布尔值|阻止工作配置文件中的屏幕捕获。|
+|workProfileBlockCrossProfileCallerId|Boolean|在个人配置文件中阻止显示工作配置文件调用方 ID。|
 |workProfileBlockCamera|Boolean|阻止工作配置文件相机。|
-|workProfileBlockCrossProfileContactsSearch|Boolean|阻止工作配置文件联系人在个人配置文件中的可用性。|
-|workProfileBlockCrossProfileCopyPaste|Boolean|指示设置是否禁用跨配置文件复制/粘贴的布尔值。|
+|workProfileBlockCrossProfileContactsSearch|Boolean|阻止个人配置文件中的工作配置文件联系人可用性。|
+|workProfileBlockCrossProfileCopyPaste|Boolean|指示是否启用设置禁止交叉配置文件复制/粘贴的布尔值。|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|必需的密码类型。 可能的值是：`deviceDefault`、`prompt`、`autoGrant`、`autoDeny`。|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|指示是否阻止工作配置文件的指纹解锁。|
-|workProfilePasswordBlockTrustAgents|Boolean|指示是否阻止工作配置文件的智能锁定和其他信任代理。|
+|workProfilePasswordBlockTrustAgents|Boolean|指示是否阻止工作配置文件的 Smart Lock 和其他信任代理。|
 |workProfilePasswordExpirationDays|Int32|工作配置文件密码过期前的天数。 有效值为 1 至 365。|
 |workProfilePasswordMinimumLength|Int32|工作配置文件密码的最小长度。 有效值为 4 至 16|
-|workProfilePasswordMinNumericCharacters|Int32|工作配置文件密码中所需的数字字符的最小值。 有效值为 1 到 10|
-|workProfilePasswordMinNonLetterCharacters|Int32|工作配置文件密码中所需的非字母字符的最小值。 有效值为 1 到 10|
-|workProfilePasswordMinLetterCharacters|Int32|工作配置文件密码中所需的最小字母字符数。 有效值为 1 到 10|
-|workProfilePasswordMinLowerCaseCharacters|Int32|工作配置文件密码中需要的最小小写字符数。 有效值为 1 到 10|
-|workProfilePasswordMinUpperCaseCharacters|Int32|工作配置文件密码中需要的最小大写字符数。 有效值为 1 到 10|
-|workProfilePasswordMinSymbolCharacters|Int32|工作配置文件密码中所需的符号的最小数。 有效值为 1 到 10|
+|workProfilePasswordMinNumericCharacters|Int32|工作配置文件密码中所需的最小数值字符数。 有效值 1 到 10|
+|workProfilePasswordMinNonLetterCharacters|Int32|工作配置文件密码中所需的非字母字符的最小 # 。 有效值 1 到 10|
+|workProfilePasswordMinLetterCharacters|Int32|工作配置文件密码中所需的最小字母字符 # 。 有效值 1 到 10|
+|workProfilePasswordMinLowerCaseCharacters|Int32|工作配置文件密码中所需的小写字符的最小数目 # 。 有效值 1 到 10|
+|workProfilePasswordMinUpperCaseCharacters|Int32|工作配置文件密码中所需的大写字符的最小数值 # 。 有效值 1 到 10|
+|workProfilePasswordMinSymbolCharacters|Int32|工作配置文件密码中所需的最小符号 # 。 有效值 1 到 10|
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|屏幕超时之前的不活动分钟数。|
-|workProfilePasswordPreviousPasswordBlockCount|Int32|要阻止的以前工作配置文件密码的数量。 有效值为 0 至 24|
-|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|在删除工作配置文件和删除所有公司数据之前允许的登录失败次数。 有效值为 1 到 16|
-|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|所需的工作配置文件密码类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
-|workProfileRequirePassword|Boolean|工作配置文件中是否要求密码|
+|workProfilePasswordPreviousPasswordBlockCount|Int32|要阻止的以前工作配置文件密码的数目。 有效值为 0 至 24|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|删除工作配置文件并删除所有公司数据之前允许的登录失败次数。 有效值 1 到 16|
+|workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|所需的工作配置文件密码的类型。 可取值为：`deviceDefault`、`lowSecurityBiometric`、`required`、`atLeastNumeric`、`numericComplex`、`atLeastAlphabetic`、`atLeastAlphanumeric`、`alphanumericWithSymbols`。|
+|workProfileRequirePassword|Boolean|工作配置文件需要密码或不使用密码|
 |securityRequireVerifyApps|Boolean|要求启用 Android 验证应用功能。|
 
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文 `201 Created` 中返回 响应代码和 [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -199,6 +199,8 @@ Content-Length: 2003
   "securityRequireVerifyApps": true
 }
 ```
+
+
 
 
 

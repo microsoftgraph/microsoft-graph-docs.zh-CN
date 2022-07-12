@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 04643375135cddf21f85d7afca90d15908b56329
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bdc96fb4631eaa53aa99e30a76b56c41c0c23168
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451813"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730495"
 ---
 # <a name="delete-deviceinstallstate"></a>删除 deviceInstallState
 
@@ -64,6 +64,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

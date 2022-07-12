@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4be2ab793fe1f99185057d45a8b82ac0d96e1782
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a1f7de6a123ab2bca8bde48ab8dca8e3e9042874
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456570"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731615"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>获取 deviceAndAppManagementRoleDefinition
 
@@ -95,6 +95,8 @@ Content-Length: 712
   }
 }
 ```
+
+
 
 
 

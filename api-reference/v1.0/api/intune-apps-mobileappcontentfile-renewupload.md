@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a93941c7b3c49e7cf3419ed011a56daa3e519a4
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 554de295706da03976b398dabd29c077df681781
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450690"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730908"
 ---
 # <a name="renewupload-action"></a>renewUpload 操作
 
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

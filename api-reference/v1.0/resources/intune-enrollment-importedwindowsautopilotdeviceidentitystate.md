@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9e1b21791d15fc65e7eb186da04723c41ac89aa7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 88ae2c19f0e7bc31841d5178a79a6709116d6c43
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454164"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731237"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>importedWindowsAutopilotDeviceIdentityState 资源类型
 
@@ -47,6 +47,8 @@ ms.locfileid: "60454164"
   "deviceErrorName": "String"
 }
 ```
+
+
 
 
 

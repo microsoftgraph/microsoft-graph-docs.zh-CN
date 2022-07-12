@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f6bebde0a74632477e1ba4a43d1bbb42f2aac6c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: bff30419dd8a53a6f3f4f5b7a32d395ac5f9ffb9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455532"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66729900"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>mobileThreatDefenseConnector 资源类型
 
@@ -34,7 +34,7 @@ ms.locfileid: "60455532"
 |:---|:---|:---|
 |id|String|尚未记录|
 |lastHeartbeatDateTime|DateTimeOffset|从数据同步合作伙伴接收到上一个检测信号的日期/时间|
-|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|数据同步此帐户的合作伙伴状态。 可能的值是：`unavailable`、`available`、`enabled`、`unresponsive`。|
+|partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|此帐户的数据同步合作伙伴状态。 可能的值是：`unavailable`、`available`、`enabled`、`unresponsive`。|
 |androidEnabled|Boolean|对于 Android 设备，设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |iosEnabled|Boolean|对于 iOS 设备，获取或设置在合规性评估期间是否应使用来自数据同步合作伙伴的数据|
 |androidDeviceBlockedOnMissingPartnerData|Boolean|对于 Android 设备，设置 Intune 是否必须在使设备兼容之前接收来自数据同步合作伙伴的数据|
@@ -67,6 +67,8 @@ ms.locfileid: "60455532"
   "partnerUnresponsivenessThresholdInDays": 1024
 }
 ```
+
+
 
 
 

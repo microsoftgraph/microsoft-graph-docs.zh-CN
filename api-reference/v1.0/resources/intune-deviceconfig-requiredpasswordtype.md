@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3abcf8a1863fb795645c83aeb17fbe54f11637a9
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f4d8cf509821e54c21cd84b12d7447eba1d642a2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454796"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730684"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>requiredPasswordType 枚举类型
 
@@ -23,9 +23,11 @@ ms.locfileid: "60454796"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，无意图。|
-|alphanumeric|1|需要字母数字密码。|
-|numeric|2|需要数字密码。|
+|deviceDefault|0|设备默认值，无意向。|
+|字母|1|所需的字母数字密码。|
+|数字|2|所需的数值密码。|
+
+
 
 
 

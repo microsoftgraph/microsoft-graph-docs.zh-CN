@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12f9e5aaecc109ad219f1b54929b59ab27aaa344
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 10834eed075dc19d55578544dc17e9830407ca0d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454157"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731923"
 ---
 # <a name="managedappoperation-resource-type"></a>managedAppOperation 资源类型
 
@@ -32,10 +32,10 @@ ms.locfileid: "60454157"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|操作名称。|
+|displayName|字符串|操作名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改应用操作的时间。|
 |state|String|操作的当前状态|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -59,6 +59,8 @@ ms.locfileid: "60454157"
   "version": "String"
 }
 ```
+
+
 
 
 

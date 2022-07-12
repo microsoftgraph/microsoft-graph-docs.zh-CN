@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1bd54c1fc67a5b51a57b03acd0e7157ea8de02b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6b4b1c424c192526f02a1791507e82ebdc1b3706
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451631"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722843"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>删除 deviceComplianceSettingState
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicyS
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

@@ -5,13 +5,13 @@ ms.date: 09/14/2017
 title: VersionAction
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 0061e53ea03d2dbca8bb4c29d0fb88c1909b592a
-ms.sourcegitcommit: e5d5095e26dca6f434354a0970e789e94ee6afb0
+ms.prod: files
+ms.openlocfilehash: 82dfa7bd353833e1b0188251556cea08043834c8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63722648"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731160"
 ---
 # <a name="versionaction-resource-type"></a>VersionAction 资源类型
 

@@ -1,50 +1,50 @@
 ---
 title: 关系资源类型
-description: 表示术语库中术语之间的关系。
+description: 表示术语存储中的术语之间的关系。
 author: mohitpcad
-localization_priority: Normal
-ms.prod: Sharepoint
+ms.localizationpriority: medium
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 12d976a189b5ebc50e993b5c1203800e4afd68da
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 18753cf6cb246eea25f9a497ebebc197ac23cb93
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289055"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732658"
 ---
 # <a name="relation-resource-type"></a>关系资源类型
 
-命名空间： termStore
+命名空间：microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-表示术语[库]中[术语](../resources/termstore-term.md)之间的关系。 目前支持两种类型的关系： pin 和重用。 
+表示术语[存储]中的[术语](../resources/termstore-term.md)之间的关系。 目前支持两种类型的关系：固定和重复使用。 
 
-在 pin 关系中，术语可固定在不同术语集中的不同术语下。 在固定的关系中，只能在创建了术语的术语集中添加术语的新子项。 术语下的层次结构中的任何更改都将反映到固定术语的集中。 
+在固定关系中，可以将术语固定在其他术语集中的不同术语下。 在固定关系中，只能在创建术语的术语集中添加术语的新子级。 术语下层次结构中的任何更改都反映在固定术语的集内。 
 
-重复使用关系类似于固定的关系，不同之处在于，可重复使用的术语的更改可从任何可重用术语的层次结构进行。 此外，对重复使用的术语的层次结构更改不会反映在重复使用该术语的其他术语集中。
+重复使用关系类似于固定关系，只是可以从重复使用该术语的任何层次结构对重复使用的术语进行更改。 此外，对重复使用的术语所做的层次结构更改不会反映在重复使用该术语的其他术语集中。
 
 继承自 [entity](../resources/entity.md)。
 
-## <a name="methods"></a>方法
+## <a name="methods"></a>Methods
 |方法|返回类型|说明|
 |:---|:---|:---|
-|[列表关系](../api/termstore-term-list-relations.md)|[termstore](../resources/termstore-relation.md) 集合的关系|检索 **关系** 对象的列表。|
-|[创建关系](../api/termstore-relation-post.md)|[microsoft termstore](../resources/termstore-relation.md)|创建新的 **relation** 对象。|
+|[列出关系](../api/termstore-term-list-relations.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md) 集合|检索 **关系** 对象的列表。|
+|[创建关系](../api/termstore-relation-post.md)|[microsoft.graph.termstore.relation](../resources/termstore-relation.md)|创建新的 **关系** 对象。|
 
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|字符串|关系的 ID。|
-|关系|字符串|关系的类型。 可取值为：`pin`、`reuse`。|
+|id|String|关系的 ID。|
+|关系|String|关系的类型。 可取值为：`pin`、`reuse`。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|fromTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 from [术语] 。 定义关系的术语。 空值指示关系是直接与 [集]。 |
-|set|[termStore 设置](../resources/termstore-set.md)|与关系相关的 [集合] 。|
-|toTerm|[microsoft termStore](../resources/termstore-term.md)|关系的 to [术语] 。 关系定义到的术语。|
+|fromTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|关系的从 [术语] 。 定义关系的术语。 null 值表示关系与 [集]直接相关。 |
+|set|[microsoft.graph.termStore.set](../resources/termstore-set.md)|关系相关的 [集] 。|
+|toTerm|[microsoft.graph.termStore.term](../resources/termstore-term.md)|关系的 [字词] 。 定义关系的术语。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -68,7 +68,7 @@ ms.locfileid: "48289055"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[microsoft]: ../resources/termstore-store.md
+[商店]: ../resources/termstore-store.md
 [术语]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
@@ -80,7 +80,7 @@ ms.locfileid: "48289055"
   "section": "documentation",
   "tocPath": "TermRelation",
   "tocBookmarks": {
-    "Resources/termStore.relation": "#"
+    "Resources/termStore.relation&quot;: &quot;#"
   },
   "suppressions": []
 }

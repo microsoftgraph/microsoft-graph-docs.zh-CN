@@ -1,16 +1,16 @@
 ---
 title: timeZoneBase 资源类型
 description: 时区的基本表示形式。
-localization_priority: Normal
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: mail
 author: abheek-das
-ms.openlocfilehash: 4869fafb20150a06a6da323359664f98b83d3eee
-ms.sourcegitcommit: 1004835b44271f2e50332a1bdc9097d4b06a914a
+ms.openlocfilehash: e1258a2d65f09eef1b9415d4d04c22eb834c4716
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50133341"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737096"
 ---
 # <a name="timezonebase-resource-type"></a>timeZoneBase 资源类型
 
