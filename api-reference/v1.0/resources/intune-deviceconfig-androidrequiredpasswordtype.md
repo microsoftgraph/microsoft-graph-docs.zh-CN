@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 908a8018b1cb805173f04f5aff47bcf528c98ceb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ae76d6e260dfdef8d269ab20448d38b7c751f0ec
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454838"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733876"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>androidRequiredPasswordType 枚举类型
 
@@ -23,14 +23,16 @@ Android 所需的密码类型。
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|deviceDefault|0|设备默认值，无意图。|
-|字母|1|需要字母密码。|
-|alphanumeric|2|需要字母数字密码。|
-|alphanumericWithSymbols|3|需要符号密码的字母数字。|
-|lowSecurityBiometric|4 |需要低安全生物识别密码。|
-|numeric|5|需要数字密码。|
-|numericComplex|6 |需要数字复杂密码。|
-|任意|7 |密码或模式是必需的，任何密码或模式都是可接受的。|
+|deviceDefault|0|设备默认值，无意向。|
+|字母|1|所需的字母密码。|
+|字母|2|所需的字母数字密码。|
+|alphanumericWithSymbols|3|具有所需的符号密码的字母数字。|
+|lowSecurityBiometric|4|所需的基于生物识别的低安全性密码。|
+|数字|5|所需的数值密码。|
+|numericComplex|6 |所需的数值复杂密码。|
+|任意|7 |需要密码或模式，任何密码或模式都是可接受的。|
+
+
 
 
 

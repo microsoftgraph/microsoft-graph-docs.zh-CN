@@ -3,14 +3,14 @@ title: timeStamp 资源类型
 description: 时间点的日期和时间信息。
 ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: sites-and-lists
 author: JeremyKelley
-ms.openlocfilehash: ff93ab9a55a695818ec21f60afb039c6542efd0a
-ms.sourcegitcommit: c7ff992ef63e480d070421ba99b28ee129cb6acb
+ms.openlocfilehash: fb82ddf1e69b8ea06cb425ed5199d1f6c5862b52
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60695795"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66737103"
 ---
 # <a name="timestamp-resource-type"></a>timeStamp 资源类型
 

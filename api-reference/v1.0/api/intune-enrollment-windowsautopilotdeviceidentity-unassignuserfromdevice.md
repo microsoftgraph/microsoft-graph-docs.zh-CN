@@ -1,16 +1,16 @@
 ---
 title: unassignUserFromDevice 操作
-description: 取消分配 Autopilot 设备中的用户。
+description: 从 Autopilot 设备取消分配用户。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92e63f21d4ef64b419cc7895d854cfe83efc9f85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e4b1765358f5bd712b4fad1263d7db07df9bc33b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60438382"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732812"
 ---
 # <a name="unassignuserfromdevice-action"></a>unassignUserFromDevice 操作
 
@@ -18,7 +18,7 @@ ms.locfileid: "60438382"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-取消分配 Autopilot 设备中的用户。
+从 Autopilot 设备取消分配用户。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

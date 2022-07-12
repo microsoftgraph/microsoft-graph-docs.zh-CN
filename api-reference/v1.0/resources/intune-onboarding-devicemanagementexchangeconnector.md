@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2a44fc19cb31e9b7edcd441657b773f628dd43e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3e9712ac86967525a0e4c0491867e60222325a3a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449311"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734926"
 ---
 # <a name="devicemanagementexchangeconnector-resource-type"></a>deviceManagementExchangeConnector 资源类型
 
@@ -33,11 +33,11 @@ ms.locfileid: "60449311"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|尚未记录|
+|id|字符串|尚未记录|
 |lastSyncDateTime|DateTimeOffset|Exchange Connector 的上一次同步时间|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange连接器状态。 可能的值是：`none`、`connectionPending`、`connected`、`disconnected`。|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange 连接器状态。 可能的值是：`none`、`connectionPending`、`connected`、`disconnected`。|
 |primarySmtpAddress|String|用于配置服务到服务 Exchange Connector 的电子邮件地址。|
-|serverName|String|服务器的名称Exchange服务器。|
+|serverName|String|Exchange 服务器的名称。|
 |connectorServerName|String|托管 Exchange Connector 的服务器的名称。|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|配置的 Exchange Connector 的类型。 可取值为：`onPremises`、`hosted`、`serviceToService`、`dedicated`。|
 |version|String|ExchangeConnectorAgent 版本|
@@ -70,6 +70,8 @@ ms.locfileid: "60449311"
   "exchangeOrganization": "String"
 }
 ```
+
+
 
 
 

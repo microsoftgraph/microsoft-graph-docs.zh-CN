@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7228dbb4add26e2eaa13c409491ce132c7965ee
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: f6abb851e2c5ca35e7a287a22ba7acdac0a3a2ff
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65899678"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734282"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>windows10NetworkProxyServer 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "65899678"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|address|String|代理服务器的地址。 按照以下格式指定地址：\<server\>\[“:”\<port\>\]|
+|address|String|代理服务器的地址。 按照以下格式指定地址：<server>\[“:”<port>\]|
 |exceptions|String 集合|不应使用代理服务器的地址。 系统无法将代理服务器用于以本节点中指定的内容开头的地址。|
 |useForLocalAddresses|Boolean|指定是否应将代理服务器用于本地 (Intranet) 地址。|
 
@@ -47,6 +47,8 @@ ms.locfileid: "65899678"
   "useForLocalAddresses": true
 }
 ```
+
+
 
 
 

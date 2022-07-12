@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 749e9b296135bd9fa8a12cc680e707c0f3d8a36f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 424372347c4cf7d07d6dbef29b32c9bd12ec3833
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452970"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66731790"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>更新 androidWorkProfileCustomConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "60452970"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-更新 [androidWorkProfileCustomConfiguration 对象](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 的属性。
+更新 [androidWorkProfileCustomConfiguration 对象的](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 属性。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -45,9 +45,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 对象的 JSON 表示形式。
+在请求正文中，为 [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 对象提供 JSON 表示形式。
 
-下表显示创建 [androidWorkProfileCustomConfiguration 时所需的属性](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md)。
+下表显示了创建 [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和更新的 `200 OK` [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和更新后的 [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) 对象。
 
 ## <a name="example"></a>示例
 
@@ -114,6 +114,8 @@ Content-Length: 559
   ]
 }
 ```
+
+
 
 
 

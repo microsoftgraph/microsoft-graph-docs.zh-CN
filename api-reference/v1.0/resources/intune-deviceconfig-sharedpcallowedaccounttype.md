@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a2cdbb727a5965106928196da76643a0fa8c4bb
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e0f4971851d2d297c776a1acbed66ec5c616c8c5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455293"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733785"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>sharedPCAllowedAccountType 枚举类型
 
@@ -23,8 +23,10 @@ ms.locfileid: "60455293"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|来宾|1|仅来宾帐户。|
-|domain|2|仅加入域的帐户。|
+|客人|1|仅来宾帐户。|
+|domain|2|仅已加入域的帐户。|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: af53066663ed71292cbe2217510016540a53eee8
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 674935ad61bc2eb6d7eab50b73d4a974abf020f3
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447359"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734663"
 ---
 # <a name="enablement-enum-type"></a>enablement 枚举类型
 
@@ -23,9 +23,11 @@ ms.locfileid: "60447359"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notConfigured|0|设备默认值，无意图。|
+|notConfigured|0|设备默认值，无意向。|
 |enabled|1|在设备上启用设置。|
-|disabled|2|在设备上禁用设置。|
+|禁用|2|禁用设备上的设置。|
+
+
 
 
 

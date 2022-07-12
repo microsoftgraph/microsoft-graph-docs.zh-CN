@@ -1,24 +1,24 @@
 ---
-title: 获取 deviceManagementReports
-description: 读取 deviceManagementReports 对象的属性和关系。
+title: getNoncompliantDevicesAndSettingsReport 操作
+description: 尚未记录
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a138188e1695f792bdaeab57b6b561fbb11799cf
+ms.openlocfilehash: f29b7b44dd3b43eb3c4057b9cac652bd6d765fe0
 ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66733491"
+ms.locfileid: "66737111"
 ---
-# <a name="get-devicemanagementreports"></a>获取 deviceManagementReports
+# <a name="getnoncompliantdevicesandsettingsreport-action"></a>getNoncompliantDevicesAndSettingsReport 操作
 
 命名空间：microsoft.graph
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-读取 [deviceManagementReports 对象的](../resources/intune-reporting-devicemanagementreports.md) 属性和关系。
+尚未记录
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -35,11 +35,8 @@ ms.locfileid: "66733491"
 }
 -->
 ``` http
-GET /deviceManagement/reports
+POST /deviceManagement/reports/getNoncompliantDevicesAndSettingsReport
 ```
-
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持 [OData 查询参数](/graph/query-parameters) 来帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
 |标头|值|
@@ -48,17 +45,54 @@ GET /deviceManagement/reports
 |接受|application/json|
 
 ## <a name="request-body"></a>请求正文
-请勿提供此方法的请求正文。
+在请求正文中，提供参数的 JSON 表示形式。
+
+下表显示了可用于此操作的参数。
+
+|属性|类型|说明|
+|:---|:---|:---|
+|name|String|尚未记录|
+|select|String collection|尚未记录|
+|search|String|尚未记录|
+|groupBy|String collection|尚未记录|
+|orderBy|String collection|尚未记录|
+|skip|Int32|尚未记录|
+|top|Int32|尚未记录|
+|sessionId|String|尚未记录|
+|filter|String|尚未记录|
+
+
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md) 对象。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和流。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
 下面是一个请求示例。
 ``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/reports
+POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getNoncompliantDevicesAndSettingsReport
+
+Content-type: application/json
+Content-length: 278
+
+{
+  "name": "Name value",
+  "select": [
+    "Select value"
+  ],
+  "search": "Search value",
+  "groupBy": [
+    "Group By value"
+  ],
+  "orderBy": [
+    "Order By value"
+  ],
+  "skip": 4,
+  "top": 3,
+  "sessionId": "Session Id value",
+  "filter": "Filter value"
+}
 ```
 
 ### <a name="response"></a>响应
@@ -66,13 +100,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/reports
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 137
+Content-Length: 111
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagementReports",
-    "id": "d6a697d3-97d3-d6a6-d397-a6d6d397a6d6"
-  }
+  "value": "Z2V0Tm9uY29tcGxpYW50RGV2aWNlc0FuZFNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIC0yMDEyNTMxMjQ3"
 }
 ```
 

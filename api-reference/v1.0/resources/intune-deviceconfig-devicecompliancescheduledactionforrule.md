@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf4301a1f38c46a203cc583bb32e271098280698
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f5355ccb39c82e8428532f3b9ea20595b4b26d51
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440400"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734982"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>deviceComplianceScheduledActionForRule 资源类型
 
@@ -33,12 +33,12 @@ ms.locfileid: "60440400"
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。|
-|ruleName|String|此计划操作适用的规则名称。 当前计划的操作是按策略而不是按规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
+|ruleName|String|此计划操作适用的规则名称。 当前计划的操作是根据策略而不是每个规则创建的，因此 RuleName 始终设置为默认值 PasswordRequired。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
 |:---|:---|:---|
-|scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 集合|此合规性策略的计划操作配置列表。 合规性策略必须具有一个且只有一个阻止计划操作。|
+|scheduledActionConfigurations|[deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md) 集合|此合规性策略的计划操作配置列表。 合规性策略必须只有一个和一个块计划操作。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。
@@ -55,6 +55,8 @@ ms.locfileid: "60440400"
   "ruleName": "String"
 }
 ```
+
+
 
 
 

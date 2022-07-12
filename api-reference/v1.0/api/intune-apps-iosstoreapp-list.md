@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5e92721932237c644131c660bc5b23f3913fa8a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 88fc1fd1c95f89d75aab542999a4499bf59b9eb1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447219"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66732324"
 ---
 # <a name="list-iosstoreapps"></a>列出 iosStoreApps
 
@@ -108,6 +108,8 @@ Content-Length: 1395
   ]
 }
 ```
+
+
 
 
 

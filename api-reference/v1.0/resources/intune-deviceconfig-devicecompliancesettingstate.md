@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f797e2e77eb0e291bdc6b71e14da25f5ef3244d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d482bb8a1532902acc6da383cd91cd17b9e7e024
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455560"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734317"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>deviceComplianceSettingState 资源类型
 
@@ -37,12 +37,12 @@ ms.locfileid: "60455560"
 |settingName|String|报告的设置名称|
 |deviceId|String|报告的设备 ID|
 |deviceName|String|报告的设备名称|
-|userId|String|报告的用户 ID|
+|userId|字符串|报告的用户 ID|
 |userEmail|String|报告的用户电子邮件地址|
 |userName|String|报告的用户名|
 |userPrincipalName|String|报告的用户主体名称|
 |deviceModel|String|报告的设备模型|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|设备合规性宽限期的到期日期/时间|
 
 ## <a name="relationships"></a>关系
@@ -73,6 +73,8 @@ ms.locfileid: "60455560"
   "complianceGracePeriodExpirationDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

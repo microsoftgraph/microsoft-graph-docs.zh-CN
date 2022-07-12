@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaa6c887d9fb1ae58222546f97b590227c178694
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 152cd434f1e8ad33b2ef4e32763cde7fe403568d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451519"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734968"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>deviceConfigurationSettingState 资源类型
 
@@ -26,7 +26,7 @@ ms.locfileid: "60451519"
 |setting|String|报告的设置|
 |settingName|String|报告的本地化/用户友好设置名称|
 |instanceDisplayName|String|报告的设置实例的名称。|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的合规性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|设置的符合性状态。 可取值为：`unknown`、`notApplicable`、`compliant`、`remediated`、`nonCompliant`、`error`、`conflict`、`notAssigned`。|
 |errorCode|Int64|设置的错误代码|
 |errorDescription|String|错误说明|
 |userId|String|UserId|
@@ -70,6 +70,8 @@ ms.locfileid: "60451519"
   "currentValue": "String"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a56fee11f542837c7f0ea7dc478f2e96b5f3cfe
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dc6fcc64d56919f7dd896365b1d92e48ec5d1957
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453392"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735864"
 ---
 # <a name="get-reportroot"></a>获取 reportRoot
 
@@ -75,6 +75,8 @@ Content-Length: 124
   }
 }
 ```
+
+
 
 
 

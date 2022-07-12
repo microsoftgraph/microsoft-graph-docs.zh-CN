@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 180ecb79e74d946b699234627471ee8816389ddd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e4b462bb1b71511dfdcc81d826f7b385c73980d8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60441481"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734779"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>列出 telecomExpenseManagementPartners
 
@@ -79,6 +79,8 @@ Content-Length: 358
   ]
 }
 ```
+
+
 
 
 

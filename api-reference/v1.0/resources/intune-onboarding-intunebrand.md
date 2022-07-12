@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d35ce5bffc1dfa7935cfdd5c946dfcd2b10a467f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3b56d97a5996273155298dd0453f744020703fe1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445603"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733274"
 ---
 # <a name="intunebrand-resource-type"></a>intuneBrand 资源类型
 
@@ -80,6 +80,8 @@ intuneBrand 包含在自定义公司门户应用程序以及最终用户网页�
   "privacyUrl": "String"
 }
 ```
+
+
 
 
 

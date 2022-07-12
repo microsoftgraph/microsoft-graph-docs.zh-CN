@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aba75bfe7e2f0d728a957134167f6f707c197f7d
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7b39b3a582a796e436b0b8ae63629345ad8bfdf9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452571"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730173"
 ---
 # <a name="update-windows10generalconfiguration"></a>更新 windows10GeneralConfiguration
 
@@ -54,8 +54,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |id|String|实体的键。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|说明|String|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|说明|字符串|管理员提供的设备配置的说明。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|字符串|管理员提供的设备配置的名称。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|设备配置的版本。 继承自 [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |enterpriseCloudPrintDiscoveryEndPoint|String|发现云打印机的终结点。|
 |enterpriseCloudPrintOAuthAuthority|String|获取 OAuth 令牌的身份验证终结点。|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |searchEnableAutomaticIndexSizeManangement|Boolean|在建立索引停止之前，指定与索引位置相同的驱动器上的最小硬盘空间量。|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|获取或设置允许设备发送诊断和使用遥测数据的值，如 Watson。 可取值为：`userDefined`、`none`、`basic`、`enhanced`、`full`。|
 |oneDriveDisableFileSync|Boolean|获取或设置一个值，允许 IT 管理员阻止应用和功能使用 OneDrive 上的文件。|
-|smartScreenEnableAppInstallControl|Boolean|此属性将在 2019 年 7 月弃用，并替换为属性 SmartScreenAppInstallControl。 允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。|
+|smartScreenEnableAppInstallControl|Boolean|此属性将于 2019 年 7 月弃用，并将替换为属性 SmartScreenAppInstallControl。 允许 IT 管理员控制是否允许用户从应用商店以外的地方安装应用。|
 |personalizationDesktopImageUrl|String|指向需要下载并用作桌面图像的 http 或 https URL，或指向需要用作桌面图像的文件系统上的本地图像的文件 URL。|
 |personalizationLockScreenImageUrl|String|指向需要下载并用作锁屏图像的 jpg、jpeg 或 png 图像的 http 或 https URL，或指向需要用作锁屏图像的文件系统上的本地图像的文件 URL。|
 |bluetoothAllowedServices|String 集合|以十六进制格式的字符串指定允许的蓝牙服务和配置文件的列表。|
@@ -206,8 +206,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |deviceManagementBlockManualUnenroll|Boolean|指示是否阻止用户从设备管理手动取消注册。|
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|指定需要的安全搜索筛选级别。 可取值为：`userDefined`、`strict`、`moderate`。|
 |edgeBlockPopups|Boolean|指示是否阻止弹出窗口。|
-|edgeBlockSearchSuggestions|Boolean|指示是否阻止用户使用地址栏中的搜索建议。|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从 Edge 切换到 Internet Explorer。 注意：此属性的名称令人误解;属性已过时，请改为使用 EdgeSendIntranetTrafficToInternetExplorer。|
+|edgeBlockSearchSuggestions|Boolean|指示是否阻止用户在地址栏中使用搜索建议。|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从 Edge 切换到 Internet Explorer。 注意：此属性的名称具有误导性;属性已过时，请改用 EdgeSendIntranetTrafficToInternetExplorer。|
 |edgeSendIntranetTrafficToInternetExplorer|Boolean|指示是否将 Intranet 流量从 Edge 切换到 Internet Explorer。|
 |edgeRequireSmartScreen|Boolean|指示是否要求用户使用智能屏蔽筛选器。|
 |edgeEnterpriseModeSiteListLocation|String|指示企业模式站点列表位置。 可能是本地文件、本地网络或 http 位置。|
@@ -750,6 +750,8 @@ Content-Length: 9994
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true
 }
 ```
+
+
 
 
 

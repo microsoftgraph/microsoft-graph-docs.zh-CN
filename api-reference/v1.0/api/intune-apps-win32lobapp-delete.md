@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4606278a165f27ab0bfeb4b19a02503afee25284
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: fd913b4c6d69384c0ea7d4ba724f25e2ecf9d462
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452599"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734604"
 ---
 # <a name="delete-win32lobapp"></a>删除 win32LobApp
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

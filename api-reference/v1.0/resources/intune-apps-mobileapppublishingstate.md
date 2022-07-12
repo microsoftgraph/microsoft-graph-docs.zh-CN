@@ -1,16 +1,16 @@
 ---
 title: mobileAppPublishingState 枚举类型
-description: 指示应用程序的发布状态。
+description: 指示应用的发布状态。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ca66cf4639e5164e35a6b8ae43d5dc6681840f0
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 63af82e4be01a3fb62b78c06e492f0d4cfac1246
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455863"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733106"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>mobileAppPublishingState 枚举类型
 
@@ -18,14 +18,16 @@ ms.locfileid: "60455863"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-指示应用程序的发布状态。
+指示应用的发布状态。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|notPublished|0|应用尚未发布。|
-|processing|1|应用程序正在等待服务器端处理。|
-|published|2|应用已发布。|
+|notPublished|0|该应用尚未发布。|
+|处理|1|应用正在等待服务端处理。|
+|发表|2|应用已发布。|
+
+
 
 
 

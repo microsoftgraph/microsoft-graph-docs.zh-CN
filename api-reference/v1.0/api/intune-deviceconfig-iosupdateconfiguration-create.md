@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ad0de0aad3f2b905cecc4b93d4e7d15f015d697
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 429e3a9fcc32b7ed6ede80ffa6284e1681d0fccb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60448105"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734492"
 ---
 # <a name="create-iosupdateconfiguration"></a>创建 iosUpdateConfiguration
 
@@ -113,6 +113,8 @@ Content-Length: 497
   "utcTimeOffsetInMinutes": 6
 }
 ```
+
+
 
 
 

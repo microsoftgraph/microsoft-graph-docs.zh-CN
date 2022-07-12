@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5572cdc0efe29610fa9bd6b5e09a59064f25784b
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 14271516a9f114195632ff09b5b384cced51d55c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60435797"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735276"
 ---
 # <a name="create-mobileappcontentfile"></a>创建 mobileAppContentFile
 
@@ -110,6 +110,8 @@ Content-Length: 450
   "uploadState": "transientError"
 }
 ```
+
+
 
 
 

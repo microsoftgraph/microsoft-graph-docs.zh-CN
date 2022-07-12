@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35e2101ace3a3f16da17acd09772c6fcf291c764
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2da49524ce7775110ede2dc7e3b9774e88c61302
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451188"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722731"
 ---
 # <a name="deviceconfiguration-resource-type"></a>deviceConfiguration 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "60451188"
 |lastModifiedDateTime|DateTimeOffset|上次修改对象的日期/时间。|
 |createdDateTime|DateTimeOffset|创建对象的日期/时间。|
 |说明|String|管理员提供的设备配置说明。|
-|displayName|String|管理员提供的设备配置名称。|
+|displayName|字符串|管理员提供的设备配置名称。|
 |version|Int32|设备配置的版本。|
 
 ## <a name="relationships"></a>关系
@@ -43,7 +43,7 @@ ms.locfileid: "60451188"
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) 集合|设备配置文件的分配列表。|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md) 集合|按设备的设备配置安装状态。|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|用户的设备配置安装状态。|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) 集合|按用户提供的设备配置安装状态。|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|设备配置设备状态概述|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|设备配置用户状态概述|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) 集合|设备配置设置状态设备摘要|
@@ -67,6 +67,8 @@ ms.locfileid: "60451188"
   "version": 1024
 }
 ```
+
+
 
 
 

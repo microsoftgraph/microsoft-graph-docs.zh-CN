@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9adf832012c51d05319f83a6d4208ce07d16a534
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ed87a74a6c53cf45390850854d27565cbcb2b778
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451449"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734996"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>termsAndConditionsAcceptanceStatus 资源类型
 
@@ -36,7 +36,7 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
-|userPrincipalName|String|接受术语的用户的 userPrincipalName。|
+|userPrincipalName|String|接受该术语的用户的 userPrincipalName。|
 
 ## <a name="relationships"></a>关系
 |关系|类型|说明|
@@ -61,6 +61,8 @@ termsAndConditionsAcceptanceStatus 实体表示给定用户对给定条款和条
   "userPrincipalName": "String"
 }
 ```
+
+
 
 
 

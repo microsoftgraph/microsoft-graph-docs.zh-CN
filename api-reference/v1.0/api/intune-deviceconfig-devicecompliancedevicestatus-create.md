@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bdb1b2c9dade91dc2fbdc3fe8ad322dfcaa5ae56
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e28eda36af4acec9ca6b0f7da61f1fd3e9e0e616
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455700"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733596"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>创建 deviceComplianceDeviceStatus
 
@@ -105,6 +105,8 @@ Content-Length: 475
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

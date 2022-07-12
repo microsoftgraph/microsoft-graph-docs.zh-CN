@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 480977428394a5ae7108485b50ca886cc3d66ae5
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2ccfeefbce49404fb947c327501d7d6a36c1b93f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451484"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734569"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>创建 termsAndConditionsAcceptanceStatus
 
@@ -55,7 +55,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 |userDisplayName|String|实体所表示的接受状态所属用户的显示名称。|
 |acceptedVersion|Int32|用户所接受的最新 T&C 版本号。|
 |acceptedDateTime|DateTimeOffset|用户上次接受条款时的日期/时间。|
-|userPrincipalName|String|接受术语的用户的 userPrincipalName。|
+|userPrincipalName|String|接受该术语的用户的 userPrincipalName。|
 
 
 
@@ -96,6 +96,8 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

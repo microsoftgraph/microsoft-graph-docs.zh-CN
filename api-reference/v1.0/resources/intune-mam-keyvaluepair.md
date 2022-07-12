@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5cd57d5c51875ce263215d137efb481a2aedb07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0a3e51bc77ae42463d8155ea46644f7edafd50b1
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457384"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736039"
 ---
 # <a name="keyvaluepair-resource-type"></a>keyValuePair 资源类型
 
@@ -23,7 +23,7 @@ ms.locfileid: "60457384"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|name|String|此键值对的名称|
+|name|字符串|此键值对的名称|
 |value|String|此键值对的值|
 
 ## <a name="relationships"></a>关系
@@ -43,6 +43,8 @@ ms.locfileid: "60457384"
   "value": "String"
 }
 ```
+
+
 
 
 

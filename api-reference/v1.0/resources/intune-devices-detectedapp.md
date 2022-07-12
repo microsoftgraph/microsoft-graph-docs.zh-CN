@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d68b62d9e04122c254ae37570d3fd54bd696490
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2b382e4ceea883fc2befa5411870662a224df002
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60444837"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730649"
 ---
 # <a name="detectedapp-resource-type"></a>detectedApp 资源类型
 
@@ -32,8 +32,8 @@ ms.locfileid: "60444837"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
-|displayName|String|发现的应用程序的名称。 只读|
+|id|字符串|检测到的应用程序的唯一标识符。 创建此应用程序时，Intune 将自动生成它。 只读。|
+|displayName|字符串|发现的应用程序的名称。 只读|
 |version|String|发现的应用程序的版本。 只读|
 |sizeInByte|Int64|发现的应用程序的大小，以字节为单位。 只读|
 |deviceCount|Int32|已安装此应用程序的设备数量|
@@ -61,6 +61,8 @@ ms.locfileid: "60444837"
   "deviceCount": 1024
 }
 ```
+
+
 
 
 

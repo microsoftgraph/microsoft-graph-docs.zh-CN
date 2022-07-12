@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d0fba5d29ac5fd11e8863878d6afc28c36eeb78
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 96fe347b217cdd60aab4668dc89731f85448620d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454894"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730012"
 ---
 # <a name="omasettinginteger-resource-type"></a>omaSettingInteger 资源类型
 
@@ -50,6 +50,8 @@ OMA 设置整数定义。
   "value": 1024
 }
 ```
+
+
 
 
 

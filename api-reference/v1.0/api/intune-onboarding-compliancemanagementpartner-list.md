@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dcb2154680482dc376ee0dbadd80df80f635c50
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 871532f8aa62bd38adb110e75f685de53d5d537c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456345"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734863"
 ---
 # <a name="list-compliancemanagementpartners"></a>列出 complianceManagementPartners
 
@@ -18,7 +18,7 @@ ms.locfileid: "60456345"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-列出 [complianceManagementPartner 对象的属性和](../resources/intune-onboarding-compliancemanagementpartner.md) 关系。
+列出 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象的属性和关系。
 
 ## <a name="prerequisites"></a>先决条件
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -48,7 +48,7 @@ GET /deviceManagement/complianceManagementPartners
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) 对象集合。
 
 ## <a name="example"></a>示例
 
@@ -107,6 +107,8 @@ Content-Length: 1408
   ]
 }
 ```
+
+
 
 
 

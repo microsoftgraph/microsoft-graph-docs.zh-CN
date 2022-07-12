@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f84cb2d83852f5f6c9fd849a214a2ae6de7c7abd
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ef524190d19cdace1d04ac3165f32e29ab89140b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434843"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736207"
 ---
 # <a name="vpplicensingtype-resource-type"></a>vppLicensingType 资源类型
 
@@ -43,6 +43,8 @@ ms.locfileid: "60434843"
   "supportsDeviceLicensing": true
 }
 ```
+
+
 
 
 

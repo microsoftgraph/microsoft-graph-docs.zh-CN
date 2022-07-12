@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4469fb76e24aca418c0b38e541138a1bd2b1ca85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: d8a4f021ac24e885c7bc05577bf19abc5cdd2e12
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454374"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66722752"
 ---
 # <a name="dayofweek-enum-type"></a>dayOfWeek 枚举类型
 
@@ -23,13 +23,15 @@ ms.locfileid: "60454374"
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|sunday|0|星期日。|
-|monday|1|星期一。|
-|tuesday|2|星期二。|
+|星期天|0|星期日。|
+|星期一|1|星期一。|
+|星期二|2|星期二。|
 |星期三|3|星期三。|
-|thursday|4 |星期四。|
+|星期四|4|星期四。|
 |星期五|5|星期五。|
-|saturday|6 |星期六。|
+|星期六|6 |星期六。|
+
+
 
 
 

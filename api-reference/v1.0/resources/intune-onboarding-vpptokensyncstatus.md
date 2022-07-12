@@ -1,16 +1,16 @@
 ---
 title: vppTokenSyncStatus 枚举类型
-description: 与 Apple Volume Purchase Program 令牌关联的可能同步状态。
+description: 与 Apple 批量购买计划令牌关联的可能同步状态。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0eca21857716e710e77dd7b2747a2dea003e1a0f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: b2272867b92fe677e595a099475fefeef964e9f0
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453602"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734900"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>vppTokenSyncStatus 枚举类型
 
@@ -18,15 +18,17 @@ ms.locfileid: "60453602"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-与 Apple Volume Purchase Program 令牌关联的可能同步状态。
+与 Apple 批量购买计划令牌关联的可能同步状态。
 
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
 |无|0|默认状态。|
-|inProgress|1|正在同步的最后一个同步。|
-|已完成|2|上次同步成功完成。|
-|failed|3|上次同步失败。|
+|inProgress|1|正在进行的最后一次同步。|
+|完成|2|上次同步已成功完成。|
+|失败|3|上次同步失败。|
+
+
 
 
 

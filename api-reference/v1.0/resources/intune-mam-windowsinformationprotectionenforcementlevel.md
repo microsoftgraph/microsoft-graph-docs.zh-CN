@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 40ed4349acfdb31b3cb17d9173d76980dd6da9c6
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 06ed93962dea70b34522764387b50d80e8a69077
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452844"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66730355"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>windowsInformationProtectionEnforcementLevel 枚举类型
 
@@ -23,10 +23,12 @@ WIP 保护强制级别的可能值
 ## <a name="members"></a>成员
 |成员|值|说明|
 |:---|:---|:---|
-|noProtection|0|不强制执行保护|
+|noProtection|0|无保护强制|
 |encryptAndAuditOnly|1|仅加密和审核|
 |encryptAuditAndPrompt|2|加密、审核和提示|
 |encryptAuditAndBlock|3|加密、审核和阻止|
+
+
 
 
 

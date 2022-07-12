@@ -1,16 +1,16 @@
 ---
 title: sectionLinks 资源类型
-description: 用于打开 OneNote 分区的链接。
-localization_priority: Normal
+description: 用于打开 OneNote 部分的链接。
+ms.localizationpriority: medium
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: notes
 author: jewan-microsoft
-ms.openlocfilehash: 9ee3022ede7da1fbbfa6074611f54590e027209c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70b39a9f8046fd1d12d391d169ca0ad0297abf61
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087584"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66723490"
 ---
 # <a name="sectionlinks-resource-type"></a>sectionLinks 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "48087584"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-用于打开 OneNote 分区的链接。
+用于打开 OneNote 部分的链接。
 
 ## <a name="json-representation"></a>JSON 表示形式
 
@@ -42,8 +42,8 @@ ms.locfileid: "48087584"
 ## <a name="properties"></a>属性
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|如果安装了 OneNote 本机客户端，则打开该分区。|
-|oneNoteWebUrl|[externalLink](externallink.md)|打开 web 上的 OneNote 中的部分。|
+|oneNoteClientUrl|[externalLink](externallink.md)|如果已安装 OneNote 本机客户端，则打开该部分。|
+|oneNoteWebUrl|[externalLink](externallink.md)|在OneNote web 版中打开该部分。|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

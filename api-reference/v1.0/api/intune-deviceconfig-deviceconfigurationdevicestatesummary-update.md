@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3a6a4a8a3bb99513bbbce3e26063cbf8506a150
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: ac48aa04e9cddca86ad653bbfa1cd1b3deef62b6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457272"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734520"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>更新 deviceConfigurationDeviceStateSummary
 
@@ -105,6 +105,8 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
+
 
 
 

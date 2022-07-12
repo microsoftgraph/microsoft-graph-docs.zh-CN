@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0966465e9b679a3c9b9225e625be8194f13d32ff
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 054af896642f7d9a6c48e53b950a5a33c0de9abf
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457720"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735241"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>获取 importedWindowsAutopilotDeviceIdentity
 
@@ -88,6 +88,8 @@ Content-Length: 729
   }
 }
 ```
+
+
 
 
 

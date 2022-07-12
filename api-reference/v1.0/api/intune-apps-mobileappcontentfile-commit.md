@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea1f64fadc471208ae2021d02031bb0819451996
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f5eeedc462d5fec8c61a173fa4492f7ba6da16a5
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447796"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733666"
 ---
 # <a name="commit-action"></a>提交操作
 
@@ -87,6 +87,8 @@ Content-length: 399
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

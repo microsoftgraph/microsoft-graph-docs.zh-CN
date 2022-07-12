@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 318fec7d726aebf12f0398efcb609515bea6912f
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a471b6afac926f9bffc002835c8206f061d016ec
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453945"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736536"
 ---
 # <a name="create-windows10customconfiguration"></a>创建 windows10CustomConfiguration
 
@@ -114,6 +114,8 @@ Content-Length: 550
   ]
 }
 ```
+
+
 
 
 
