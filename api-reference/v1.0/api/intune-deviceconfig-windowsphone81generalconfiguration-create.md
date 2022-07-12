@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 969ba7646d8264e0d1c1b07d2706ef2913abe8f2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7cb7ddd3e1f1c1af46352af3a9912a61827af6cb
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454094"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736305"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>创建 windowsPhone81GeneralConfiguration
 
@@ -200,6 +200,8 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
+
 
 
 

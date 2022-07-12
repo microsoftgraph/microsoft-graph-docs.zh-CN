@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5610f1ad7aef3941491c3a108913d4f6a817dbe8
-ms.sourcegitcommit: 95df356bd43b8e5f60fb4c2b62bfa0d5f36a61c2
+ms.openlocfilehash: 7d9b980cace596d62d8deebe86783f268eec221c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65900049"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736417"
 ---
 # <a name="omasettingbase64-resource-type"></a>omaSettingBase64 资源类型
 
@@ -27,9 +27,9 @@ OMA 设置 Base64 定义。
 |属性|类型|说明|
 |:---|:---|:---|
 |displayName|String|显示名称。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|说明|String|说明。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA。 继承自 [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|与 Value 属性关联的文件名 (*.cer、*.crt、*.p7b、*.bin) 。|
+|fileName|String|与 Value 属性 (*.cer | *.crt | *.p7b | *.bin) 。|
 |value|String|值。 （Base64 编码字符串）|
 
 ## <a name="relationships"></a>关系
@@ -52,6 +52,8 @@ OMA 设置 Base64 定义。
   "value": "String"
 }
 ```
+
+
 
 
 

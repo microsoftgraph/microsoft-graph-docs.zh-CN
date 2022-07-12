@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e4bfdaa8f5ca05d08f68dca09dea91a85edf809
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 992fcb9641be8e86f83db34134b20f91a8b9b9c9
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451820"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734625"
 ---
 # <a name="assign-action"></a>分配操作
 
@@ -66,7 +66,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assign
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}/assign
 
 Content-type: application/json
-Content-length: 461
+Content-length: 1050
 
 {
   "mobileAppAssignments": [
@@ -78,8 +78,21 @@ Content-length: 461
         "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       },
       "settings": {
-        "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
-        "vpnConfigurationId": "Vpn Configuration Id value"
+        "@odata.type": "microsoft.graph.win32LobAppAssignmentSettings",
+        "notifications": "showReboot",
+        "restartSettings": {
+          "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+          "gracePeriodInMinutes": 4,
+          "countdownDisplayBeforeRestartInMinutes": 6,
+          "restartNotificationSnoozeDurationInMinutes": 10
+        },
+        "installTimeSettings": {
+          "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+          "useLocalTime": true,
+          "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+          "deadlineDateTime": "2017-01-01T00:00:21.0378955-08:00"
+        },
+        "deliveryOptimizationPriority": "foreground"
       }
     }
   ]
@@ -91,6 +104,8 @@ Content-length: 461
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

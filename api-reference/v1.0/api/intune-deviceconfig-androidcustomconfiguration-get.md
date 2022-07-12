@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0dfa989eed22ea049ca0b998c35f52c29230acf
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a4a095187a8e7af5a8bc51555df99735ca949e41
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453672"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734121"
 ---
 # <a name="get-androidcustomconfiguration"></a>获取 androidCustomConfiguration
 
@@ -88,6 +88,8 @@ Content-Length: 597
   }
 }
 ```
+
+
 
 
 

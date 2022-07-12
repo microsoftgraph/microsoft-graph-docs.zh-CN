@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f1df88b1c9284f8c7cfc2bd0be0486e4de9a86a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0fc07e167846c4951dae12bbe4451b611323fe05
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447725"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736550"
 ---
 # <a name="list-ioscustomconfigurations"></a>列出 iosCustomConfigurations
 
@@ -82,6 +82,8 @@ Content-Length: 524
   ]
 }
 ```
+
+
 
 
 

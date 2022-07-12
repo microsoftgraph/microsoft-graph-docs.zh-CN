@@ -1,16 +1,16 @@
 ---
 title: resourceAction 资源类型
-description: 资源允许和不允许的操作集。
+description: 资源的允许和不允许的操作集。
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf13bb9cf2bbc68aa85197b17c3ddcbe60aceaa7
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 4af98a05b656bacd038fdab4ed483e992faee695
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454451"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736382"
 ---
 # <a name="resourceaction-resource-type"></a>resourceAction 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "60454451"
 
 > **注意：** 适用于 Intune 的 Microsoft Graph API 需要适用于租户的 [活动 Intune 许可证](https://go.microsoft.com/fwlink/?linkid=839381)。
 
-资源允许和不允许的操作集。
+资源的允许和不允许的操作集。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
@@ -47,6 +47,8 @@ ms.locfileid: "60454451"
   ]
 }
 ```
+
+
 
 
 

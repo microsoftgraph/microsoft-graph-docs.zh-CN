@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd3efaa555297e2c92ebf02bce61ef7fce788210
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3b2b0a8d45cfd6380d1228fbdc5fc39248e45be8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60436766"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735171"
 ---
 # <a name="update-roleassignment"></a>更新 roleAssignment
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|实体的键。 此为只读，且自动生成。|
-|displayName|String|角色分配的显示或友好名称。|
+|displayName|字符串|角色分配的显示或友好名称。|
 |说明|String|角色分配的说明。|
 |resourceScopes|String collection|角色作用域成员安全组的 ID 列表。  这些是 Azure Active Directory 中的 ID。|
 
@@ -97,6 +97,8 @@ Content-Length: 242
   ]
 }
 ```
+
+
 
 
 

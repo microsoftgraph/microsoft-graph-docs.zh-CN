@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bbff4124a3ede1da828ac71663deb9a423a2e96e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 045729db40cde9020991558361bc7c84a1442224
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454908"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736529"
 ---
 # <a name="list-windows81compliancepolicies"></a>列出 windows81CompliancePolicies
 
@@ -90,6 +90,8 @@ Content-Length: 879
   ]
 }
 ```
+
+
 
 
 

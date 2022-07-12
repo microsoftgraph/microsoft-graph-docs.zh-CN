@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 513197984bd88200280267c65a3acecbeba53aca
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 725339976f5a23c0d32c2c4f317a0bb4698b257f
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60434927"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735206"
 ---
 # <a name="delete-localizednotificationmessage"></a>删除 localizedNotificationMessage
 
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

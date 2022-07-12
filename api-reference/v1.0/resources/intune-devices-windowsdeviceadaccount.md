@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94ce7543d12bc0fc037b2f54a74315bc13645ace
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 9775b00c02f094561e5b1e187aaf57225af6e81d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453616"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734688"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>windowsDeviceADAccount 资源类型
 
@@ -48,6 +48,8 @@ ms.locfileid: "60453616"
   "userName": "String"
 }
 ```
+
+
 
 
 

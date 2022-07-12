@@ -5,12 +5,12 @@ author: lumine2008
 ms.localizationpriority: medium
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0cfe9f8b9bcb13174076444e63e04dc4dfb5fccb
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 1da24fc3c51ded5d4c970bdf528607760ed9ec6c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59056765"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736354"
 ---
 # <a name="chart-image"></a>图表：图像
 
@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
-| Authorization  | 持有者{令牌}。必需。 |
+| Authorization  | Bearer {token}。必需。 |
 | Workbook-Session-Id  | 确定是否保留更改的工作簿会话 ID。可选。|
 
 ## <a name="path-parameters"></a>路径参数
@@ -51,7 +51,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/ima
 |:---------------|:--------|:----------|
 |height|Int32|生成的图像的所需高度。 可选。|
 |width|Int32|生成的图像的所需宽度。 可选。|
-|fittingMode|string|用于将图表缩放到指定尺寸的方法 (将高度和宽度都设置为) "。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
+|fittingMode|string|如果将高度和宽度都设置为) ，则用于将图表缩放为指定维度的方法 (。  可能的值包括 `Fit`、`FitAndCenter`、`Fill`。|
 
 ## <a name="response"></a>响应
 
@@ -85,11 +85,11 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 对于默认行为，请使用 `Image(width=0,height=0,fittingMode='fit')`。 下面的示例展示了使用默认参数返回的图表图像。
 
-![使用默认高度和宽度的 Excel 图表图像。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
+![显示使用默认设置和拟合模式设置的饼图显示的屏幕截图。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
 若要自定义图像的显示方式，请指定高度、宽度和调整模式。 下面展示了使用 `Image(width=500,height=500,fittingMode='Fill')` 参数检索的同一个图表图像。
 
-![使用默认高度和宽度的 Excel 图表图像。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
+![显示使用宽度和高度设置为 500 并设置为填充的拟合模式显示的饼图的屏幕截图。](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

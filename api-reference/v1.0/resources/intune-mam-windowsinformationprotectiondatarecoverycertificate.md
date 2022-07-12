@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f1c018f84840caa53dda967e4a4914d080c5b86
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a6c9bbb289999a8079cf0d430d347deecc7334b4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454782"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734954"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>windowsInformationProtectionDataRecoveryCertificate 资源类型
 
@@ -47,6 +47,8 @@ Windows 信息保护 DataRecoveryCertificate
   "certificate": "binary"
 }
 ```
+
+
 
 
 

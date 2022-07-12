@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72fd03ace8ede4adeb2f39e6d0fef4e1d7636d85
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 014198d37e028b0705d035688a004ea6b0ab84d4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447978"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734758"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>iosNotificationSettings 资源类型
 
@@ -57,6 +57,8 @@ ms.locfileid: "60447978"
   "soundsEnabled": true
 }
 ```
+
+
 
 
 

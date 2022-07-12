@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ca338018b986338fd9a69a40bc3ca9a317a5cf6
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 2e8fe01f426f8cf00fe2c5852c3aa2643db07b90
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60440008"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736634"
 ---
 # <a name="delete-mobileappcontent"></a>删除 mobileAppContent
 
@@ -65,6 +65,8 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

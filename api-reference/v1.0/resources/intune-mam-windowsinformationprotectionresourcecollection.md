@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36f8e731fcabd12320c114133b6ad32e8aa0c787
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: f909eabe7c8bc21615b6ed1d92aece640f1153ba
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455202"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734940"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>windowsInformationProtectionResourceCollection 资源类型
 
@@ -45,6 +45,8 @@ Windows 信息保护资源集合
   ]
 }
 ```
+
+
 
 
 

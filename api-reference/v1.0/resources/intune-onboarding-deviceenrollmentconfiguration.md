@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 673179b3009a0bd3650e6a8c389cfc766988d9dc
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: c1586813b5b8e83919cf2e2aef4f7c1bfa294d05
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450184"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735983"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>deviceEnrollmentConfiguration 资源类型
 
@@ -31,12 +31,12 @@ ms.locfileid: "60450184"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|帐户的唯一标识符|
-|displayName|String|设备显示名称配置|
+|id|字符串|帐户的唯一标识符|
+|displayName|字符串|设备注册配置的显示名称|
 |说明|String|设备注册配置的说明|
-|priority|Int32|如果用户位于分配了注册配置的多个组中，则使用优先级。 用户仅受优先级值最低的配置使用。|
-|createdDateTime|DateTimeOffset|设备注册配置的创建日期时间（UTC）|
-|lastModifiedDateTime|DateTimeOffset|设备注册配置的上次修改日期时间（UTC）|
+|priority|Int32|当用户存在于分配了注册配置的多个组中时，将使用优先级。 用户仅受优先级最低的配置的约束。|
+|createdDateTime|DateTimeOffset|在 UTC 中创建设备注册配置的日期时间|
+|lastModifiedDateTime|DateTimeOffset|设备注册配置的 UTC 中上次修改的日期时间|
 |version|Int32|设备注册配置的版本|
 
 ## <a name="relationships"></a>关系
@@ -64,6 +64,8 @@ ms.locfileid: "60450184"
   "version": 1024
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75e46e4a4b85d1575779b86243ec3bf8aabbfa87
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: a21035ddfe545dccd69e0e83e28aa75657cb007a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60452529"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735374"
 ---
 # <a name="statemanagementsetting-enum-type"></a>stateManagementSetting 枚举类型
 
@@ -24,8 +24,10 @@ ms.locfileid: "60452529"
 |成员|值|说明|
 |:---|:---|:---|
 |notConfigured|0|未配置。|
-|blocked|1|已阻止。|
-|allowed|2|允许。|
+|封锁|1|封锁。|
+|允许|2|允许。|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 013936aa20836979a5ebea9c0e92cceb4d503c4c
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 10d0b1a7f65602452c7cdd1480f06035cc8bd36a
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450901"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734842"
 ---
 # <a name="get-organization"></a>获取组织
 
@@ -76,6 +76,8 @@ Content-Length: 176
   }
 }
 ```
+
+
 
 
 

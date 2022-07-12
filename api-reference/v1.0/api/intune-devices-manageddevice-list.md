@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4ca8337ccbe446ba66ff60abf365f099f0ec7c3
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 32c9d575983eabf7c83c8b598dae0ca5b13dbbfd
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445561"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735829"
 ---
 # <a name="list-manageddevices"></a>列出 managedDevices
 
@@ -177,6 +177,8 @@ Content-Length: 5315
   ]
 }
 ```
+
+
 
 
 

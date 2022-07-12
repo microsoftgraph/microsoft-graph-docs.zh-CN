@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72e4581ded72b9e22eba3fa0d10382ed1b3a5101
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: efaf3832d6fd6a77f4a7f92dd208f8ffb02988cc
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445494"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735381"
 ---
 # <a name="reportroot-resource-type"></a>reportRoot 资源类型
 
@@ -50,6 +50,8 @@ ms.locfileid: "60445494"
   "id": "String (identifier)"
 }
 ```
+
+
 
 
 

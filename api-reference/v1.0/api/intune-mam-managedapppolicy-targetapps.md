@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06d556f4364a7ed26ae93761a44d264ece155f8a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: dbc0bcf6bcac314f1e36eeb891111798e7afc604
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60445814"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734009"
 ---
 # <a name="targetapps-action"></a>targetApps 操作
 
@@ -90,6 +90,8 @@ Content-length: 335
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

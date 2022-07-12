@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dfc12dc4bfe9d4a16b63c838bef8bd5e3513e198
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 15b0e90e851dd25452a9472829b020588bbcd346
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447950"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736410"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>deviceManagementPartnerTenantState 枚举类型
 
@@ -24,11 +24,13 @@ ms.locfileid: "60447950"
 |成员|值|说明|
 |:---|:---|:---|
 |unknown|0|合作伙伴状态未知。|
-|不可用|1|合作伙伴不可用。|
-|enabled|2|启用合作伙伴。|
-|已终止|3|合作伙伴连接已终止。|
-|rejected|4 |合作伙伴邮件被拒绝。|
-|unresponsive|5|合作伙伴无响应。|
+|无法|1|合作伙伴不可用。|
+|enabled|2|已启用合作伙伴。|
+|终止|3|合作伙伴连接已终止。|
+|拒绝|4|合作伙伴消息被拒绝。|
+|反应 迟钝|5|合作伙伴无响应。|
+
+
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa3096ce28ba55a8d72a9e18852977ccfd462c2a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 63748f8578d0024f67bc450944b755d61296f1c2
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60457398"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734247"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>windowsUpdateActiveHoursInstall 资源类型
 
@@ -46,6 +46,8 @@ ms.locfileid: "60457398"
   "activeHoursEnd": "String (time of day)"
 }
 ```
+
+
 
 
 

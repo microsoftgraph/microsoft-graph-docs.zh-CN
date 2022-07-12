@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4bff1399e72339e269deec70dab147e89e8634e
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 6aee398549846a0488f87c0e9dcdeddc913206c6
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60450753"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736439"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>iosHomeScreenItem 资源类型
 
@@ -41,6 +41,8 @@ ms.locfileid: "60450753"
   "displayName": "String"
 }
 ```
+
+
 
 
 

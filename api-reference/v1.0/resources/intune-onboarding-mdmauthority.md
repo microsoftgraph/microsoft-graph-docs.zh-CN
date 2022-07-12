@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b0dd3db25f84a05f8346510ad143f2d1d8be797
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 169945ea8a4cab5be9e0e3e8b8010b1277af41b8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60449458"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735976"
 ---
 # <a name="mdmauthority-enum-type"></a>mdmAuthority 枚举类型
 
@@ -25,8 +25,10 @@ ms.locfileid: "60449458"
 |:---|:---|:---|
 |unknown|0|未知|
 |intune|1|Intune|
-|sccm|2|SCCM|
+|Sccm|2|SCCM|
 |office365|3|Office365|
+
+
 
 
 

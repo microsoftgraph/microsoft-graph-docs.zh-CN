@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7eb2c4e78f2e2bc0c966b709ea9ef237c7965e89
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 0c59f6245e70849a761fd7907114b73723dd1dc4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60447838"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736025"
 ---
 # <a name="managedmobileapp-resource-type"></a>managedMobileApp 资源类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "60447838"
 |属性|类型|说明|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|包含其操作系统类型的应用标识符。|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |version|String|实体的版本。|
 
 ## <a name="relationships"></a>关系
@@ -58,6 +58,8 @@ ms.locfileid: "60447838"
   "version": "String"
 }
 ```
+
+
 
 
 

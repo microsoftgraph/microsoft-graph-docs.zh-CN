@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 525ad63ee636e9cce161e760d6f320a15c122592
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 22a9d1ba4f6f109fe7e62018d8aec104e188607b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454416"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735528"
 ---
 # <a name="list-deviceenrollmentlimitconfigurations"></a>列出 deviceEnrollmentLimitConfigurations
 
@@ -81,6 +81,8 @@ Content-Length: 446
   ]
 }
 ```
+
+
 
 
 

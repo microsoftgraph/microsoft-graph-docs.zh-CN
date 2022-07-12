@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2eebc9d8b84beff27d0f98bcb3a125d714ad0557
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 27b05a8cc2b7079aa9151e0cd3a950ce3b704cda
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364972"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735101"
 ---
 # <a name="get-callrecord"></a>获取 callRecord
 
@@ -20,7 +20,7 @@ ms.locfileid: "65364972"
 
 可通过两种方法获取 **callRecord** 的 **ID**：
 
-* 订阅到终结点的`/communications/callRecords`[更改通知](/graph/api/resources/webhooks?view=graph-rest-1.0)。
+* 订阅到终结点的`/communications/callRecords`[更改通知](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true)。
 * 使用 [调用](../resources/call.md)的 **callChainId** 属性。 调用记录仅在关联的调用完成后才可用。
 
 ## <a name="permissions"></a>权限

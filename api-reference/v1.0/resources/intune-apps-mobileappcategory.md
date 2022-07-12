@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 30a46d71a5cb808444df73d0e77dfaf335aad698
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 82a1c3f835441f79acb34d8e4c2ac2fe3510d1a4
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455483"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735010"
 ---
 # <a name="mobileappcategory-resource-type"></a>mobileAppCategory 资源类型
 
@@ -32,7 +32,7 @@ ms.locfileid: "60455483"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|实体的键。|
+|id|字符串|实体的键。|
 |displayName|String|应用类别的名称。|
 |lastModifiedDateTime|DateTimeOffset|上次修改 mobileAppCategory 的日期和时间。|
 
@@ -55,6 +55,8 @@ ms.locfileid: "60455483"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

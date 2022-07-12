@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f974ae033389deba42a838f122e2b2bb200db84
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 7c0c57579308b8b0bbdaaf6c3913235a2780d709
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60454775"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735969"
 ---
 # <a name="organization-resource-type"></a>组织资源类型
 
@@ -52,6 +52,8 @@ ms.locfileid: "60454775"
   "mobileDeviceManagementAuthority": "String"
 }
 ```
+
+
 
 
 

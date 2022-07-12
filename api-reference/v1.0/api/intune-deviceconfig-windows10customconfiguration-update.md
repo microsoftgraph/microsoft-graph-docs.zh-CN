@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4aa5dbb5e5473fd1580886c2f783c385fd7263ce
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 708d6f3ea6fbb25f2420f8e416642903d6f3996c
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455525"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736333"
 ---
 # <a name="update-windows10customconfiguration"></a>更新 windows10CustomConfiguration
 
@@ -114,6 +114,8 @@ Content-Length: 550
   ]
 }
 ```
+
+
 
 
 

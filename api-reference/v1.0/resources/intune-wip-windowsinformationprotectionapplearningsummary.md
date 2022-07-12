@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b733ee53a31f75a49ea89a8d571b444774da1df
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 09ba70461d4553222894ef19f158d880c361126b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60456648"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735955"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>windowsInformationProtectionAppLearningSummary 资源类型
 
@@ -32,7 +32,7 @@ Windows 信息保护应用学习摘要实体。
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
+|id|字符串|WindowsInformationProtectionAppLearningSummary 的唯一标识符。|
 |applicationName|String|应用程序名称|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|应用程序类型。 可取值为：`universal`、`desktop`。|
 |deviceCount|Int32|设备计数|
@@ -57,6 +57,8 @@ Windows 信息保护应用学习摘要实体。
   "deviceCount": 1024
 }
 ```
+
+
 
 
 

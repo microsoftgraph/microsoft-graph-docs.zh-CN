@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1d0782601aaff157c04a6e33f29f651f1c666ba
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 39901d5c2b33b2d5d4852cd195991c9f3df541d8
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453026"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735486"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>更新 windowsInformationProtectionAppLearningSummary
 
@@ -93,6 +93,8 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
+
 
 
 

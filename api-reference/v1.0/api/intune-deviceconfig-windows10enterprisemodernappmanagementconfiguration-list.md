@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e6383f4422a38b7389a4a6e76ba0556c23bf6a2
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 758e52670411a254cfe6ac10011f57155b281c88
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60446040"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736865"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>列出 windows10EnterpriseModernAppManagementConfigurations
 
@@ -80,6 +80,8 @@ Content-Length: 459
   ]
 }
 ```
+
+
 
 
 

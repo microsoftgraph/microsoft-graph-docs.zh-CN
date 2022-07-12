@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3ef41a2b92810294dae182372fa7dc47bbbb11a
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 3dcfc024611e16d0e6c5f69738c7305b1a7a038d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60453917"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66736326"
 ---
 # <a name="list-windows10mobilecompliancepolicies"></a>列出 windows10MobileCompliancePolicies
 
@@ -95,6 +95,8 @@ Content-Length: 1089
   ]
 }
 ```
+
+
 
 
 

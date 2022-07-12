@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d9f27229f4c6995e2689f60f4b59e7a57f759e07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: e0aee31f6caed7110c5d3d8fbff8f7009751af9b
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60455926"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66733939"
 ---
 # <a name="getdevicemanagementintentsettingsreport-action"></a>getDeviceManagementIntentSettingsReport 操作
 
@@ -64,7 +64,7 @@ POST /deviceManagement/reports/getDeviceManagementIntentSettingsReport
 
 
 ## <a name="response"></a>响应
-如果成功，此操作在响应 `200 OK` 正文中返回 响应代码和 Stream。
+如果成功，此操作在响应正文中返回 `200 OK` 响应代码和流。
 
 ## <a name="example"></a>示例
 
@@ -106,6 +106,8 @@ Content-Length: 111
   "value": "Z2V0RGV2aWNlTWFuYWdlbWVudEludGVudFNldHRpbmdzUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc2OTIyMjczOA=="
 }
 ```
+
+
 
 
 

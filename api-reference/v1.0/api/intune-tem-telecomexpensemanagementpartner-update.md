@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29bd4b968e21296d36e9bbd285d4ee9e076ada07
-ms.sourcegitcommit: cd8611227a84db21449ab0ad40bedb665dacb9bb
+ms.openlocfilehash: 68983da8725ca148e3d7d57e1fa762525af4a6aa
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60451217"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66734772"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>更新 telecomExpenseManagementPartner
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManageme
 |属性|类型|说明|
 |:---|:---|:---|
 |id|String|TEM 合作伙伴的唯一标识符。|
-|displayName|String|TEM 合作伙伴的显示名称。|
+|displayName|字符串|TEM 合作伙伴的显示名称。|
 |url|String|TEM 合作伙伴的管理控制面板的 URL，管理员可以在其中配置其 TEM 服务。|
 |appAuthorized|Boolean|是否已授权合作伙伴的 AAD 应用访问 Intune。|
 |enabled|Boolean|当前是启用还是禁用了 Intune 的 TEM 服务连接。|
@@ -99,6 +99,8 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
 
 
 
