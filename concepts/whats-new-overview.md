@@ -3,12 +3,12 @@ title: Microsoft Graph 新增功能
 description: 查看过去两个月 Microsoft Graph 中的新增功能、早期版本中添加的内容以及如何分享你的想法的亮点。
 author: angelgolfer-ms
 ms.localizationpriority: high
-ms.openlocfilehash: e08c148c1898633f07412a94bf94b11e0d650f98
-ms.sourcegitcommit: 005e9d483d03ed048611ffd180a92930afff4e42
+ms.openlocfilehash: 26b4024a3fd23fb2ea9f2ee04a02894b16db6e0d
+ms.sourcegitcommit: 7c1f2df6599638963e28dc89491eafb4b81f4e8e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66646141"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66735332"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Microsoft Graph 新增功能
 
@@ -113,7 +113,7 @@ ms.locfileid: "66646141"
 
 我们可以通过以下方式进行参与：
 
-- 是否有希望 Microsoft Graph 支持的方案？ 在 [Microsoft 技术社区](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph)中建议新功能并进行投票。
+- 是否有希望 Microsoft Graph 支持的方案？ 在 [Microsoft 反馈门户](https://aka.ms/graphfeedback) 提出有关新功能的建议并进行投票。
     某些新功能来源于开发人员社区的热门请求。 Microsoft Graph 团队会定期评估客户需求，并按以下顺序发布新功能：
 
     1. 处于 **_预览_** 状态的 Debut。 任何相关的 REST API 更新都在 beta 终结点 (`https://graph.microsoft.com/beta`) 中。  
