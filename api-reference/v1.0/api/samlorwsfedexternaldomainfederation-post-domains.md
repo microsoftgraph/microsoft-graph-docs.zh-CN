@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 2b88d4b2a4cebcb0ef895b65e809b84d836d9641
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 6672ffdb619adafff5e9ec8ed6220b8c72a0d48d
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65314622"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768180"
 ---
 # <a name="create-externaldomainname"></a>创建 externalDomainName
 命名空间：microsoft.graph
@@ -22,11 +22,11 @@ ms.locfileid: "65314622"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.ReadWrite.Alll|
 
-工作或学校帐户需要属于以下[Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 [Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供者管理员

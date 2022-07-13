@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5883640754dfc1256bd0293556ea766e48b613c3
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 4f2fd1bce0619204237b8a3d49f7643f20b4a3fa
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820831"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768299"
 ---
 # <a name="update-todotask"></a>更新 todoTask
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "65820831"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|应用|不支持|
+|Application|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -59,6 +59,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 |isReminderOn|Boolean|如果设置警报以提醒用户有任务，则设置为 true。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|任务计划启动的指定时区中的日期。|
 |状态|任务状态|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简要说明。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。|

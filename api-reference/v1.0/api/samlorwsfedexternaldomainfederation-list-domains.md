@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 803e67770dc38851e96f2c69a78568b855c7f7a3
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 5d7adcc1861baa3fa42cd630f3b78cf0e0f7140a
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315659"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768131"
 ---
 # <a name="list-domains"></a>列出域
 命名空间：microsoft.graph
@@ -23,11 +23,11 @@ ms.locfileid: "65315659"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.Read.All、Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.Read.All、Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于以下[Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 [Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供者管理员

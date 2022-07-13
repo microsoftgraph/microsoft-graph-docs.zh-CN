@@ -1,8 +1,8 @@
 ### YamlMime:Tutorial
-title: 生成首个Microsoft Graph 数据连接应用程序
+title: 生成第一个 Microsoft Graph Data Connect 应用程序
 metadata:
-  title: 生成首个Microsoft Graph 数据连接应用程序
-  description: 本教程介绍如何生成首个电子邮件Microsoft Graph 数据连接应用程序。
+  title: 生成第一个 Microsoft Graph Data Connect 应用程序
+  description: 在本教程中，你将生成第一个用于电子邮件指标的 Microsoft Graph Data Connect 应用程序。
   audience: Developer
   level: Beginner
   displayType: one-column
@@ -10,41 +10,41 @@ metadata:
   author: fercobo-msft
   ms.topic: tutorial
   ms.custom: scenarios:getting-started, languages:ASP.NET
-  ms.openlocfilehash: af54756e2ec275210cb621e8e118f4fdd8fbd43f1a9f10065fdd04aa300d133a
-  ms.sourcegitcommit: 986c33b848fa22a153f28437738953532b78c051
+  ms.openlocfilehash: 9dd17b419898fe7e7355a740521263780fdef13b
+  ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "54146520"
+  ms.lasthandoff: 07/13/2022
+  ms.locfileid: "66768192"
 items:
-- title: 生成首个Microsoft Graph 数据连接应用程序
+- title: 生成第一个 Microsoft Graph Data Connect 应用程序
   durationInMinutes: 10
   content: >
-    [!INCLUDE [](data-connect-quickstart-01.md)]
-- title: 设置租户Microsoft 365并启用Microsoft Graph 数据连接
+    [!INCLUDE [](../includes/data-connect-quickstart-01.md)]
+- title: 设置 Microsoft 365 租户并启用 Microsoft Graph Data Connect
   durationInMinutes: 5
   content: >
-    [!INCLUDE [](data-connect-quickstart-02.md)]
-- title: 设置Azure Active Directory应用注册
+    [!INCLUDE [](../includes/data-connect-quickstart-02.md)]
+- title: 设置 Azure Active Directory 应用注册
   durationInMinutes: 10
   content: >
-    [!INCLUDE [](data-connect-quickstart-03.md)]
-- title: 设置Azure 存储资源
+    [!INCLUDE [](../includes/data-connect-quickstart-03.md)]
+- title: 设置 Azure 存储资源
   durationInMinutes: 10
   content: >
-    [!INCLUDE [](data-connect-quickstart-04.md)]
-- title: 设置 Azure 数据工厂资源
+    [!INCLUDE [](../includes/data-connect-quickstart-04.md)]
+- title: 设置Azure 数据工厂资源
   durationInMinutes: 15
   content: >
-    [!INCLUDE [](data-connect-quickstart-05.md)]
-- title: 使用 Microsoft 365 管理 和 PowerShell 监视数据许可请求
+    [!INCLUDE [](../includes/data-connect-quickstart-05.md)]
+- title: 使用 Microsoft 365 管理 Center 和 PowerShell 监视数据同意请求
   durationInMinutes: 5
   content: >
-    [!INCLUDE [](data-connect-quickstart-06.md)]
-- title: 创建 ASP.NET Web 应用程序以处理导出的数据
+    [!INCLUDE [](../includes/data-connect-quickstart-06.md)]
+- title: 创建 ASP.NET Web 应用程序来处理导出的数据
   durationInMinutes: 25
   content: >
-    [!INCLUDE [](data-connect-quickstart-07.md)]
+    [!INCLUDE [](../includes/data-connect-quickstart-07.md)]
 - title: 恭喜！
   durationInMinutes: 0
-  content: '[!INCLUDE [](data-connect-quickstart-08.md)]'
+  content: '[!INCLUDE [](../includes/data-connect-quickstart-08.md)]'

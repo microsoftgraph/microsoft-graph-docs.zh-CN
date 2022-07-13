@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb26739dd736e95c4714af0de278f5a0b1be1e5b
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 0e1756c7eecc4341d2c72bc0fac5c04d3e781343
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821090"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767991"
 ---
 # <a name="get-todotask"></a>获取 todoTask
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "65821090"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|应用|不支持|
+|Application|不支持|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -126,6 +126,10 @@ Content-Type: application/json
     },
     "dueDateTime": {
         "dateTime": "2020-08-25T04:00:00.0000000",
+        "timeZone": "UTC"
+    },
+    "startDateTime": {
+        "dateTime": "2020-06-23T04:00:00.0000000",
         "timeZone": "UTC"
     }
 }

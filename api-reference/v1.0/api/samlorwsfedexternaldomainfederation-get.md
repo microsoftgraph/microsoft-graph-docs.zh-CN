@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: c0ba873ada25f1e39362e8f62f7d1cef447ba9de
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 4f78d8e132755c4e63a1fa6061a125e6b91709da
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65315374"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768250"
 ---
 # <a name="get-samlorwsfedexternaldomainfederation"></a>获取 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -23,11 +23,11 @@ ms.locfileid: "65315374"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.Read.All、Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.Read.All、Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于以下[Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 [Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
 * 外部标识提供者管理员

@@ -5,25 +5,25 @@ author: jpettere
 ms.localizationpriority: medium
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 8c78950129ccb0c469b505970c696a4b57236e9d
-ms.sourcegitcommit: 94741ff7f61f20a39dacfa6ce451a77ca02dd68a
+ms.openlocfilehash: 5812fb25f03a1bffde622ac1461738754b060b65
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62047103"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768117"
 ---
 # <a name="update-settings"></a>更新设置
 
 命名空间：microsoft.graph
 
-更新 [userSettings 对象](../resources/usersettings.md) 的属性。 根据用户的偏好或组织策略，同一组织中用户可以具有不同的设置。 若要获取用户当前设置，请参阅 [当前用户设置](usersettings-get.md)。 
+更新 [userSettings 对象的](../resources/usersettings.md) 属性。 同一组织中的用户可以根据首选项或组织策略具有不同的设置。 若要获取用户当前设置，请参阅 [当前用户设置](usersettings-get.md)。 
 
 ### <a name="batch-request"></a>批量请求
 
-也可以选择从组织中退出多个Delve并通过批处理请求禁用他们对整个组织的内容相关性的贡献。
-若要了解更多信息，请参阅 [JSON 批处理](/graph/json-batching)。
+也可以从 Delve 中选择退出多个用户，并通过批量请求禁用他们对整个组织内容相关性的贡献。
+若要了解详细信息，请参阅 [JSON 批处理](/graph/json-batching)。
 
->**重要** 提示：只有组织管理 [角色](/exchange/permissions/permissions?view=exchserver-2019#role-groups) 组的成员才能更新多个用户。 
+>**重要** 提示：只有 [组织管理](/exchange/permissions/permissions?view=exchserver-2019#role-groups&preserve-view=true) 角色组的成员才能更新多个用户。 
 
 
 
@@ -62,13 +62,13 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 | 属性     | 类型   |说明|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|布尔值|设置为 true 将禁用委派访问[Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) API，并禁用用户对 Office Delve 中的文档的访问。 设置为 true 还会影响 Microsoft 365 中显示的内容的相关性-例如，SharePoint Home 中的建议网站和 OneDrive for Business 中的发现视图显示不太相关的结果。 此设置反映控件在[控件Office Delve。](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout)|
+|contributionToContentDiscoveryDisabled|布尔值|设置为 true 会禁用对趋势 API [的](/graph/api/resources/insights-trending?view=graph-rest-1.0&preserve-view=true) 委托访问，并禁用对用户 Office Delve 中文档的访问权限。 设置为 true 也会影响 Microsoft 365 中显示的内容的相关性 ，例如，SharePoint 主页中的建议网站和OneDrive for Business中的发现视图显示不太相关的结果。 此设置反映 [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout) 中的控件状态。|
 
 ## <a name="example"></a>示例 
 
 ##### <a name="request"></a>请求
 
-下面是一个示例请求，请求如何选择退出用户，Delve并禁用他针对整个组织的内容相关性的贡献。
+下面是一个示例请求，说明如何从 Delve 中选择退出用户，并禁用他对整个组织内容相关性的贡献。
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/settings

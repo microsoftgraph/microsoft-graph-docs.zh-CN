@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 53d95a9f40ba3253c3c6cc7fbc8133a787de0e09
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 43614ae06988fe31ee3b2a8eb4013f02befa7b40
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62099022"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768306"
 ---
 # <a name="create-samlorwsfedexternaldomainfederation"></a>创建 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -25,14 +25,14 @@ ms.locfileid: "62099022"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.Read.All、Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.Read.All、Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -42,7 +42,7 @@ ms.locfileid: "62099022"
 -->
 
 ``` http
-POST /directory/federationConfigurations
+POST /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -56,20 +56,20 @@ POST /directory/federationConfigurations
 
 在请求正文中，提供 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象的 JSON 表示形式。
 
-下表显示创建 [samlOrWsFedExternalDomainFederation 时所需的属性](../resources/samlorwsfedexternaldomainfederation.md)。
+下表显示了创建 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|基于显示名称 SAML/WS-Fed 的标识提供程序的名称。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。|
+|displayName|String|基于 SAML/WS-Fed 的标识提供者的显示名称。 继承自 [identityProviderBase](../resources/identityproviderbase.md)。|
 |issuerUri|String|联合服务器的颁发者 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
-|metadataExchangeUri|String|用于从富客户端应用程序进行身份验证的元数据交换终结点的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
-|passiveSignInUri|String|登录服务时基于 Web 的客户端定向到Azure AD URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
-|preferredAuthenticationProtocol|String|首选身份验证协议。 支持的值包括 `saml` 或 `wsfed` 。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
-|signingCertificate|String|用于对传递到证书的令牌进行签名的当前Microsoft 标识平台。 证书的格式设置为联合 IdP 令牌签名证书的公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。  <br/><br/> 此属性用于以下方案： <ul><li> 如果在自动注册更新之外需要滚动 <li>正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后联合身份验证属性中不存在新的令牌签名证书。 </ul> <br/><br/> Azure AD通过自动注册过程更新证书，其中它尝试从联合身份验证服务元数据检索新证书，即当前证书到期前 30 天。 如果新证书不可用，Azure AD每天监视元数据，并且将在新证书可用时更新域的联盟设置。|
+|metadataExchangeUri|String|用于从丰富的客户端应用程序进行身份验证的元数据交换终结点的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
+|passiveSignInUri|字符串|登录到 Azure AD 服务时基于 Web 的客户端定向到的 URI。 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
+|preferredAuthenticationProtocol|String|首选身份验证协议。 支持的值包括 `saml` 或 `wsfed`. 继承自 [samlOrWsFedProvider](../resources/samlorwsfedprovider.md)。|
+|signingCertificate|String|用于对传递给Microsoft 标识平台的令牌进行签名的当前证书。 该证书的格式设置为联合 IdP 令牌签名证书公共部分的 Base64 编码字符串，并且必须与 X509Certificate2 类兼容。  <br/><br/> 此属性在以下方案中使用： <ul><li> 如果自动滚动更新外部需要滚动更新 <li>正在设置新的联合身份验证服务 <li> 如果更新联合身份验证服务证书后，联合身份验证属性中不存在新的令牌签名证书。 </ul> <br/><br/> Azure AD 通过自动滚动更新过程更新证书，在此过程中，Azure AD 会尝试在当前证书过期前 30 天从联合身份验证服务元数据中检索新证书。 如果新证书不可用，Azure AD 将每天监视元数据，并在有新证书可用时更新域的联合身份验证设置。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `201 Created` [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -83,7 +83,7 @@ POST /directory/federationConfigurations
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/directory/federationConfigurations
+POST https://graph.microsoft.com/beta/directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomainFederation
 Content-Type: application/json
 
 {

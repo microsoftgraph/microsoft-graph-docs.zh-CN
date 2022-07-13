@@ -5,12 +5,12 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: cd92f1d919f3fc5938e2f994255f02f11849330f
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 251f16e3a30372819a8800a87ac62f4ae64e1401
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62125563"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768327"
 ---
 # <a name="delete-samlorwsfedexternaldomainfederation"></a>删除 samlOrWsFedExternalDomainFederation
 命名空间：microsoft.graph
@@ -25,14 +25,14 @@ ms.locfileid: "62125563"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于以下角色Azure Active Directory (Azure AD) [之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 [Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -62,7 +62,6 @@ DELETE directory/federationConfigurations/{samlOrWsFedExternalDomainFederation I
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -99,7 +98,6 @@ DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db0
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>响应
 

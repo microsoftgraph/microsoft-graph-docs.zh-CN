@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: b7c78f1a792930d701cc07666c3c95d4d77803bf
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 187ac1380b20726300d7a9134b866a63973d818e
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477495"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768166"
 ---
 # <a name="update-serviceprincipal"></a>更新 servicePrincipal
 
@@ -47,7 +47,7 @@ PATCH /servicePrincipals/{id}
 | 属性     | 类型 |说明|
 |:---------------|:--------|:----------|
 |accountEnabled|Boolean| 如果服务主体帐户已启用，则为 **true**；否则，为 **false**。|
-|addIns| [addIn](../resources/addin.md) | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/?view=odsp-graph-online)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
+|addIns| [addIn](../resources/addin.md) | 定义使用服务可用于调用特定上下文中的应用的自定义行为。 例如，呈现文件流的应用程序可能会为其“FileHandler”功能[设置 addIns 属性](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true)。 这将使 Microsoft 365 之类的服务在用户正在处理的文档上下文中调用应用程序。|
 |alternativeNames|字符串集合| 用于按订阅、标识资源组和[托管标识](/azure/active-directory/managed-identities-azure-resources/overview)的完整资源 ID 检索服务主体。|
 |appRoleAssignmentRequired|Boolean|指定在 Azure AD 在向应用程序签发用户或访问令牌之前用户或组是否需要 **appRoleAssignment**。不可为 null。 |
 |appRoles|[appRole](../resources/approle.md) 集合|关联应用程序公开的应用程序角色。 有关详细信息，请参阅 [应用程序](../resources/application.md)资源上的 **appRoles** 属性定义。 不可为空。 |

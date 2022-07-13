@@ -5215,7 +5215,7 @@ items:
                         href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
                   - name: 版本升级许可证类型
                     href: resources/intune-deviceconfig-editionupgradelicensetype.md
-                  - name: 电子邮件证书类型
+                  - name: Email证书类型
                     href: resources/intune-deviceconfig-emailcertificatetype.md
                   - name: 电子邮件同步持续时间
                     href: resources/intune-deviceconfig-emailsyncduration.md
@@ -10493,7 +10493,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 设置审阅状态
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: 疑难解答
+                  - name: 排除故障
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10888,7 +10888,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: Estado de funcionamento dos serviços问题
+              - name: 服务运行状况问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题
@@ -12382,6 +12382,13 @@ items:
                     href: api/oauth2permissiongrant-delete.md
                   - name: 获取 Delta
                     href: api/oauth2permissiongrant-delta.md
+              - name: '外部标识策略 (预览) '
+                href: resources/externalidentitiespolicy.md
+                items:
+                  - name: 获取
+                    href: api/externalidentitiespolicy-get.md
+                  - name: 更新
+                    href: api/externalidentitiespolicy-update.md
               - name: 标识保护
                 href: resources/identityprotection-overview.md
                 items:
@@ -12668,7 +12675,7 @@ items:
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-                      - name: 电子邮件策略
+                      - name: Email策略
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
                           - name: 获取
@@ -14178,7 +14185,7 @@ items:
                     href: resources/callactivitystatistics.md
                   - name: 聊天统计信息类型
                     href: resources/chatactivitystatistics.md
-                  - name: 电子邮件统计信息类型
+                  - name: Email统计信息类型
                     href: resources/emailactivitystatistics.md
                   - name: 焦点统计信息类型
                     href: resources/focusactivitystatistics.md
@@ -14612,7 +14619,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: 获取活动计数
                     href: api/reportroot-getyammergroupsactivitycounts.md
-          - name: Microsoft Defender for Office 365 安全报告
+          - name: Microsoft Defender for Office 365安全报告
             items:
               - name: 攻击模拟报告
                 displayname: Attack simulation and training
@@ -15681,6 +15688,10 @@ items:
                 href: api/channel-update-members.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
+              - name: 删除邮件
+                href: api/chatmessage-softdelete.md
+              - name: 撤消消息删除
+                href: api/chatmessage-undosoftdelete.md
               - name: 检查用户访问权限
                 href: api/channel-doesuserhaveaccess.md
               - name: 列出共享频道的团队
@@ -15759,6 +15770,10 @@ items:
                 href: api/chatmessage-post-replies.md
               - name: 更新邮件
                 href: api/chatmessage-update.md
+              - name: 删除邮件
+                href: api/chatmessage-softdelete.md
+              - name: 撤消消息删除
+                href: api/chatmessage-undosoftdelete.md
               - name: 在所有通道中获取消息
                 href: api/channel-getallmessages.md
               - name: 在所有聊天中获取消息

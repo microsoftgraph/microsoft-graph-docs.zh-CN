@@ -1,16 +1,16 @@
 ---
 title: todoTaskList： delta
-description: 获取一组在 微软待办 中添加、删除或删除的 todoTaskList 资源。
+description: 获取一组在 Microsoft To Do 中添加、删除或删除的 todoTaskList 资源。
 ms.localizationpriority: medium
 author: avijityadav
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bc9da9fbc462a4056504d982d41ff4d63c2835c7
-ms.sourcegitcommit: 972d83ea471d1e6167fa72a63ad0951095b60cb0
+ms.openlocfilehash: ff97063f53297ca2457252aae5dec3b1dfd42c18
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65246795"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767946"
 ---
 # <a name="todotasklist-delta"></a>todoTaskList： delta
 
@@ -18,11 +18,11 @@ ms.locfileid: "65246795"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取一组在 微软待办 中添加、删除或删除的 [todoTaskList](../resources/todotasklist.md) 资源。
+获取一组在 Microsoft To Do 中添加、删除或删除的 [todoTaskList](../resources/todotasklist.md) 资源。
 
 **todoTaskList** 的 **增量** 函数调用类似于 GET 请求，只是通过在其中一个或多个调用中适当应用 [状态令牌](/graph/delta-query-overview)，可以查询 **todoTaskList** 中的增量更改。 这样便可以维护和同步用户 **todoTaskList** 的本地存储，而无需每次从服务器提取所有 **todoTaskList** 。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 
@@ -30,7 +30,7 @@ ms.locfileid: "65246795"
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Tasks.ReadWrite    |
 |委派（个人 Microsoft 帐户） | Tasks.ReadWrite    |
-|应用 | 不支持 |
+|Application | 不支持 |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
@@ -59,6 +59,8 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 | Content-Type  | string  | application/json. Required. |
 | Prefer | string  | odata.maxpagesize={x}。可选。 |
 
+> **注意：** 在请求标头中，值 `odata.maxpagesize` 应大于或等于 10 以获取正确的 `nextLink` 值。
+
 ## <a name="response"></a>响应
 
 如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [todoTaskList](../resources/todotasklist.md) 集合对象。
@@ -74,7 +76,7 @@ GET /users/{id|userPrincipalName}/todo/lists/delta
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists/delta
-Prefer: odata.maxpagesize=2
+Prefer: odata.maxpagesize=12
 ```
 ### <a name="response"></a>响应
 
@@ -83,7 +85,7 @@ Prefer: odata.maxpagesize=2
 
 以下响应显示了 _@odata.nextLink_ 响应头中的 _skipToken_。
 
-注意：为了提高可读性，可能缩短了此处显示的响应对象。
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 
 ```http
 HTTP/1.1 200 OK

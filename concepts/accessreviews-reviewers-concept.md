@@ -5,12 +5,12 @@ author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: ce0e806920b2bb925cc16b7d31aa57156388935a
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
+ms.openlocfilehash: 72f5fd24e3949d9cb291e094006461c5c4e90b92
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698343"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768124"
 ---
 # <a name="assign-reviewers-to-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API 将审阅者分配到访问评审
 
@@ -35,7 +35,7 @@ ms.locfileid: "66698343"
 ```http
 "reviewers": [
     {
-        "query": "/users/{user id}",
+        "query": "/users/{userId}",
         "queryType": "MicrosoftGraph"
     }
 ]
@@ -46,13 +46,37 @@ ms.locfileid: "66698343"
 ```http
 "reviewers": [
     {
-        "query": "/groups/{group id}/transitiveMembers",
+        "query": "/groups/{groupId}/transitiveMembers",
         "queryType": "MicrosoftGraph"
     }
 ]
 ```
 
 ## <a name="example-4-group-owners-as-reviewers"></a>示例 4：组所有者作为审阅者
+
+当访问评审的范围限定到组时，例如， [示例 1：查看分配给组的所有用户](accessreviews-scope-concept.md#example-1-review-all-users-assigned-to-a-group)， [示例 2：查看分配给组的所有来宾用户](accessreviews-scope-concept.md#example-2-review-all-guest-users-assigned-to-a-group)， [以及示例 3：查看分配给组的所有用户和组](accessreviews-scope-concept.md#example-3-review-all-users-and-groups-assigned-to-a-group)。
+```http
+"reviewers": [
+    {
+        "query": "/groups/{groupId}/owners",
+        "queryType": "MicrosoftGraph"
+    }
+]
+```
+
+当访问评审的范围限定到组并仅将特定国家/地区的组所有者分配为审阅者时：
+
+```http
+"reviewers": [
+    {
+        "query": "/groups/{groupId}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
+        "type": "MicrosoftGraph”
+    }
+]
+```
+
+当访问评审范围限定到 *所有* 组时，例如示 [例 4：查看分配给所有 Microsoft 365 组的所有用户](accessreviews-scope-concept.md#example-4-review-all-users-assigned-to-all-microsoft-365-groups)， [示例 5：查看分配给所有 Microsoft 365 组的所有来宾用户](accessreviews-scope-concept.md#example-5-review-all-guest-users-assigned-to-all-microsoft-365-groups)， [以及示例 6：查看分配给所有团队的所有来宾用户](accessreviews-scope-concept.md#example-6-review-all-guest-users-assigned-to-all-teams)。
+
 ```http
 "reviewers": [
     {
@@ -62,16 +86,7 @@ ms.locfileid: "66698343"
 ]
 ```
 
-若要仅将特定国家/地区的组所有者分配为审阅者，请执行以下操作：
 
-```http
-"reviewers": [
-    {
-        "query": "/groups/{group id}/owners?$filter=microsoft.graph.user/userType eq 'Member' and microsoft.graph.user/country eq 'USA'",
-        "type": "MicrosoftGraph”
-    }
-]
-```
 
 ## <a name="example-5-people-managers-as-reviewers"></a>示例 5：人员经理作为审阅者
 
@@ -94,7 +109,7 @@ ms.locfileid: "66698343"
 ```http
 "reviewers": [
     {
-        "query": "/servicePrincipals/{id}/owners",
+        "query": "/servicePrincipals/{servicePrincipalId}/owners",
         "queryType": "MicrosoftGraph"
     }
 ]

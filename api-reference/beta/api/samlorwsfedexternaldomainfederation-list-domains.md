@@ -5,19 +5,19 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 0655cc11f6f153ee62d16d5d1378b07340a225b0
-ms.sourcegitcommit: 08e9b0bac39c1b1d2c8a79539d24aaa93364baf2
+ms.openlocfilehash: 92b41c5c2ce5fc50a0ee3908157a11c82046d869
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "59766511"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768278"
 ---
 # <a name="list-domains"></a>列出域
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取[samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)的所有[externalDomainName](../resources/externaldomainname.md)对象的列表。
+获取 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 的所有 [externalDomainName](../resources/externaldomainname.md) 对象的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -25,14 +25,14 @@ ms.locfileid: "59766511"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.Read.All、Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.Read.All、Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于以下 Azure [AD Azure Active Directory (角色) 之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 [Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +57,7 @@ GET /directory/federationConfigurations/microsoft.graph.samlOrWsFedExternalDomai
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [externalDomainName](../resources/externaldomainname.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [externalDomainName](../resources/externaldomainname.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

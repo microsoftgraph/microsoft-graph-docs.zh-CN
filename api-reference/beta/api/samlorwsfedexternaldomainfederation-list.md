@@ -5,19 +5,19 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 7c8ad07b44a4bb724e9b58645ac053df58a34a02
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 6081b34c488d3b55d06880d4c05789b6dd59b024
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132717"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768313"
 ---
 # <a name="list-samlorwsfedexternaldomainfederations"></a>列出 samlOrWsFedExternalDomainFederations
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [samlOrWsFedExternalDomainFederation 对象](../resources/samlorwsfedexternaldomainfederation.md) 及其属性的列表。
+获取 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象及其属性的列表。
 
 ## <a name="permissions"></a>权限
 
@@ -25,14 +25,14 @@ ms.locfileid: "62132717"
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.Read.All、Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.Read.All、Domain.ReadWrite.All|
+|委派（工作或学校帐户）|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序|IdentityProvider.Read.All、IdentityProvider.ReadWrite.All|
 
 工作或学校帐户需要属于以下角色之一：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +57,7 @@ GET /directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederatio
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 

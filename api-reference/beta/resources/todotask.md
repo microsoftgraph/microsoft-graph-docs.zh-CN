@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7d1d19378d27cb65365d5a9999974aa16b511661
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: 9c11252d3dded276e96ffbc219a3cf9155718da7
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645246"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767944"
 ---
 # <a name="todotask-resource-type"></a>todoTask 资源类型
 
@@ -35,7 +35,7 @@ ms.locfileid: "66645246"
 |[创建任务](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| 在指定的任务列表中创建 [todoTask](todotask.md)|
 |[获取任务](../api/todotask-get.md)|[todoTask](../resources/todotask.md)|读取 [todoTask](../resources/todotask.md) 对象的属性和关系。|
 |[更新任务](../api/todotask-update.md)|[todoTask](../resources/todotask.md)|更新 [todoTask](../resources/todotask.md) 对象的属性。|
-|[删除任务](../api/todotask-delete.md)|无|删除 [todoTask](../resources/todotask.md) 对象。|
+|[删除任务](../api/todotask-delete.md)|None|删除 [todoTask](../resources/todotask.md) 对象。|
 |[列出 checklistItems](../api/todotask-list-checklistitems.md)|[checklistItem](../resources/checklistitem.md) 集合|从 **checklistItems 导航属性获取 checklistItem** 资源。|
 |[创建 checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|创建新的 **checklistItem** 对象。|
 |[列出 linkedResources](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) 集合|从 linkedResources 导航属性获取 linkedResources。|
@@ -57,6 +57,7 @@ ms.locfileid: "66645246"
 |lastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|任务的定期模式。|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|提醒警报发出任务发生提醒的日期和时间。|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|任务计划启动的指定时区中的日期。|
 |状态|任务状态|指示任务的状态或进度。 可取值为：`notStarted`、`inProgress`、`completed`、`waitingOnOthers`、`deferred`。|
 |title|String|任务的简要说明。|
 
@@ -65,7 +66,7 @@ ms.locfileid: "66645246"
 |:---|:---|:---|
 |attachments|[taskFileAttachment](../resources/taskfileattachment.md) 集合| 任务的文件附件集合。|
 |checklistItems|[checklistItem](../resources/checklistitem.md) 集合|链接到更复杂的父任务的较小子任务的集合。 |
-|extensions|[扩展](extension.md)集合| 为任务定义的开放扩展的集合。 可为 NULL。|
+|extensions|[扩展](extension.md)集合| 为任务定义的开放扩展的集合。 可为 Null。|
 |linkedResources|[linkedResource](../resources/linkedresource.md) 集合|链接到任务的资源集合。|
 
 
@@ -99,6 +100,9 @@ ms.locfileid: "66645246"
     "@odata.type": "microsoft.graph.patternedRecurrence"
   },
   "reminderDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "startDateTime": {
     "@odata.type": "microsoft.graph.dateTimeTimeZone"
   },
   "status": "String",

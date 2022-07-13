@@ -1,22 +1,23 @@
 ---
 title: 获取 plannerTaskDetails
-description: 检索 **plannertaskdetails** 对象的属性和关系。
+description: 检索 plannerTaskDetails 对象的属性和关系。
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 4b492bd6f947d18de6b869e2278f23466d04629e
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: acc02f8e1c11993945977a519593f064d0c82fe5
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132256"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768292"
 ---
 # <a name="get-plannertaskdetails"></a>获取 plannerTaskDetails
 
 命名空间：microsoft.graph
 
-检索 **plannertaskdetails** 对象的属性和关系。
+检索 **plannerTaskDetails** 对象的属性和关系。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -47,8 +48,8 @@ GET /planner/tasks/{id}/details
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 403 和 404 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -84,8 +85,9 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。 
+>**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",
   "truncated": true,

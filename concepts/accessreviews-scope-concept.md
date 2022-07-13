@@ -5,12 +5,12 @@ author: zhusijia26
 ms.localizationpriority: medium
 ms.prod: governance
 doc_type: conceptualPageType
-ms.openlocfilehash: 983bb98c9344fc745ebe9a36c27995cef4ce4562
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
+ms.openlocfilehash: 3eb8f913e59de3acbbe89a9b516939a36f4ea288
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698336"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66768257"
 ---
 # <a name="configure-the-scope-of-your-access-review-using-the-microsoft-graph-api"></a>使用 Microsoft 图形 API配置访问评审的范围
 
@@ -39,7 +39,7 @@ ms.locfileid: "66698336"
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -52,7 +52,7 @@ ms.locfileid: "66698336"
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
     "inactiveDuration": "P30D",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user",
+    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user",
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -66,7 +66,7 @@ ms.locfileid: "66698336"
 ```http
 "scope": {
     "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-    "query": "/groups/{group id}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
+    "query": "/groups/{groupId}/transitiveMembers/microsoft.graph.user/?$filter=(userType eq 'Guest')",    
     "queryType": "MicrosoftGraph"
 }
 ```
@@ -80,7 +80,7 @@ ms.locfileid: "66698336"
 
 ```http
 "scope": {
-        "query": "/groups/{group id}/members",
+        "query": "/groups/{groupId}/members",
         "queryType": "MicrosoftGraph"
 }
 ```

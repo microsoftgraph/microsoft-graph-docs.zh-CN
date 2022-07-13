@@ -5,33 +5,33 @@ author: namkedia
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5038eebdc83c242ffce20668b1eb906f032e006f
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 5c53e346e5f6631b6cf322fae118c5563aab04e5
+ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60947669"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66767963"
 ---
 # <a name="create-externaldomainname"></a>创建 externalDomainName
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过创建新的 [externalDomainName](../resources/externaldomainname.md) 对象WS-Fed将多个域添加到基于 SAML 或基于 SAML 的配置，并将其添加到现有 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)中。
+通过创建新的 [externalDomainName](../resources/externaldomainname.md) 对象并将其添加到现有的 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md)，将多个域添加到 SAML 或基于WS-Fed配置。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）|Domain.ReadWrite.All|
-|委派（个人 Microsoft 帐户）| 不支持。|
-|应用程序|Domain.ReadWrite.All|
+|委派（工作或学校帐户）| IdentityProvider.ReadWrite.All|
+|委派（Microsoft 个人帐户）| 不支持。|
+|应用程序| IdentityProvider.ReadWrite.All|
 
-工作或学校帐户需要属于以下角色Azure Active Directory (Azure AD) [之一](/azure/active-directory/roles/permissions-reference)：
+工作或学校帐户需要属于以下 [Azure Active Directory (Azure AD) 角色之一](/azure/active-directory/roles/permissions-reference)：
 
 * 全局管理员
-* 外部标识提供程序管理员
+* 外部标识提供者管理员
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -55,15 +55,15 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 在请求正文中，提供 [externalDomainName](../resources/externaldomainname.md) 对象的 JSON 表示形式。
 
-下表显示创建 [externalDomainName 时所需的属性](../resources/externaldomainname.md)。
+下表显示了创建 [externalDomainName](../resources/externaldomainname.md) 时所需的属性。
 
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|要添加到 [samlOrWsFedExternalDomainFederation 的外部组织的域名](../resources/samlorwsfedexternaldomainfederation.md)。 继承自 [实体](../resources/entity.md)。|
+|id|String|要添加到 [samlOrWsFedExternalDomainFederation](../resources/samlorwsfedexternaldomainfederation.md) 的外部组织的域名。 继承自 [entity](../resources/entity.md)。|
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码和 [externalDomainName](../resources/externaldomainname.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [externalDomainName](../resources/externaldomainname.md) 对象。
 
 ## <a name="examples"></a>示例
 
