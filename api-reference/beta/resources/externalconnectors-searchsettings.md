@@ -1,16 +1,16 @@
 ---
 title: searchSettings 资源类型
-description: 收集与搜索连接器内容相关的所有可配置设置。
+description: 通过连接器内容收集与搜索相关的所有可配置设置。
 author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 6750ce5ea8f6b74dd55e83dae1a8f22d04ebfc15
-ms.sourcegitcommit: 2a9b82dae63d8a998711679a379ae1fa89df80e0
+ms.openlocfilehash: f0915d57f0c49199f0273b8c44d5f60b2d78531c
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60214921"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788631"
 ---
 # <a name="searchsettings-resource-type"></a>searchSettings 资源类型
 
@@ -18,12 +18,12 @@ ms.locfileid: "60214921"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-收集与搜索连接器内容相关的所有可配置设置。
+通过连接器内容收集与搜索相关的所有可配置设置。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|searchResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) 集合|使开发人员能够定义内容的外观并配置规定应何时显示模板的条件。|
+|searchResultTemplates|[microsoft.graph.externalConnectors.displayTemplate](../resources/externalconnectors-displaytemplate.md) 集合|使开发人员能够定义内容的外观并配置条件，这些条件决定了何时应显示模板。 每个连接最多 2 个搜索结果模板。|
 
 ## <a name="relationships"></a>关系
 无。

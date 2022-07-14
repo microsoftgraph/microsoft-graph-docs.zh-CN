@@ -5,18 +5,20 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 61d11d33871710267933fcf71e5932a33f71514d
-ms.sourcegitcommit: f99b4d365ba381f8f1997d3857ab43da03528924
+ms.openlocfilehash: 6ed39739978d7d72427e32f01445d9bcac36c930
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66768159"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788771"
 ---
 # <a name="list-deleteditems-directory-objects"></a>列出 deletedItems (目录对象) 
 
 命名空间：microsoft.graph
 
 检索最近删除的目录对象的列表。 目前，仅[应用程序、](../resources/application.md)[组](../resources/group.md)和[用户](../resources/user.md)资源支持此功能。
+
+目前，删除的项目功能仅支持 [应用程序](../resources/application.md)、 [servicePrincipal](../resources/serviceprincipal.md)、 [组](../resources/group.md)和 [用户](../resources/user.md) 资源。
 
 >**注意：** 已删除的安全组将被永久删除，无法通过此 API 检索。
 
@@ -26,7 +28,7 @@ ms.locfileid: "66768159"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-applications"></a>对于应用程序：
+### <a name="for-applications-and-service-principals"></a>对于应用程序和服务主体：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -54,12 +56,13 @@ ms.locfileid: "66768159"
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.application
+GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 GET /directory/deletedItems/microsoft.graph.device
 ```
 
-此 API 目前支持检索 () 、组`microsoft.graph.group` () `microsoft.graph.application` 或从已删除项 () `microsoft.graph.user` 的用户的对象类型。 OData 强制转换类型是 URI 的必需部分，**不** 支持不使用类型调用`GET /directory/deleteditems`。
+此 API 目前支持检索 () 、servicePrincipals (`microsoft.graph.application`) 、组 (`microsoft.graph.serviceprincipal`) `microsoft.graph.group` 或从已删除项 (`microsoft.graph.user`) 的用户的对象类型。 OData 强制转换类型是 URI 的必需部分，**不** 支持不使用类型调用`GET /directory/deleteditems`。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 

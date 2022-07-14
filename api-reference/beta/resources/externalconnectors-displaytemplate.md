@@ -1,16 +1,16 @@
 ---
 title: displayTemplate 资源类型
-description: 定义内容的外观以及规定何时应显示模板的条件。
+description: 定义内容的外观以及决定何时显示模板的条件。
 author: emzho
 ms.localizationpriority: normal
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: cd18d8ec9b38e0011436dad13a97d8f09fe87ba2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: a20b9935ad142fce0a1b1fcd2a47e608a0fec670
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62132590"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788764"
 ---
 # <a name="displaytemplate-resource-type"></a>displayTemplate 资源类型
 
@@ -18,15 +18,15 @@ ms.locfileid: "62132590"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-定义内容的外观以及规定何时应显示模板的条件。
+定义内容的外观以及决定何时显示模板的条件。
 
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|id|String|显示模板的文本标识符;例如， `contosoTickets` 。|
-|layout|[microsoft.graph.Json](../resources/intune-mam-json.md)|内容外观的定义，由自适应 [卡片](/adaptive-cards/authoring-cards/getting-started)表示，该卡片是 JSON 序列化的卡片对象模型。|
-|priority|Int32|定义显示模板的优先级。 优先级为 1 的显示模板先于优先级为 4 的模板进行评估。 支持优先级值中的间隔。|
-|规则|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) 集合|指定用于基于项目架构选择此显示模板的其他规则。 可选。|
+|id|String|显示模板的文本标识符;例如， `contosoTickets`. 最大 16 个字符。 仅允许字母数字字符。 |
+|布局|[microsoft.graph.Json](../resources/intune-mam-json.md)|内容外观的定义，由 [自适应卡片](/adaptive-cards/authoring-cards/getting-started)表示，该卡片是 JSON 序列化卡片对象模型。|
+|priority|Int32|定义显示模板的优先级。 优先级为 1 的显示模板在优先级为 4 的模板之前进行评估。 支持优先级值的差距。 必须是正值。|
+|规则|[microsoft.graph.externalConnectors.propertyRule](../resources/externalconnectors-propertyrule.md) 集合|指定基于项架构选择此显示模板的其他规则。 可选。|
 
 ## <a name="relationships"></a>关系
 无。

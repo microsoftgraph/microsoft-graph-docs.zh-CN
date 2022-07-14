@@ -5,12 +5,12 @@ author: adimitui
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: f6a642c39a773b25181ca659ebb2d9599e02dd2e
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 683df79d236c4b23e03473c3b91645b6650a1b18
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671004"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788792"
 ---
 # <a name="update-directorysetting"></a>更新 directorySetting
 
@@ -24,16 +24,28 @@ ms.locfileid: "63671004"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>对于除“同意策略设置”对象以外的所有设置
+
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） | Directory.ReadWrite.All    |
 |委派（个人 Microsoft 帐户） | 不支持。    |
 |应用程序 | Directory.ReadWrite.All |
 
+### <a name="for-the-consent-policy-settings-object"></a>对于“同意策略设置”对象
+
+更新“同意策略设置” **directorySetting** 对象需要以下权限。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Policy.ReadWrite.Authorization    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Policy.ReadWrite.Authorization |
+
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
-更新租户范围设置。
+更新租户范围的设置。
 ```http
 PATCH /settings/{directorySettingId}
 ```

@@ -1,16 +1,16 @@
 ---
-title: 检索最近删除的项目的属性
+title: 检索最近删除的项的属性
 description: 检索已删除的项目中最近删除项目的属性。
 author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: ecd2dbce0993e9610c51007f50ce1f2c58bad423
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 84386053c422ffaf3b1b454e0824fdf2cc8beaa6
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63672033"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788470"
 ---
 # <a name="get-deleted-item"></a>获取已删除项目
 
@@ -18,14 +18,14 @@ ms.locfileid: "63672033"
 
 检索[已删除的项目](../resources/directory.md)中最近删除项目的属性。
 
-目前，仅应用程序、组和用户资源支持[已删除的项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md)
+目前，删除的项目功能仅支持 [应用程序](../resources/application.md)、 [servicePrincipal](../resources/serviceprincipal.md)、 [组](../resources/group.md)和 [用户](../resources/user.md) 资源。
 
->**注意：** 已删除的安全组将永久删除，无法通过此 API 进行检索。
+>**注意：** 已删除的安全组将被永久删除，无法通过此 API 检索。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-applications"></a>对于应用程序：
+### <a name="for-applications-and-service-principals"></a>对于应用程序和服务主体：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

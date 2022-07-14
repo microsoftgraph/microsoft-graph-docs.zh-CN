@@ -1,22 +1,23 @@
 ---
 title: 删除 plannerBucket
-description: 删除 **plannerBucket**。
+description: 删除 plannerBucket。
 ms.localizationpriority: medium
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c093395416aac8344a79b0f65cb020dcb46d0e81
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: b6bd4c39025d1f69c15f6faad714ff50cb0fe041
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62134524"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788778"
 ---
 # <a name="delete-plannerbucket"></a>删除 plannerBucket
 
 命名空间：microsoft.graph
 
 删除 **plannerBucket**。
+
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -31,6 +32,7 @@ ms.locfileid: "62134524"
 ```http
 DELETE /planner/buckets/{id}
 ```
+
 ## <a name="request-headers"></a>请求标头
 | 名称       | 说明|
 |:---------------|:----------|
@@ -47,8 +49,8 @@ DELETE /planner/buckets/{id}
 此方法可以返回任何 [HTTP 状态代码](/graph/errors)。应用应当为此方法处理的最常见的错误为 400、403、404、409 和 412 响应。有关这些错误的详细信息，请参阅[常见规划器错误情况](../resources/planner-overview.md#common-planner-error-conditions)。
 
 ## <a name="example"></a>示例
-##### <a name="request"></a>请求
-下面是一个请求示例。
+### <a name="request"></a>请求
+请求示例如下所示。
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -85,8 +87,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ---
 
-##### <a name="response"></a>响应
-这是一个示例响应。注意：为提高可读性，可能缩短了此处显示的响应对象。
+### <a name="response"></a>响应
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

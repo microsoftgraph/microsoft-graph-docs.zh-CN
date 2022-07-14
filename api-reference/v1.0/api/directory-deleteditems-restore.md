@@ -5,12 +5,12 @@ author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 02417fe5f942513461d4f4d36304b57b24e8c5c9
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e2eaa049a07d054ff187d91063cf3610e0346453
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442344"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788617"
 ---
 # <a name="restore-deleted-item"></a>恢复已删除的项目
 
@@ -18,14 +18,14 @@ ms.locfileid: "66442344"
 
 从[已删除的项目](../resources/directory.md)中还原最近删除的项目。 
 
-目前，仅[应用程序、](../resources/application.md)[组](../resources/group.md)和[用户](../resources/user.md)资源支持还原已删除的项目功能。 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
+目前，仅[应用程序、](../resources/application.md)[servicePrincipal](../resources/serviceprincipal.md)、[组](../resources/group.md)和[用户](../resources/user.md)资源支持还原已删除的项目功能。 如果意外删除项目，可完全还原该项目。 这不适用于永久删除的安全组。
 
 最近删除的项目将保留最多 30 天的可用时间。 30 天后，该项目将永久删除。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-applications"></a>对于应用程序：
+### <a name="for-applications-and-service-principals"></a>对于应用程序和服务主体：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: psaffaie
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 484bcb632dcd986607ecddf9eff803e1304cc6cc
-ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.openlocfilehash: b0b67346fdf59ec1ee8ed75d0e7bd252c5e75bc0
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66645312"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788484"
 ---
 # <a name="list-a-users-memberships-direct-and-transitive"></a>列出用户 (直接和可传递) 的成员身份
 
@@ -24,11 +24,11 @@ ms.locfileid: "66645312"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-| :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Directory.Read.All、Directory.ReadWrite.All |
-| 委派（个人 Microsoft 帐户） | 不支持。                              |
-| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All |
+| 权限类型                        | 权限（从最低特权到最高特权）                                  |
+| :------------------------------------- | :--------------------------------------------------------------------------- |
+| 委派（工作或学校帐户）     | User.Read、GroupMember.Read.All、Directory.Read.All、Directory.ReadWrite.All |
+| 委派（个人 Microsoft 帐户） | 不支持。                                                               |
+| 应用程序                            | Directory.Read.All、Directory.ReadWrite.All                                  |
 
 ## <a name="http-request"></a>HTTP 请求
 

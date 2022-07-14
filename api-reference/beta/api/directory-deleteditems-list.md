@@ -1,34 +1,34 @@
 ---
-title: 列出已删除的项目
+title: '列出 deletedItems (目录对象) '
 description: 从已删除的项目中检索最近删除的项目列表。
 author: keylimesoda
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 650d0fe5976ae9ad9763c6c4e8f15327a6349649
-ms.sourcegitcommit: 0e7927f34b7e55d323acbf281e11560cb40a89ed
+ms.openlocfilehash: 49757af04692632d47a70f0c55e80db4c54ce27a
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63671508"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788645"
 ---
-# <a name="list-deleted-items"></a>列出已删除项目
+# <a name="list-deleteditems-directory-objects"></a>列出 deletedItems (目录对象) 
 
 命名空间：microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从[已删除的项目](../resources/directory.md)中检索最近删除的项目列表。
+检索最近删除的目录对象的列表。 目前，仅[应用程序、](../resources/application.md)[组](../resources/group.md)和[用户](../resources/user.md)资源支持此功能。
 
-目前，仅应用程序、组和用户资源支持[已删除的项目](../resources/group.md)[功能](../resources/user.md)。[](../resources/application.md)
+目前，删除的项目功能仅支持 [应用程序](../resources/application.md)、 [servicePrincipal](../resources/serviceprincipal.md)、 [组](../resources/group.md)和 [用户](../resources/user.md) 资源。
 
->**注意：** 已删除的安全组将永久删除，无法通过此 API 进行检索。
+>**注意：** 已删除的安全组将被永久删除，无法通过此 API 检索。
 
 ## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-### <a name="for-applications"></a>对于应用程序：
+### <a name="for-applications-and-service-principals"></a>对于应用程序和服务主体：
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,33 +56,34 @@ ms.locfileid: "63671508"
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deleteditems/microsoft.graph.application
+GET /directory/deleteditems/microsoft.graph.servicePrincipal
 GET /directory/deleteditems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
-此 API 当前支持 `microsoft.graph.application` `microsoft.graph.group` `microsoft.graph.user` 检索应用程序的对象类型 () 、 () 用户 () 删除的项目。 OData 转换类型是 URI 的必需部分，不支持 `GET /directory/deleteditems` 在没有类型的情况下 **调用** 。
+此 API 目前支持检索 () 、servicePrincipals (`microsoft.graph.application`) 、组 (`microsoft.graph.serviceprincipal`) `microsoft.graph.group` 或从已删除项 (`microsoft.graph.user`) 的用户的对象类型。 OData 强制转换类型是 URI 的必需部分，**不** 支持不使用类型调用`GET /directory/deleteditems`。
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持 OData 转换指定的资源支持的查询参数。 即，、`$count``$expand`、、`$filter`、`$orderBy`、`$search`、`$select`和`$top`查询参数。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 例如：
+此方法支持由 OData 强制转换指定的资源支持的查询参数。 即、、`$count``$expand`、`$filter`、`$orderBy`、`$search``$select`和`$top`查询参数。 只有将 **ConsistencyLevel** 标头设置为 `eventual` 和 `$count` 时，才支持某些查询。 例如：
 
 ```msgraph-interactive
 https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
-此示例需要 **ConsistencyLevel** 标头，因为 `$orderBy` 查询 `$count` 中使用了 和 查询参数。
+此示例需要 **ConsistencyLevel** 标头， `$orderBy` 因为查询中使用了查询参数和 `$count` 查询参数。
 
-### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 OData $orderBy参数的示例
+### <a name="examples-using-the-orderby-odata-query-parameter"></a>使用 $orderBy OData 查询参数的示例
 
-在 `$orderBy` 已删除的对象类型的 **deletedDateTime**、 **displayName** 和 **userPrincipalName** 属性上支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要将高级查询 [](/graph/aad-advanced-queries)参数 (**ConsistencyLevel** `true` `$count=true` 标头设置为 ，并添加查询字符串) 。
+已 `$orderBy` 删除对象类型的 **deletedDateTime**、 **displayName** 和 **userPrincipalName** 属性支持 OData 查询参数。 在 **deletedDateTime** 属性上，查询需要添加 [高级查询参数](/graph/aad-advanced-queries) (将 **ConsistencyLevel** 标头设置为`true``$count=true`查询字符串) 。
 
-| OData 转换 | 支持属性$orderBy | 示例 |
+| OData 强制转换 | 支持$orderBy的属性 | 示例 |
 | :--- | :--- | :--- |
 | microsoft.graph.user | deletedDateTime、displayName、userPrincipalName | /directory/deletedItems/microsoft.graph.user？$orderBy=userPrincipalName |
-| microsoft.graph.group | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.group？$orderBy=deletedDateTime asc&$count=true |
-| microsoft.graph.application | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.application？$orderBy=displayName |
-| microsoft.graph.device | deletedDateTime， displayName | /directory/deletedItems/microsoft.graph.device？$orderBy=deletedDateTime&$count=true |
+| microsoft.graph.group | deletedDateTime、displayName | /directory/deletedItems/microsoft.graph.group？$orderBy=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime、displayName | /directory/deletedItems/microsoft.graph.application？$orderBy=displayName |
+| microsoft.graph.device | deletedDateTime、displayName | /directory/deletedItems/microsoft.graph.device？$orderBy=deletedDateTime&$count=true |
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -165,7 +166,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-retrieve-the-count-of-deleted-user-objects-and-order-the-results-by-the-deleteddatetime-property"></a>示例 2：检索已删除用户对象的计数，并按 deletedDateTime 属性对结果排序
+### <a name="example-2-retrieve-the-count-of-deleted-user-objects-and-order-the-results-by-the-deleteddatetime-property"></a>示例 2：检索已删除用户对象的计数，并按 deletedDateTime 属性对结果进行排序
 
 #### <a name="request"></a>请求
 

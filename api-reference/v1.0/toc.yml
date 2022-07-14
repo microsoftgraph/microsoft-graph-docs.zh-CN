@@ -950,6 +950,14 @@ items:
                 href: api/serviceprincipal-update.md
               - name: 删除
                 href: api/serviceprincipal-delete.md
+              - name: 列出已删除的服务主体
+                href: api/directory-deleteditems-list.md
+              - name: 获取已删除的服务主体
+                href: api/directory-deleteditems-get.md
+              - name: 永久删除服务主体
+                href: api/directory-deleteditems-delete.md
+              - name: 还原已删除的服务主体
+                href: api/directory-deleteditems-restore.md
               - name: 获取 Delta
                 href: api/serviceprincipal-delta.md
               - name: 列出创建的对象
@@ -4196,7 +4204,7 @@ items:
                     href: api/serviceannouncement-list-healthoverviews.md
                   - name: 获取服务运行状况
                     href: api/servicehealth-get.md
-              - name: Estado de funcionamento dos serviços问题
+              - name: 服务运行状况问题
                 href: resources/servicehealthissue.md
                 items:
                   - name: 列出问题
@@ -5275,7 +5283,7 @@ items:
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
                           - name: 删除
                             href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
-                      - name: 电子邮件策略
+                      - name: Email策略
                         href: resources/emailauthenticationmethodconfiguration.md
                         items:
                           - name: 获取

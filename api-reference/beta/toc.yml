@@ -1125,6 +1125,14 @@ items:
                 href: api/serviceprincipal-update.md
               - name: 删除服务主体
                 href: api/serviceprincipal-delete.md
+              - name: 列出已删除的服务主体
+                href: api/directory-deleteditems-list.md
+              - name: 获取已删除的服务主体
+                href: api/directory-deleteditems-get.md
+              - name: 永久删除服务主体
+                href: api/directory-deleteditems-delete.md
+              - name: 还原已删除的服务主体
+                href: api/directory-deleteditems-restore.md
               - name: List createdObjects
                 href: api/serviceprincipal-list-createdobjects.md
               - name: List ownedObjects

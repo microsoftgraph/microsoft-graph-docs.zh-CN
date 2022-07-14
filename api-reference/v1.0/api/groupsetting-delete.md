@@ -5,12 +5,12 @@ author: psaffaie
 ms.localizationpriority: medium
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4c81494ba9e85dd0c5521c0eb22ba28dc17646a4
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 690fd574c341e785c8b7c227bc6e20963fc1036c
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65206396"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788476"
 ---
 # <a name="delete-a-group-setting"></a>删除组设置
 
@@ -22,11 +22,23 @@ ms.locfileid: "65206396"
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-| 权限类型                        | 权限（从最低特权到最高特权） |
-| :------------------------------------- | :------------------------------------------ |
-| 委派（工作或学校帐户）     | Directory.ReadWrite.All                     |
-| 委派（个人 Microsoft 帐户） | 不支持。                              |
-| Application                            | Directory.ReadWrite.All                     |
+### <a name="for-all-settings-except-the-consent-policy-settings-object"></a>对于除“同意策略设置”对象以外的所有设置
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Directory.ReadWrite.All    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Directory.ReadWrite.All |
+
+### <a name="for-the-consent-policy-settings-object"></a>对于“同意策略设置”对象
+
+更新“同意策略设置” **directorySetting** 对象需要以下权限。
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户） | Policy.ReadWrite.Authorization    |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | Policy.ReadWrite.Authorization |
 
 ## <a name="http-request"></a>HTTP 请求
 
