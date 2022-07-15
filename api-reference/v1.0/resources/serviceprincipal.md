@@ -5,12 +5,12 @@ ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: applications
 author: sureshja
-ms.openlocfilehash: ca78548f8fe4590ccde9d8faf8cb558c6572ca8f
-ms.sourcegitcommit: 0249c86925c9b4797908394c952073b5d9137911
+ms.openlocfilehash: 83e8df77e43d0ca6711d574ffeebde175bd49cb8
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477816"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788570"
 ---
 # <a name="serviceprincipal-resource-type"></a>servicePrincipal 资源类型
 
@@ -29,6 +29,10 @@ ms.locfileid: "64477816"
 |[Get servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |读取 servicePrincipal 对象的属性和关系。|
 |[更新 servicePrincipal](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |更新 servicePrincipal 对象。 |
 |[删除 servicePrincipal](../api/serviceprincipal-delete.md) | 无 |删除 servicePrincipal 对象。|
+|[列出已删除的 servicePrincipal](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) 集合 | 检索最近删除的 servicePrincipal 对象的列表。 |
+|[获取已删除的 servicePrincipal](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | 检索最近删除的 servicePrincipal 对象的属性。 |
+|[永久删除 servicePrincipal](../api/directory-deleteditems-delete.md) | 无 | 永久删除 servicePrincipal 对象。 |
+|[还原已删除的 servicePrincipal](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | 还原最近删除的 servicePrincipal 对象。 |
 |[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 createdObject 对象集合。|
 |[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) 集合| 获取 ownedObject 对象集合。|
 |[获取 delta](../api/serviceprincipal-delta.md)|servicePrincipal 集合| 获取服务主体的增量更改。 |

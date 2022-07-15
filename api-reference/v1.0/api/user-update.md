@@ -5,12 +5,12 @@ author: jpettere
 ms.localizationpriority: high
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e56cf53369e7b63e04fe9cf6a882fb6361ee31e5
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 9e2bd2c3814cc8bebb065db81ca37a28d6156812
+ms.sourcegitcommit: 033e779ba738b61b03e2760f39554a2fd0ab65b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555735"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66788701"
 ---
 # <a name="update-user"></a>更新用户
 
@@ -75,7 +75,7 @@ PATCH /users/{id | userPrincipalName}
 |onPremisesImmutableId|String|此属性用于将本地 Active Directory 用户帐户关联到他们的 Azure AD 用户对象。如果对用户的 **userPrincipalName** (UPN) 属性使用联盟域，在 Graph 中创建新用户帐户时必须指定此属性。**重要事项：** 指定该属性时不能使用 **$** 和 **_** 字符。                            |
 |otherMails|字符串集合 |用户的其他电子邮件地址列表；例如：`["bob@contoso.com", "Robert@fabrikam.com"]`。|
 |passwordPolicies|String|指定用户的密码策略。此值是一个枚举，其中一个可能的值为 `DisableStrongPassword`，这允许指定比默认策略更弱的密码。也可指定 `DisablePasswordExpiration`。两者可以一起指定，例如：`DisablePasswordExpiration, DisableStrongPassword`。|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。不能用于联合用户。<br><br> 必须为调用用户分配 *Directory.AccessAsUser.All* 委派权限才能更新此属性。 无法仅使用应用程序权限更新此属性。|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|指定用户的密码配置文件。配置文件包含用户的密码。创建用户时此属性是必需的。配置文件中的密码必须满足 **passwordPolicies** 属性指定的最低要求。默认情况下，必须使用强密码。不能用于联合用户。<br><br> 在委派访问中，必须代表已登录用户向调用应用分配 *Directory.AccessAsUser.All* 委派权限。 在仅限应用程序的访问权限中，必须为调用应用分配 *User.ReadWrite.All* 应用程序权限，以及至少 *用户管理员* [Azure AD 角色](/azure/active-directory/roles/permissions-reference)。|
 |pastProjects|String collection|供用户枚举其过去项目的列表。|
 |postalCode|String|用户邮政地址的邮政编码。邮政编码特定于用户所在的国家/地区。在美国，此属性包含邮政编码。|
 |preferredLanguage|String|用户的首选语言。应遵循 ISO 639-1 代码，例如 `en-US`。 |
@@ -90,15 +90,15 @@ PATCH /users/{id | userPrincipalName}
 |userType|String|可用于对目录中的用户类型进行分类的字符串值，例如`Member``Guest`。          |
 
 > [!NOTE] 
-> - 只有应用程序权限的应用无法更新以下属性：**aboutMe**、 **birthday**、 **employeeHireDate**、 **interests**、 **mySite**、 **pastProjects**、 **preferredName**、 **responsibilities**、 **schools**、 and **skills**。
-> - 要更新以下属性，必须在其 PATCH 请求中指定它们，无需包含上表中列出的其他属性：**aboutMe**、**birthday**、**interests**、**mySite**、**pastProjects**、**preferredName**、**职责**、**schools** 和 **skills**。
+> - 只有应用程序权限的应用无法更新以下属性：**aboutMe**、**birthday** **employeeHireDate**、**interests**、**mySite**、**pastProjects**、**responsibilities**、**schools** 和 **skills**。
+> - 要更新以下属性，必须在其自身 PATCH 请求中指定它们，而无需包含上表中列出的其他属性：**aboutMe**、**birthday**、**interests**、**mySite**、**pastProjects**、**responsibilities**、**schools** 和 **skills**。
 
 ### <a name="manage-extensions-and-associated-data"></a>管理扩展名和关联的数据
 
 使用此 API 管理用户的目录、架构和打开扩展及其数据，如下所示：
 
 + 在现有用户的扩展中添加、更新和存储数据
-+ 对于目录和架构扩展，通过将自定义扩展属性的值设置为 `null`来删除任何存储的数据。 对于打开的扩展，请使用 [删除打开的扩展](/graph/api/opentypeextension-delete) API。
++ 对于目录和架构扩展，通过将自定义扩展属性的值设置为 `null`来删除任何存储的数据。 对于开放扩展，请使用 [删除开放扩展](/graph/api/opentypeextension-delete) API。
 
 ## <a name="response"></a>响应
 
@@ -226,7 +226,7 @@ HTTP/1.1 204 No Content
 
 ### <a name="example-3-update-the-passwordprofile-of-a-user-to-reset-their-password"></a>示例 3：更新用户的 passwordProfile 以重置其密码
 
-下列示例展示重置其他用户密码的请求。 必须为调用用户分配 *Directory.AccessAsUser.All* 委派权限才能更新此属性。
+下列示例展示重置其他用户密码的请求。
 
 #### <a name="request"></a>请求
 
