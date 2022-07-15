@@ -1,21 +1,21 @@
 ---
-title: Get todoTaskList
+title: 获取 todoTaskList
 description: 读取 todoTaskList 对象的属性和关系。
 author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f8322415eff483def3687a0accd92bb8c1f33060
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 06f847f53a9e45123f68ca9a9e46224258d6c984
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62122805"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810282"
 ---
-# <a name="get-todotasklist"></a>Get todoTaskList
+# <a name="get-todotasklist"></a>获取 todoTaskList
 命名空间：microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-读取 [todoTaskList 对象的属性和](../resources/todotasklist.md) 关系。
+读取 [todoTaskList](../resources/todotasklist.md) 对象的属性和关系。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -24,7 +24,7 @@ ms.locfileid: "62122805"
 |:---|:---|
 |委派（工作或学校帐户）|Tasks.ReadWrite|
 |委派（个人 Microsoft 帐户）|Tasks.ReadWrite|
-|应用程序|不支持。|
+|Application|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [todoTaskList](../resources/todotasklist.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [todoTaskList](../resources/todotasklist.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -105,14 +105,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.todoTaskList",
-    "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
-    "displayName": "Monthly tasks",
-    "isOwner": "true",
-    "isShared": "false",
-    "wellknownListName": "defaultList"
-  }
+  "@odata.type": "#microsoft.graph.todoTaskList",
+  "id": "5daae1ed-e1ed-5daa-ede1-aa5dede1aa5d",
+  "displayName": "Monthly tasks",
+  "isOwner": true,
+  "isShared": false,
+  "wellknownListName": "defaultList"
 }
 ```
 

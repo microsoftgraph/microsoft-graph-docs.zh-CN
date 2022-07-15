@@ -5,12 +5,12 @@ author: avijityadav
 ms.localizationpriority: medium
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5ace3cd2e43a5410f55125f7018e816c5ca3199b
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: a96121caaaee5c2ace12a1b73281e156829d9e3d
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821139"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810240"
 ---
 # <a name="todotask-resource-type"></a>todoTask 资源类型
 
@@ -41,7 +41,7 @@ ms.locfileid: "65821139"
 |属性|类型|说明|
 |:---|:---|:---|
 |body|[itemBody](../resources/itembody.md)|通常包含有关任务的信息的任务正文。|
-|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
+|bodyLastModifiedDateTime|DateTimeOffset|上次修改任务正文的日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式，并始终处于 UTC 时间。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|
 |类别|String 集合|与任务关联的类别。 每个类别对应于用户定义的 [outlookCategory](../resources/outlookcategory.md) 的 **displayName** 属性。|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|在指定时区内完成任务的日期。|
 |createdDateTime|DateTimeOffset|任务的创建日期和时间。 默认情况下，它采用 UTC 格式。 你可以在请求标头中提供自定义时区。 属性值使用 ISO 8601 格式。 例如，2020 年 1 月 1 日午夜 UTC 如下所示：“2020-01-01T00：00：00Z”。|

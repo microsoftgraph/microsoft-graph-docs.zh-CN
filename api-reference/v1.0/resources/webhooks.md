@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: Jumaodhiss
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: 8d95f4cdb8402b0b3b7a7188cea8b30b2477fbc4
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 30c645158aa21b6b25b92fd665a148e325018f39
+ms.sourcegitcommit: 84db9d70672e7a36a1130ff4f4b9baf3554d287f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555728"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810247"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>使用 Microsoft Graph API 获取更改通知
 
@@ -39,7 +39,7 @@ Microsoft Graph REST API 使用 Webhook 机制将更改通知传递到客户端�
 | Teams [频道][] | 对所有团队中频道的更改：<br>`/teams/getAllChannels` <br>对特定团队中频道的更改：<br>`/teams/{id}/channels` | 是 |
 | Teams [conversationMember][] | 对特定团队中成员身份的更改：<br>`/teams/{id}/members` <br> 对特定团队下所有频道中的成员身份的更改：<br>`teams/{id}/channels/getAllMembers` <br> 对特定聊天中成员身份的更改：<br>`/chats/{id}/members` <br> 对所有聊天中成员身份的更改：<br>`/teams/getAllMembers` | 是 |
 | Teams [团队][] | 对租户中任何团队的更改：<br>`/teams` <br>对特定团队的更改：<br>`/teams/{id}` | 是 |
-| [待办事项任务][] | 对特定任务列表中的所有任务进行更改:<br>`/me/todo/lists/{todoTaskListId}/tasks`<br>对所有任务的更改:<br>`/me/todo/lists/alltasks` | 否 |
+| [待办事项任务][] | 对特定任务列表中的所有任务进行更改:<br>`/me/todo/lists/{todoTaskListId}/tasks` | 否 |
 | [用户][] | 对所有用户更改：<br>`/users` <br>对特定用户更改：<br>`/users/{id}`| 否 |
 
 > **注意**：以 `/users/{id}` 开头的任何资源路径还可接受 `/me` 以引用已登录的用户。
