@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageByPrinter
 [!INCLUDE [sample-code](../includes/snippets/java/get-endpoints-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-endpoints-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

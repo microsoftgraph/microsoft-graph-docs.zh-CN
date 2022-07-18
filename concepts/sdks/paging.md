@@ -121,7 +121,7 @@ while(messagesPage != null) {
 }
 ```
 
-### <a name="go"></a>[转到](#tab/Go)
+### <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -248,7 +248,7 @@ while (!pageIterator.isComplete()) {
 // not supported in java SDK
 ```
 
-### <a name="go"></a>[转到](#tab/Go)
+### <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

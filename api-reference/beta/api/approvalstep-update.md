@@ -78,7 +78,7 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-approvalstep-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/patch-approvalstep-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

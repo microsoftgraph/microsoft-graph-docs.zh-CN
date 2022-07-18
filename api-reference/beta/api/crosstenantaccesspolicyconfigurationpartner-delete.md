@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partner
 [!INCLUDE [sample-code](../includes/snippets/java/delete-crosstenantaccesspolicyconfigurationpartner-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-crosstenantaccesspolicyconfigurationpartner-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO226784
 [!INCLUDE [sample-code](../includes/snippets/java/get-servicehealthissue-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[转到](#tab/go)
+# <a name="go"></a>[Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-servicehealthissue-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

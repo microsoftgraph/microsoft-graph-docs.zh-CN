@@ -144,7 +144,7 @@ final GraphServiceClient graphServiceClient = GraphServiceClient
     .buildClient();
 ```
 
-## <a name="go"></a>[转到](#tab/Go)
+## <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 
@@ -318,7 +318,7 @@ final GraphServiceClient graphServiceClient =
 > [!NOTE]
 > 有关 Azure 标识代理配置的详细信息，请 [参阅 ProxyOptions](/java/api/com.azure.core.http.proxyoptions.proxyoptions)。
 
-## <a name="go"></a>[转到](#tab/Go)
+## <a name="go"></a>[Go](#tab/go)
 
 [!INCLUDE [go-sdk-preview](../../includes/go-sdk-preview.md)]
 

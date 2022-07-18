@@ -78,7 +78,7 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
         .get();
     ```
 
-    # <a name="go"></a>[转到](#tab/go)
+    # <a name="go"></a>[Go](#tab/go)
 
     ```go
     // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
@@ -171,7 +171,7 @@ Microsoft Graph 查询引擎使用索引存储来满足查询请求。 为了添
         .get();
     ```
 
-    # <a name="go"></a>[转到](#tab/go)
+    # <a name="go"></a>[Go](#tab/go)
 
     ```go
     // See https://docs.microsoft.com/graph/sdks/create-client?tabs=Go
