@@ -5,12 +5,12 @@ author: jackson-woods
 ms.localizationpriority: high
 ms.prod: applications
 ms.custom: graphiamtop20
-ms.openlocfilehash: 72e2522a8208c9296ff7e39469a9085c9889b862
-ms.sourcegitcommit: 9bbcce5784a89768ece55a66e3651080d56e1e92
+ms.openlocfilehash: ee672c67ce9979bf5de3e18871398458c5a2dffc
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64917526"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855957"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>代表用户获取访问权限
 
@@ -213,7 +213,6 @@ Content-Type: application/x-www-form-urlencoded
 client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
-&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=refresh_token
 &client_secret=jXoM3iz...      // NOTE: Only required for web apps
 ```
@@ -222,9 +221,8 @@ client_id=11111111-1111-1111-1111-111111111111
 |---------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client_id     | 必需              | [注册门户](https://go.microsoft.com/fwlink/?linkid=2083908)分配给应用的应用程序 ID。                                                                                                                                                                                             |
 | grant_type    | 必需              | 必须是 `refresh_token`。                                                                                                                                                                                                                                                                                          |
-| 范围         | 必需              | 用空格分隔的权限列表（范围）。应用请求的权限必须等于初始 authorization_code 请求中所请求的权限或其子集。                                                                                                                             |
+| 范围         | 可选              | 用空格分隔的权限列表（范围）。应用请求的权限必须等于初始 authorization_code 请求中所请求的权限或其子集。                                                                                                                             |
 | refresh_token | 必需              | 令牌请求期间获得的 refresh_token。                                                                                                                                                                                                                                                     |
-| redirect_uri  | 必需              | 用于获取 authorization_code 的相同的 redirect_uri 值。                                                                                                                                                                                                                                      |
 | client_secret | Web 应用需要 | 你在应用注册门户中为应用创建的应用程序密码。不要本机应用中使用密码，因为设备无法可靠地存储 client_secrets。Web 应用和 Web API 需要此值，它们能够将 client_secret 安全地存储在服务器端上。 |
 
 ### <a name="response"></a>响应

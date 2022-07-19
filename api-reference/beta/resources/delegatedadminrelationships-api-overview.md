@@ -5,12 +5,12 @@ author: adtangir
 ms.localizationpriority: medium
 ms.prod: customer-relationship-management
 doc_type: resourcePageType
-ms.openlocfilehash: 2d4876f6017219c655b38bc303ce6bbca81db8d2
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 1916627207c8b4c9d8f3a36f400d66a4e4577b9b
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821246"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855623"
 ---
 # <a name="granular-delegated-admin-privileges-gdap-api-overview"></a>GDAP) API 概述 (粒度委派的管理员权限
 
@@ -18,7 +18,7 @@ ms.locfileid: "65821246"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-作为 Microsoft 合作伙伴中心生态系统的一部分，云解决方案提供商、增值经销商或顾问程序中的 Microsoft 合作伙伴可以对其客户租户执行管理操作，以帮助管理客户的服务，例如 Azure AD 和Microsoft 365。 此功能以前允许合作伙伴无限期地在客户租户中担任全局管理员角色，从而产生潜在的安全风险并限制市场潜力。
+作为 Microsoft 合作伙伴中心生态系统的一部分，云解决方案提供商、增值经销商或顾问程序中的 Microsoft 合作伙伴可以对其客户租户执行管理操作，以帮助管理客户的服务，例如 Azure AD 和 Microsoft 365。 此功能以前允许合作伙伴无限期地在客户租户中担任全局管理员角色，从而产生潜在的安全风险并限制市场潜力。
 
 **GDAP (粒度委派的管理员权限)** 为合作伙伴提供对客户租户的最低特权访问权限，遵循 [零信任网络安全模型](/security/zero-trust/)。 通过 GDAP，合作伙伴配置并请求对其客户环境的粒度和限时访问权限，客户必须显式向合作伙伴授予此最低特权的访问权限。 此外，合作伙伴必须在一定的时间内请求客户租户管理的特定角色。 此控件消除了合作伙伴在其客户的租户中具有全局管理员角色的需求，但是，他们现在拥有委派的管理任务绝对需要的特权更低的权限。
 
@@ -99,7 +99,7 @@ ms.locfileid: "65821246"
 
 ## <a name="permissions"></a>权限
 
-若要管理委派的管理员关系，调用主体必须在合作伙伴租户中，并被授予适当的 [粒度委派管理员权限](/graph/permissions-reference#delegated-admin-relationship-permissions)。
+若要管理委派的管理员关系，调用主体必须在合作伙伴租户中，并被授予适当的 [粒度委派管理员权限](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions)。
 
 
 ## <a name="see-also"></a>另请参阅

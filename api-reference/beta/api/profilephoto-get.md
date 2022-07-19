@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: people
 author: kevinbellinger
-ms.openlocfilehash: 4f5ddbc309c874e49cd7595ed89517eff8a6585c
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: cc86e6dfc1e2aeb57c65d00f383c90842f30e2cb
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860712"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855625"
 ---
 # <a name="get-profilephoto"></a>获取 profilePhoto
 
@@ -31,13 +31,13 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 
 > **注意：** beta 版中的获取照片方法支持用户的工作、学校或个人帐户。 但是获取照片元数据方法仅支持用户的工作或学校帐户，不支持个人帐户。
 
-### <a name="to-retrieve-the-profile-photo-of-a-user"></a>检索用户的个人资料照片
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>检索联系人的个人资料照片
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）      |   User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All           |
-|委派（个人 Microsoft 帐户）      |   User.Read、User.ReadWrite            |
-|应用程序      |    User.Read.All、User.ReadWrite.All           |
+|委派（工作或学校帐户）      |   Contacts.Read、Contacts.ReadWrite           |
+|委派（个人 Microsoft 帐户）      |   Contacts.Read、Contacts.ReadWrite            |
+|应用程序      |    Contacts.Read、Contacts.ReadWrite           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-group"></a>检索组的个人资料照片
 
@@ -47,19 +47,29 @@ Microsoft 365 支持以下高清照片尺寸：48x48、64x64、96x96、120x120�
 |委派（个人 Microsoft 帐户）      |   不支持。            |
 |应用程序      |    Group.Read.All、Group.ReadWrite.All           |
 
-### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>检索联系人的个人资料照片
+### <a name="to-retrieve-the-profile-photo-of-a-team"></a>检索团队的个人资料照片
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
-|委派（工作或学校帐户）      |   Contacts.Read、Contacts.ReadWrite           |
-|委派（个人 Microsoft 帐户）      |   Contacts.Read、Contacts.ReadWrite            |
-|应用程序      |    Contacts.Read、Contacts.ReadWrite           |
+|委派（工作或学校帐户） | Team.ReadBasic.All、TeamSettings.Read.All、TeamSettings.ReadWrite.All、Group.Read.All **、Group.ReadWrite.All**、Directory.Read.All **、Directory.ReadWrite.All** |
+|委派（个人 Microsoft 帐户） | 不支持。    |
+|应用程序 | TeamSettings.Read.Group *、TeamSettings.ReadWrite.Group*、Team.ReadBasic.All、TeamSettings.Read.All、TeamSettings.ReadWrite.All、Group.Read.All **、Group.ReadWrite.All**、Directory.Read.All **、Directory.ReadWrite.All**  |
+
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>检索用户的个人资料照片
+
+|权限类型      | 权限（从最低特权到最高特权）              |
+|:--------------------|:---------------------------------------------------------|
+|委派（工作或学校帐户）      |   User.Read、User.ReadBasic.All、User.Read.All、User.ReadWrite、User.ReadWrite.All           |
+|委派（个人 Microsoft 帐户）      |   User.Read、User.ReadWrite            |
+|应用程序      |    User.Read.All、User.ReadWrite.All           |
+
+
 
 > [!NOTE]
 > 
 > 1. 个人 Microsoft 帐户不支持元数据操作。
 > 2. 当前在使用应用权限访问组照片方面存在一个 [已知问题](/graph/known-issues#groups)。
-> 3. 当前不支持在 B2C 租户Graph Microsoft Azure AD检索用户的照片。
+> 3. Azure AD B2C 租户目前不支持使用 Microsoft 图形 API 检索用户的照片。
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -74,6 +84,7 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /team/{id}/photo/$value
 ```
 
 ### <a name="get-the-metadata-of-the-photo"></a>获取照片的元数据
@@ -87,6 +98,7 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /team/{id}/photo
 ```
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>获取指定照片尺寸的元数据
@@ -212,6 +224,61 @@ Content-type: application/json
     "height": 1
 }
 ```
+
+### <a name="example-4-get-the-photo-metadata"></a>示例 4：获取照片元数据
+
+#### <a name="request"></a>请求
+
+下述示例展示了要获取团队照片元数据的请求。
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
+}-->
+```http
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+```
+
+#### <a name="response"></a>响应
+
+下面是一个响应示例。
+
+> **注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/beta/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.mediaContentType": "image/jpeg",
+    "@odata.mediaEtag": "\"BA09D118\"",
+    "id": "240X240",
+    "width": 240,
+    "height": 240
+}
+```
+
+### <a name="example-5-get-the-team-photos-binary-data"></a>示例 5：获取团队照片的二进制数据
+
+以下示例展示了要获取团队照片二进制数据的请求。
+
+#### <a name="request"></a>请求
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo"
+}-->
+```http
+GET https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+```
+
+#### <a name="response"></a>响应
+
+包含所请求照片的二进制数据。HTTP 响应代码为 200。
 
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>使用所请求照片的二进制数据
 

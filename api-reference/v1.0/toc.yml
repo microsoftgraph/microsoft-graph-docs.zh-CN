@@ -1525,6 +1525,8 @@ items:
                 href: api/bookingbusiness-publish.md
               - name: 取消发布
                 href: api/bookingbusiness-unpublish.md
+              - name: 获取员工可用性
+                href: api/bookingbusiness-getstaffavailability.md
           - name: 预订约会
             href: resources/bookingappointment.md
             items:
@@ -6951,6 +6953,10 @@ items:
                 href: api/user-list-joinedteams.md
               - name: 获取主通道
                 href: api/team-get-primarychannel.md
+              - name: 获取团队照片
+                href: api/profilephoto-get.md
+              - name: 更新团队照片
+                href: api/profilephoto-update.md
               - name: 列出所有团队
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
               - name: 团队的完整迁移

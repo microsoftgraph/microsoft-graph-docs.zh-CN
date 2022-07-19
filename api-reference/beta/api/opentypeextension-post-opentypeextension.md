@@ -1,18 +1,18 @@
 ---
-title: 创建开放扩展
+title: 创建 openTypeExtension
 description: 创建 open extension (openTypeExtension 对象) 并添加自定义属性
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 6dffafea076698b90a5adfe1dd83114c7e2eadcc
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 67fcf14d2e22ee6fd1a1c215c91a67b3bb40ec84
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555259"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855698"
 ---
-# <a name="create-open-extension"></a>创建开放扩展
+# <a name="create-opentypeextension"></a>创建 openTypeExtension
 
 命名空间：microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "66555259"
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。 可以在资源实例中 [创建打开的扩展，](/graph/api/opentypeextension-post-opentypeextension) 并将自定义数据存储在同一操作中，但特定资源除外。 有关详细信息，请参阅 [开放扩展的已知限制](/graph/known-issues#extensions) 。
+创建开放扩展（[openTypeExtension](../resources/opentypeextension.md) 对象），并在资源的新实例或现有实例中添加自定义属性。 可以在同一操作中创建资源实例中的 [开放扩展，](/graph/api/opentypeextension-post-opentypeextension) 并将自定义数据存储到其中，但特定资源除外。 有关详细信息，请参阅 [开放扩展的已知限制](/graph/known-issues#extensions)。
 
 "权限" ["](#permissions) "部分中列出支持打开扩展的资源。
 
@@ -56,15 +56,15 @@ ms.locfileid: "66555259"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/events
-POST /users/{id|userPrincipalName}/messages
-POST /groups/{id}/events
-POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/todo/lists
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/tasks/lists
+POST /users/{userId|userPrincipalName}/events
+POST /users/{userId|userPrincipalName}/messages
+POST /groups/{userId}/events
+POST /groups/{userId}/threads/{threadId}/posts/{postId}/reply
+POST /users/{userId|userPrincipalName}/contacts
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/todo/lists
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 >**注意：** 此语法显示了一些创建支持的资源实例的常见方法。可以用来创建这些资源实例的所有其他 POST 语法均支持以类似的方式从中创建开放扩展。
@@ -77,31 +77,25 @@ POST /users/{id|userPrincipalName}/tasks/lists
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeunits/{id}/extensions
-POST /devices/{id}/extensions
-POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /groups/{id}/extensions
-POST /groups/{id}/events/{id}/extensions
-POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
-POST /organization/{id}/extensions
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
-POST /users/{id|userPrincipalName}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
+POST /administrativeunits/{administrativeUnitId}/extensions
+POST /devices/{deviceId}/extensions
+POST /users/{userId|userPrincipalName}/events/{eventId}/extensions
+POST /groups/{groupId}/extensions
+POST /groups/{groupId}/events/{eventId}/extensions
+POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
+POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
+POST /organization/{organizationId}/extensions
+POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 ```
 
 >**注意：** 此语法显示了一些标识资源实例的常见方法，以便在其中创建一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中创建开放扩展。
 
 若要了解如何在请求正文中添加 _扩展_，请参阅 [请求正文](#request-body)部分。
-
-## <a name="path-parameters"></a>路径参数
-
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|id|string|对象在相应集合中的唯一标识符。必需。|
 
 ## <a name="request-headers"></a>请求标头
 
@@ -117,7 +111,7 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 | 名称       | 值 |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | 唯一字符串 |
 
 在 _新_ 资源实例中创建扩展插件时，除了新的 **openTypeExtension** 对象之外，还要提供 JSON 表示形式的相关属性才能创建此类资源实例。
 
@@ -196,7 +190,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -325,7 +319,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -406,7 +400,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -495,7 +489,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -581,7 +575,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-opentypeextension-5-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

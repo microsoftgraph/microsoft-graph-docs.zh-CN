@@ -5,17 +5,25 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3e1c3cc68afaa2be716f05ddf6e0a385eff9b540
-ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
+ms.openlocfilehash: 43a22ad7bdd5ba93e70016105078c9c3e9e626a7
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66604487"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855642"
 ---
 # <a name="enum-values"></a>枚举值
 
 命名空间：microsoft.graph
 
+### <a name="bookingsavailabilitystatus-values"></a>bookingsAvailabilityStatus 值
+|成员|
+|:---|
+|可用|
+|忙|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
 
 ### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>crossTenantAccessPolicyTargetConfigurationAccessType 值
 
@@ -718,7 +726,7 @@ ms.locfileid: "66604487"
 
 ### <a name="contactrelationship-values"></a>contactRelationship 值
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |父级|0|用户的父级。|
 |相对|1| 用户的相对。|
@@ -726,7 +734,7 @@ ms.locfileid: "66604487"
 |医生|3| 用户的医生。|
 |监护人|4| 用户的监护人。|
 |Child|5| 用户的子级。|
-|其他|6 | 与用户的未指定关系。|
+|其他|6| 与用户的未指定关系。|
 |unknownFutureValue|7 | 用于将来兼容性的标记值。|
 
 ### <a name="scheduleentitytheme-values"></a>scheduleEntityTheme 值
@@ -853,7 +861,7 @@ ms.locfileid: "66604487"
 | lightGray  | 3
 | lightYellow| 4
 | lightTeal  | 5
-| lightPink  | 6 
+| lightPink  | 6
 | lightBrown | 7 
 | lightRed   | 8 
 | maxColor   | 9 
@@ -1200,7 +1208,7 @@ ms.locfileid: "66604487"
 | preset3  | 3
 | preset4  | 4
 | preset5  | 5
-| preset6  | 6 
+| preset6  | 6
 | preset7  | 7 
 | preset8  | 8 
 | preset9  | 9 
@@ -1224,7 +1232,7 @@ ms.locfileid: "66604487"
 
 有关分析人员提供的警报的可能反馈值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |truePositive|1|警报为 true-positive。|
@@ -1235,7 +1243,7 @@ ms.locfileid: "66604487"
 
 文件哈希类型的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知类型。|
 |sha1|1|SHA1 哈希类型。|
@@ -1243,7 +1251,7 @@ ms.locfileid: "66604487"
 |md5|3| MD5 哈希类型。|
 |authenticodeHash256|4| AuthenticodeHash256 哈希类型。|
 |lsHash|5| LsHash 哈希类型。|
-|ctph|6 | CTPH 哈希类型。|
+|ctph|6| CTPH 哈希类型。|
 |peSha1|7 | PESHA1 哈希类型。|
 |peSha256|8 | PESHA256 哈希类型。|
 
@@ -1251,7 +1259,7 @@ ms.locfileid: "66604487"
 
 枚举网络连接 (入站/出站) 的方向。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知连接。|
 |入境|1|入站连接。|
@@ -1261,7 +1269,7 @@ ms.locfileid: "66604487"
 
 连接状态的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的连接状态。|
 |企图|1|尝试连接。|
@@ -1273,7 +1281,7 @@ ms.locfileid: "66604487"
 
 进程的可能完整性级别值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知。|
 |可信|10|完整性级别不受信任。|
@@ -1286,7 +1294,7 @@ ms.locfileid: "66604487"
 
 由 [/windows/desktop/sysinfo/registry-hives 定义的注册表 hiv 的枚举](/windows/desktop/sysinfo/registry-hives)。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知 hive。|
 |currentConfig|1|HKEY_CURRENT_CONFIG hive。|
@@ -1294,13 +1302,13 @@ ms.locfileid: "66604487"
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM hive。|
 |localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software hive。|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive。|
-|usersDefault|6 | \\HKEY_USERS。DEFAULT hive。|
+|usersDefault|6| \\HKEY_USERS。DEFAULT hive。|
 
 ### <a name="registryoperation-values"></a>registryOperation 值
 
 更改注册表项名称和/或值的操作。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |create|1|创建注册表。|
@@ -1311,7 +1319,7 @@ ms.locfileid: "66604487"
 
 由 [/windows/desktop/sysinfo/registry-value-types](/windows/desktop/sysinfo/registry-value-types) 定义的注册表值类型的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知的注册表值类型。|
 |二 进 制|1|REG_BINARY注册表值类型。|
@@ -1319,7 +1327,7 @@ ms.locfileid: "66604487"
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN注册表值类型。|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN注册表值类型。|
 |expandSz|5| REG_EXPAND_SZ注册表值类型。|
-|链接|6 | REG_LINK注册表值类型。|
+|链接|6| REG_LINK注册表值类型。|
 |multiSz|7 | REG_MULTI_SZ注册表值类型。|
 |无|8 | REG_NONE注册表值类型。|
 |qword|9 | REG_QWORD注册表值类型。|
@@ -1330,7 +1338,7 @@ ms.locfileid: "66604487"
 
 警报严重性的枚举。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|严重性未知。|
 |信息|1|严重性仅适用于信息。|
@@ -1342,7 +1350,7 @@ ms.locfileid: "66604487"
 
 警报生命周期状态的可能值 (阶段) 。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知状态。|
 |newAlert|10| 警报是新的。|
@@ -1352,7 +1360,7 @@ ms.locfileid: "66604487"
 ### <a name="emailrole-values"></a>emailRole 值
 电子邮件角色的可能值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|0|未知角色。|
 |sender|1|电子邮件的发件人。|
@@ -1362,7 +1370,7 @@ ms.locfileid: "66604487"
 
 用户登录方法的可能值。
 
-|成员|值|说明|
+|成员|值|Description|
 |:---|:---|:---|
 |unknown|-1|未知。|
 |互动|0|登录是交互式的。|
@@ -1507,14 +1515,14 @@ ms.locfileid: "66604487"
 
 ### <a name="threatexpectedassessment-values"></a>threatExpectedAssessment 值
 
-| 成员  | 值 | 说明                       |
+| 成员  | 值 | Description                       |
 |:--------|:------|:----------------------------------|
 | 块   | 1     | 应阻止威胁。     |
 | 疏通 | 2     | 不应阻止威胁。 |
 
 ### <a name="threatcategory-values"></a>threatCategory 值
 
-| 成员             | 值 | 说明        |
+| 成员             | 值 | Description        |
 |:-------------------|:------|:-------------------|
 | 垃圾邮件 (spam)               | 1     | 垃圾邮件威胁。       |
 | 仿冒           | 2     | 网络钓鱼威胁。   |
@@ -1523,14 +1531,14 @@ ms.locfileid: "66604487"
 
 ### <a name="threatassessmentstatus-values"></a>threatAssessmentStatus 值
 
-| 成员    | 值 | 说明                              |
+| 成员    | 值 | Description                              |
 |:----------|:------|:-----------------------------------------|
 | 等待   | 1     | 威胁评估仍在进行中。 |
 | 完成 | 2     | 威胁评估已完成。         |
 
 ### <a name="threatassessmentrequestsource-values"></a>threatAssessmentRequestSource 值
 
-| 成员        | 值 | 说明              |
+| 成员        | 值 | Description              |
 |:--------------|:------|:-------------------------|
 | 定义     | 0     | 还不知道            |
 | 用户          | 1     | 用户提交。         |
@@ -1538,7 +1546,7 @@ ms.locfileid: "66604487"
 
 ### <a name="threatassessmentresulttype-values"></a>threatAssessmentResultType 值
 
-| 成员             | 值 | 说明                                          |
+| 成员             | 值 | Description                                          |
 |:-------------------|:------|:-----------------------------------------------------|
 | checkPolicy        | 1     | 策略检查结果，仅用于 `mail` 评估。 |
 | rescan             | 2     | 重新扫描结果。                                   |
@@ -1546,7 +1554,7 @@ ms.locfileid: "66604487"
 
 ### <a name="maildestinationroutingreason-values"></a>mailDestinationRoutingReason 值
 
-| 成员                | 值 | 说明                         |
+| 成员                | 值 | Description                         |
 |:----------------------|:------|:------------------------------------|
 | 无                  | 0     | 还不知道                       |
 | mailFlowRule          | 1     | Exchange 传输规则。            |
@@ -1554,7 +1562,7 @@ ms.locfileid: "66604487"
 | blockedSender         | 3     | 阻止的发件人列表。                |
 | advancedSpamFiltering | 4     | 高级垃圾邮件飞溅选项。     |
 | domainAllowList       | 5     | 发送方域允许列表。           |
-| domainBlockList       | 6      | 发送方域块列表。           |
+| domainBlockList       | 6     | 发送方域块列表。           |
 | notInAddressBook      | 7      | 排除未在通讯簿中的发件人。 |
 | firstTimeSender       | 8      | 由于第一次发送者而被阻止。   |
 | autoPurgeToInbox      | 9      | TimeTravel 将消息移动到收件箱。   |
@@ -1603,7 +1611,7 @@ ms.locfileid: "66604487"
 
 ### <a name="channelmembershiptype-values"></a>channelMembershipType 值
 
-| 成员             | 值 |说明|
+| 成员             | 值 |Description|
 | :----------------- | :---- |:-----------|
 | 标准           | 0     |频道继承父团队成员的列表。|
 | 私人            | 1     |频道可以包含成员，这些成员是父团队中所有成员的子集。|
@@ -1879,7 +1887,7 @@ ms.locfileid: "66604487"
 |成员|
 |:---|
 |团队|
-|频道|
+|通道|
 |聊天|
 |unknownFutureValue|
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 81d796a94897a73f96979990bb4d0d79523bf5a3
-ms.sourcegitcommit: 0759717104292bda6012dd2e9e3a362567aa2b64
+ms.openlocfilehash: 9298682cd33509f1ffb6beaa850fbd33a761b42c
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "60938565"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855761"
 ---
 # <a name="create-printjob-for-a-printer"></a>为打印机创建 printJob
 
@@ -18,12 +18,14 @@ ms.locfileid: "60938565"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-为打印机[创建新的 printJob。](../resources/printJob.md) [](../resources/printer.md) 
+为[打印机](../resources/printer.md)创建新的 [printJob](../resources/printJob.md)。 
 
-## <a name="permissions"></a>Permissions
+> **注意：** 用户可以在 10 天内提交最多 10000 个打印作业。
+
+## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-除了以下权限之外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [获取](printer-get.md) 打印机访问权限的权限。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+除了以下权限外，用户或应用的租户还必须具有活动的通用打印订阅，并且具有授予 [Get 打印机](printer-get.md) 访问权限的权限。 已登录的用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -44,12 +46,12 @@ POST print/printers/{id}/jobs
 | Content-type  | application/json. Required.|
 
 ## <a name="request-body"></a>请求正文
-在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。 printJob 对象应仅包含 **配置**。 配置的所有 **属性都** 为 null。 所有其他字段（包括作业和文档 ID）将在资源创建过程中自动设置。
+在请求正文中，提供 [printJob](../resources/printjob.md) 对象的 JSON 表示形式。 printJob 对象应仅包含 **配置**。 **配置** 的所有属性都是可以为 null 的。 在创建资源期间会自动设置所有其他字段，包括作业和文档 ID。
 
-目前，通用打印仅支持每个 **printJob** 对象一个 **printDocument。**
+目前，通用打印仅支持每个 **printJob** 对象一个 **printDocument**。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `201 Created` 正文中返回 响应代码[、printJob](../resources/printjob.md)对象和关联的[printDocument。](../resources/printDocument.md) 
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [printJob](../resources/printjob.md) 对象以及关联的 [printDocument](../resources/printDocument.md) 。 
 ## <a name="example"></a>示例
 ### <a name="request"></a>请求
 下面展示了示例请求。

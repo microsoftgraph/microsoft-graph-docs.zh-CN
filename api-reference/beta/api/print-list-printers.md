@@ -1,16 +1,16 @@
 ---
 title: 获取打印机
-description: 检索租户中注册的打印机列表。
+description: 检索在租户中注册的打印机列表。
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: ebcdcf360ff936c7f4bb6732b5d34b267ad7ecb2
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 868ee729be71a2cf7fea6c7b8e14761e205e4e35
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62127251"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855789"
 ---
 # <a name="list-printers"></a>列出打印机
 
@@ -18,12 +18,12 @@ ms.locfileid: "62127251"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-检索租户 **中** 注册的打印机列表。
+检索在租户中注册的 **打印机** 列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。 登录的用户必须是打印机 [管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
+若要使用通用打印服务，除下表中列出的权限外，用户或应用的租户还必须具有活动的通用打印订阅。 已登录的用户必须是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -40,9 +40,9 @@ GET /print/printers
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-### <a name="exceptions"></a>Exceptions
-* 和 `$expand` `select` 运算符受导航属性 `share` 支持，但不支持 `jobs` 。
-* 不支持某些运算符 `$count` `$search` ：、。
+### <a name="exceptions"></a>例外
+* 导航`$expand`属性支持`shares`和运算符，但不支持`jobs`。`$select`
+* 不支持某些运算符： `$count`。 `$search`
 
 ## <a name="request-headers"></a>请求标头
 | 名称      |说明|
@@ -52,7 +52,7 @@ GET /print/printers
 ## <a name="request-body"></a>请求正文
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printer](../resources/printer.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [打印机](../resources/printer.md) 对象集合。
 ## <a name="example"></a>示例
 ##### <a name="request"></a>请求
 下面展示了示例请求。
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/print/printers
 [!INCLUDE [sample-code](../includes/snippets/java/get-printers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printers-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

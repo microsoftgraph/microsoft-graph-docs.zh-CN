@@ -10501,7 +10501,7 @@ items:
                     href: api/manageddevice-restorecloudpc.md
                   - name: 设置审阅状态
                     href: api/manageddevice-setcloudpcreviewstatus.md
-                  - name: 排除故障
+                  - name: 疑难解答
                     href: api/cloudpc-troubleshoot.md
               - name: 云电脑设备映像
                 href: resources/cloudpcdeviceimage.md
@@ -10702,6 +10702,26 @@ items:
                         href: api/windowsupdates-updatableassetgroup-removemembers.md
                       - name: 按 ID 删除成员
                         href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+              - name: 资源连接
+                href: resources/windowsupdates-resourceconnection.md
+                items:
+                  - name: 列出
+                    href: api/windowsupdates-updates-list-resourceconnections.md
+                  - name: 获取
+                    href: api/windowsupdates-resourceconnection-get.md
+                  - name: 删除
+                    href: api/windowsupdates-resourceconnection-delete.md
+                  - name: 操作见解连接
+                    href: resources/windowsupdates-operationalinsightsconnection.md
+                    items:
+                      - name: 列出
+                        href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+                      - name: 创建
+                        href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+                      - name: 获取
+                        href: api/windowsupdates-operationalinsightsconnection-get.md
+                      - name: 删除
+                        href: api/windowsupdates-operationalinsightsconnection-delete.md
           - name: 多租户管理（预览）
             items:
               - name: 托管租户
@@ -14390,6 +14410,13 @@ items:
             items:
               - name: 概述
                 href: resources/report.md
+              - name: 设置
+                href: resources/adminreportsettings.md
+                items:
+                  - name: 获取
+                    href: api/adminreportsettings-get.md
+                  - name: 更新
+                    href: api/adminreportsettings-update.md
               - name: Microsoft Teams 设备使用情况
                 href: resources/microsoft-teams-device-usage-reports.md
                 items:
@@ -15143,6 +15170,59 @@ items:
                 href: api/tiindicator-deletetiindicators.md
               - name: 按外部 ID 删除多项
                 href: api/tiindicator-deletetiindicatorsbyexternalid.md
+          - name: '威胁提交 (预览) '
+            href: resources/security-threatsubmission.md
+            items:
+              - name: Email威胁提交
+                href: resources/security-emailthreatsubmission.md
+                items:
+                  - name: 列出
+                    href: api/security-emailthreatsubmission-list.md
+                  - name: 创建
+                    href: api/security-emailthreatsubmission-post-emailthreats.md
+                  - name: 获取
+                    href: api/security-emailthreatsubmission-get.md
+                  - name: 审阅
+                    href: api/security-emailthreatsubmission-review.md
+                  - name: Email内容威胁提交
+                    href: resources/security-emailcontentthreatsubmission.md
+                  - name: Email URL 威胁提交
+                    href: resources/security-emailurlthreatsubmission.md
+              - name: Email威胁提交策略
+                href: resources/security-emailthreatsubmissionpolicy.md
+                items:
+                  - name: 列出
+                    href: api/security-emailthreatsubmissionpolicy-list.md
+                  - name: 创建
+                    href: api/security-emailthreatsubmissionpolicy-post-emailthreatsubmissionpolicies.md
+                  - name: 获取
+                    href: api/security-emailthreatsubmissionpolicy-get.md
+                  - name: 更新
+                    href: api/security-emailthreatsubmissionpolicy-update.md
+                  - name: 删除
+                    href: api/security-emailthreatsubmissionpolicy-delete.md
+              - name: URL 威胁提交
+                href: resources/security-urlthreatsubmission.md
+                items:
+                  - name: 列出
+                    href: api/security-urlthreatsubmission-list.md
+                  - name: 创建
+                    href: api/security-urlthreatsubmission-post-urlthreats.md
+                  - name: 获取
+                    href: api/security-urlthreatsubmission-get.md
+              - name: 文件威胁提交
+                href: resources/security-filethreatsubmission.md
+                items:
+                  - name: 列出
+                    href: api/security-filethreatsubmission-list.md
+                  - name: 创建
+                    href: api/security-filethreatsubmission-post-filethreats.md
+                  - name: 获取
+                    href: api/security-filethreatsubmission-get.md
+                  - name: 文件 URL 威胁提交
+                    href: resources/security-fileurlthreatsubmission.md
+                  - name: 文件内容威胁提交
+                    href: resources/security-filecontentthreatsubmission.md
           - name: 错误
             href: resources/security-error-codes.md
       - name: 网站和列表
@@ -15560,7 +15640,7 @@ items:
               - name: 获取主通道
                 href: api/team-get-primarychannel.md
               - name: 获取团队照片
-                href: api/team-get-photo.md
+                href: api/profilephoto-get.md
               - name: 更新团队照片
                 href: api/profilephoto-update.md
               - name: 团队的完整迁移

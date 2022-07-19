@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b8749e7831a54e4d6b94add1e37e5eaa6a95e86b
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: fa6da0486972982566b6785a8f2aa62fef408b30
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160543"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856279"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
@@ -43,7 +43,7 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。 频道�
 |[列出你的团队](../api/user-list-joinedteams.md) | [team](team.md) 集合 | 列出你属于的团队。 |
 |[列出关联的团队](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) 集合 | 获取 [user](user.md) 与之关联的 Microsoft Teams 中的 [associatedTeamInfo](associatedteaminfo.md) 对象的列表。 |
 |[列出组织中的所有团队](../api/teams-list.md) | [团队](team.md) 集合 | 列出组织中的所有团队。 |
-|[获取团队照片](../api/team-get-photo.md) | 二进制数据 | 获取团队的照片（图片）。 |
+|[获取团队照片](../api/profilephoto-get.md) | 二进制数据 | 获取团队的照片（图片）。 |
 |[完成迁移](../api/team-completemigration.md)|[团队](team.md)| 从团队中删除迁移模式并使团队可供用户发布和阅读消息。|
 |[示例 1：列出所有频道](../api/team-list-allchannels.md)|[channel](../resources/channel.md) 集合|获取此 **团队** 中的 [频道](../resources/channel.md) 列表或与此 **团队** (传入频道) 共享的频道列表。|
 |[列出频道](../api/channel-list.md)|[频道](../resources/channel.md)集合|获取 **团队** 中的 [频道列表](../resources/channel.md)。|

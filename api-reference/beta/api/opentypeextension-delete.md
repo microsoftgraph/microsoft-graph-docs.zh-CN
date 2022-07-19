@@ -1,18 +1,18 @@
 ---
-title: 删除开放扩展
+title: 删除 openTypeExtension
 description: '从指定的资源实例中删除开放扩展（openTypeExtension 对象）。 '
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7aa81b04f64ebc656d721f08248b0b3993abe2d3
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: d41d6e784c5e2194bc2a4671ace11f44f56ac529
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821146"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855747"
 ---
-# <a name="delete-open-extension"></a>删除开放扩展
+# <a name="delete-opentypeextension"></a>删除 openTypeExtension
 
 命名空间：microsoft.graph
 
@@ -50,29 +50,23 @@ ms.locfileid: "65821146"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{Id}/extensions/{extensionId}
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{Id}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{Id}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+DELETE /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+DELETE /devices/{deviceId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/extensions/{extensionId}
+DELETE /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/threads/{threadIid}/posts/{postId}/extensions/{extensionId}
+DELETE /users/{userIid|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+DELETE /organization/{organizationId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**注意：** 以上语法显示了一些标识资源实例的常见方法，以便从中删除扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式从中删除开放扩展。
-
-## <a name="path-parameters"></a>路径参数
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|id|string|实例在相应集合中的唯一标识符。必需。|
-|extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
@@ -114,7 +108,7 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 [!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

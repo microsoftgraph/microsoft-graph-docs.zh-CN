@@ -1,52 +1,63 @@
 ---
 title: 列出约会
-description: 获取指定 bookingbusiness 的 bookingAppointment 对象列表。
+description: 获取指定 bookingBusiness 的 bookingAppointment 对象列表。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2695fa895417ebb3d2e4bb793c4565cafdf06a64
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: fbb01079dde03e2926775eb16fa6d7f7b972167a
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014269"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856048"
 ---
 # <a name="list-appointments"></a>列出约会
 
 命名空间：microsoft.graph
 
-获取指定的[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象列表。
-## <a name="permissions"></a>Permissions
+获取指定 [bookingBusiness](../resources/bookingbusiness.md) 的 [bookingAppointment](../resources/bookingappointment.md) 对象列表。
+
+## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
 |:--------------------|:---------------------------------------------------------|
 |委派（工作或学校帐户） |  Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All   |
 |委派（个人 Microsoft 帐户） | 不支持。   |
-|应用程序 | 不支持。  |
+|应用程序 | BookingsAppointment.ReadWrite.All、Bookings.Read.All   |
 
 ## <a name="http-request"></a>HTTP 请求
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/appointments
 ```
-## <a name="optional-query-parameters"></a>可选的查询参数
-此方法支持使用 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
 
-若要获取日期范围内 Microsoft Bookings 业务（而不是 ）的约会集，请获取该 `$filter` 日期范围的[calendarView。](bookingbusiness-list-calendarview.md)
+## <a name="optional-query-parameters"></a>可选的查询参数
+
+此方法支持$count和$expand [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
+
+若要获取日期范围内Microsoft Bookings企业的约会集，而不是`$filter`获取该日期范围[的 calendarView](bookingbusiness-list-calendarview.md)。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称      |说明|
 |:----------|:----------|
-| Authorization  | Bearer {code}。 必需。|
+| Authorization  | 持有者 {code}。必需。|
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
+
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
+
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
+
 ## <a name="example"></a>示例
+
 ### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 <!-- {
@@ -57,6 +68,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

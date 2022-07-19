@@ -1,16 +1,16 @@
 ---
 title: 列出共享项
-description: 检索打印机共享的列表。
+description: 检索打印机共享列表。
 author: braedenp-msft
 ms.localizationpriority: medium
 ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8c03dd3ac57568751837e0607b4a3d62998579e4
-ms.sourcegitcommit: a16b765507093d892022603d521c0ae8043de432
+ms.openlocfilehash: 3aba801dfd7eb5bfc285606ec347edc6831360be
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62124513"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856244"
 ---
 # <a name="list-shares"></a>列出共享项
 命名空间：microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "62124513"
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
-若要使用通用打印服务，除了下表中列出的权限之外，用户或应用的租户还必须具有活动的通用打印订阅。
+若要使用通用打印服务，除下表中列出的权限外，用户或应用的租户还必须具有活动的通用打印订阅。
 
 |权限类型 | 权限（从最低特权到最高特权） |
 |:---------------|:--------------------------------------------|
@@ -41,10 +41,10 @@ GET /print/shares
 ## <a name="optional-query-parameters"></a>可选的查询参数
 此方法支持一些 OData 查询参数来帮助自定义响应。 若要了解一般信息，请参阅 [OData 查询参数](/graph/query-parameters)。
 
-若要查看每个打印机共享功能的列表，请包含可选的 `$select=capabilities` 查询参数。
+> **注意：** 使用 $top=n 查询参数将 **返回到**`n`共享。 调用方需要使用跳过令牌来枚举整个列表。
 
-### <a name="exceptions"></a>Exceptions
-不支持某些运算符 `$count` `$orderby` ：、、。 `$search`
+### <a name="exceptions"></a>例外
+不支持某些运算符： `$count`。 `$search`
 
 ## <a name="request-headers"></a>请求标头
 |名称|说明|
@@ -56,9 +56,15 @@ GET /print/shares
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 响应代码和 `200 OK` [printerShare](../resources/printershare.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [printerShare](../resources/printershare.md) 对象集合。
 
->**注意**：响应将不包含 **defaults** 和 **capabilities** 属性。 可以通过获取 [printerShare](printershare-get.md) 请求获取这些属性。
+>**注意**：响应将不包含 **默认** 值或 **功能** 属性。 
+
+> 对于以下方案，响应将包含 id、displayName、manufacturer、model、location)  (有限属性集：
+>  - 代表不是 [打印机管理员](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)的用户列出打印机共享。
+>  - 根据或 `location`. `capabilities` 筛选打印机共享。
+
+可以通过 [Get printerShare](printershare-get.md) 请求获取其他属性。
 
 ## <a name="examples"></a>示例
 
@@ -89,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/print/shares
 [!INCLUDE [sample-code](../includes/snippets/java/list-printershare-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-printershare-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

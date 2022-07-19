@@ -1,18 +1,18 @@
 ---
-title: 更新开放扩展
+title: 更新 openTypeExtension
 description: 通过请求正文中的属性更新开放扩展（openTypeExtension 对象）：
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: acd04e9d1bd24bcd87228a8b29c1f9154f02c5d9
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 06f6b02831138d00f02f412e9355b8547f536309
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820747"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855656"
 ---
-# <a name="update-open-extension"></a>更新开放扩展
+# <a name="update-opentypeextension"></a>更新 openTypeExtension
 
 命名空间：microsoft.graph
 
@@ -55,31 +55,25 @@ ms.locfileid: "65820747"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/{Id}/extensions/{extensionId}
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{Id}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
+PATCH /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+PATCH /devices/{deviceId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/extensions/{extensionId}
+PATCH /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+PATCH /organization/{organizationId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 >**注意：** 以上语法显示一些标识资源实例的常见方法，以便在其中更新一个扩展。可以用来标识这些资源实例的所有其他语法均支持以类似的方式在其中更新开放扩展。
 
 若要了解如何在请求正文中添加任意自定义数据来进行更改或添加到扩展插件，请参阅[请求正文](#request-body)部分。
-
-## <a name="path-parameters"></a>路径参数
-|**参数**|**类型**|**说明**|
-|:-----|:-----|:-----|
-|id|string|相应集合的实例的唯一标识符。必需。|
-|extensionId|string|这可以是一个扩展名称（即扩展的唯一文本标识符）或完全限定的名称（连接扩展类型和唯一文本标识符）。创建扩展时，在 `id` 属性中返回完全限定的名称。必需。|
 
 ## <a name="request-headers"></a>请求标头
 | 名称       | 值 |
@@ -91,10 +85,10 @@ PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
 
 提供 [openTypeExtension](../resources/opentypeextension.md) 对象的 JSON 正文（具有以下所需的名称-值对）以及要更改或添加到该扩展中的任意定义数据。JSON 负载中的数据可以是基元或基元数组类型。
 
-| Name       | 值 |
+| 名称       | 值 |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %unique_string% |
+| extensionName | 唯一字符串 |
 
 ## <a name="response"></a>响应
 
@@ -238,7 +232,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-opentypeextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-opentypeextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

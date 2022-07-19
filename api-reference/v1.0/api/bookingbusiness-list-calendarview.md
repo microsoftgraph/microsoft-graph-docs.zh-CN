@@ -1,24 +1,25 @@
 ---
 title: 列出业务日历视图
-description: 获取 bookingBusiness 的 bookingAppointment 对象的集合，该集合发生在指定的日期范围内。
+description: 获取在指定日期范围内发生的 bookingBusiness 的 bookingAppointment 对象的集合。
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d5f298052dc086358c195decc4ffb6cb0d58225
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 81fb96038e08657bd63270e463b0a540348a5e16
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014262"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856356"
 ---
 # <a name="list-business-calendarview"></a>列出业务日历视图
 
 命名空间：microsoft.graph
 
-获取[bookingBusiness](../resources/bookingbusiness.md)的[bookingAppointment](../resources/bookingappointment.md)对象的集合，该集合发生在指定的日期范围内。
+获取在指定日期范围内发生的 [bookingBusiness](../resources/bookingbusiness.md) 的 [bookingAppointment](../resources/bookingappointment.md) 对象的集合。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
+
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
 |权限类型      | 权限（从最低特权到最高特权）              |
@@ -39,27 +40,31 @@ GET /solutions/bookingBusinesses/{id}/calendarView?start={start-value}&end={end-
 
 | 参数    | 类型   |Description|
 |:---------------|:--------|:----------|
-|end|DateTimeOffset|一个时间范围的结束日期和时间，以 ISO 8601 格式表示为 UTC 或与 UTC 的偏移量。 例如，2018 年 1 月 1 日凌晨 3 点 UTC 如下所示："2018-01-01T03：00：00Z"，PST 中的同一时间如下所示："2017-12-31T19：00：00-08：00"。|
-|start|DateTimeOffset|一个时间范围的开始日期和时间，以 ISO 8601 格式表示，为 UTC 或与 UTC 的时差。 例如，2018 年 1 月 1 日午夜 UTC 如下所示："2018-01-01T00：00：00Z"，PST 中的同一时间如下所示："2017-12-31T16：00：00-08：00"。|
+|end|DateTimeOffset|以 ISO 8601 格式表示的时间范围的结束日期和时间，作为 UTC 或 UTC 的偏移量。 例如，2018 年 1 月 1 日凌晨 3 点 UTC 如下所示：“2018-01-01T03：00：00Z”，PST 中的同一时间如下所示：“2017-12-31T19：00：00-08：00”。|
+|start|DateTimeOffset|以 ISO 8601 格式表示的时间范围的开始日期和时间，作为 UTC 或 UTC 的偏移量。 例如，2018 年 1 月 1 日午夜 UTC 如下所示：“2018-01-01T00：00：00Z”，PST 中的同一时间如下所示：“2017-12-31T16：00：00-08：00”。|
 
-和 的值使用其相应值中指定的时区偏移量进行解释，如果存在，则不会影响 `start` `end` `Prefer: outlook.timezone` 标头的值。
+值的值 `start` 使用 `end` 其相应值中指定的时区偏移量进行解释，如果存在，则不会受到标头值 `Prefer: outlook.timezone` 的影响。
 
-此方法还支持一些 $count 和 $expand [OData](/graph/query-parameters) 查询参数来帮助自定义响应。
+此方法还支持某些$count和$expand [OData 查询参数](/graph/query-parameters) ，以帮助自定义响应。
 
 ## <a name="request-headers"></a>请求标头
+
 | 名称       | 说明|
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
 ## <a name="request-body"></a>请求正文
+
 请勿提供此方法的请求正文。
 
 ## <a name="response"></a>响应
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
+
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [bookingAppointment](../resources/bookingappointment.md) 对象集合。
 
 ## <a name="example"></a>示例
 
 ### <a name="request"></a>请求
+
 下面展示了示例请求。
 
 <!-- {
@@ -70,6 +75,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>响应
+
 下面展示了示例响应。 
 
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。

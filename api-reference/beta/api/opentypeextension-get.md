@@ -1,18 +1,18 @@
 ---
-title: 获取开放扩展
+title: 获取 openTypeExtension
 description: 获取按名称或完全限定的名称标识的开放扩展（openTypeExtension 对象）。
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 06f84bf05337f396f3004f69b314b07d24dd472b
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: bd845009302774ab8dfb7a64e36c8ea49049cdcf
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971621"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855880"
 ---
-# <a name="get-open-extension"></a>获取开放扩展
+# <a name="get-opentypeextension"></a>获取 openTypeExtension
 
 命名空间：microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "65971621"
 
 |**GET 应用场景**|**支持的资源**|**响应正文**|
 |:-----|:-----|:-----|
-|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md)， [baseTask](../resources/basetask.md) (已弃用) ， [baseTaskList](../resources/basetasklist.md) (已弃用) 、 [设备](../resources/device.md)、 [事件](../resources/event.md)、 [组](../resources/group.md)、 [组事件](../resources/event.md)、 [组帖子](../resources/post.md)、 [邮件](../resources/message.md)、 [组织](../resources/organization.md)、 [个人联系](../resources/contact.md)人、 [用户](../resources/user.md)、 [todoTask](../resources/todotask.md)、 [todoTaskList](../resources/todotasklist.md)  | 仅开放扩展。|
+|从已知资源实例中获取特定扩展。| [管理单元](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (已弃用)  <br/> [baseTaskList](../resources/basetasklist.md) (已弃用)  <br/> [设备](../resources/device.md) <br/> [事件](../resources/event.md) <br/> [组](../resources/group.md) <br/> [组事件](../resources/event.md) <br/> [组帖子](../resources/post.md) <br/> [邮件](../resources/message.md) <br/> [组织](../resources/organization.md) <br/> [个人联系人](../resources/contact.md) <br/> [user](../resources/user.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md)  | 仅开放扩展。|
 |获取一个通过特定扩展插件扩展的已知资源实例。|管理单元、基任务、基任务列表、设备、事件、组、组事件、组帖子、邮件、组织、个人联系人、用户、操作任务、操作任务列表。 |一个通过开放扩展插件扩展的资源实例。|
 |查找并展开具有特定扩展的资源实例。 | 基任务、基任务列表、事件、组事件、组帖子、邮件、个人联系人、操作任务、操作任务列表 |通过开放扩展展开的资源实例。|
 
@@ -41,7 +41,7 @@ ms.locfileid: "65971621"
 | [baseTask](../resources/basetask.md) (已弃用)  | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [baseTaskList](../resources/basetasklist.md) (已弃用)   | Tasks.ReadWrite | Tasks.ReadWrite | 不支持 |
 | [设备](../resources/device.md) | Directory.Read.All | 不支持 | Device.ReadWrite.All |
-| [事件](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [组](../resources/group.md) | Group.Read.All | 不支持 | Group.Read.All |
 | [组事件](../resources/event.md) | Group.Read.All | 不支持 | 不支持 |
 | [组帖子](../resources/post.md) | Group.Read.All | 不支持 | Group.Read.All |
@@ -62,20 +62,20 @@ ms.locfileid: "65971621"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{Id}/extensions/{extensionId}
-GET /devices/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /groups/{Id}/extensions/{extensionId}
-GET /groups/{Id}/events/{Id}/extensions/{extensionId}
-GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
-GET /organization/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
+GET /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+GET /devices/{deviceId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+GET /groups/{groupId}/extensions/{extensionId}
+GET /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+GET /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+GET /organization/{organizationId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>获取一个通过匹配的扩展插件扩展的已知资源实例 
@@ -84,15 +84,15 @@ GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/threads/{threadId}/posts/{postId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/messages/{messageId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/contacts/{contactId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -100,10 +100,10 @@ GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /devices/{deviceId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{groupId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{organizationId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{userId|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 
@@ -113,11 +113,11 @@ GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/threads/{threadId}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**注意：** 以上语法显示了一些标识资源实例或集合的常见方法，以便从中获取扩展。可以用来识别这些资源实例或集合的所有其他语法均支持以类似的方式从中获取开放扩展。
@@ -183,7 +183,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -257,7 +257,7 @@ GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -323,7 +323,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -447,7 +447,7 @@ GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6
 [!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -504,7 +504,7 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%20eq%20'Com.Contoso.Referral')&$expand=Extensions($filter=id%20eq%20'Com.Contoso.Referral')
 ```
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -532,7 +532,7 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=Extensions/any(f:f/id%2
 [!INCLUDE [sample-code](../includes/snippets/snippet-unavailable.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-opentypeextension-5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

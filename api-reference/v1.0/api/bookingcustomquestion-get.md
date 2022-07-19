@@ -5,20 +5,20 @@ author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cfc83806f3186e347b62afabcbddf52c8e16e620
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 3e37db41f4565ee77568336b13e5d0aa155eb00d
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014115"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855999"
 ---
 # <a name="get-bookingcustomquestion"></a>获取 bookingCustomQuestion
 
 命名空间：microsoft.graph
 
-读取 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象的属性和关系。
+读取 [bookingCustomQuestion 对象的](../resources/bookingcustomquestion.md) 属性和关系。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
 
@@ -26,7 +26,7 @@ ms.locfileid: "62014115"
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
 | 委派（工作或学校帐户）     | Bookings.Read.All、BookingsAppointment.ReadWrite.All、Bookings.ReadWrite.All、Bookings.Manage.All |
 | 委派（个人 Microsoft 帐户） | 不支持。                                                                                    |
-| 应用程序                            | 不支持。                                                                                    |
+| 应用程序   | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -41,7 +41,7 @@ GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingC
 
 ## <a name="optional-query-parameters"></a>可选的查询参数
 
-此方法支持一些 OData 查询参数来帮助自定义响应。 有关一般信息，请参阅 $count 和 $expand [OData 查询参数](/graph/query-parameters)。
+此方法支持一些 OData 查询参数来帮助自定义响应。 有关常规信息，请参阅$count和$expand [OData 查询参数](/graph/query-parameters)。
 
 ## <a name="request-headers"></a>请求标头
 
@@ -55,7 +55,7 @@ GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingC
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应 `200 OK` 正文中返回 响应代码和 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [bookingCustomQuestion](../resources/bookingcustomquestion.md) 对象。
 
 ## <a name="examples"></a>示例
 
