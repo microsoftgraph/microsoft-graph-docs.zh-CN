@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8ae8a25bb90e647c4bd4795febf321a2a7208421
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 42daaa6cb5321e90c722af8a54ace685145d2449
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945448"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838505"
 ---
 # <a name="ediscoveryreviewset-addtoreviewset"></a>ediscoveryReviewSet：addToReviewSet
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-开始将集合从 Microsoft 365 服务添加到审阅集的过程。 创建操作后，可以通过从响应标头中检索 `Location` 参数来获取操作的状态。 该位置提供一个 URL，该 URL 将返回 [“添加到审阅”集操作](../resources/security-ediscoveryaddtoreviewsetoperation.md)。
+开始将集合从 Microsoft 365 服务添加到 [审阅集](../resources/security-ediscoveryreviewset.md)的过程。 创建操作后，可以通过从响应标头中检索 `Location` 参数来获取操作的状态。 该位置提供一个 URL，该 URL 将返回 [“添加到审阅”集操作](../resources/security-ediscoveryaddtoreviewsetoperation.md)。
 
 
 ## <a name="permissions"></a>权限
@@ -36,7 +36,7 @@ ms.locfileid: "65945448"
 }
 -->
 ``` http
-POST /ediscoveryExportOperation/reviewSet/addToReviewSet
+POST /security/cases/ediscoverycases/{eDiscoveryCaseId}/reviewSets/{eDiscoveryReviewSetId}/addToReviewSet
 ```
 
 ## <a name="request-headers"></a>请求标头
@@ -50,7 +50,7 @@ POST /ediscoveryExportOperation/reviewSet/addToReviewSet
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|要添加到审阅集的电子数据展示搜索的 ID。|
 |additionalDataOptions|additionalDataOptions|用于将项目添加到 reviewSet 的选项。|
@@ -75,12 +75,12 @@ POST /ediscoveryExportOperation/reviewSet/addToReviewSet
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSet/addToReviewSet
+POST https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/addToReviewSet
 Content-Type: application/json
 
 {
     "search": {
-        "id": "7c165312-d8db-48b5-9129-1af50932df53"
+        "id": "c17e91d6-6bc0-4ecb-b388-269ea3d4ffb7"
     },
     "additionalDataOptions": "linkedFiles"
 }
@@ -88,13 +88,13 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```

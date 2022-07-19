@@ -1730,7 +1730,7 @@ items:
                     href: api/printtask-get.md
                   - name: 更新任务
                     href: api/printtaskdefinition-update-task.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 按打印机组织
                     items:
@@ -6411,6 +6411,189 @@ items:
                 href: api/alert-get.md
               - name: 更新警报
                 href: api/alert-update.md
+          - name: 电子数据展示
+            items:
+              - name: 情况
+                href: resources/security-ediscoverycase.md
+                items:
+                  - name: 列出
+                    href: api/security-casesroot-list-ediscoverycases.md
+                  - name: 创建
+                    href: api/security-casesroot-post-ediscoverycases.md
+                  - name: 获取
+                    href: api/security-ediscoverycase-get.md
+                  - name: 更新
+                    href: api/security-ediscoverycase-update.md
+                  - name: 删除
+                    href: api/security-casesroot-delete-ediscoverycases.md
+                  - name: 关闭
+                    href: api/security-ediscoverycase-close.md
+                  - name: 重新
+                    href: api/security-ediscoverycase-reopen.md
+                  - name: 列举操作
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: 列出保管人
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: 创建保管人
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: 列出非存储数据源
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: 创建非托管数据源
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: 列出搜索
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: 创建搜索
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: 列出审阅集
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: 创建审阅集
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: 列出标记
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: 创建标记
+                    href: api/security-ediscoverycase-post-tags.md
+              - name: 事例设置
+                href: resources/security-ediscoverycasesettings.md
+                items:
+                  - name: 获取设置
+                    href: api/security-ediscoverycasesettings-get.md
+                  - name: 更新设置
+                    href: api/security-ediscoverycasesettings-update.md
+                  - name: 将设置重置为默认设置
+                    href: api/security-ediscoverycasesettings-resettodefault.md
+              - name: 操作
+                href: resources/security-caseoperation.md
+                items:
+                  - name: 列出事例操作
+                    href: api/security-ediscoverycase-list-operations.md
+                  - name: 按 ID 获取大小写操作
+                    href: api/security-caseoperation-get.md
+              - name: Custodian
+                href: resources/security-ediscoverycustodian.md
+                items:
+                  - name: 列出
+                    href: api/security-ediscoverycase-list-custodians.md
+                  - name: 创建
+                    href: api/security-ediscoverycase-post-custodians.md
+                  - name: 获取
+                    href: api/security-ediscoverycustodian-get.md
+                  - name: 激活
+                    href: api/security-ediscoverycustodian-activate.md
+                  - name: 发布
+                    href: api/security-ediscoverycustodian-release.md
+                  - name: 应用保留
+                    href: api/security-ediscoverycustodian-applyhold.md
+                  - name: 删除保留
+                    href: api/security-ediscoverycustodian-removehold.md
+                  - name: 更新索引
+                    href: api/security-ediscoverycustodian-updateindex.md
+                  - name: 列出用户源
+                    href: api/security-ediscoverycustodian-list-usersources.md
+                  - name: 创建用户源
+                    href: api/security-ediscoverycustodian-post-usersources.md
+                  - name: 列出站点源
+                    href: api/security-ediscoverycustodian-list-sitesources.md
+                  - name: 创建站点源
+                    href: api/security-ediscoverycustodian-post-sitesources.md
+                  - name: 列出统一组源
+                    href: api/security-ediscoverycustodian-list-unifiedgroupsources.md
+                  - name: 创建未筛选的组源
+                    href: api/security-ediscoverycustodian-post-unifiedgroupsources.md
+                  - name: 获取上次索引操作
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: 非存储数据源
+                href: resources/security-ediscoverynoncustodialdatasource.md
+                items:
+                  - name: 列出
+                    href: api/security-ediscoverycase-list-noncustodialdatasources.md
+                  - name: 创建
+                    href: api/security-ediscoverycase-post-noncustodialdatasources.md
+                  - name: 获取
+                    href: api/security-ediscoverynoncustodialdatasource-get.md
+                  - name: 发布
+                    href: api/security-ediscoverynoncustodialdatasource-release.md
+                  - name: 应用保留
+                    href: api/security-ediscoverynoncustodialdatasource-applyhold.md
+                  - name: 删除保留
+                    href: api/security-ediscoverynoncustodialdatasource-removehold.md
+                  - name: 更新索引
+                    href: api/security-ediscoverynoncustodialdatasource-updateindex.md
+                  - name: 获取上次索引操作
+                    href: api/security-ediscoverycustodian-list-lastindexoperation.md
+              - name: 搜索
+                href: resources/security-ediscoverysearch.md
+                items:
+                  - name: 列出
+                    href: api/security-ediscoverycase-list-searches.md
+                  - name: 创建
+                    href: api/security-ediscoverycase-post-searches.md
+                  - name: 获取
+                    href: api/security-ediscoverysearch-get.md
+                  - name: 更新
+                    href: api/security-ediscoverysearch-update.md
+                  - name: 删除
+                    href: api/security-ediscoverycase-delete-searches.md
+                  - name: 估计统计信息
+                    href: api/security-ediscoverysearch-estimatestatistics.md
+                  - name: 列出保管人源
+                    href: api/security-ediscoverysearch-list-custodiansources.md
+                  - name: 添加保管人源
+                    href: api/security-ediscoverysearch-post-custodiansources.md
+                  - name: 删除保管人源
+                    href: api/security-ediscoverysearch-delete-custodiansources.md
+                  - name: 列出非存储数据源
+                    href: api/security-ediscoverysearch-list-noncustodialsources.md
+                  - name: 添加非存储数据源
+                    href: api/security-ediscoverysearch-post-noncustodialsources.md
+                  - name: 删除非存储数据源
+                    href: api/security-ediscoverysearch-delete-noncustodialsources.md
+                  - name: 列出其他源
+                    href: api/security-ediscoverysearch-list-additionalsources.md
+                  - name: 添加其他源
+                    href: api/security-ediscoverysearch-post-additionalsources.md
+                  - name: 获取上次估计统计信息操作
+                    href: api/security-ediscoverysearch-list-lastestimatestatisticsoperation.md
+              - name: 审阅集
+                href: resources/security-ediscoveryreviewset.md
+                items:
+                  - name: 列出
+                    href: api/security-ediscoverycase-list-reviewsets.md
+                  - name: 创建
+                    href: api/security-ediscoverycase-post-reviewsets.md
+                  - name: 获取
+                    href: api/security-ediscoveryreviewset-get.md
+                  - name: 添加到审阅集
+                    href: api/security-ediscoveryreviewset-addtoreviewset.md
+                  - name: 查询
+                    href: resources/security-ediscoveryreviewsetquery.md
+                    items:
+                      - name: 列出
+                        href: api/security-ediscoveryreviewset-list-queries.md
+                      - name: 创建
+                        href: api/security-ediscoveryreviewset-post-queries.md
+                      - name: 获取
+                        href: api/security-ediscoveryreviewsetquery-get.md
+                      - name: 更新
+                        href: api/security-ediscoveryreviewsetquery-update.md
+                      - name: 删除
+                        href: api/security-ediscoveryreviewset-delete-queries.md
+                      - name: Apply tags
+                        href: api/security-ediscoveryreviewsetquery-applytags.md
+              - name: Tag
+                href: resources/security-ediscoveryreviewtag.md
+                items:
+                  - name: 列出
+                    href: api/security-ediscoverycase-list-tags.md
+                  - name: 创建
+                    href: api/security-ediscoverycase-post-tags.md
+                  - name: 获取
+                    href: api/security-ediscoveryreviewtag-get.md
+                  - name: 更新
+                    href: api/security-ediscoveryreviewtag-update.md
+                  - name: 删除
+                    href: api/security-ediscoverycase-delete-tags.md
+                  - name: 将标记列为层次结构
+                    href: api/security-ediscoveryreviewtag-ashierarchy.md
           - name: 信息保护
             items:
               - name: 威胁评估

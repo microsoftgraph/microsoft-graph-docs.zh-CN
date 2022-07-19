@@ -1,18 +1,18 @@
 ---
-title: 列出 ediscoverySearch
+title: 列出搜索
 description: 从电子数据展示案例中获取搜索列表
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: dee104aa8565d8c6638fac4dbdc27ad083d4c741
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: ce518a2cabf19b654f4ca2e421800feb90d59497
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439444"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838568"
 ---
-# <a name="list-ediscoverysearch"></a>列出 ediscoverySearch
+# <a name="list-searches"></a>列出搜索
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "66439444"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ediscoverySearch](../resources/security-ediscoverysearch.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverysearch-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-ediscoverysearch-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

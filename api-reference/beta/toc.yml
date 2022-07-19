@@ -1185,7 +1185,7 @@ items:
                 items:
                   - name: 列出 memberOf
                     href: api/serviceprincipal-list-memberof.md
-                  - name: List transitive memberOf
+                  - name: 列出 transitive memberOf
                     href: api/serviceprincipal-list-transitivememberof.md
                   - name: 检查成员组
                     href: api/directoryobject-checkmembergroups.md
@@ -14821,7 +14821,7 @@ items:
                     href: resources/simulationautomationrun.md
                   - name: 列出
                     href: api/simulationautomation-list-runs.md
-              - name: 报表
+              - name: 报告
                 items:
                   - name: 攻击模拟报告
                     displayname: Attack simulation and training
@@ -14844,7 +14844,7 @@ items:
                         href: resources/attacksimulationtrainingusercoverage.md
                       - name: 获取用户的培训覆盖范围
                         href: api/reportroot-getattacksimulationtrainingusercoverage.md
-          - name: 电子数据展示（预览版）
+          - name: 电子数据展示
             items:
               - name: 情况
                 href: resources/security-ediscoverycase.md
@@ -14873,9 +14873,9 @@ items:
                     href: api/security-ediscoverycase-list-noncustodialdatasources.md
                   - name: 创建非托管数据源
                     href: api/security-ediscoverycase-post-noncustodialdatasources.md
-                  - name: 列出法定保留
+                  - name: '列出法定保留 (预览版) '
                     href: api/security-ediscoverycase-list-legalholds.md
-                  - name: 创建法定保留
+                  - name: '创建法定保留 (预览版) '
                     href: api/security-ediscoverycase-post-legalholds.md
                   - name: 列出搜索
                     href: api/security-ediscoverycase-list-searches.md
@@ -14957,7 +14957,7 @@ items:
                     href: api/security-ediscoverynoncustodialdatasource-updateindex.md
                   - name: 获取上次索引操作
                     href: api/security-ediscoverycustodian-list-lastindexoperation.md
-              - name: 保留策略
+              - name: '保留策略 (预览) '
                 href: resources/security-ediscoveryholdpolicy.md
                 items:
                   - name: 列出
@@ -14993,7 +14993,7 @@ items:
                     href: api/security-ediscoverycase-delete-searches.md
                   - name: 估计统计信息
                     href: api/security-ediscoverysearch-estimatestatistics.md
-                  - name: 清除数据
+                  - name: '清除数据 (预览) '
                     href: api/security-ediscoverysearch-purgedata.md
                   - name: 列出保管人源
                     href: api/security-ediscoverysearch-list-custodiansources.md
@@ -15024,7 +15024,7 @@ items:
                     href: api/security-ediscoveryreviewset-get.md
                   - name: 添加到审阅集
                     href: api/security-ediscoveryreviewset-addtoreviewset.md
-                  - name: 导出
+                  - name: '导出 (预览) '
                     href: api/security-ediscoveryreviewset-export.md
                     items:
                       - name: 获取下载 URL
@@ -15042,16 +15042,16 @@ items:
                         href: api/security-ediscoveryreviewsetquery-update.md
                       - name: 删除
                         href: api/security-ediscoveryreviewset-delete-queries.md
-                      - name: 导出
+                      - name: '导出 (预览) '
                         href: api/security-ediscoveryreviewsetquery-export.md
                         items:
                           - name: 获取下载 URL
                             href: api/security-ediscoveryexportoperation-getdownloadurl.md
                       - name: Apply tags
                         href: api/security-ediscoveryreviewsetquery-applytags.md
-                      - name: 运行
+                      - name: '运行 (预览) '
                         href: api/security-ediscoveryreviewsetquery-run.md
-                  - name: 文件
+                  - name: '文件 (预览) '
                     href: resources/security-ediscoveryfile.md
                     items:
                       - name: 列出

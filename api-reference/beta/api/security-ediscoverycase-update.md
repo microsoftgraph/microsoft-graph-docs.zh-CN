@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 62c2e076a8364e7623d056f2cc68a9a104c23c08
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2ef788b583b5114c1050fa4aac75f69c630b6ce3
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441838"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837511"
 ---
 # <a name="update-ediscoverycase"></a>更新 ediscoveryCase
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66441838"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -57,7 +57,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `204 NO CONTENT` 响应代码和更新 [后的 ediscoveryCase](../resources/security-ediscoverycase.md) 对象。
+如果成功，此方法在响应正文中返回 `204 NO CONTENT` 响应代码和更新的 [microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverycase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverycase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -103,8 +103,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: d95cdd3dd8f66c2c4de67c8c469281989e839f93
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 1f6c01ecfe63a666a5da2b43be2e9e5dfe472497
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945321"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838652"
 ---
 # <a name="datasource-resource-type"></a>dataSource 资源类型
 
@@ -30,7 +30,7 @@ dataSource 实体是一个抽象基类，用于标识电子数据展示的内容
 |createdDateTime|DateTimeOffset|**创建 dataSource** 的日期和时间。|
 |displayName|String|**dataSource** 的显示名称。 这将是 SharePoint 网站的名称。|
 |id|String| **dataSource** 的 ID。 这不是实际网站的 ID。|
-|holdStatus|字符串|**dataSource** 的保留状态。可能的值为： `notApplied`， `applied`， `applying`， `removing``partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|**dataSource** 的保留状态。可能的值为： `notApplied`， `applied`， `applying`， `removing``partial`|
 ## <a name="relationships"></a>关系
 无。
 

@@ -1,18 +1,18 @@
 ---
-title: 创建 ediscoveryReviewSet
+title: 创建 reviewSet
 description: 创建新的 ediscoveryReviewSet 对象。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 921cd76809af7aafe28c0dc7da2b65386e513edd
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: dbb71c0de6cbe137029b015cf389ebfe42cc02e6
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437925"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838575"
 ---
-# <a name="create-ediscoveryreviewset"></a>创建 ediscoveryReviewSet
+# <a name="create-reviewsets"></a>创建 reviewSet
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "66437925"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -56,7 +56,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -89,7 +89,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewset-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewset-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,7 +102,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 9c828a92d32e4d43d952c91e0820e575c3d2f59e
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 130f274e9bb9bff1eb2e573366bba3fbe8d4ed77
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945162"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838610"
 ---
 # <a name="ediscoveryreviewset-resource-type"></a>ediscoveryReviewSet 资源类型
 
@@ -26,10 +26,10 @@ ms.locfileid: "65945162"
 |[列出 ediscoveryReviewSets](../api/security-ediscoverycase-list-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 集合|获取 [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 对象及其属性的列表。|
 |[创建 ediscoveryReviewSet](../api/security-ediscoverycase-post-reviewsets.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|创建新的 [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 对象。|
 |[获取 ediscoveryReviewSet](../api/security-ediscoveryreviewset-get.md)|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|读取 [ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 对象的属性和关系。|
-|[出口](../api/security-ediscoveryreviewset-export.md)|无|从 **审阅集** 启动数据导出。|
-|[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|无|将 **电子数据展示搜索** 中的数据添加到 **审阅集**。|
+|[出口](../api/security-ediscoveryreviewset-export.md)|无|从 [审阅集](../resources/security-ediscoveryreviewset.md)启动数据导出。|
+|[addToReviewSet](../api/security-ediscoveryreviewset-addtoreviewset.md)|无|开始将集合从 Microsoft 365 服务添加到 [审阅集](../resources/security-ediscoveryreviewset.md)的过程。|
 |[列出文件](../api/security-ediscoveryreviewset-list-files.md)|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) 集合|从文件导航属性获取 ediscoveryFile 资源。|
-|[列出查询](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) 集合|从查询导航属性获取 ediscoveryReviewSetQuery 资源。|
+|[列出查询](../api/security-ediscoveryreviewset-list-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) 集合|获取与电子数据展示评审集关联的 [查询](../resources/security-ediscoveryreviewsetquery.md) 列表。|
 |[创建 ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-post-queries.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|创建新的 ediscoveryReviewSetQuery 对象。|
 
 ## <a name="properties"></a>属性
@@ -41,7 +41,7 @@ ms.locfileid: "65945162"
 |id|String|审阅集唯一标识符。 只读。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |files|[microsoft.graph.security.ediscoveryFile](../resources/security-ediscoveryfile.md) 集合|表示审阅集中的文件。|
 |查询|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) 集合|表示审阅集中的查询。|

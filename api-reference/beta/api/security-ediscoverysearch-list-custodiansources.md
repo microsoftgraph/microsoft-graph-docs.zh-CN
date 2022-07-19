@@ -1,23 +1,23 @@
 ---
 title: 列出保管人来源
-description: 从 CustodianSources 导航属性获取 dataSource 资源。
+description: 获取与电子数据展示搜索关联的保管数据源列表。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 5642e3db50b823846ae9a8b55a914d1703c50abb
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: bb695a964e4d1827e9c456fa0e43f55eac6e3708
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66094365"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837854"
 ---
 # <a name="list-custodiansources"></a>列出保管人来源
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 CustodianSources 导航属性获取 dataSource 资源。
+获取与 [电子数据展示搜索](../resources/security-ediscoverysearch.md)关联的保管数据源列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearc
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [dataSource](../resources/security-datasource.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.security.dataSource](../resources/security-datasource.md) 对象集合。
 
 ## <a name="examples"></a>示例
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/java/list-datasource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-datasource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

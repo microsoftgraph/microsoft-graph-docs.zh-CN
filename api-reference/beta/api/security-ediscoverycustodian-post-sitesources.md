@@ -1,23 +1,23 @@
 ---
 title: 创建保管人 siteSource
-description: 创建新的保管人 siteSource 对象。
+description: 创建与电子数据展示保管人关联的新保管人 siteSource 对象。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 3f0fc2841616867f059a8be7f85337ae3f9e47b5
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 1cfa9f3a83ec91549ff62e4b22a9c332d611a232
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446697"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838772"
 ---
-# <a name="create-custodian-sitesource"></a>创建保管人 siteSource
+# <a name="create-sitesource"></a>创建 siteSource
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 [siteSource](../resources/security-sitesource.md) 对象。
+创建与[电子数据展示保管人](../resources/security-ediscoverycustodian.md)关联的新 [siteSource](../resources/security-sitesource.md) 对象。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "66446697"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,14 +49,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 
 创建 **siteSource** 时，可以指定以下属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |网站|String|站点的 URL;例如， `https://contoso.sharepoint.com/sites/HumanResources`.|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [siteSource](../resources/security-sitesource.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [microsoft.graph.security.siteSource](../resources/security-sitesource.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-sitesource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

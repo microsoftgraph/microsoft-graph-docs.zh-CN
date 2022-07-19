@@ -1,23 +1,23 @@
 ---
-title: 列出 ediscoveryNoncustodialDataSource
+title: 列出 ediscoveryNoncustodialDataSources
 description: 获取 ediscoveryNoncustodialDataSource 对象的列表。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 8980c82c2f553af5c585c82a4648ca22feaf6437
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: e1a49e58687c5cafb16eb7e11ebd495a395b60da
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092278"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838344"
 ---
-# <a name="list-ediscoverynoncustodialdatasource"></a>列出 ediscoveryNoncustodialDataSource
+# <a name="list-ediscoverynoncustodialdatasources"></a>列出 ediscoveryNoncustodialDataSources
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-获取 [非存储数据源](../resources/security-ediscoverynoncustodialdatasource.md) 对象及其属性的列表。
+获取 [非托管数据源](../resources/security-ediscoverynoncustodialdatasource.md) 及其属性的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -47,7 +47,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和  [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) 对象的集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.security.ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverynoncustodialdatasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-418
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

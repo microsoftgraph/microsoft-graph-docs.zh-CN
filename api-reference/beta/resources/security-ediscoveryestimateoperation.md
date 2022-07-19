@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: f49f6356af89166ed384a56c0e4f3fe8bb4d553a
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: f4edad31ab7e5c1018cae4e681559d189ba8ef30
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945179"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838253"
 ---
 # <a name="ediscoveryestimateoperation-resource-type"></a>ediscoveryEstimateOperation 资源类型
 
@@ -27,7 +27,7 @@ ms.locfileid: "65945179"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|action|String| 操作表示的操作类型。 可能的值为：，`addToReviewSet``applyTags`，，`contentExport``convertToPdf`，`estimateStatistics`，`purgeData`|
+|action|microsoft.graph.security.caseAction| 操作表示的操作类型。 可能的值为：，`addToReviewSet``applyTags`，，`contentExport``convertToPdf`，`estimateStatistics`，`purgeData`|
 |completedDateTime|DateTimeOffset|操作完成的日期和时间。 只读。 |
 |createdBy|[identitySet](../resources/identityset.md)|创建操作的用户。 只读。 |
 |createdDateTime|DateTimeOffset|操作开始的日期和时间。 只读。|
@@ -38,12 +38,12 @@ ms.locfileid: "65945179"
 |percentProgress|Int32|操作的进度。 只读。 |
 |resultInfo|[resultInfo](../resources/resultinfo.md)|包含成功和失败特定的结果信息。 |
 |siteCount|Int32|具有搜索命中次数的邮箱数。|
-|status|String| 事例操作的状态。 可取值为：`notStarted`、`submissionFailed`、`running`、`succeeded`、`partiallySucceeded`、`failed`。|
+|status|microsoft.graph.security.caseOperationStatus| 事例操作的状态。 可取值为：`notStarted`、`submissionFailed`、`running`、`succeeded`、`partiallySucceeded`、`failed`。|
 |unindexedItemCount|Int64|集合的未表达项的估计计数。|
 |unindexedItemsSize|Int64|集合的未表达项的估计大小。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|电子数据展示搜索。|
 

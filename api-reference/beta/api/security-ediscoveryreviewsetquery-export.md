@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 80d989b333503d61d768547ac781741ebb8f8fef
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 718419e7deddb45d748c442612af00f6111e3309
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66442490"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837686"
 ---
 # <a name="ediscoveryreviewsetquery-export"></a>ediscoveryReviewSetQuery：导出
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-从 **reviewSet** 查询启动导出。  有关详细信息，请参阅[Advanced eDiscovery中审阅集的导出文档](/microsoft-365/compliance/export-documents-from-review-set)。
+从 **reviewSet** 查询启动导出。  有关详细信息，请参阅 [电子数据展示 (高级) 中审阅集的 ](/microsoft-365/compliance/export-documents-from-review-set)导出文档。
 
 
 ## <a name="permissions"></a>权限
@@ -27,7 +27,7 @@ ms.locfileid: "66442490"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 
 ## <a name="http-request"></a>HTTP 请求
@@ -51,7 +51,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
 |outputName|String| 导出的名称。 必需。 |
 |description|String| 导出说明 |
@@ -99,7 +99,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoveryreviewsetquerythisexport-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoveryreviewsetquerythisexport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,8 +112,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true

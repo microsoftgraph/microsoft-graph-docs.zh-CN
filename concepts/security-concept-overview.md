@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2226f5a75db859f7cbc20db1d1a9a53b1caae2d3
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f5525d2e37bc306c138f8b30010e62c2335cb703
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66437574"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837497"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -70,7 +70,7 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 
 使用 Microsoft 安全功能分数（预览版）了解组织的安全需求，获取改进方法建议，并预测在采纳这些建议后的改进分数。 可以轻松度量一段时间内的进度，并获取有助于提高分数的具体变更的相关见解。
 
-### <a name="manage-your-ediscovery-workflows-preview"></a>管理电子数据展示工作流（预览版）
+### <a name="manage-your-ediscovery-workflows"></a>管理电子数据展示工作流
 
 组织依靠 [Microsoft Purview 电子数据展示](/microsoft-365/compliance/ediscovery?view=o365-worldwide&preserve-view=true) 功能来满足要求，根据内部或外部要求（如诉讼、调查或法规合规性）查找组织中所发生情况的真实信息。
 

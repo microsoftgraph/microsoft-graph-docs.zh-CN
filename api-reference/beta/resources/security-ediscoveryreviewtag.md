@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 1e5ba6fecb006a270d256e0f53f63e643874cec4
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 4bd787ed238fdd7c365b913a98d1129d2b80b35d
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945159"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838596"
 ---
 # <a name="ediscoveryreviewtag-resource-type"></a>ediscoveryReviewTag 资源类型
 
@@ -32,13 +32,13 @@ ms.locfileid: "65945159"
 
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|childSelectability|String|指示是否可以将单个或多个子标记与文档关联。 可取值为：`One`、`Many`。  此值控制 UX 是将标记显示为复选框还是单选按钮组。|
+|childSelectability|microsoft.graph.security.childSelectability|指示是否可以将单个或多个子标记与文档关联。 可取值为：`One`、`Many`。  此值控制 UX 是将标记显示为复选框还是单选按钮组。|
 |createdBy|[identitySet](../resources/identityset.md)|创建标记的用户。|
-|description|字符串|标记的说明。|
+|说明|String|标记的说明。|
 |displayName|String|标记的显示名称。|
-|id|字符串|标记的唯一标识符。|
+|id|String|标记的唯一标识符。|
 |lastModifiedDateTime|DateTimeOffset|上次修改标记的日期和时间。|
 
 ### <a name="childselectability-values"></a>childSelectability 值
@@ -50,7 +50,7 @@ ms.locfileid: "65945159"
 
 ## <a name="relationships"></a>关系
 
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |childTags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) 集合|返回标记的子级标记。|
 |父级|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|返回指定标记的父标记。|

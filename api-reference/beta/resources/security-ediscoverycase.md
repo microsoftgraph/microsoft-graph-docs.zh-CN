@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 6bb5c8777afb87523d2e939d7c1665288e5c27fd
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 0c50d528d67ad4757c8f6b25c7f70b4757540008
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945317"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837819"
 ---
 # <a name="ediscoverycase-resource-type"></a>ediscoveryCase 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "65945317"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在电子数据展示的上下文中，包含保管人、保留、搜索、审阅集和导出。 有关详细信息，请参阅 [Microsoft Purview 电子数据展示 (高级) 概述 ](/microsoft-365/compliance/overview-ediscovery-20)。
+在电子数据展示的上下文中，包含保管人、保留、搜索、审阅集和导出。 有关详细信息，请参阅[Microsoft Purview 电子数据展示 (高级) 概述](/microsoft-365/compliance/overview-ediscovery-20)。
 
 ## <a name="methods"></a>方法
 |方法|返回类型|说明|
@@ -43,19 +43,19 @@ ms.locfileid: "65945317"
 |[创建 ediscoveryReviewTag](../api/security-ediscoverycase-post-tags.md)|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md)|创建新的 ediscoveryReviewTag 对象。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |closedBy|[microsoft.graph.identitySet](../resources/identityset.md)|结案的用户。|
 |closedDateTime|DateTimeOffset|结案的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 |createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|创建案例的用户。|
 |createdDateTime|DateTimeOffset|创建实体的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|description|String|事例说明。|
+|说明|String|事例说明。|
 |displayName|String|事例名称。|
 |externalId|String|客户引用的外部事例号。|
 |id|String|电子数据展示案例的 ID。 只读。 |
 |lastModifiedBy|[microsoft.graph.identitySet](../resources/identityset.md)|修改案例的最后一个用户。
 |lastModifiedDateTime|DateTimeOffset|修改案例的最新日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-|status|String|事例状态。 可能的值包括`unknown`、`active`、`pendingDelete`、`closed``closing`和 `closedWithError`。 有关详细信息，请参阅下表。
+|status|microsoft.graph.security.caseStatus|事例状态。 可能的值包括`unknown`、`active`、`pendingDelete`、`closed``closing`和 `closedWithError`。 有关详细信息，请参阅下表。
 
 ### <a name="casestatus-values"></a>caseStatus 值
 
@@ -69,7 +69,7 @@ ms.locfileid: "65945317"
 | closedWithError | 案件已结案，但该案存在释放保留的错误。 |
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |保管员|[microsoft.graph.security.ediscoveryCustodian](../resources/security-ediscoverycustodian.md) 集合|返回此 **事例** 的案例 **ediscoveryCustodian** 对象的列表。|
 |legalHolds|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) 集合|返回此 **事例** 的 **案例电子数据展示HoldPolicy** 对象的列表。|
@@ -78,7 +78,7 @@ ms.locfileid: "65945317"
 |reviewSets|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md) 集合|返回本例中 **电子数据展示ReviewSet** 对象的列表。|
 |搜索|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md) 集合|返回与此事例关联的 **电子数据展示Search** 对象的列表。|
 |settings|[microsoft.graph.security.ediscoveryCaseSettings](../resources/security-ediscoverycasesettings.md)|返回 **在这种情况下的 eDIscoverySettings** 对象的列表。|
-|标记|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) 集合|返回与这种情况关联的 **ediscoveryReviewTag** 对象的列表。|
+|tags|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) 集合|返回与这种情况关联的 **ediscoveryReviewTag** 对象的列表。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

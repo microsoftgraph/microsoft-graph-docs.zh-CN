@@ -1,16 +1,16 @@
 ---
 title: ocrSettings 资源类型
-description: 电子数据展示案例的 OCR 设置
+description: 表示电子数据展示事例的 OCR 设置。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: d3a72dbcbdf75abe0e2da50aa8626a828a4d2588
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: e3951812e8196a4bd5839f5580cf79bac8bc671e
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945154"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838225"
 ---
 # <a name="ocrsettings-resource-type"></a>ocrSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "65945154"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-电子数据展示用例的 OCR (光学字符识别) 设置。
+表示电子数据展示用例的光学字符识别 (OCR) 设置。
 
 
 ## <a name="properties"></a>属性
@@ -26,7 +26,7 @@ ms.locfileid: "65945154"
 |:---|:---|:---|
 |isEnabled|Boolean|指示是否为案例启用 OCR。|
 |maxImageSize|Int32|将在 KB) 中处理的最大图像大小。|
-|timeout|期限|OCR 引擎的超时持续时间。 更长的超时可能会增加 OCR 的成功率，但可能会增加总处理时间。|
+|timeout|持续时间|OCR 引擎的超时持续时间。 更长的超时可能会增加 OCR 的成功率，但可能会增加总处理时间。|
 
 ## <a name="relationships"></a>关系
 无。

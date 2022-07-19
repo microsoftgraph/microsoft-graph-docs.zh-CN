@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 237c5cbb2aa7fdf4f18da879afc049cdac18d870
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: b9edba3e4521177e26b3b13d409c4a6c7c1ea025
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945309"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837546"
 ---
 # <a name="ediscoverycustodian-resource-type"></a>ediscoveryCustodian 资源类型
 
@@ -31,26 +31,26 @@ ms.locfileid: "65945309"
 |[释放](../api/security-ediscoverycustodian-release.md)|无|从案例中释放保管人。|
 |[applyHold](../api/security-ediscoverycustodian-applyhold.md)|无|开始将保留应用到电子数据展示保管人的过程。|
 |[removeHold](../api/security-ediscoverycustodian-removehold.md)|无|开始从电子数据展示保管人中删除保留的过程。|
-|[列出 ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) 集合|从 lastIndexOperation 导航属性获取 ediscoveryIndexOperation 资源。|
+|[列出 ediscoveryIndexOperation](../api/security-ediscoverycustodian-list-lastindexoperation.md)|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) 集合|获取与 [ediscoveryCustodian](../resources/security-ediscoverycustodian.md) 关联的 [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md) 的列表。|
 |[列出 siteSources](../api/security-ediscoverycustodian-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) 集合|从 siteSources 导航属性获取 siteSource 资源。|
-|[创建 siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|创建新的 siteSource 对象。|
+|[创建 siteSource](../api/security-ediscoverycustodian-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|创建与[电子数据展示保管人](../resources/security-ediscoverycustodian.md)关联的新 [siteSource](../resources/security-sitesource.md) 对象。|
 |[列出 unifiedGroupSources](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) 集合|从 unifiedGroupSources 导航属性获取 unifiedGroupSource 资源。|
-|[创建 unifiedGroupSource](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|创建新的 unifiedGroupSource 对象。|
+|[创建 unifiedGroupSource](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|创建与[电子数据展示保管人](../resources/security-ediscoverycustodian.md)关联的新 [unifiedGroupSource](../resources/security-unifiedgroupsource.md) 对象。|
 |[列出 userSources](../api/security-ediscoverycustodian-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) 集合|从 userSources 导航属性获取 userSource 资源。|
-|[创建 userSource](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|创建新的 userSource 对象。|
+|[创建 userSource](../api/security-ediscoverycustodian-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|创建与[电子数据展示保管人](../resources/security-ediscoverycustodian.md)关联的新 [userSource](../resources/security-usersource.md) 对象。|
 
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |acknowledgedDateTime|DateTimeOffset|保管人确认保留通知的日期和时间。|
 |createdDateTime|DateTimeOffset|将保管人添加到事例的日期和时间。|
 |displayName|String|保管人显示名称。|
-|email|String|保管人的电子邮件地址。|
+|email|String|Email保管人地址。|
 |id|String|指定情况下的保管人 ID。 只读。|
 |lastModifiedDateTime|DateTimeOffset|上次修改保管人对象的日期和时间|
 |releasedDateTime|DateTimeOffset|保管人从案例中释放的日期和时间。|
-|status|microsoft.graph.ediscovery.custodianStatus|保管人状态。 可取值为：`active`、`released`。|
-|holdStatus|String|保管人保留状态。可能的值为： `notApplied`， `applied`， `applying`， `removing``partial`|
+|status|microsoft.graph.security.dataSourceContainerStatus|保管人状态。 可取值为：`active`、`released`。|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|保管人保留状态。可能的值为： `notApplied`， `applied`， `applying`， `removing``partial`|
 
 ### <a name="custodianstatus-values"></a>保管人Status 值
 
@@ -70,12 +70,12 @@ ms.locfileid: "65945309"
 |部分|保管人处于混合状态，其中某些源处于保留状态，有些源未处于保留或错误状态。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|表示保管人的最新索引的操作实体。|
 |siteSources|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) 集合|与保管人关联的 SharePoint 网站的数据源实体。|
 |unifiedGroupSources|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) 集合|与保管人关联的组的数据源实体。|
-|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) 集合|保管人的数据源实体。 这是保管人的邮箱和 OneDrive for Business 网站的容器。|
+|userSources|[microsoft.graph.security.userSource](../resources/security-usersource.md) 集合|保管人的数据源实体。 这是保管人的邮箱和OneDrive for Business网站的容器。|
 
 ## <a name="json-representation"></a>JSON 表示形式
 下面是资源的 JSON 表示形式。

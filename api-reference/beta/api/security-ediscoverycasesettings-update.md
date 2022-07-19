@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 1a25eff61ef247e6a8b0b0e8aa6f0c6e367ec71b
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f70b57cafece8f59de3cf15c8f8e37d1a4df75d9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447267"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838758"
 ---
 # <a name="update-ediscoverycasesettings"></a>更新 ediscoveryCaseSettings
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66447267"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -48,11 +48,11 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|**TODO：添加说明** 选。|
-|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|**TODO：添加说明** 选。|
-|Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|**TODO：添加说明** 选。|
+|redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|冗余 (电子数据展示案例的电子邮件线程和近乎重复的检测) 设置。 可选。|
+|topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|主题建模 (电子数据展示案例的主题) 设置。 可选。|
+|Ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|电子数据展示用例的 OCR (光学字符识别) 设置。 可选。|
 
 
 
@@ -100,7 +100,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoverycasesettings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoverycasesettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -113,8 +113,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

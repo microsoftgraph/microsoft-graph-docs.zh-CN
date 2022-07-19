@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: c2149238fbcdf7671ea376ad15784b158f7f70f3
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: f61b0418f195ac8da8b0e45cfcf5497811f71e9b
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440487"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837924"
 ---
 # <a name="ediscoverycustodian-activate"></a>ediscoveryCustodian：activate
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-激活已从案例中释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅[Advanced eDiscovery案例中的管理保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
+激活已从案例中释放的保管人，使其再次成为案例的一部分。 有关详细信息，请参阅 [电子数据展示 (高级) 案例中的管理保管人](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)。
 
 
 ## <a name="permissions"></a>权限
@@ -27,7 +27,7 @@ ms.locfileid: "66440487"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -77,7 +77,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverycustodianthisactivate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverycustodianthisactivate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,8 +88,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 ---
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

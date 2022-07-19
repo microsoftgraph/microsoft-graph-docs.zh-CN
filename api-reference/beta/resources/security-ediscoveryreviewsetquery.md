@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 245a998a9d5c853ddadcc6b1a194e276ad4759c0
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 1fd3a579783929eb587055ad4ff0c2a7d6d222ec
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945161"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838239"
 ---
 # <a name="ediscoveryreviewsetquery-resource-type"></a>ediscoveryReviewSetQuery 资源类型
 
@@ -38,10 +38,10 @@ ms.locfileid: "65945161"
 | createdBy | [identitySet](/graph/api/resources/identityset) | 创建查询的用户。 |
 | createdDateTime |DateTimeOffset| 创建查询的时间和日期。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
 | displayName | String | 查询的名称。|
-| id |字符串| 查询的唯一标识符。 只读。|
+| id |String| 查询的唯一标识符。 只读。|
 | lastModifiedBy | [identitySet](/graph/api/resources/identityset) | 上次修改查询的用户。 |
 | lastModifiedDateTime |DateTimeOffset | 上次修改查询的日期和时间。 时间戳类型表示采用 ISO 8601 格式的日期和时间信息，始终采用 UTC 时区。 例如，2014 年 1 月 1 日午夜 UTC 为 `2014-01-01T00:00:00Z`|
-| 查询 | String | KQL (关键字查询语言) 查询中的查询字符串。 有关详细信息，请参阅 [高级电子数据展示中的“文档元数据”字段](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。  此字段直接映射到关键字条件。  可以使用与值配对的 *可搜索字段名称* 中列出的字段来优化搜索;例如， *subject：“Quarterly Financials” AND Date>=06/01/2016 AND Date<=07/01/2016*. |
+| 查询 | String | KQL (关键字查询语言) 查询中的查询字符串。 有关详细信息，请参阅 [电子数据展示 (高级) 中的“文档元 ](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)数据”字段。  此字段直接映射到关键字条件。  可以使用与值配对的 *可搜索字段名称* 中列出的字段来优化搜索;例如， *subject：“Quarterly Financials” AND Date>=06/01/2016 AND Date<=07/01/2016*. |
 
 
 ## <a name="relationships"></a>关系

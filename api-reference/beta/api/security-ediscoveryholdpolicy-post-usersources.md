@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4659c52ec4431cb7ab9960056acd24704eafa46e
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 2fcc0d2c45e296a39c1537e40c4a1679af622b05
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446797"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837917"
 ---
 # <a name="create-usersource"></a>创建 userSource
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66446797"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,15 +49,15 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHo
 
 创建 **userSource** 时，可以指定以下属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
 |email|String|用户的 SMTP 地址。|
-|includedSources|String|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
+|includedSources|microsoft.graph.security.sourceType|指定此组中包含的源。 可取值为：`mailbox`、`site`。|
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [userSource](../resources/security-usersource.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [microsoft.graph.security.userSource](../resources/security-usersource.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-usersource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

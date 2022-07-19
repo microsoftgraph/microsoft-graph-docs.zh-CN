@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 1924ee87043a2ba10beb0505e9a42f1446c30a9e
-ms.sourcegitcommit: 9adff6756e27aabbf36a9adbc2269b13c7fa74ef
+ms.openlocfilehash: 06ab85704a737877ca6674737dd64504f3698629
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65883990"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838463"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>使用 Microsoft Graph 安全性 API
 
@@ -49,6 +49,10 @@ Microsoft Graph 安全性 API 提供来自以下提供商的警报。 下表显�
 
 \*\*\* Microsoft Defender for Identity 警报通过 Microsoft Defender for Cloud Apps 集成提供。 这意味着只有在加入了 Unified SecOps 并将 Microsoft Defender for Identity 连接到 Microsoft Defender for Cloud Apps 时，才会收到 Microsoft Defender for Identity 警报。 了解有关[如何集成 Microsoft Defender for Identity 和 Microsoft Defender for Cloud Apps](/defender-for-identity/mcas-integration) 的详细信息。
 
+## <a name="ediscovery"></a>电子数据展示
+
+[Microsoft Purview 电子数据展示（高级版）](/microsoft-365/compliance/overview-ediscovery-20) 提供端到端工作流，用于保留、收集、分析、审阅和导出响应组织内部和外部调查的内容。
+
 ## <a name="information-protection"></a>信息保护
 
 Microsoft Graph 威胁评估 API 可帮助组织评估租户中任何用户收到的威胁。 这样，客户就可将其收到的垃圾电子邮件、网络钓鱼 URL 或恶意软件附件报告给 Microsoft。 策略检查结果和重新扫描结果可帮助租户管理员了解威胁扫描判定并调整其组织策略。
@@ -64,7 +68,9 @@ Microsoft Graph 威胁评估 API 可帮助组织评估租户中任何用户收�
 | **用例**   | **REST 资源** | **在 Graph 浏览器中试调用** |
 |:---------------|:--------|:----------|
 | 列出警报 | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| 更新警报 | [Update alert](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| 更新警报 | [更新警报](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+|列出电子数据展示案例|[List eDiscoveryCases](../api/security-casesroot-list-ediscoverycases.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoveryCases](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
+|列出电子数据展示案例操作|[List caseOperations](../api/security-ediscoverycase-list-operations.md)|[https://graph.microsoft.com/beta/security/cases/eDiscoverycases/{id}/operations](https://developer.microsoft.com/graph/graph-explorer?request=security%2Fcases%2FeDiscoverycases%2F%7Bid%7D%2Foperations&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |列出安全功能分数|[列出 secureScore](../api/security-list-securescores.md) |[https://graph.microsoft.com/v1.0/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |获取安全功能分数|[获取 secureScore](../api/securescore-get.md) |[https://graph.microsoft.com/v1.0/security/secureScores/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores/{id}&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|
 |列出安全功能分数控制配置文件|[列出 secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) |[https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com)|

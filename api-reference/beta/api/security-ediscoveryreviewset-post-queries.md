@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: f489128a7e4c666827e669a08bbcc6f3846f3c62
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: eb001e518abdbfb0044b0e657b0ea7cc61bb9604
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66440431"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837406"
 ---
 # <a name="create-ediscoveryreviewsetquery"></a>创建 ediscoveryReviewSetQuery
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66440431"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,14 +51,14 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|String|查询的名称。 必需项。|
-|contentQuery|String|审阅集的 KQL 查询。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|displayName|String|查询的名称。 必需。|
+|contentQuery|String|审阅集的 KQL 查询。 有关详细信息，请参阅 [审阅集中的查询和筛选内容](/microsoft-365/compliance/review-set-search)。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) 对象。
+如果成功，此方法在响应正文中返回 `201 Created` 响应代码和 [microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewsetquery-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewsetquery-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,7 +105,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

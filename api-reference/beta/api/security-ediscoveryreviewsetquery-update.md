@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 65ea037aaaf9de643377c529818a44a52543d59c
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 6b20bfe3f2d857e40a274cf0e4ec290cc8dc52c1
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945442"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838211"
 ---
 # <a name="update-ediscoveryreviewsetquery"></a>更新 ediscoveryReviewSetQuery
 命名空间：microsoft.graph.security
@@ -49,8 +49,8 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryR
 
 |属性|类型|说明|
 |:---|:---|:---|
-|displayName|字符串|查询的名称。 必填。|
-|contentQuery|String|审阅集的 KQL 查询。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/review-set-search)|
+|displayName|String|查询的名称。 必需。|
+|contentQuery|String|审阅集的 KQL 查询。 有关详细信息，请参阅 [审阅集中的查询和筛选内容](/microsoft-365/compliance/review-set-search)。|
 
 
 
@@ -68,7 +68,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryR
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery
+PATCH https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/5f426fdc-f027-40db-b7cc-453cf06dc996
 Content-Type: application/json
 
 {
@@ -79,8 +79,8 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true

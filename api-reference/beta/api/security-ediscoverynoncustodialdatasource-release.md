@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 60b59f363b60245e50b8fef6181b7e5683e4a66d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 6862b62b2c1fc6701c582faed15b48de976d67d6
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66445418"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837420"
 ---
 # <a name="ediscoverynoncustodialdatasource-release"></a>ediscoveryNoncustodialDataSource： release
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66445418"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverynoncustodialdatasourcethisrelease-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverynoncustodialdatasourcethisrelease-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -89,8 +89,8 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscovery
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 271989fb37804db1cf4d0051d9b1bebcdd1d1e32
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 5b98442eb897362dfb967e8f44217911c80ff228
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66093922"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837700"
 ---
 # <a name="update-ediscoveryholdpolicy"></a>更新 ediscoveryHoldPolicy
 命名空间：microsoft.graph.security
@@ -56,7 +56,7 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryH
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `204 No Content` 响应代码和更新后的 [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) 对象。
+如果成功，此方法在响应正文中返回 `204 No Content` 响应代码和更新的 [microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) 对象。
 
 ## <a name="examples"></a>示例
 
@@ -89,7 +89,7 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 [!INCLUDE [sample-code](../includes/snippets/java/update-ediscoveryholdpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryholdpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,8 +98,8 @@ PATCH https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-4
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
+
 <!-- {
   "blockType": "response",
   "truncated": true

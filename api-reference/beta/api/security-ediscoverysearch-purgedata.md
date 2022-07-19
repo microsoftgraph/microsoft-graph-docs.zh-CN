@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 4a74360e6d714f34e23e6dc6a7ac2bbef641431d
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: e61c21c6d4a1238062f550c63d75828eede168e1
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66446650"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838372"
 ---
 # <a name="ediscoverysearch-purgedata"></a>ediscoverySearch： purgeData
 命名空间：microsoft.graph.security
@@ -30,7 +30,7 @@ ms.locfileid: "66446650"
 
 有关清除 Teams 消息的详细信息，请参阅：
 - [电子数据展示解决方案系列：数据溢出方案 - 搜索和清除](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
-- [Advanced eDiscovery Microsoft Teams 中内容的工作流](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
+- [Microsoft Teams 中内容的电子数据展示 (高级) 工作流](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
 
 ## <a name="permissions"></a>权限
@@ -40,7 +40,7 @@ ms.locfileid: "66446650"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -94,7 +94,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/java/ediscoverysearchthispurgedata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/ediscoverysearchthispurgedata-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,8 +107,7 @@ POST https://graph.microsoft.com/beta/security/cases/eDiscoverycases/b0073e4e-41
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,23 +1,23 @@
 ---
-title: 列出 ediscoveryReviewTag
+title: 列出标记
 description: 从电子数据展示案例对象获取 ediscoveryReviewTag 对象的列表。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: ccdaf7d79d08e083edbbadc15be6bf73ccb2addf
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a2c5911c7f087c9fcec31a0f6949b2d795a8979d
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66439420"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837567"
 ---
-# <a name="list-ediscoveryreviewtag"></a>列出 ediscoveryReviewTag
+# <a name="list-tags"></a>列出标记
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-创建新的 ediscoveryReviewTag 对象。
+获取 [电子数据展示ReviewTag](../resources/security-ediscoveryreviewtag.md) 对象及其属性的列表。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "66439420"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -47,7 +47,8 @@ GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 请勿提供此方法的请求正文。
 ## <a name="response"></a>响应
 
-如果成功，此方法返回 `200 OK` 响应代码。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.security.ediscoveryreviewtag](../resources/security-ediscoveryreviewtag.md) 对象的集合。
+
 ## <a name="examples"></a>示例
 
 ### <a name="request"></a>请求
@@ -74,7 +75,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoveryreviewtag-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoveryreviewtag-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -87,7 +88,7 @@ GET https://graph.microsoft.com/beta/security/cases/eDiscoverycases/58399dff-ceb
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 96ea336e1281f758baa54f7d214bcfd738b6f19d
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: 0b62bcd76282faf94a611c0266da6fd1861e72d4
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66092068"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838267"
 ---
 # <a name="remove-custodiansources"></a>删除保管人源
 命名空间：microsoft.graph.security
@@ -81,8 +81,7 @@ DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscove
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

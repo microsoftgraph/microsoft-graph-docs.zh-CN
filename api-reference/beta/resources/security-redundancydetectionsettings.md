@@ -1,16 +1,16 @@
 ---
 title: redundancyDetectionSettings 资源类型
-description: 电子数据展示案例的冗余设置。
+description: 表示电子数据展示案例的冗余设置。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 8fcc425c95540552479cfd07b862e5e9ba29e53e
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 3717992dc8cc9d1be843430c0a517f081e9bf220
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945153"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837525"
 ---
 # <a name="redundancydetectionsettings-resource-type"></a>redundancyDetectionSettings 资源类型
 
@@ -18,7 +18,7 @@ ms.locfileid: "65945153"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-冗余 (电子数据展示案例的电子邮件线程和近乎重复的检测) 设置。
+表示 (电子数据展示案例的冗余 (和近乎重复的检测) 设置。
 
 
 ## <a name="properties"></a>属性

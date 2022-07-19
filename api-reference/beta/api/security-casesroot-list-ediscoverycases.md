@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 29c693647fefbdb1a67a1488f63a238442e35b9a
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: a10d79d161df2cc4a0d8d04accaee54a450accbb
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66441894"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837931"
 ---
 # <a name="list-ediscoverycases"></a>列出 ediscoveryCases
 命名空间：microsoft.graph.security
@@ -26,7 +26,7 @@ ms.locfileid: "66441894"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -51,7 +51,7 @@ GET /security/cases/ediscoveryCases
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [ediscoveryCase](../resources/security-ediscoverycase.md) 对象集合。
+如果成功，此方法在响应正文中返回 `200 OK` 响应代码和 [microsoft.graph.security.ediscoveryCase](../resources/security-ediscoverycase.md) 对象的集合。
 
 ## <a name="examples"></a>示例
 
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases
 [!INCLUDE [sample-code](../includes/snippets/java/list-ediscoverycase-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-ediscoverycase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
+下面展示了示例响应。
 >**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
 <!-- {
   "blockType": "response",

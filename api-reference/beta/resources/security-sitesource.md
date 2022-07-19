@@ -1,8 +1,17 @@
 ---
-title：“siteSource 资源类型”说明：“与保管人关联的站点的容器。
-author： “SeunginLyu” ms.localizationpriority： medium ms.prod： “ediscovery” doc_type： resourcePageType
+title: siteSource 资源类型
+description: 与保管人关联的站点的容器。
+author: SeunginLyu
+ms.localizationpriority: medium
+ms.prod: ediscovery
+doc_type: resourcePageType
+ms.openlocfilehash: 0dd23c703ef63c11da357ac6db0d0dfdc73a5212
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837532"
 ---
-
 # <a name="sitesource-resource-type"></a>siteSource 资源类型
 
 命名空间：microsoft.graph.security
@@ -10,7 +19,7 @@ author： “SeunginLyu” ms.localizationpriority： medium ms.prod： “edisc
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 与保管人关联的站点的容器。
 
-[dataSource](../resources/security-datasource.md) 中的 IInherits。
+继承自 [dataSource](../resources/security-datasource.md)。
 
 
 ## <a name="methods"></a>方法
@@ -21,11 +30,11 @@ author： “SeunginLyu” ms.localizationpriority： medium ms.prod： “edisc
 |createdBy|[identitySet](../resources/identityset.md)|创建 **siteSource** 的用户。|
 |createdDateTime|DateTimeOffset|**网站源** 的创建日期和时间。|
 |displayName|String|**siteSource** 的显示名称。 这将是 SharePoint 网站的名称。|
-|id|字符串| **siteSource** 的 ID。 可以随时使用 [Get 网站检索站点](../api/site-get.md)源 - https://graph.microsoft.com/v1.0/sites/{siteId}|
-|holdStatus|String|**siteSource** 的保留状态。可能的值为： `notApplied`， `applied`， `applying`， `removing``partial`|
+|id|String| **siteSource** 的 ID。 |
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|**siteSource** 的保留状态。 可能的值包括 `notApplied`、`applied`、`applying`、`removing`、`partial`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |网站|[site](../resources/site.md)|与 **siteSource** 关联的 SharePoint 网站。|
 
@@ -35,7 +44,7 @@ author： “SeunginLyu” ms.localizationpriority： medium ms.prod： “edisc
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.security.siteSource",
-  "baseType": "microsoft.graph.ediscovery.dataSource",
+  "baseType": "microsoft.graph.security.dataSource",
   "openType": false
 }
 -->

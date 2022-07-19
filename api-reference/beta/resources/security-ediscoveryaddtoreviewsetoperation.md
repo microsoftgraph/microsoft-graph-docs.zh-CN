@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 888f96bc37b476055513f43c9086a57b4d2c6cbc
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 7e16dc269d212517465c3492dcbe30b9fd3de7d4
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945326"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838631"
 ---
 # <a name="ediscoveryaddtoreviewsetoperation-resource-type"></a>ediscoveryAddToReviewSetOperation 资源类型
 
@@ -27,17 +27,17 @@ ms.locfileid: "65945326"
 ## <a name="properties"></a>属性
 |属性|类型|说明|
 |:---|:---|:---|
-|action|String| 操作表示的操作类型。 可能的值为：，`addToReviewSet``applyTags`，，`contentExport``convertToPdf`，`estimateStatistics`，`purgeData`|
+|action|microsoft.graph.security.caseAction| 操作表示的操作类型。 可能的值为：，`addToReviewSet``applyTags`，，`contentExport``convertToPdf`，`estimateStatistics`，`purgeData`|
 |completedDateTime|DateTimeOffset| 操作完成的日期和时间。 |
 |createdBy|[identitySet](../resources/identityset.md)| 创建操作的用户。 |
 |createdDateTime|DateTimeOffset| 创建操作的日期和时间。 |
 |id|String| 操作的 ID。 只读。 |
 |percentProgress|Int32| 操作的进度。 |
 |resultInfo|[resultInfo](../resources/resultinfo.md)| 包含成功和失败特定的结果信息。 |
-|status|String| 事例操作的状态。 可取值为：`notStarted`、`submissionFailed`、`running`、`succeeded`、`partiallySucceeded`、`failed`。|
+|status|microsoft.graph.security.caseOperationStatus| 事例操作的状态。 可取值为：`notStarted`、`submissionFailed`、`running`、`succeeded`、`partiallySucceeded`、`failed`。|
 
 ## <a name="relationships"></a>关系
-|关系|类型|说明|
+|关系|类型|描述|
 |:---|:---|:---|
 |reviewSet|[microsoft.graph.security.ediscoveryReviewSet](../resources/security-ediscoveryreviewset.md)|电子数据展示评审集，将匹配源集合查询的项目添加到其中。|
 |search|[microsoft.graph.security.ediscoverySearch](../resources/security-ediscoverysearch.md)|添加到审阅集的电子数据展示搜索。|

@@ -1,23 +1,23 @@
 ---
-title: 添加 dataSource
-description: 通过发布到 custodianSources 集合来添加 custodianSources。
+title: 添加保管人源
+description: 创建与电子数据展示搜索关联的新保管人源。
 author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: a5755e7d4dfd0dea3313081e52fcf5fe5decaa30
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: ad3265d6e28e1fe67024f16ac169b82469408ae9
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66440210"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837847"
 ---
-# <a name="add-datasource"></a>添加 dataSource
+# <a name="add-custodian-sources"></a>添加保管人源
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-通过发布到 custodianSources 集合来添加 custodianSources。
+创建与 [电子数据展示搜索](../resources/security-ediscoverysearch.md)关联的新保管人源。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "66440210"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,15 +49,15 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 
 创建 **dataSource** 时，可以指定以下属性。
 
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|@odata.id|String|定义存储对象的字符串。 请参阅下面的示例。|
+|@odata.id|String|定义存储对象的字符串。 请参阅下面 [的示例](#examples) 。|
 
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `204 No Content` 响应代码和 [dataSource](../resources/security-datasource.md) 对象。
+如果成功，此方法返回 `204 No Content` 响应代码。
 
 ## <a name="examples"></a>示例
 
@@ -90,7 +90,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/create-datasource-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-datasource-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,8 +99,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

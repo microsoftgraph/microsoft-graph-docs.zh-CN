@@ -5,19 +5,19 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: apiPageType
-ms.openlocfilehash: 94c9492804b1efc35247b5465d4b6b94b4b537f2
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: b241270cee8ae5264fdf3008c8aa7fc54b1cc36b
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945446"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66837399"
 ---
 # <a name="ediscoveryreviewsetquery-applytags"></a>ediscoveryReviewSetQuery： applyTags
 命名空间：microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-将标记应用到电子数据展示审阅集中的文件。 [了解详细信息。](https://docs.microsoft.com/microsoft-365/compliance/tagging-documents)
+将标记应用到 [电子数据展示审阅集中](../resources/security-ediscoveryreviewset.md)的文件。 有关详细信息，请参阅 [电子数据展示中审阅集中的标记文](/microsoft-365/compliance/tagging-documents)档。
 
 ## <a name="permissions"></a>权限
 要调用此 API，需要以下权限之一。要了解详细信息，包括如何选择权限的信息，请参阅[权限](/graph/permissions-reference)。
@@ -26,7 +26,7 @@ ms.locfileid: "65945446"
 |:---|:---|
 |委派（工作或学校帐户）|eDiscovery.Read.All、eDiscovery.ReadWrite.All|
 |委派（个人 Microsoft 帐户）|不支持。|
-|Application|不支持。|
+|应用程序|不支持。|
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -49,7 +49,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 
 下表显示了可用于此操作的参数。
 
-|参数|类型|说明|
+|参数|类型|描述|
 |:---|:---|:---|
 |tagsToAdd|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) 集合|要从审阅集查询中的文件中删除的标记。|
 |tagsToRemove|[microsoft.graph.security.ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) 集合|用于删除在审阅集查询中添加文件的标记。|
@@ -70,7 +70,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryRe
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/ediscoveryExportOperation/reviewSetQuery/applyTags
+POST https://graph.microsoft.com/beta/security/cases/ediscoverycases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/5f426fdc-f027-40db-b7cc-453cf06dc996/applyTags
 Content-Type: application/json
 
 {
@@ -82,8 +82,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>响应
-下面是响应的示例
->**注意：** 为了提高可读性，可能缩短了此处显示的响应对象。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true

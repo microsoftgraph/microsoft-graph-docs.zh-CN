@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: a23b2d95519e1f3f69f05c4199d3ae3b843c3a72
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: 9b58f52074154ebaf621134327a3d5ee1c7804d2
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945173"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838183"
 ---
 # <a name="ediscoveryholdoperation-resource-type"></a>ediscoveryHoldOperation 资源类型
 

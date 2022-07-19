@@ -5,12 +5,12 @@ author: SeunginLyu
 ms.localizationpriority: medium
 ms.prod: ediscovery
 doc_type: resourcePageType
-ms.openlocfilehash: 7482e31ab1a43cf4c60e7c211acb38d8cac42bfa
-ms.sourcegitcommit: a345f96fb22115f65840702a4acf0acc7c1b0679
+ms.openlocfilehash: f90a527ec47cc6b9e14e536a4f8da4841d6504c8
+ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65945318"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838645"
 ---
 # <a name="datasourcecontainer-resource-type"></a>dataSourceContainer 资源类型
 
@@ -25,15 +25,34 @@ ms.locfileid: "65945318"
 
 无。
 ## <a name="properties"></a>属性
-|属性|类型|说明|
+|属性|类型|描述|
 |:---|:---|:---|
-|holdStatus|String|dataSourceContainer 的保留状态。可能的值为： `notApplied`， ， `applied`， `applying`， `removing``partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|dataSourceContainer 的保留状态。可能的值为： `notApplied`， ， `applied`， `applying`， `removing``partial`|
 |createdDateTime|DateTimeOffset|创建 dataSourceContainer 实体的日期和时间。|
 |displayName|String|dataSourceContainer 实体的显示名称。|
 |id|String|dataSourceContainer 的唯一标识符。 继承自 [实体](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|dataSourceContainer 的上次修改日期和时间。|
 |releasedDateTime|DateTimeOffset|DataSourceContainer 从案例中释放的日期和时间。|
-|status|String|dataSourceContainer 的最新状态。 可取值为：`Active`、`Released`。|
+|status|microsoft.graph.security.dataSourceContainerStatus|dataSourceContainer 的最新状态。 可取值为：`Active`、`Released`。|
+
+
+### <a name="datasourcecontainerstatus-values"></a>dataSourceContainerStatus 值
+
+|成员|说明|
+|:----|-----------|
+| 积极| 数据源容器处于活动状态。|
+| 释放 | 数据源容器已发布。|
+
+### <a name="datasourceholdstatus-values"></a>dataSourceHoldStatus 值
+
+|成员|说明|
+|:----|-----------|
+| notApplied | 数据源容器未处于保留状态。|
+| 应用 | 数据源容器处于保留状态。|
+| 应用 | 数据源容器在应用保留状态 (已触发的 applyHold 操作) 。|
+| 删除 | 数据源容器正在删除 () 触发的 removeHold 操作的保留状态。|
+| 部分 | 数据源容器处于混合状态，其中某些源处于保留状态，有些源未处于保留或错误状态。|
+
 
 ## <a name="relationships"></a>关系
 无。
