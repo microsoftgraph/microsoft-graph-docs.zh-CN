@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: ea2cee219628415158c3f625a5cdd376d5fd1bd7
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: fe1d1da1ddf03a3b25a206c380f6ce9b6886650e
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685213"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883082"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>将 Microsoft Graph API 与 Microsoft Teams 结合使用
 
@@ -22,22 +22,24 @@ Microsoft Teams 是 Microsoft 365 中基于聊天的工作区，可提供对特�
 
 | 资源 | 方法 |
 |:---------------|:--------|
-|[team](../resources/team.md)| [列出团队](../api/user-list-joinedteams.md)， [列出所有团队](/graph/teams-list-all-teams)， [列出关联的团队](../api/associatedteaminfo-list.md)， [创建](../api/team-put-teams.md)、 [读取](../api/team-get.md)、 [更新](../api/team-update.md)、 [删除](../api/group-delete.md)、 [克隆](../api/team-clone.md)、 [存档](../api/team-archive.md)、 [无政府状态](../api/team-unarchive.md) |
-|[组](../resources/group.md)| [添加成员](../api/group-post-members.md)、 [移除成员](../api/group-delete-members.md)、[添加所有者](../api/group-post-owners.md)、 [移除所有者](../api/group-delete-owners.md)、[获取文件](drive.md)、[获取笔记本](../resources/notebook.md)、[获取计划](plannergroup.md)、[获取日历](event.md) |
-|[频道](../resources/channel.md)|[列出](../api/channel-list.md)、[创建](../api/channel-post.md)、[读取](../api/channel-get.md)、[更新](../api/channel-patch.md)、[删除](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[列出](../api/channel-list-tabs.md)、[创建](../api/channel-post-tabs.md)、[读取](../api/channel-get-tabs.md)、[更新](../api/channel-patch-tabs.md)、[删除](../api/channel-delete-tabs.md) |
-|[teamsApp](../resources/teamsapp.md)|[列出](../api/appcatalogs-list-teamsapps.md)、[发布](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[移除](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/team-list-installedapps.md)、[安装](../api/team-post-installedapps.md)、[升级](../api/team-delete-installedapps.md)、[移除](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [在频道中列出](../api/channel-list-messages.md)、[在聊天中列出](../api/chat-list-messages.md)、[发送](../api/chatmessage-post.md)、[在频道中读取](../api/chatmessage-get.md)、[在聊天中读取](../api/chatmessage-get.md)|
-|[聊天](../resources/chat.md)| [列出](../api/chat-list.md)、 [读取](../api/chat-get.md)、
+|[团队](../resources/team.md)| [列出你的团队](../api/user-list-joinedteams.md)、[列出所有团队](/graph/teams-list-all-teams)、[列出关联的团队](../api/associatedteaminfo-list.md)、[创建](../api/team-put-teams.md)、[读取](../api/team-get.md)、[更新](../api/team-update.md)、[删除](../api/group-delete.md)、[克隆](../api/team-clone.md)、[存档](../api/team-archive.md)、[取消存档](../api/team-unarchive.md) |
 |[call](../resources/call.md)| [应答](../api/call-answer.md)、[拒绝](../api/call-reject.md)、[重定向](../api/call-redirect.md)、[静音](../api/call-mute.md)、[取消静音](../api/call-unmute.md)、[更改屏幕共享角色](../api/call-changescreensharingrole.md)、[列出参与者](../api/call-list-participants.md)、[邀请参与者](../api/participant-invite.md)、[将所有参与者静音](../api/participant-muteall.md) |
+|[频道](../resources/channel.md)|[列出](../api/channel-list.md)、[创建](../api/channel-post.md)、[获取](../api/channel-get.md)、[更新](../api/channel-patch.md)、[删除](../api/channel-delete.md)|
+|[聊天](../resources/chat.md)| [列出](../api/chat-list.md)、[读取](../api/chat-get.md)
+|[chatMessage](../resources/chatmessage.md)| [在频道中列出](../api/channel-list-messages.md)、[在聊天中列出](../api/chat-list-messages.md)、[发送](../api/chatmessage-post.md)、[在频道中读取](../api/chatmessage-get.md)、[在聊天中读取](../api/chatmessage-get.md)|
+|[组](../resources/group.md)| [添加成员](../api/group-post-members.md)、 [移除成员](../api/group-delete-members.md)、[添加所有者](../api/group-post-owners.md)、 [移除所有者](../api/group-delete-owners.md)、[获取文件](drive.md)、[获取笔记本](../resources/notebook.md)、[获取计划](plannergroup.md)、[获取日历](event.md) |
+|[learningContent](learningcontent.md) | [列出](../api/learningprovider-list-learningcontents.md)、[获取](../api/learningcontent-get.md)、[更新](../api/learningcontent-update.md)、[删除](../api/learningprovider-delete-learningcontents.md) |
+|[learningProvider](learningprovider.md) | [列出](../api/employeeexperience-list-learningproviders.md)、 [创建](../api/employeeexperience-post-learningproviders.md)、 [获取](../api/learningprovider-get.md)、 [更新](../api/learningprovider-update.md)、 [删除](../api/employeeexperience-delete-learningproviders.md) |
 |[日程安排](../resources/schedule.md)| [创建或替换](../api/team-put-schedule.md)、[获取](../api/schedule-get.md)、[共享](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [创建](../api/schedule-post-schedulinggroups.md)、[列出](../api/schedule-list-schedulinggroups.md)、[获取](../api/schedulinggroup-get.md)、[替换](../api/schedulinggroup-put.md)、[删除](../api/schedulinggroup-delete.md) |
 |[shift](../resources/shift.md)| [创建](../api/schedule-post-shifts.md)、[列出](../api/schedule-list-shifts.md)、[获取](../api/shift-get.md)、[替换](../api/shift-put.md)、[删除](../api/shift-delete.md) |
+|[标记](../resources/teamworkTag.md)|[列出](../api/teamworkTag-list.md)、[创建](../api/teamworkTag-post.md)、[获取](../api/teamworkTag-get.md)、[更新](../api/teamworkTag-update.md)、[删除](../api/teamworkTag-delete.md)|
+|[tagMember](../resources/teamworkTagMember.md)|[列出](../api/teamworkTagMember-list.md)、[创建](../api/teamworkTagMember-post.md)、[获取](../api/teamworkTagMember-get.md)、[删除](../api/teamworkTagMember-delete.md)|
+|[teamsApp](../resources/teamsapp.md)|[列出](../api/appcatalogs-list-teamsapps.md)、[发布](../api/teamsapp-publish.md)、[更新](../api/teamsapp-update.md)、[移除](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [列出](../api/team-list-installedapps.md)、[安装](../api/team-post-installedapps.md)、[升级](../api/team-delete-installedapps.md)、[移除](../api/team-delete-installedapps.md) |
+|[teamsTab](../resources/teamstab.md) |[列出](../api/channel-list-tabs.md)、[创建](../api/channel-post-tabs.md)、[读取](../api/channel-get-tabs.md)、[更新](../api/channel-patch-tabs.md)、[删除](../api/channel-delete-tabs.md) |
 |[timeOff](../resources/timeoff.md)| [创建](../api/schedule-post-timesoff.md)、[列出](../api/schedule-list-timesoff.md)、[获取](../api/timeoff-get.md)、[替换](../api/timeoff-put.md)、[删除](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [创建](../api/schedule-post-timeoffreasons.md)、[列出](../api/schedule-list-timeoffreasons.md)、[获取](../api/timeoffreason-get.md)、[替换](../api/timeoffreason-put.md)、[删除](../api/timeoffreason-delete.md) |
-|[标记](../resources/teamworkTag.md)|[列出](../api/teamworkTag-list.md)、 [创建](../api/teamworkTag-post.md)、 [获取](../api/teamworkTag-get.md)、 [更新](../api/teamworkTag-update.md)、 [删除](../api/teamworkTag-delete.md)|
-|[tagMember](../resources/teamworkTagMember.md)|[列出](../api/teamworkTagMember-list.md)、 [创建](../api/teamworkTagMember-post.md)、 [获取](../api/teamworkTagMember-get.md)、 [删除](../api/teamworkTagMember-delete.md)|
 
 ## <a name="microsoft-teams-limits"></a>Microsoft Teams 限制
 
