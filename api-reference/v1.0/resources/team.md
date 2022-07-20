@@ -5,18 +5,16 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ad4cb5d1031c3c8f30e014ad99de01255e737937
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5024de8d0788e0e3c02975105826813369d8dae8
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334329"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855978"
 ---
 # <a name="team-resource-type"></a>团队资源类型
 
 命名空间：microsoft.graph
-
-
 
 Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 频道表示团队内部的某个主题，因此是讨论的逻辑隔离。
@@ -86,9 +84,10 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 |channels|[channel](channel.md) 集合|与团队相关的频道和消息的集合。|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) 集合|此团队中安装的应用。|
 |members|[conversationMember](../resources/conversationmember.md) 集合|团队的成员和所有者。|
-|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 | 
-|[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 | 
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) 集合| 在此团队中运行过或正在运行的异步操作。 |
+|[primaryChannel](../api/team-get-primarychannel.md)|[频道](channel.md)| 团队的常规频道。 |
 |schedule|[日程安排](schedule.md)| 此团队的排班安排。|
+|photo|[profilePhoto](../resources/profilephoto.md)| 团队的个人资料照片。 |
 |template|[teamsTemplate](teamstemplate.md)| 从中创建此团队的模板。请参阅[可用模板](/MicrosoftTeams/get-started-with-teams-templates)。 |
 
 ## <a name="json-representation"></a>JSON 表示形式
@@ -132,4 +131,3 @@ Microsoft Teams 中的团队是 [channel](channel.md) 对象的集合。
 - [将 Microsoft Graph API 与 Microsoft Teams 结合使用](teams-api-overview.md)
 - [创建包含团队的组](/graph/teams-create-group-and-team)
 - [列出所有团队](/graph/teams-list-all-teams)
-
