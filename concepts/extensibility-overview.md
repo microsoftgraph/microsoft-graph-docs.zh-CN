@@ -1,17 +1,17 @@
 ---
 title: 使用扩展向资源添加自定义数据
-description: 可以使用自己的应用程序数据扩展 Microsoft Graph。 无需使用外部数据存储，即可向 Microsoft Graph 资源添加自定义属性。
+description: 可以使用自己的应用程序数据扩展 Microsoft Graph。 添加用于在 Microsoft Graph 资源中存储自定义数据的自定义属性，而无需外部数据存储。
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fca4c70795f06007b7d51bfaa2ccad6968fd9d16
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a7d2a2eeba27877afe5c1aba4fbc416ad10d48c9
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554895"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856111"
 ---
-# <a name="add-custom-properties-to-resources-using-extensions"></a>使用扩展向资源添加自定义属性
+# <a name="add-custom-data-to-resources-using-extensions"></a>使用扩展向资源添加自定义数据
 
 Microsoft Graph 提供单个 API 终结点，以通过 [用户](/graph/api/resources/user) 和 [消息](/graph/api/resources/message) 等资源访问以人为本的丰富数据和见解。 还可以通过将自定义属性添加到资源实例来扩展 Microsoft Graph，而无需使用外部数据存储。
 
@@ -475,12 +475,10 @@ GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/
 
 有关使用扩展的已知限制，请参阅已知问题文章中的[扩展部分](known-issues.md#extensions)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="next-steps"></a>后续步骤
 
-- [使用开放扩展向用户添加自定义属性](extensibility-open-users.md)
-- [使用架构扩展向组添加自定义属性](extensibility-schema-groups.md)
-- [Microsoft 365 域](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [为 Microsoft 365 租户添加和验证域](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [使用开放扩展向用户添加自定义数据](extensibility-open-users.md)
+- [使用架构扩展向组添加自定义数据](extensibility-schema-groups.md)
 
 
 <!-- Links -->

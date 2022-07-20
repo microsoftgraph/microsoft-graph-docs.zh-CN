@@ -4,12 +4,12 @@ description: 使用 Microsoft Graph 中的通用打印 API 创建打印作业、
 author: nilakhan
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f4b373c7da760277dff390ca1ea491aa9117d354
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 315d1e34870761d0e972dd714ee0735c7c62d901
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66447056"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856097"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>使用 Microsoft Graph 通用打印 API 上载文档
 
@@ -18,6 +18,8 @@ ms.locfileid: "66447056"
 若要上传文件或文件的一部分，应用程序可以对在 **createUploadSession** 响应中收到的 **uploadUrl** 值创建 PUT 请求。可以上传整个文件，也可以将文件拆分为多个字节范围，只要任意给定请求的最大字节数少于 10 MB 即可。
 
 可按任意顺序上传文件的片段，并且最多可并行上传四个并发请求。 上传文档的所有二进制片段时，二进制文件将链接到 **printDocument**。
+
+> **注意**：如果应用将文件拆分为多个字节范围，我们建议每个字节范围的大小是 200 KB 的倍数，除非你使用的是 Microsoft Graph SDK，因为这要求区段大小是 320 KB 的倍数。 
 
 ## <a name="upload-a-file"></a>上传文件
 
@@ -83,7 +85,7 @@ Content-Type: application/json
 ### <a name="remarks"></a>备注
 
 * 如果因客户端发送服务器已接收的片段导致失败，服务器将响应 `HTTP 416 Requested Range Not Satisfiable`。可以 [请求上载状态](#get-the-upload-session) 以获取缺少范围的详细列表。
-* 在进行 `PUT` 调用时添加 `Authorizatio`n 标头可能会导致 `HTTP 401 Unauthorized` 响应。 授权标头和持有者令牌只应在创建上传会话时发送。 将数据上传到上传会话时，不应将其包含在内。
+* 在进行 `PUT` 调用时添加 `Authorization` 标头可能会导致 `HTTP 401 Unauthorized` 响应。 授权标头和持有者令牌只应在创建上传会话时发送。 将数据上传到上传会话时，不应将其包含在内。
 
 ## <a name="complete-a-file-upload"></a>完成文件上传
 

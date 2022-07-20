@@ -5,12 +5,12 @@ author: jahsu
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9c7319d55a8ea78fa08f5a21a8986b55a552a2f7
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 098de14a7538ae9853d74f6b47ffeb3987645803
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66443786"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856104"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>订阅使用 Microsoft Graph 更改云打印 API 的通知
 
@@ -37,6 +37,8 @@ ms.locfileid: "66443786"
 
 >[!NOTE]
 >为收听 JobFableable 事件更改通知， **printTaskDefinition** 更改通知。
+>
+>应用程序应处理重复的通知。
 
 ### <a name="create-an-application-to-listen-to-notifications"></a>创建可收听通知的应用程序
 
@@ -204,9 +206,11 @@ Microsoft Graph 将验证创建订阅前订阅请求的 **notificationurl** 属�
 ### <a name="what-are-applications-expected-to-do-after-receiving-a-change-notification"></a>收到更改通知后，应用程序应执行哪些操作？
 应用程序应处理和确认他们收到的每个更改通知。 有关详细信息，请参阅 [更改通知](./webhooks.md#processing-the-change-notification)。
 
+### <a name="how-can-i-validate-the-authenticity-of-notifications"></a>如何验证通知的真实性？
+可以使用 **clientState** 值验证通知的真实性，如 [处理更改通知](./webhooks.md#processing-the-change-notification) 或 [验证更改通知中的令牌](./webhooks-with-resource-data.md#validation-tokens-in-the-change-notification) 中所述。
+
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>如何获取活动订阅列表？
 若要详细了解如何检索 Web 网站订阅列表，请参阅 [订阅](/graph/api/subscription-list)。
-
 
 ## <a name="see-also"></a>另请参阅
 

@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f5525d2e37bc306c138f8b30010e62c2335cb703
-ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.openlocfilehash: 71d2c8f16314b85f6878bf037c2c9a68d9eee097
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66837497"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856188"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Microsoft Graph 安全性 API 概述
 
@@ -33,6 +33,10 @@ Microsoft Graph 安全性 API 可用于连接 Microsoft 安全产品、服务和
 - [拖放到工作流和行动手册中](https://aka.ms/graphsecurityconnectorsblogpost) - 将 [Microsoft Graph 安全连接器](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) 用于 [Azure 逻辑应用](/azure/logic-apps/logic-apps-overview)、[Microsoft Flow](https://flow.microsoft.com/) 和 [Power Apps](https://powerapps.microsoft.com/)。
 - [将数据导入报告和仪表板](https://aka.ms/graphsecuritypowerbiconnectorblogpost) – 将 [Microsoft Graph 安全连接器用于 Power BI](/power-bi/connect-data/desktop-connect-graph-security)。
 - [使用 Jupyter 笔记本进行连接](https://jupyter.org/) – 查找 [Jupyter 笔记本示例](https://aka.ms/graphsecurityjupyternotebooks)。  
+
+### <a name="submit-threats-and-trigger-whole-automation-flow"></a>提交威胁并触发整个自动化流
+
+使用统一的安全威胁提交 API 更轻松地跨安全解决方案提交威胁。 使用此功能，不仅可以提交威胁，还可以获取威胁提交结果并触发下游警报流。 新的统一安全威胁提交 API 支持应用程序和委派权限，可帮助构建新的安全解决方案。
 
 ### <a name="unify-and-standardize-alert-tracking"></a>统一和标准化警报跟踪
 

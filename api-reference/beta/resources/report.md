@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: ed1f58f3243a0abc433b2407f61d04077469f896
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 937f1c18efe074a0fdec3dc02b31f393dd6ca40c
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133690"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855624"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>在 Microsoft Graph 中使用 Microsoft 365 的使用情况报表
 
@@ -23,6 +23,10 @@ ms.locfileid: "65133690"
 ## <a name="authorization"></a>Authorization
 
 Microsoft Graph 通过权限控制对资源的访问。 必须指定访问报表资源所需的权限。 通常是在 Azure Active Directory (Azure AD) 门户中指定权限。 有关详细信息，请参阅 [Microsoft Graph 权限参考](/graph/permissions-reference)和[报表权限](/graph/permissions-reference#reports-permissions)。
+
+## <a name="settings"></a>设置
+
+在 Microsoft 365 报表中，将隐藏用户名、组和网站等用户信息；不会显示实际值。 可以使用 [adminReportSettings](../resources/adminreportsettings.md) API 控制用户信息在报表中的显示。
 
 ## <a name="cloud-deployments"></a>云部署
 
