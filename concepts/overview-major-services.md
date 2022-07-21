@@ -4,12 +4,12 @@ description: 了解 Microsoft Graph 的 Microsoft 365 服务和功能网络如�
 author: angelgolfer-ms
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 44c013d3a166f803c8c0df35bd82eecd513055d4
-ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.openlocfilehash: 3b9a6813acd90b39ed19df45f6807e1f79195ee5
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66837707"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883089"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Microsoft Graph 中的主要服务和功能
 
@@ -56,7 +56,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 工作簿和图表 | Excel | 允许用户使用 Excel 电子表格进行复杂计算、跟踪、分析和可视化数据，并生成专业报表。 | [Excel 工作簿和图表概述](excel-concept-overview.md) |
 | 待办任务 | 待办事项 | 允许用户管理工作和生活中的个人任务。它还与 Outlook、Teams、Planner 和 Cortana 集成，使其成为存放 Microsoft 365 中用户个人任务的单一位置。 | [微软待办任务概述](todo-concept-overview.md) |
 
-## <a name="collaboration"></a>协作
+## <a name="collaboration-and-employee-learning"></a>协作和员工学习
 
 <!-- Want to update links to concept overviews as they are created over time. 
 -->
@@ -66,6 +66,7 @@ Microsoft Graph 中的一些服务是首次推出，其他服务则是我们所�
 | 网站和列表  | SharePoint | 面向用户和 Microsoft 365 组的基于 Web 的平台，以共享、组织、管理和发现内容（包括列表、文件和笔记）。 | [SharePoint 网站和内容概述](sharepoint-concept-overview.md) | 
 |任务和计划 | Planner | 使 Microsoft 365 组中的用户能够创建计划、分配任务和跟踪进度。 | [Planner 计划和任务概述](planner-concept-overview.md) |
 |团队合作 |  Microsoft Teams | 面向团队的数字中心和基于聊天的工作区，用于共享文件、笔记、日历和计划。 | [Microsoft Teams 团队合作概述](teams-concept-overview.md) |
+| 员工学习 | Viva Learning | 通过在已使用的工具和 Microsoft 365 平台中将学习引入工作流，使员工能够让学习成为一天中的自然部分。 从 Microsoft Teams 中的学习中心发现、共享和跟踪各种源的学习。  | [使用 Teams 中的协作功能助力员工学习](teams-concept-overview.md#enable-employee-learning-using-the-collaborative-capabilities-in-teams) |
 
 ## <a name="people-and-workplace-intelligence"></a>人员和工作场所智能
 

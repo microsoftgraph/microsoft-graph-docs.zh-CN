@@ -4,12 +4,12 @@ description: Microsoft Graph 公开了控制应用程序对资源（如用户、
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 396986fb8519a8bf36c3dbab4827ca9103032915
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
+ms.openlocfilehash: f71c850321addb0c92e5dd6aec45855cc474d8a4
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698051"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883075"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Microsoft Graph 权限引用
 
@@ -896,6 +896,28 @@ _Directory.ReadWrite.All_ 权限可授予以下特权：
 * _EduRoster.ReadBasic_：登录用户听讲或教授的课程 (`GET /education/classes/{id}/members`)
 
 有关涉及多个权限的更复杂的情况，请参阅[权限方案](#permission-scenarios)。
+
+
+---
+
+## <a name="employee-learning-permissions"></a>员工学习权限
+
+#### <a name="delegated-permissions"></a>委派权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    阅读学习内容 | 允许应用代表已登录用户读取组织目录中的学习内容。 | 是 | 否 |
+| _LearningContent.ReadWrite.All_  |    管理学习内容 | 允许应用代表已登录用户管理组织目录中的学习内容。  | 是 | 否 |
+| _LearningProvider.Read_ |    读取学习提供程序 | 允许应用代表已登录用户读取组织目录中学习提供程序的数据。 | 是 | 否 |
+| _LearningProvider.ReadWrite_  |    管理学习提供程序 | 允许应用代表已登录用户为组织目录中的学习提供程序创建、更新、读取和删除数据。 | 是 | 否 |
+
+#### <a name="application-permissions"></a>应用程序权限
+
+|   权限    |  显示字符串   |  说明 | 需经过管理员同意 | 支持的 Microsoft 帐户 |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    阅读学习内容 | 允许应用在没有登录用户的情况下读取组织目录中的所有学习内容。 | 是 | 否 |
+| _LearningContent.ReadWrite.All_  |    管理学习内容 | 允许应用在没有登录用户的情况下管理组织目录中的所有学习内容。  | 是 | 否 |
+
 
 ---
 
