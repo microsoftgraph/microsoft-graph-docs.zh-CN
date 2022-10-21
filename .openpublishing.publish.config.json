@@ -33,10 +33,7 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [
-    "v-mipop@microsoft.com",
-    "v-jijaku@microsoft.com"
-  ],
+  "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
     "live-sxs",
