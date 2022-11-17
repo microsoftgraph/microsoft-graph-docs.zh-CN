@@ -1,23 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: f08bad9de163b0c0d70a77eddb34c94568372235
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 75bddd70adaad5bd51b149c559499c3bf8772691
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325796"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61012920"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
-requestBody := msgraphsdk.NewMessageIdsRequestBody()
+requestBody := msgraphsdk.New()
 requestBody.SetMessageIds( []String {
     "MC172851",
     "MC167983",
 }
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(requestBody)
+options := &msgraphsdk.UnarchiveRequestBuilderPostOptions{
+    Body: requestBody,
+}
+result, err := graphClient.Admin().ServiceAnnouncement().Messages().Unarchive().Post(options)
 
 
 ```

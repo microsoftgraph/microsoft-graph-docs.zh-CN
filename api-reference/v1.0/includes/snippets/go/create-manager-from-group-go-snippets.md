@@ -1,22 +1,26 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 677057778f728c96c3873ab6f185d3f70845e12d
-ms.sourcegitcommit: 54ba08a80db85b9e84813387e8c4416eca44fa8e
+ms.openlocfilehash: 625643bea739de0b09780ca938ccfe5d560dfd38
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65719240"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60992310"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
-requestBody := msgraphsdk.NewReferenceUpdateSchema()
-@odata.id := "https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0"
-requestBody.Set@odata.id(&@odata.id)
+requestBody := msgraphsdk.New()
+requestBody.SetAdditionalData(map[string]interface{}{
+    "@odata.id": "https://graph.microsoft.com/v1.0/users/{id}",
+}
+options := &msgraphsdk.RefRequestBuilderPutOptions{
+    Body: requestBody,
+}
 userId := "user-id"
-graphClient.UsersById(&userId).Manager().$ref().Put(requestBody)
+graphClient.UsersById(&userId).Manager().$ref().Put(options)
 
 
 ```

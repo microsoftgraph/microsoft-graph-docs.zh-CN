@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 9d6297908ee742c322b70c308ca25f376b736720
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: d6f0b91523def933a7cb18c3668280b7fb8f3090
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66098742"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61019220"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.NewDeployment()
 content := msgraphsdk.NewDeployableContent()
@@ -29,14 +29,11 @@ monitoring := msgraphsdk.NewMonitoringSettings()
 settings.SetMonitoring(monitoring)
 monitoring.SetMonitoringRules( []MonitoringRule {
     msgraphsdk.NewMonitoringRule(),
-signal := "rollback"
-    SetSignal(&signal)
-threshold := int32(5)
-    SetThreshold(&threshold)
-action := "pauseDeployment"
-    SetAction(&action)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.windowsUpdates.monitoringRule",
+        "signal": "rollback",
+        "threshold": ,
+        "action": "pauseDeployment",
     }
 }
 settings.SetAdditionalData(map[string]interface{}{
@@ -45,7 +42,10 @@ settings.SetAdditionalData(map[string]interface{}{
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
 }
-result, err := graphClient.Admin().Windows().Updates().Deployments().Post(requestBody)
+options := &msgraphsdk.DeploymentsRequestBuilderPostOptions{
+    Body: requestBody,
+}
+result, err := graphClient.Admin().Windows().Updates().Deployments().Post(options)
 
 
 ```

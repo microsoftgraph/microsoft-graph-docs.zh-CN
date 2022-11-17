@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: fa6f89abc7d7a1301de42b6264212febc5b7db08
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 33f912fb7b170d1d7c3473e4679c57920cfa1817
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66502609"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999591"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.NewBookingAppointment()
 customerEmailAddress := "jordanm@contoso.com"
@@ -88,7 +88,6 @@ isLocationOnline := true
 requestBody.SetIsLocationOnline(&isLocationOnline)
 optOutOfCustomerEmail := false
 requestBody.SetOptOutOfCustomerEmail(&optOutOfCustomerEmail)
-requestBody.SetAnonymousJoinWebUrl(nil)
 postBuffer := "PT10M"
 requestBody.SetPostBuffer(&postBuffer)
 preBuffer := "PT5M"
@@ -99,37 +98,28 @@ priceType := "fixedPrice"
 requestBody.SetPriceType(&priceType)
 requestBody.SetReminders( []BookingReminder {
     msgraphsdk.NewBookingReminder(),
-message := "This service is tomorrow"
-    SetMessage(&message)
-offset := "P1D"
-    SetOffset(&offset)
-recipients := "allAttendees"
-    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
+        "message": "This service is tomorrow",
+        "offset": "P1D",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
+        "recipients": "allAttendees",
     }
     msgraphsdk.NewBookingReminder(),
-message := "Please be available to enjoy your lunch service."
-    SetMessage(&message)
-offset := "PT1H"
-    SetOffset(&offset)
-recipients := "customer"
-    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
+        "message": "Please be available to enjoy your lunch service.",
+        "offset": "PT1H",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
+        "recipients": "customer",
     }
     msgraphsdk.NewBookingReminder(),
-message := "Please check traffic for next cater."
-    SetMessage(&message)
-offset := "PT2H"
-    SetOffset(&offset)
-recipients := "staff"
-    SetRecipients(&recipients)
     SetAdditionalData(map[string]interface{}{
         "@odata.type": "#microsoft.graph.bookingReminder",
+        "message": "Please check traffic for next cater.",
+        "offset": "PT2H",
         "recipients@odata.type": "#microsoft.graph.bookingReminderRecipients",
+        "recipients": "staff",
     }
 }
 serviceId := "57da6774-a087-4d69-b0e6-6fb82c339976"
@@ -180,32 +170,17 @@ start.SetTimeZone(&timeZone)
 start.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.dateTimeTimeZone",
 }
-maximumAttendeesCount := int32(5)
-requestBody.SetMaximumAttendeesCount(&maximumAttendeesCount)
-filledAttendeesCount := int32(1)
-requestBody.SetFilledAttendeesCount(&filledAttendeesCount)
-requestBody.SetCustomers( []BookingCustomerInformationBase {
-    msgraphsdk.NewBookingCustomerInformationBase(),
-    SetAdditionalData(map[string]interface{}{
-        "@odata.type": "#microsoft.graph.bookingCustomerInformation",
-        "customerId": "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
-        "name": "Jordan Miller",
-        "emailAddress": "jordanm@contoso.com",
-        "phone": "213-555-0199",
-        "notes": nil,
-        "timeZone": "America/Chicago",
-        "customQuestionAnswers":  []Object {
-        }
-    }
-}
 requestBody.SetAdditionalData(map[string]interface{}{
     "@odata.type": "#microsoft.graph.bookingAppointment",
     "invoiceStatus@odata.type": "#microsoft.graph.bookingInvoiceStatus",
     "priceType@odata.type": "#microsoft.graph.bookingPriceType",
     "reminders@odata.type": "#Collection(microsoft.graph.bookingReminder)",
 }
+options := &msgraphsdk.AppointmentsRequestBuilderPostOptions{
+    Body: requestBody,
+}
 bookingBusinessId := "bookingBusiness-id"
-result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(requestBody)
+result, err := graphClient.BookingBusinessesById(&bookingBusinessId).Appointments().Post(options)
 
 
 ```

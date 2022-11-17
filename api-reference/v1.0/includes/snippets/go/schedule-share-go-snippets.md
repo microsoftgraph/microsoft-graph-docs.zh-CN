@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 5073d59667ba0e4714a1fd534f784b9150e1faea
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 197ef24f97abf6c321c1d4f75c499e83bfa4d7df
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65329035"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976433"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.New()
 notifyTeam := true
@@ -19,8 +19,11 @@ startDateTime, err := time.Parse(time.RFC3339, "2018-10-08T00:00:00.000Z")
 requestBody.SetStartDateTime(&startDateTime)
 endDateTime, err := time.Parse(time.RFC3339, "2018-10-15T00:00:00.000Z")
 requestBody.SetEndDateTime(&endDateTime)
+options := &msgraphsdk.ShareRequestBuilderPostOptions{
+    Body: requestBody,
+}
 teamId := "team-id"
-graphClient.TeamsById(&teamId).Schedule().Share(team-id).Post(requestBody)
+graphClient.TeamsById(&teamId).Schedule().Share().Post(options)
 
 
 ```

@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0838b66555e29516b2121f2772b83a88977a15a1
-ms.sourcegitcommit: 4f5a5aef6cfe2fab2ae39ff7eccaf65f44b7aea1
+ms.openlocfilehash: 29189ba7e875031aee24b2c990a132ba4b820c79
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65208938"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60976003"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>在频道或聊天中发送 chatMessage
 
@@ -18,11 +18,11 @@ ms.locfileid: "65208938"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-在指定[的频道](../resources/channel.md)或[聊天](../resources/chat.md)中发送新的 [chatMessage](../resources/chatmessage.md)。
+在指定的频道或聊天中[发送新的](../resources/channel.md)[chatMessage。](../resources/chatmessage.md) [](../resources/chat.md)
 
-> **注意**：我们不建议使用此 API 进行数据迁移。 它没有典型迁移所需的吞吐量。
+> **注意**：不建议使用此 API 进行数据迁移。 它不具有典型迁移所需的吞吐量。
 
-> **注意**：将Microsoft Teams用作日志文件违反了 [使用条款](/legal/microsoft-apis/terms-of-use)。 仅发送用户将读取的消息。
+> **注意**：使用产品作为Microsoft Teams违反日志文件。 [](/legal/microsoft-apis/terms-of-use) 仅发送用户将阅读的邮件。
 
 ## <a name="permissions"></a>权限
 
@@ -33,18 +33,16 @@ ms.locfileid: "65208938"
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ChannelMessage.Send、Group.ReadWrite.All** |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| 应用程序                            | Teamwork.Migrate.All |
+| 应用程序                            | 不支持。 |
 
-> **Note**： 仅支持使用 ** 标记的权限以实现向后兼容。 建议更新解决方案，以使用上表中列出的替代权限，并避免今后使用这些权限。
-
-> **注意**： *仅* 支持 [迁移](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)应用程序权限。 将来，Microsoft 可能要求你或你的客户根据导入的数据量支付其他费用。
+> **注意**：标记为 ** 的权限已弃用，不应使用。
 
 ### <a name="permissions-for-chat"></a>聊天权限
 | 权限类型                        | 权限（从最低特权到最高特权） |
 |:---------------------------------------|:--------------------------------------------|
 | 委派（工作或学校帐户）     | ChatMessage.Send、Chat.ReadWrite |
 | 委派（个人 Microsoft 帐户） | 不支持。 |
-| Application                            | 不支持。 |
+| 应用程序                            | 不支持。 |
 
 ## <a name="http-request"></a>HTTP 请求
 
@@ -54,7 +52,7 @@ ms.locfileid: "65208938"
 POST /teams/{team-id}/channels/{channel-id}/messages
 ```
 
-**在频道中发送答复**
+**在频道中发送回复**
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
@@ -66,27 +64,27 @@ POST /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies
 POST /chats/{chat-id}/messages
 ```
 
-## <a name="request-headers"></a>请求标头
+## <a name="request-headers"></a>请求头
 
 | 名称          | 说明   |
 |:--------------|:--------------|
-| Authorization | 持有者 {code}。必需。 |
+| Authorization | Bearer {code}。 必需。 |
 | Content-type | application/json. Required. |
 
 ## <a name="request-body"></a>请求正文
 
-在请求正文中，提供 [chatMessage 对象的](../resources/chatmessage.md) JSON 表示形式。 只有正文属性是必需的;其他属性是可选的。
+在请求正文中，提供 [chatMessage](../resources/chatmessage.md) 对象的 JSON 表示形式。 只有 body 属性是必需的;其他属性是可选的。
 
 
 ## <a name="response"></a>响应
 
-如果成功，此方法在响应正文中返回 `201 Created` 响应代码和新的 [chatMessage](../resources/chatmessage.md) 对象。
+如果成功，此方法在响应正文中返回 响应代码和新 `201 Created` [chatMessage](../resources/chatmessage.md) 对象。
 
 ## <a name="examples"></a>示例
 
-在以下示例中，URL 可以使用所述[的 HTTP 语法](#http-request)[向聊天发送消息](chat-post-messages.md)、[向频道发送消息](channel-post-messages.md)或[向频道发送回复](chatmessage-post-replies.md)。
+在下面的示例中，URL 可以使用描述的[HTTP](#http-request)语法向[](chat-post-messages.md)聊天发送消息、向频道发送消息或[](channel-post-messages.md)向频道[发送回复](chatmessage-post-replies.md)。
 
-### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>示例 1：在频道中发送Hello World消息
+### <a name="example-1-send-a-hello-world-message-in-a-channel"></a>示例 1：在频道中发送 Hello World 消息
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -123,12 +121,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -136,7 +130,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -182,14 +176,13 @@ Content-type: application/json
         "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
         "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
     },
-    "onBehalfOf": null,
     "attachments": [],
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中的用户
+### <a name="example-2-mentions-a-user-in-a-channel-message"></a>示例 2：@mentions频道消息中通知用户
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
@@ -240,12 +233,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -253,7 +242,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -319,12 +308,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-send-message-that-contains-cards"></a>示例 3：发送包含卡片的消息
+### <a name="example-3-send-message-that-contains-cards"></a>示例 3：发送包含卡片的邮件
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：** 附件的 ID 必须是唯一的，并且可以是随机生成的新 GUID。 但是，附件的 ID 在 _正文_ 和 _附件_ 元素中必须相同。
+> **注意：** 附件的 ID 必须是唯一的，并且可以是随机生成的新 GUID。 但是，附件的 ID 在 _body_ 和 attachments 元素中 _必须_ 相同。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -332,7 +321,6 @@ Content-type: application/json
   "blockType": "request",
   "name": "post_chatmessage_3"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 Content-type: application/json
@@ -371,12 +359,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -384,7 +368,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -439,18 +423,17 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
-    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>示例 4：发送包含文件附件的消息
+### <a name="example-4-send-a-message-with-file-attachment-in-it"></a>示例 4：发送包含文件附件的邮件
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
->**注意：** 该文件必须已在SharePoint中。 若要查找文件属性，请获取文件的 **driveItem** 。 例如，/drives/{id}/items/{id}。 附件 ID 是 **driveItem** **eTag** 中的 GUID，附件 **contentURL** 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。
+>**注意：** 该文件必须已SharePoint。 若要查找文件属性，请获取 **文件的 driveItem。** 例如，/drives/{id}/items/{id}。 附件 ID 是 **driveItem** 的 **eTag** 中的 GUID，附件 contentURL 是 **driveItem** 文件夹的 **webUrl** 加上 **driveItem** 的名称，附件名称是 **driveItem** 的名称。 
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -493,12 +476,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-4-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -506,7 +485,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -561,20 +540,19 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
-    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-5-send-inline-images-along-with-the-message"></a>示例 5：发送内联图像以及消息
+### <a name="example-5-send-inline-images-along-with-the-message"></a>示例 5：随邮件一起发送内嵌图像
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：****hostedContents** 集合中的 **temporaryId** 是随机 ID，但在 **正文** 和 **hostedContents** 元素中必须相同。  (请注意 **，temporaryId** 设置为 **1** ，正文中的引用为 `../hostedContents/1/$value`.) 
+> **注意：****hostedContents** 集合中的 **temporaryId** 是一个随机 ID，但在整个 **body** 和 **hostedContents** 元素中必须相同。  (注意 **temporaryId** 设置为 **1，** 正文中的引用设置为 `../hostedContents/1/$value` .) 
 
-**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 可以通过使用 C# 执行此操作 `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -616,12 +594,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-5-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -629,7 +603,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -656,7 +630,6 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": null,
     "channelIdentity": null,
-    "onBehalfOf": null,
     "policyViolation": null,
     "eventDetail": null,
     "from": {
@@ -683,9 +656,9 @@ Content-type: application/json
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> **注意：****hostedContents** 集合中的 **temporaryId** 是随机 ID，但在 **附件**) 和 **hostedContents** 元素中 **的内容** (必须相同。  (请注意 **，temporaryId** 设置为 **1** ，内容中的引用设置为 `../hostedContents/1/$value`.) 
+> **注意：** hostedContents 集合中的 **temporaryId** 是一个随机 ID，但必须在附件和 **hostedContents** (内容) 相同。  (请注意 **，temporaryId 设置为** **1，** 内容中的引用设置为 `../hostedContents/1/$value` .) 
 
-**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 可以通过使用 C# 执行此操作 `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+**contentBytes** 必须设置为二进制字符串 Base64 编码字节。 为此，可以使用 C# `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -738,12 +711,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-6-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-6-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -805,18 +774,17 @@ Content-type: application/json
             "thumbnailUrl": null
         }
     ],
-    "onBehalfOf": null,
     "mentions": [],
     "reactions": []
 }
 ```
 
-### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention频道消息中的通道
+### <a name="example-7--mention-a-channel-in-a-channel-message"></a>示例 7：@mention消息中的频道
 
 #### <a name="request"></a>请求
-下面展示了示例请求。 有关如何获取团队中频道列表的信息，请参阅 [“列表”频道](../api/channel-list.md)。
+下面展示了示例请求。 若要了解如何获取团队中的频道列表，请参阅 [列出频道](../api/channel-list.md)。
 
-> 注意： **conversationIdentityType** 必须设置为 `channel` @mention频道。
+> 注意 **：conversationIdentityType** 必须设置为 `channel` @mention通道。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -864,12 +832,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionchannel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionchannel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentionchannel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -877,7 +841,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -945,12 +909,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中的团队
+### <a name="example-8--mention-a-team-in-a-channel-message"></a>示例 8：@mention频道消息中通知团队
 
 #### <a name="request"></a>请求
 下面展示了示例请求。
 
-> 注意： **conversationIdentityType** 必须设置为 `team` @mention团队。
+> 注意 **：conversationIdentityType** 必须设置为@mention `team` 团队。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -999,12 +963,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentionteam-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentionteam-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentionteam-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1012,7 +972,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -1080,10 +1040,10 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention通道消息中的标记
+### <a name="example-9--mention-a-tag-in-a-channel-message"></a>示例 9：@mention消息中的标记
 
 #### <a name="request"></a>请求
-下面展示了示例请求。 有关如何在团队中获取标记列表的信息，请参阅 [List teamworkTags](../api/teamworktag-list.md)。
+下面展示了示例请求。 若要了解如何获取团队中的标记列表，请参阅 [List teamworkTags](../api/teamworktag-list.md)。
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -1130,12 +1090,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-atmentiontag-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[转到](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-atmentiontag-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-atmentiontag-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1143,7 +1099,7 @@ Content-type: application/json
 
 #### <a name="response"></a>响应
 
-下面介绍响应示例。
+下面展示了示例响应。
 
 <!-- {
   "blockType": "response",
@@ -1206,138 +1162,6 @@ Content-type: application/json
             }
         }
     ],
-    "reactions": []
-}
-```
-
-### <a name="example-10-send-message-that-contains-cards-that-are-attributed-to-a-teams-app"></a>示例 10：发送包含归于Teams应用的卡片的消息
-
-#### <a name="request"></a>请求
-
-下面展示了示例请求。
-
-> **注意：** 指定Teams应用以将卡片属性化时，用于进行调用的Azure AD应用 ID 必须与Teams应用的Azure AD应用 ID 相匹配。 可在应用清单的 *webApplicationInfo* 部分中指定Teams应用的Azure AD应用 ID。 请参阅有关当前[Teams应用清单架构](/microsoftteams/platform/resources/schema/manifest-schema)的以下文档。
->
-> 此外，必须为发送消息的用户安装有效负载中指定的应用，或者在发送消息的聊天或频道中安装该应用。
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "post_chatmessage_10"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
-Content-type: application/json
-
-{
-    "subject": null,
-    "body": {
-        "contentType": "html",
-        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
-    },
-    "attachments": [
-        {
-            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
-            "contentType": "application/vnd.microsoft.card.thumbnail",
-            "contentUrl": null,
-            "content": "{\r\n  \"title\": \"This is an example of posting a card\",\r\n  \"subtitle\": \"<h3>This is the subtitle</h3>\",\r\n  \"text\": \"Here is some body text. <br>\\r\\nAnd a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\r\\nAnd below that is some buttons:\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"messageBack\",\r\n      \"title\": \"Login to FakeBot\",\r\n      \"text\": \"login\",\r\n      \"displayText\": \"login\",\r\n      \"value\": \"login\"\r\n    }\r\n  ]\r\n}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
-        }
-    ]
-}
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-10-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-10-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-10-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-10-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-10-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-10-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### <a name="response"></a>响应
-
-下面展示了示例响应。
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.chatMessage"
-} -->
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages/$entity",
-    "id": "1616991851162",
-    "replyToId": null,
-    "etag": "1616991851162",
-    "messageType": "message",
-    "createdDateTime": "2021-03-29T04:24:11.162Z",
-    "lastModifiedDateTime": "2021-03-29T04:24:11.162Z",
-    "lastEditedDateTime": null,
-    "deletedDateTime": null,
-    "subject": null,
-    "summary": null,
-    "chatId": null,
-    "importance": "normal",
-    "locale": "en-us",
-    "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616991851162?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616991851162&parentMessageId=1616991851162",
-    "policyViolation": null,
-    "eventDetail": null,
-    "from": {
-        "application": null,
-        "device": null,
-        "user": {
-            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-            "displayName": "Robin Kline",
-            "userIdentityType": "aadUser"
-        }
-    },
-    "body": {
-        "contentType": "html",
-        "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
-    },
-    "channelIdentity": {
-        "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
-        "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
-    },
-    "attachments": [
-        {
-            "id": "74d20c7f34aa4a7fb74e2b30004247c5",
-            "contentType": "application/vnd.microsoft.card.thumbnail",
-            "contentUrl": null,
-            "content": "{  \"title\": \"This is an example of posting a card\",  \"subtitle\": \"<h3>This is the subtitle</h3>\",  \"text\": \"Here is some body text. <br>\\\\And a <a href=\\\"http://microsoft.com/\\\">hyperlink</a>. <br>\\\\And below that is some buttons:\",  \"buttons\": [    {      \"type\": \"messageBack\",      \"title\": \"Login to FakeBot\",      \"text\": \"login\",      \"displayText\": \"login\",      \"value\": \"login\"    }  ]}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": "881b8843-fd91-49e5-9ac2-47ec497ffbe5"
-        }
-    ],
-    "onBehalfOf": null,
-    "mentions": [],
     "reactions": []
 }
 ```

@@ -1,16 +1,16 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 8e5c579370474b01ddc59570744ad625ca72b6bc
-ms.sourcegitcommit: 6bb3c5c043d35476e41ef2790bcf4813fae0769d
+ms.openlocfilehash: e1f01cbff33423fd4f3189b3ebf8b7657324adb6
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66098754"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60985215"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.NewEvent()
 subject := "Plan summer company picnic"
@@ -51,42 +51,28 @@ locationType := "Default"
 location.SetLocationType(&locationType)
 requestBody.SetLocations( []Location {
     msgraphsdk.NewLocation(),
-displayName := "Conf Room 3"
-    SetDisplayName(&displayName)
+    SetAdditionalData(map[string]interface{}{
+        "displayName": "Conf Room 3",
+    }
     msgraphsdk.NewLocation(),
-displayName := "Fourth Coffee"
-    SetDisplayName(&displayName)
-address := msgraphsdk.NewPhysicalAddress()
-    SetAddress(address)
-street := "4567 Main St"
-    address.SetStreet(&street)
-city := "Redmond"
-    address.SetCity(&city)
-state := "WA"
-    address.SetState(&state)
-countryOrRegion := "US"
-    address.SetCountryOrRegion(&countryOrRegion)
-postalCode := "32008"
-    address.SetPostalCode(&postalCode)
-coordinates := msgraphsdk.NewOutlookGeoCoordinates()
-    SetCoordinates(coordinates)
-latitude := float64(47.672)
-    coordinates.SetLatitude(&latitude)
-longitude := float64(-102.103)
-    coordinates.SetLongitude(&longitude)
+    SetAdditionalData(map[string]interface{}{
+        "displayName": "Fourth Coffee",
+    }
     msgraphsdk.NewLocation(),
-displayName := "Home Office"
-    SetDisplayName(&displayName)
+    SetAdditionalData(map[string]interface{}{
+        "displayName": "Home Office",
+    }
 }
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals)
 headers := map[string]string{
     "Prefer": "outlook.timezone="Pacific Standard Time""
 }
-options := &msgraphsdk.EventsRequestBuilderPostRequestConfiguration{
-    Headers: headers,
+options := &msgraphsdk.EventsRequestBuilderPostOptions{
+    Body: requestBody,
+    H: headers,
 }
-result, err := graphClient.Me().Events().PostWithRequestConfigurationAndResponseHandler(requestBody, options, nil)
+result, err := graphClient.Me().Events().Post(options)
 
 
 ```

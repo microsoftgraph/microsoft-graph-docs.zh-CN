@@ -1,24 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: 3be181e27bbe0717c3b45b160714c7e8848bbcf8
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 92341a5983cb654a2e12e7759e44ad3743d199c8
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65328351"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60993702"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestParameters := &msgraphsdk.NamedLocationsRequestBuilderGetQueryParameters{
     Filter: "isof('microsoft.graph.ipNamedLocation')",
 }
-options := &msgraphsdk.NamedLocationsRequestBuilderGetRequestConfiguration{
-    QueryParameters: requestParameters,
+options := &msgraphsdk.NamedLocationsRequestBuilderGetOptions{
+    Q: requestParameters,
 }
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().GetWithRequestConfigurationAndResponseHandler(options, nil)
+result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(options)
 
 
 ```

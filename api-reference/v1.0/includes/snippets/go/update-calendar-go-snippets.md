@@ -1,21 +1,24 @@
 ---
 description: 自动生成文件。 请不要修改
-ms.openlocfilehash: dc57df78b873f73609624df59583c4853e2ca710
-ms.sourcegitcommit: 30d1f0d898b6e4488d1938251fba143370119241
+ms.openlocfilehash: 6ab0337df8706af29a8a08661ea9d08957143e23
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65325751"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61000950"
 ---
 ```go
 
 //THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter);
 
 requestBody := msgraphsdk.NewCalendar()
 name := "Social events"
 requestBody.SetName(&name)
-graphClient.Me().Calendar().Patch(requestBody)
+options := &msgraphsdk.CalendarRequestBuilderPatchOptions{
+    Body: requestBody,
+}
+graphClient.Me().Calendar().Patch(options)
 
 
 ```

@@ -4,12 +4,12 @@ description: 了解如何将大型文件附加到 Microsoft 待办任务，以�
 author: avijityadav
 ms.localizationpriority: high
 ms.prod: outlook
-ms.openlocfilehash: 2d4c66a6e6e2438f1d7b7aafc6555ab701d1883a
-ms.sourcegitcommit: 7bc623e73fdfb970dbd0a62154d10bb2863afaf7
-ms.translationtype: HT
+ms.openlocfilehash: 756d10a8886ee3bed423551a166eac3d3eae570f
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
+ms.translationtype: Auto
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66671358"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645570"
 ---
 # <a name="attach-files-to-a-to-do-task"></a>将文件附加到待办事项任务
 
@@ -193,7 +193,7 @@ Content-Length: 0
 ```
 
 ## <a name="alternative-step-cancel-the-upload-session"></a>替代步骤：取消上传会话
-在上传会话到期之前的任何时间，如果必须取消上传，可使用同一初始非跳转 URL 来删除上传会话。 成功的操作返回 `204 No Content` 响应代码。
+在上传会话到期之前的任何时间，如果必须取消上传，可使用同一初始非跳转 URL 来删除上传会话。 成功的操作返回 `HTTP 204 No Content` 响应代码。
 
 ### <a name="example-cancel-the-upload-session"></a>示例：取消上传会话
 
